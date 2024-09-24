@@ -67,10 +67,6 @@ C {devices/iopin.sym} 330 -430 0 0 {name=p6 lab=VPWR}
 C {devices/lab_wire.sym} 310 -430 0 0 {name=l12 sig_type=std_logic lab=VPWR}
 C {devices/lab_wire.sym} 310 -30 0 0 {name=l13 sig_type=std_logic lab=VGND}
 C {devices/lab_pin.sym} 260 -340 2 0 {name=l14 sig_type=std_logic lab=VPWR}
-C {main_inv.sym} 160 -300 0 0 {name=Xi_1}
-C {main_inv.sym} 160 -140 0 0 {name=Xi_2}
-C {aux_inv.sym} 250 -220 0 0 {name=Xi_3}
-C {aux_inv.sym} 370 -220 0 0 {name=Xi_4}
 C {devices/lab_pin.sym} 140 -360 0 0 {name=p7 sig_type=std_logic lab=VCCA}
 C {devices/lab_pin.sym} 140 -70 0 0 {name=p8 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 240 -360 0 0 {name=p10 sig_type=std_logic lab=VCCA}
@@ -83,3 +79,7 @@ C {devices/lab_wire.sym} 200 -30 0 0 {name=p16 sig_type=std_logic lab=GND}
 C {devices/iopin.sym} 140 -30 2 0 {name=p17 lab=GND}
 C {devices/lab_pin.sym} 140 -240 0 0 {name=p9 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 140 -200 0 0 {name=p18 sig_type=std_logic lab=VCCA}
+C {vco_main_inv.sym} 160 -300 0 0 {name=x1}
+C {vco_main_inv.sym} 160 -140 0 0 {name=x2}
+C {vco_aux_inv.sym} 250 -220 0 0 {name=x3}
+C {vco_aux_inv.sym} 370 -220 0 0 {name=x4}

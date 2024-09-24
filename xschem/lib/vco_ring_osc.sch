@@ -99,10 +99,10 @@ C {devices/opin.sym} 70 -170 0 0 {name=p9 lab=p\\[4\\]}
 C {devices/opin.sym} 590 -20 0 0 {name=p10 lab=pn\\[2\\]}
 C {devices/opin.sym} 770 -20 0 0 {name=p11 lab=pn\\[3\\]}
 C {devices/opin.sym} 70 -10 0 0 {name=p12 lab=pn\\[4\\]}
-C {cc_inv.sym} 130 -90 0 0 {name=Xi_1 l_main=l_main l_aux=l_aux wp=wp wn=wn}
-C {cc_inv.sym} 310 -90 0 0 {name=Xi_2 l_main=l_main l_aux=l_aux wp=wp wn=wn}
-C {cc_inv.sym} 490 -90 0 0 {name=Xi_3 l_main=l_main l_aux=l_aux wp=wp wn=wn}
-C {cc_inv.sym} 670 -90 0 0 {name=Xi_4 l_main=l_main l_aux=l_aux wp=wp wn=wn}
-C {cc_inv.sym} 850 -90 0 0 {name=Xi_5 l_main=l_main l_aux=l_aux wp=wp wn=wn}
 C {devices/iopin.sym} 475 -280 2 0 {name=p13 lab=VCCA}
 C {devices/iopin.sym} 475 120 2 0 {name=p14 lab=GND}
+C {vco_cc_inv.sym} 130 -90 0 0 {name=x1}
+C {vco_cc_inv.sym} 310 -90 0 0 {name=x2}
+C {vco_cc_inv.sym} 490 -90 0 0 {name=x3}
+C {vco_cc_inv.sym} 670 -90 0 0 {name=x4}
+C {vco_cc_inv.sym} 850 -90 0 0 {name=x5}

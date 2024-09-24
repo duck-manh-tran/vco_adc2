@@ -105,7 +105,7 @@ vco_cc_inv: get_file
 	$(NETGEN) $(NETGEN_OPTS) "$(XSC_VCO_PATH)/vco_cc_inv.spice vco_cc_inv" "$(MAG_VCO_PATH)/vco_cc_inv.spice vco_cc_inv" $(SETUP_TCL)
 	make check_lvs
 
-vco_ring_ocs: get_file
+vco_ring_osc: get_file
 	$(NETGEN) $(NETGEN_OPTS) "$(XSC_VCO_PATH)/vco_ring_osc.spice vco_ring_osc" "$(MAG_VCO_PATH)/vco_ring_osc.spice vco_ring_osc" $(SETUP_TCL)
 	make check_lvs
 
@@ -145,7 +145,6 @@ dco: get_file
 	make check_lvs
 
 block_dco: dco_main_inv dco_aux_inv dco_cc_inv dco_ring_osc dco_idac dco_freq dco 
-	clear
 	@echo "All module dco check completed successfully"
 
 count: get_file
@@ -160,7 +159,10 @@ system: get_file
 	$(NETGEN) $(NETGEN_OPTS) "$(XSC_SYSTEM_PATH)/system.spice system" "$(MAG_SYSTEM_PATH)/system.spice system" $(SETUP_TCL)
 	make check_lvs
 
-.PHONY: get_file check_lvs vco_main_inv vco_aux_inv vco_cc_inv vco_ring_osc vco dco_main_inv dco_aux_inv dco_cc_inv dco_ring_osc block_dco count qz system
+test_system: block_vco block_dco count qz system
+	@echo "SYSTEM check completed successfully"
+
+.PHONY: get_file check_lvs vco_main_inv vco_aux_inv vco_cc_inv vco_ring_osc vco dco_main_inv dco_aux_inv dco_cc_inv dco_ring_osc block_dco count qz system test_system
 
 clean:
 	rm -f $(file_log) *.out
