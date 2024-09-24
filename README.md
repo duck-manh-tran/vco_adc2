@@ -1,32 +1,20 @@
 # VCO based ADC 2nd 
+This project implements a second-order VCO-based ADC on skywater 130 nm for Audio Recording. 
+## The project includes the following files:
+1. `layout`
+2. `xschem`
+3. `netgen`
+4. `matlab`
+5. `python`
+6. `spice`
+7. `synopsys`
 
-# How to Run LVS?
-In the `netgen` folder, you can run LVS in the terminal using the following command:
-```sh
-make target_name
-```
+![](https://github.com/toinguyendinh/Picture/blob/main/Picture1.png)
 
-example:
-```sh
-make dco_idac
-```
-netlist of circuit design: `xschem/lib/simulations/dco_idac.spice`
 
-netlist of layout design: `layout/dco/idac.spice`
+![](Picture1.png)
 
-# Bug in LVS for IDAC
-When generating the netlist from Magic VLSI, an issue arises with improper wire arrangement. The wiring is incorrect in four blocks: Resistor, Buffer, Inverter, and 4 MOSFETs.
-
-Note:
-The original code has been modified. You can go to the folder layout/dco and regenerate the netlist for Magic VLSI using:
-
-```sh
-magic idac.mag
-```
-
-In the tkcon Main window, you can run:
-```sh
-source ext.sh
-```
-
-After that, return to the netgen folder. When you run LVS again, you will see the error appear.
+## Contributors
+- Duc-Manh Tran: Analog Circuit Design
+- Dinh-Toi Nguyen: Analog Layout Design 
+- Duy-Hieu Bui and Xuan-Tu Tran: PI and 
