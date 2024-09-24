@@ -31,7 +31,8 @@ def filt_data(filename_):
 def decimation_filr(sig, rate):
 	decimation         = rate 		# any integer; powers of 2 work best.
 	stages             = 3			# pipelined I and C stages
-	gain = (decimation * 1) ** stages
+#	gain = (decimation * 1) ** stages
+	gain = 1
 	c_stages = stages
 	i_stages = stages
 
