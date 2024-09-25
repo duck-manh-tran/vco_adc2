@@ -159,10 +159,11 @@ system: get_file
 	$(NETGEN) $(NETGEN_OPTS) "$(XSC_SYSTEM_PATH)/system.spice system" "$(MAG_SYSTEM_PATH)/system.spice system" $(SETUP_TCL)
 	make check_lvs
 
-test_system: block_vco block_dco count qz system
-	@echo "SYSTEM check completed successfully"
+all: block_vco block_dco count qz system
+	clear
+	@echo "ALL module check completed successfully"
 
-.PHONY: get_file check_lvs vco_main_inv vco_aux_inv vco_cc_inv vco_ring_osc vco dco_main_inv dco_aux_inv dco_cc_inv dco_ring_osc block_dco count qz system test_system
+.PHONY: get_file check_lvs vco_main_inv vco_aux_inv vco_cc_inv vco_ring_osc vco dco_main_inv dco_aux_inv dco_cc_inv dco_ring_osc block_dco count qz system all
 
 clean:
 	rm -f $(file_log) *.out
