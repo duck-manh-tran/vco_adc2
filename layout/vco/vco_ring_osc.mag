@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1726027226
+timestamp 1727249012
 << locali >>
 rect 2980 1375 3090 1415
 rect 5980 1375 6090 1415
@@ -44,24 +44,24 @@ rect 9000 -1660 9300 -1610
 rect 9405 -2050 9455 1515
 rect 5875 -2100 6925 -2050
 rect 8875 -2100 9455 -2050
-use mag_vco_cc_inv  mag_vco_cc_inv_0
-timestamp 1725793258
+use vco_cc_inv  vco_cc_inv_0
+timestamp 1727248762
 transform 1 0 130 0 1 150
 box -130 -150 2870 1415
-use mag_vco_cc_inv  mag_vco_cc_inv_1
-timestamp 1725793258
+use vco_cc_inv  vco_cc_inv_1
+timestamp 1727248762
 transform 1 0 3130 0 1 150
 box -130 -150 2870 1415
-use mag_vco_cc_inv  mag_vco_cc_inv_2
-timestamp 1725793258
+use vco_cc_inv  vco_cc_inv_2
+timestamp 1727248762
 transform 1 0 6130 0 1 150
 box -130 -150 2870 1415
-use mag_vco_cc_inv  mag_vco_cc_inv_3
-timestamp 1725793258
+use vco_cc_inv  vco_cc_inv_3
+timestamp 1727248762
 transform -1 0 5870 0 -1 -685
 box -130 -150 2870 1415
-use mag_vco_cc_inv  mag_vco_cc_inv_4
-timestamp 1725793258
+use vco_cc_inv  vco_cc_inv_4
+timestamp 1727248762
 transform -1 0 8870 0 -1 -685
 box -130 -150 2870 1415
 << labels >>
