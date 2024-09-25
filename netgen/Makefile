@@ -160,7 +160,6 @@ system: get_file
 	make check_lvs
 
 all: block_vco block_dco count qz system
-	clear
 	@echo "ALL module check completed successfully"
 
 .PHONY: get_file check_lvs vco_main_inv vco_aux_inv vco_cc_inv vco_ring_osc vco dco_main_inv dco_aux_inv dco_cc_inv dco_ring_osc block_dco count qz system all
