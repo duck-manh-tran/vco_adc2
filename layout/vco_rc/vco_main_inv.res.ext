@@ -1,0 +1,88 @@
+scale 1000 1 500000
+rnode "GND.t0" 0 0 1175 -610 0
+rnode "GND.t1" 0 0 365 -610 0
+rnode "GND" 0 0 -180 -1020 0
+resist "GND.t1" "GND.t0" 2994.96
+resist "GND" "GND.t1" 3194.5
+rnode "VGND.t0" 0 250.404 1540 -610 0
+rnode "VGND.t1" 0 250.403 0 -610 0
+rnode "VGND" 0 199.194 770 -1270 0
+resist "VGND" "VGND.t0" 214.002
+resist "VGND" "VGND.t1" 214.004
+rnode "VCCA.t1" 0 461.883 1175 500 0
+rnode "VCCA.t0" 0 434.851 365 500 0
+rnode "VCCA" 0 103.266 -180 1010 0
+resist "VCCA.t0" "VCCA.t1" 663.362
+resist "VCCA" "VCCA.t0" 825.714
+rnode "VPWR.t1" 0 343.875 1540 500 0
+rnode "VPWR.t0" 0 343.875 0 500 0
+rnode "VPWR" 0 312.25 770 1260 0
+resist "VPWR" "VPWR.t1" 258.204
+resist "VPWR" "VPWR.t0" 258.204
+rnode "Y.t0" 0 68.2415 810 -610 0
+rnode "Y.t3" 0 68.2415 730 -610 0
+rnode "Y.n0" 0 136.483 770 -250 0
+rnode "Y.t1" 0 85.3018 810 500 0
+rnode "Y.t2" 0 85.3018 730 500 0
+rnode "Y.n1" 0 454.874 770 880 0
+rnode "Y.n2" 0 327.61 770 -250 0
+rnode "Y" 0 73.9463 770 -1010 0
+resist "Y.n0" "Y.t3" 6
+resist "Y.n0" "Y.t0" 6
+resist "Y.n2" "Y.n0" 7.16458
+resist "Y.n1" "Y.t2" 7.88
+resist "Y.n1" "Y.t1" 7.88
+resist "Y" "Y.n2" 42.4393
+resist "Y.n2" "Y.n1" 174.363
+rnode "A.n0" 0 11.4648 280 -110 0
+rnode "A.n1" 0 11.4648 280 -110 0
+rnode "A.t3" 0 539.176 365 500 0
+rnode "A.t1" 0 418.465 365 -610 0
+rnode "A.n2" 0 429.081 365 0 0
+rnode "A.n3" 0 11.8736 1100 -110 0
+rnode "A.n4" 0 11.4648 1020 -110 0
+rnode "A.t0" 0 539.176 1175 500 0
+rnode "A.t2" 0 418.465 1175 -610 0
+rnode "A.n5" 0 455.312 1175 0 0
+rnode "A.n6" 0 18.1491 1100 -110 0
+rnode "A.n7" 0 18.5201 1020 -110 0
+rnode "A.n8" 0 70.7124 940 -110 0
+rnode "A.n9" 0 11.4648 940 -110 0
+rnode "A.n10" 0 69.6052 940 -110 0
+rnode "A.n11" 0 47.2923 360 -110 0
+rnode "A.n12" 0 11.4648 360 -110 0
+rnode "A.n13" 0 65.011 360 -110 0
+rnode "A.n14" 0 25.0652 280 -110 0
+rnode "A.n15" 0 13.9061 200 -110 0
+rnode "A" 0 2.8662 160 -110 0
+resist "A" "A.n15" 0.0384615
+resist "A.n15" "A.n0" 0.0769231
+resist "A.n11" "A.n0" 0.0769231
+resist "A.n11" "A.n10" 0.557692
+resist "A.n13" "A.n2" 1.14762
+resist "A.n4" "A.n3" 2.75925
+resist "A.n10" "A.n3" 3.36152
+resist "A.n14" "A.n1" 3.62603
+resist "A.n9" "A.n4" 7.87692
+resist "A.n12" "A.n1" 7.87692
+resist "A.n1" "A.n0" 9.3
+resist "A.n12" "A.n11" 9.3
+resist "A.n10" "A.n9" 9.3
+resist "A.n15" "A.n14" 13.364
+resist "A.n6" "A.n5" 17.2143
+resist "A.n8" "A.n7" 18.3619
+resist "A.n7" "A.n6" 18.3619
+resist "A.n5" "A.t2" 26.411
+resist "A.n2" "A.t1" 26.411
+resist "A.n5" "A.t0" 33.0137
+resist "A.n2" "A.t3" 33.0137
+resist "A.n14" "A.n13" 96.7754
+resist "A.n8" "A.n2" 139.321
+resist "A.n9" "A.n8" 152
+resist "A.n7" "A.n4" 152
+resist "A.n13" "A.n12" 152
+resist "A.n6" "A.n3" 154.782
+device msubckt sky130_fd_pr__pfet_01v8 0 0 1 1  "VCCA.t0" "A.t3" 1460 0 "VPWR.t0" 1000 80000,2160 "Y.t2" 1000 40000,1080
+device msubckt sky130_fd_pr__nfet_01v8 810 -1010 811 -1009  "GND.t0" "A.t2" 1460 0 "Y.t0" 800 32000,880 "VGND.t0" 800 64000,1760
+device msubckt sky130_fd_pr__nfet_01v8 0 -1010 1 -1009  "GND.t1" "A.t1" 1460 0 "VGND.t1" 800 64000,1760 "Y.t3" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 810 0 811 1  "VCCA.t1" "A.t0" 1460 0 "Y.t1" 1000 40000,1080 "VPWR.t1" 1000 80000,2160
