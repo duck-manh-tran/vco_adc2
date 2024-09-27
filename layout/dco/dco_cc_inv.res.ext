@@ -1,0 +1,105 @@
+scale 1000 1 500000
+rnode "inn" 0 476.465 0 460 0
+rnode "inn.n0" 0 682.183 2375 720 0
+rnode "inn.t3" 0 393.234 2380 1180 0
+rnode "inn.t0" 0 254.446 2380 460 0
+rnode "inn.t2" 0 393.234 2660 1180 0
+rnode "inn.t1" 0 254.446 2660 460 0
+rnode "inn.n1" 0 346.629 2660 770 0
+rnode "inn.n2" 0 346.356 2480 770 0
+rnode "inn.n3" 0 44.6806 2370 770 0
+rnode "dco_main_inv_1/A" 0 8.32731 2330 770 0
+resist "inn.n3" "inn.n0" 0.00694444
+resist "dco_main_inv_1/A" "inn.n3" 0.0555556
+resist "inn.n0" "inn" 4.00174
+resist "inn.n2" "inn.n1" 64.2667
+resist "inn.n1" "inn.t1" 74.71
+resist "inn.n2" "inn.t0" 74.71
+resist "inn.n1" "inn.t2" 98.81
+resist "inn.n2" "inn.t3" 98.81
+resist "inn.n3" "inn.n2" 161.3
+resist "inn.n1" "inn.n0" 161.696
+rnode "inp.t3" 0 290.764 360 1180 0
+rnode "inp.n0" 0 335.527 380 300 0
+rnode "inp.t0" 0 182.375 360 660 0
+rnode "inp.n1" 0 187.686 460 770 0
+rnode "inp.t2" 0 290.764 640 1180 0
+rnode "inp.t1" 0 188.141 640 460 0
+rnode "inp.n2" 0 256.308 640 770 0
+rnode "inp.n3" 0 0 640 770 0
+rnode "inp" 0 101.254 0 1200 0
+rnode "inp.n4" 0 261.022 350 810 0
+rnode "dco_main_inv_0/A" 0 6.15735 310 770 0
+resist "dco_main_inv_0/A" "inp.n4" 0.0555556
+resist "inp.n4" "inp" 1.09375
+resist "inp.n1" "inp.t0" 26.51
+resist "inp.n3" "inp.n1" 26.7679
+resist "inp.n3" "inp.n2" 26.8348
+resist "inp.n4" "inp.n3" 67.3507
+resist "inp.t0" "inp.n0" 74.0489
+resist "inp.n2" "inp.t1" 74.71
+resist "inp.n2" "inp.t2" 98.81
+resist "inp.n1" "inp.t3" 98.81
+rnode "VCCA.n0" 0 96.693 1520 1900 0
+rnode "dco_main_inv_0/VCCA" 0 370.852 80 1490 0
+rnode "VCCA" 0 2.85352 60 1980 0
+rnode "VCCA.n1" 0 61.3507 80 1900 0
+rnode "VCCA.n2" 0 88.9347 940 1900 0
+rnode "dco_aux_inv_0/VCCA" 0 34.5988 940 1470 0
+rnode "VCCA.n3" 0 764.968 940 1420 0
+rnode "dco_aux_inv_1/VCCA" 0 34.5988 1520 1470 0
+rnode "VCCA.n4" 0 850.007 1520 1420 0
+rnode "dco_main_inv_1/VCCA" 0 695.144 2100 1490 0
+resist "VCCA.n1" "VCCA" 0.03125
+resist "VCCA.n1" "dco_main_inv_0/VCCA" 0.640625
+resist "dco_aux_inv_1/VCCA" "VCCA.n0" 0.671875
+resist "dco_aux_inv_0/VCCA" "VCCA.n2" 0.671875
+resist "VCCA.n2" "VCCA.n0" 0.90625
+resist "VCCA.n2" "VCCA.n1" 1.34375
+resist "dco_main_inv_1/VCCA" "VCCA.n0" 1.54688
+resist "VCCA.n4" "dco_aux_inv_1/VCCA" 379.378
+resist "VCCA.n3" "dco_aux_inv_0/VCCA" 379.378
+resist "VCCA.n4" "VCCA.n3" 725
+resist "dco_main_inv_1/VCCA" "VCCA.n4" 1104.38
+resist "VCCA.n3" "dco_main_inv_0/VCCA" 1454.38
+rnode "dco_aux_inv_0/VPWR" 0 1046.03 1080 1480 0
+rnode "VPWR" 0 1071.8 1290 1740 0
+rnode "dco_aux_inv_1/VPWR" 0 1282.16 1660 1480 0
+resist "VPWR" "dco_aux_inv_0/VPWR" 62.4
+resist "dco_aux_inv_1/VPWR" "VPWR" 88
+rnode "GND" 0 0 130 -180 0
+rnode "outn.t1" 0 424.553 1800 1180 0
+rnode "outn.t0" 0 274.711 1800 460 0
+rnode "dco_aux_inv_1/A" 0 362.822 1790 770 0
+rnode "outn" 0 682.65 2880 460 0
+rnode "outn.n0" 0 1511.8 1790 920 0
+rnode "dco_aux_inv_0/Y" 0 543.464 1400 770 0
+resist "dco_aux_inv_0/Y" "outn.n0" 22.4321
+resist "dco_aux_inv_1/A" "outn.t0" 74.71
+resist "outn.n0" "outn" 87.3591
+resist "dco_aux_inv_1/A" "outn.t1" 98.81
+resist "outn.n0" "dco_aux_inv_1/A" 157.298
+rnode "dco_aux_inv_1/VGND" 0 624.777 1660 260 0
+rnode "VGND" 0 555.79 1310 0 0
+rnode "dco_aux_inv_0/VGND" 0 519.434 1080 260 0
+resist "dco_aux_inv_0/VGND" "VGND" 65.6
+resist "VGND" "dco_aux_inv_1/VGND" 84.8
+rnode "outp.t1" 0 461.273 1220 1180 0
+rnode "outp.t0" 0 298.471 1220 460 0
+rnode "outp" 0 3209.32 2880 1200 0
+rnode "dco_aux_inv_0/A" 0 430.937 1210 770 0
+resist "dco_aux_inv_0/A" "outp.t0" 74.71
+resist "dco_aux_inv_0/A" "outp.t1" 98.81
+resist "dco_aux_inv_0/A" "outp" 164.52
+device msubckt sky130_fd_pr__pfet_01v8 2280 880 2281 881  "VCCA" "inn.t3" 400 0 "VPWR" 600 48000,1360 "outn" 600 24000,680
+device msubckt sky130_fd_pr__pfet_01v8 2560 880 2561 881  "VCCA" "inn.t2" 400 0 "outn" 600 24000,680 "VPWR" 600 48000,1360
+device msubckt sky130_fd_pr__nfet_01v8 2560 260 2561 261  "GND" "inn.t1" 400 0 "outn" 400 16000,480 "VGND" 400 32000,960
+device msubckt sky130_fd_pr__nfet_01v8 2280 260 2281 261  "GND" "inn.t0" 400 0 "VGND" 400 32000,960 "outn" 400 16000,480
+device msubckt sky130_fd_pr__pfet_01v8 260 880 261 881  "VCCA" "inp.t3" 400 0 "VPWR" 600 48000,1360 "outp" 600 24000,680
+device msubckt sky130_fd_pr__pfet_01v8 540 880 541 881  "VCCA" "inp.t2" 400 0 "outp" 600 24000,680 "VPWR" 600 48000,1360
+device msubckt sky130_fd_pr__nfet_01v8 540 260 541 261  "GND" "inp.t1" 400 0 "outp" 400 16000,480 "VGND" 400 32000,960
+device msubckt sky130_fd_pr__nfet_01v8 260 260 261 261  "GND" "inp.t0" 400 0 "VGND" 400 32000,960 "outp" 400 16000,480
+device msubckt sky130_fd_pr__pfet_01v8 1700 880 1701 881  "VCCA" "outn.t1" 400 0 "VPWR" 600 48000,1360 "outp" 600 48000,1360
+device msubckt sky130_fd_pr__nfet_01v8 1700 260 1701 261  "GND" "outn.t0" 400 0 "VGND" 400 32000,960 "outp" 400 32000,960
+device msubckt sky130_fd_pr__pfet_01v8 1120 880 1121 881  "VCCA" "outp.t1" 400 0 "VPWR" 600 48000,1360 "outn" 600 48000,1360
+device msubckt sky130_fd_pr__nfet_01v8 1120 260 1121 261  "GND" "outp.t0" 400 0 "VGND" 400 32000,960 "outn" 400 32000,960

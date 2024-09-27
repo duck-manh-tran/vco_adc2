@@ -1,13 +1,13 @@
-timestamp 1727146712
+timestamp 1727249101
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use vco_ring_osc vco_ring_osc_0 1 0 600 0 1 4200
 use sky130_fd_sc_hd__einvp_1 sky130_fd_sc_hd__einvp_1_0 1 0 5128 0 1 2638
 use sky130_fd_pr__res_generic_po_DKCPUZ sky130_fd_pr__res_generic_po_DKCPUZ_1 0 -1 7640 1 0 3538
 use sky130_fd_pr__res_generic_po_DKCPUZ sky130_fd_pr__res_generic_po_DKCPUZ_0 0 -1 4780 1 0 3848
-use mag_vco_ring_vco mag_vco_ring_vco_0 1 0 600 0 1 4200
 port "p[4]" 3 6470 980 6470 980 m1
 port "Anlg_in" 4 4100 3900 4100 3900 m1
 port "VCCA" 5 19900 7330 19900 7330 m1
@@ -30,143 +30,613 @@ node "VPWR" 121 284.235 19900 7030 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "li_780_6950#" 141 455.822 780 6950 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70400 1920 0 0 0 0 0 0 0 0 0 0 0 0
 node "VCCD" 1506 1126.33 5160 3470 m1 0 0 0 0 76800 1120 0 0 8000 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13800 700 205600 4720 0 0 0 0 0 0 0 0 0 0
 substrate "GND" 0 0 6230 3340 m1 0 0 0 0 0 0 0 0 0 0 8000 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8000 360 239200 6000 0 0 0 0 0 0 0 0 0 0
-cap "p[4]" "m1_6310_2150#" 10.459
-cap "li_5390_3800#" "VCCD" 18.7829
-cap "m1_8230_3480#" "li_6850_3480#" 0.326981
-cap "li_780_6950#" "m1_640_7230#" 13.288
-cap "ENB" "VCCD" 5.63405
-cap "VCCD" "li_5510_2740#" 65.4278
 cap "li_5390_3800#" "li_5510_2740#" 0.804964
 cap "li_5390_3800#" "Anlg_in" 0.322439
-cap "ENB" "li_5510_2740#" 9.43558
+cap "VCCD" "li_5510_2740#" 65.4278
+cap "li_5510_2740#" "ENB" 9.43558
+cap "li_780_6950#" "m1_640_7230#" 13.288
+cap "li_5390_3800#" "VCCD" 18.7829
+cap "m1_8230_3480#" "li_6850_3480#" 0.326981
+cap "m1_6310_2150#" "p[4]" 10.459
+cap "VCCD" "ENB" 5.63405
 cap "VPWR" "VCCA" 17.7749
-cap "sky130_fd_sc_hd__einvp_1_0/Z" "mag_vco_ring_vco_0/p[4]" -5.22951
+cap "vco_ring_osc_0/p[4]" "vco_ring_osc_0/pn[4]" -5.22951
 cap "sky130_fd_sc_hd__einvp_1_0/Z" "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" 1.51891
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "sky130_fd_sc_hd__einvp_1_0/Z" 288.129
-cap "mag_vco_ring_vco_0/VGND" "sky130_fd_sc_hd__einvp_1_0/Z" -0.115418
-cap "sky130_fd_sc_hd__einvp_1_0/a_27_47#" "sky130_fd_sc_hd__einvp_1_0/VGND" -23.806
-cap "sky130_fd_sc_hd__einvp_1_0/TE" "sky130_fd_sc_hd__einvp_1_0/VGND" -5.71798
-cap "mag_vco_ring_vco_0/VGND" "sky130_fd_sc_hd__einvp_1_0/TE" 0.0230036
-cap "sky130_fd_sc_hd__einvp_1_0/a_27_47#" "sky130_fd_sc_hd__einvp_1_0/Z" 57.374
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "sky130_fd_sc_hd__einvp_1_0/a_204_47#" -2.16164
-cap "sky130_fd_sc_hd__einvp_1_0/TE" "sky130_fd_sc_hd__einvp_1_0/Z" 5.33029
-cap "sky130_fd_sc_hd__einvp_1_0/A" "sky130_fd_sc_hd__einvp_1_0/VGND" -31.2336
-cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "sky130_fd_sc_hd__einvp_1_0/Z" 5.17793
-cap "mag_vco_ring_vco_0/VGND" "sky130_fd_sc_hd__einvp_1_0/A" 0.0127571
-cap "sky130_fd_sc_hd__einvp_1_0/a_276_297#" "sky130_fd_sc_hd__einvp_1_0/VGND" -1.43563
-cap "sky130_fd_sc_hd__einvp_1_0/TE" "sky130_fd_sc_hd__einvp_1_0/a_27_47#" 1.77636e-15
-cap "sky130_fd_sc_hd__einvp_1_0/Z" "sky130_fd_sc_hd__einvp_1_0/a_204_47#" 5.55211
-cap "sky130_fd_sc_hd__einvp_1_0/A" "sky130_fd_sc_hd__einvp_1_0/Z" 1.2873
-cap "mag_vco_ring_vco_0/VGND" "sky130_fd_sc_hd__einvp_1_0/VGND" 0.748189
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "sky130_fd_sc_hd__einvp_1_0/a_204_47#" 0.263421
-cap "sky130_fd_sc_hd__einvp_1_0/A" "sky130_fd_sc_hd__einvp_1_0/VGND" 0.0160931
-cap "mag_vco_ring_vco_0/VGND" "sky130_fd_sc_hd__einvp_1_0/Z" 0.501563
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "sky130_fd_sc_hd__einvp_1_0/TE" 0.0880279
-cap "mag_vco_ring_vco_0/VGND" "sky130_fd_sc_hd__einvp_1_0/a_204_47#" 0.00413614
-cap "sky130_fd_sc_hd__einvp_1_0/A" "mag_vco_ring_vco_0/VGND" 0.01187
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "mag_vco_ring_vco_0/mag_vco_cc_inv_3/mag_vco_main_inv_1/A" 4.47653
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "mag_vco_ring_vco_0/VGND" 10.1479
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "sky130_fd_sc_hd__einvp_1_0/a_27_47#" 0.134
-cap "mag_vco_ring_vco_0/VGND" "mag_vco_ring_vco_0/mag_vco_cc_inv_3/mag_vco_main_inv_1/A" 0.173078
-cap "sky130_fd_sc_hd__einvp_1_0/Z" "mag_vco_ring_vco_0/p[4]" -5.22951
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "sky130_fd_sc_hd__einvp_1_0/Z" 87.0107
-cap "mag_vco_ring_vco_0/VGND" "mag_vco_ring_vco_0/pn[4]" 7.23615
-cap "mag_vco_ring_vco_0/VGND" "mag_vco_ring_vco_0/mag_vco_cc_inv_3/mag_vco_main_inv_1/A" 4.11159
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "mag_vco_ring_vco_0/mag_vco_cc_inv_3/mag_vco_main_inv_1/A" 7.75429
+cap "vco_ring_osc_0/vco_cc_inv_1/GND" "sky130_fd_sc_hd__einvp_1_0/a_276_297#" -1.43563
+cap "sky130_fd_sc_hd__einvp_1_0/A" "vco_ring_osc_0/pn[4]" 1.2873
+cap "vco_ring_osc_0/vco_cc_inv_1/GND" "sky130_fd_sc_hd__einvp_1_0/a_27_47#" -23.806
+cap "sky130_fd_sc_hd__einvp_1_0/a_27_47#" "sky130_fd_sc_hd__einvp_1_0/TE" 1.77636e-15
+cap "vco_ring_osc_0/pn[4]" "sky130_fd_sc_hd__einvp_1_0/a_27_47#" 57.374
+cap "vco_ring_osc_0/VGND" "vco_ring_osc_0/vco_cc_inv_1/GND" 0.748189
+cap "vco_ring_osc_0/vco_cc_inv_1/GND" "sky130_fd_sc_hd__einvp_1_0/a_204_47#" -2.16164
+cap "vco_ring_osc_0/VGND" "sky130_fd_sc_hd__einvp_1_0/TE" 0.0230036
+cap "vco_ring_osc_0/VGND" "vco_ring_osc_0/pn[4]" -0.115418
+cap "vco_ring_osc_0/pn[4]" "sky130_fd_sc_hd__einvp_1_0/a_204_47#" 5.55211
+cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "vco_ring_osc_0/pn[4]" 5.17793
+cap "vco_ring_osc_0/VGND" "sky130_fd_sc_hd__einvp_1_0/A" 0.0127571
+cap "vco_ring_osc_0/vco_cc_inv_1/GND" "sky130_fd_sc_hd__einvp_1_0/TE" -5.71798
+cap "vco_ring_osc_0/vco_cc_inv_1/GND" "vco_ring_osc_0/pn[4]" 288.129
+cap "vco_ring_osc_0/pn[4]" "sky130_fd_sc_hd__einvp_1_0/TE" 5.33029
+cap "sky130_fd_sc_hd__einvp_1_0/A" "vco_ring_osc_0/vco_cc_inv_1/GND" -31.2336
+cap "vco_ring_osc_0/GND" "sky130_fd_sc_hd__einvp_1_0/a_27_47#" 0.134
+cap "vco_ring_osc_0/GND" "sky130_fd_sc_hd__einvp_1_0/A" 0.0160931
+cap "vco_ring_osc_0/GND" "sky130_fd_sc_hd__einvp_1_0/a_204_47#" 0.263421
+cap "vco_ring_osc_0/GND" "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_1/A" 4.47653
+cap "vco_ring_osc_0/pn[4]" "vco_ring_osc_0/p[4]" -5.22951
+cap "vco_ring_osc_0/GND" "sky130_fd_sc_hd__einvp_1_0/TE" 0.0880279
+cap "vco_ring_osc_0/pn[4]" "vco_ring_osc_0/GND" 87.0107
+cap "sky130_fd_sc_hd__einvp_1_0/A" "vco_ring_osc_0/VGND" 0.01187
+cap "vco_ring_osc_0/GND" "vco_ring_osc_0/VGND" 10.1479
+cap "sky130_fd_sc_hd__einvp_1_0/a_204_47#" "vco_ring_osc_0/VGND" 0.00413614
+cap "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_1/A" "vco_ring_osc_0/VGND" 0.173078
+cap "vco_ring_osc_0/pn[4]" "vco_ring_osc_0/VGND" 0.501563
+cap "vco_ring_osc_0/GND" "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_1/A" 7.75429
+cap "vco_ring_osc_0/VGND" "vco_ring_osc_0/pn[4]" 7.23615
+cap "vco_ring_osc_0/VGND" "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_1/A" 4.11159
 cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "sky130_fd_sc_hd__einvp_1_0/Z" 1.53518
-cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "mag_vco_ring_vco_0/mag_vco_cc_inv_0/VGND" 0.766002
-cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_n630#" "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" 0.0106726
-cap "mag_vco_ring_vco_0/mag_vco_cc_inv_0/mag_vco_aux_inv_1/A" "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" 0.510204
-cap "sky130_fd_sc_hd__einvp_1_0/VNB" "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" 7.4349
-cap "mag_vco_ring_vco_0/VGND" "sky130_fd_sc_hd__einvp_1_0/TE" 7.69721
-cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "sky130_fd_sc_hd__einvp_1_0/Z" 5.21326
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "sky130_fd_sc_hd__einvp_1_0/Z" 0.847787
-cap "sky130_fd_sc_hd__einvp_1_0/A" "sky130_fd_sc_hd__einvp_1_0/Z" 44.1878
-cap "mag_vco_ring_vco_0/VGND" "sky130_fd_sc_hd__einvp_1_0/Z" 2.81057
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "sky130_fd_sc_hd__einvp_1_0/a_27_47#" 0.0114619
-cap "sky130_fd_sc_hd__einvp_1_0/A" "sky130_fd_sc_hd__einvp_1_0/a_27_47#" 10.3738
-cap "mag_vco_ring_vco_0/VGND" "sky130_fd_sc_hd__einvp_1_0/a_27_47#" 1.27283
-cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "mag_vco_ring_vco_0/mag_vco_cc_inv_0/mag_vco_aux_inv_1/A" 3.87755
+cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "vco_ring_osc_0/vco_cc_inv_0/VGND" 0.766002
+cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_n630#" 0.0106726
+cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_1/GND" 7.4349
+cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_1/A" 0.510204
 cap "sky130_fd_sc_hd__einvp_1_0/a_204_47#" "sky130_fd_sc_hd__einvp_1_0/A" -1.17997
-cap "sky130_fd_sc_hd__einvp_1_0/TE" "sky130_fd_sc_hd__einvp_1_0/Z" 1.19226
-cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "sky130_fd_sc_hd__einvp_1_0/VGND" 25.2603
-cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "mag_vco_ring_vco_0/VGND" 7.70439
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "sky130_fd_sc_hd__einvp_1_0/A" -15.2075
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "mag_vco_ring_vco_0/VGND" 32.1362
-cap "sky130_fd_sc_hd__einvp_1_0/A" "mag_vco_ring_vco_0/mag_vco_cc_inv_0/mag_vco_main_inv_1/A" 0.157999
-cap "mag_vco_ring_vco_0/VGND" "sky130_fd_sc_hd__einvp_1_0/A" 58.5654
-cap "mag_vco_ring_vco_0/VGND" "mag_vco_ring_vco_0/mag_vco_cc_inv_0/mag_vco_main_inv_1/A" 4.38776
-cap "sky130_fd_sc_hd__einvp_1_0/A" "sky130_fd_sc_hd__einvp_1_0/a_276_297#" 0.83275
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "sky130_fd_sc_hd__einvp_1_0/TE" 1.01844
-cap "sky130_fd_sc_hd__einvp_1_0/a_27_47#" "sky130_fd_sc_hd__einvp_1_0/Z" 2.73229
-cap "sky130_fd_sc_hd__einvp_1_0/a_204_47#" "sky130_fd_sc_hd__einvp_1_0/Z" 0.229608
-cap "sky130_fd_sc_hd__einvp_1_0/A" "sky130_fd_sc_hd__einvp_1_0/TE" 9.88333
-cap "sky130_fd_sc_hd__einvp_1_0/A" "sky130_fd_sc_hd__einvp_1_0/Z" 17.5992
-cap "mag_vco_ring_vco_0/VGND" "sky130_fd_sc_hd__einvp_1_0/VGND" 27.8622
-cap "sky130_fd_sc_hd__einvp_1_0/A" "mag_vco_ring_vco_0/VGND" 8.90921
-cap "sky130_fd_sc_hd__einvp_1_0/TE" "sky130_fd_sc_hd__einvp_1_0/VGND" 0.0960622
+cap "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_1/A" "vco_ring_osc_0/VGND" 4.38776
+cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "vco_ring_osc_0/VGND" 7.70439
+cap "sky130_fd_sc_hd__einvp_1_0/a_27_47#" "vco_ring_osc_0/pn[4]" 2.73229
+cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "vco_ring_osc_0/vco_cc_inv_1/GND" 25.2603
+cap "sky130_fd_sc_hd__einvp_1_0/a_204_47#" "vco_ring_osc_0/pn[4]" 0.229608
+cap "vco_ring_osc_0/vco_cc_inv_1/GND" "vco_ring_osc_0/VGND" 32.1362
+cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_1/A" 3.87755
+cap "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_1/A" "sky130_fd_sc_hd__einvp_1_0/A" 0.157999
+cap "vco_ring_osc_0/VGND" "sky130_fd_sc_hd__einvp_1_0/A" 58.5654
+cap "sky130_fd_sc_hd__einvp_1_0/TE" "vco_ring_osc_0/VGND" 7.69721
+cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "vco_ring_osc_0/pn[4]" 5.21326
+cap "sky130_fd_sc_hd__einvp_1_0/TE" "vco_ring_osc_0/vco_cc_inv_1/GND" 1.01844
+cap "vco_ring_osc_0/vco_cc_inv_1/GND" "sky130_fd_sc_hd__einvp_1_0/A" -15.2075
+cap "vco_ring_osc_0/VGND" "vco_ring_osc_0/pn[4]" 2.81057
+cap "vco_ring_osc_0/vco_cc_inv_1/GND" "vco_ring_osc_0/pn[4]" 0.847787
+cap "vco_ring_osc_0/VGND" "sky130_fd_sc_hd__einvp_1_0/a_27_47#" 1.27283
+cap "vco_ring_osc_0/vco_cc_inv_1/GND" "sky130_fd_sc_hd__einvp_1_0/a_27_47#" 0.0114619
+cap "sky130_fd_sc_hd__einvp_1_0/TE" "sky130_fd_sc_hd__einvp_1_0/A" 9.88333
+cap "sky130_fd_sc_hd__einvp_1_0/TE" "vco_ring_osc_0/pn[4]" 1.19226
+cap "sky130_fd_sc_hd__einvp_1_0/A" "vco_ring_osc_0/pn[4]" 44.1878
+cap "sky130_fd_sc_hd__einvp_1_0/a_276_297#" "sky130_fd_sc_hd__einvp_1_0/A" 0.83275
+cap "sky130_fd_sc_hd__einvp_1_0/A" "sky130_fd_sc_hd__einvp_1_0/a_27_47#" 10.3738
+cap "sky130_fd_sc_hd__einvp_1_0/a_27_47#" "vco_ring_osc_0/GND" 0.170613
+cap "sky130_fd_sc_hd__einvp_1_0/a_276_297#" "vco_ring_osc_0/VGND" 0.00327866
+cap "vco_ring_osc_0/VGND" "vco_ring_osc_0/pn[4]" 0.621532
 cap "sky130_fd_sc_hd__einvp_1_0/A" "sky130_fd_sc_hd__einvp_1_0/TE" 0.398751
-cap "mag_vco_ring_vco_0/VGND" "sky130_fd_sc_hd__einvp_1_0/Z" 0.621532
-cap "sky130_fd_sc_hd__einvp_1_0/a_27_47#" "sky130_fd_sc_hd__einvp_1_0/VGND" 0.170613
-cap "sky130_fd_sc_hd__einvp_1_0/A" "sky130_fd_sc_hd__einvp_1_0/a_276_297#" 1.58831
-cap "sky130_fd_sc_hd__einvp_1_0/A" "sky130_fd_sc_hd__einvp_1_0/a_27_47#" 2.41204
-cap "mag_vco_ring_vco_0/VGND" "sky130_fd_sc_hd__einvp_1_0/a_276_297#" 0.00327866
-cap "sky130_fd_sc_hd__einvp_1_0/A" "sky130_fd_sc_hd__einvp_1_0/VGND" 10.1324
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "sky130_fd_sc_hd__einvp_1_0/Z" 1.04611
-cap "mag_vco_ring_vco_0/VGND" "sky130_fd_sc_hd__einvp_1_0/VGND" 40.6186
-cap "mag_vco_ring_vco_0/VGND" "mag_vco_ring_vco_0/mag_vco_cc_inv_1/mag_vco_main_inv_0/A" 3.14442
-cap "mag_vco_ring_vco_0/mag_vco_cc_inv_3/mag_vco_main_inv_1/A" "sky130_fd_sc_hd__einvp_1_0/VGND" 14.734
-cap "mag_vco_ring_vco_0/VGND" "mag_vco_ring_vco_0/pn[4]" 7.12462
-cap "mag_vco_ring_vco_0/VGND" "mag_vco_ring_vco_0/mag_vco_cc_inv_3/mag_vco_main_inv_1/A" 9.10889
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "mag_vco_ring_vco_0/mag_vco_cc_inv_1/mag_vco_main_inv_0/A" 3.14442
-cap "mag_vco_ring_vco_0/mag_vco_cc_inv_0/VGND" "sky130_fd_sc_hd__einvp_1_0/VNB" 2.84217e-14
-cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "mag_vco_ring_vco_0/mag_vco_cc_inv_0/mag_vco_main_inv_1/Y" 0.616769
-cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "mag_vco_ring_vco_0/mag_vco_cc_inv_0/VGND" 0.93476
-cap "sky130_fd_sc_hd__einvp_1_0/TE" "mag_vco_ring_vco_0/VGND" 0.057285
-cap "mag_vco_ring_vco_0/VGND" "mag_vco_ring_vco_0/mag_vco_cc_inv_0/mag_vco_main_inv_1/A" 4.58844
-cap "mag_vco_ring_vco_0/mag_vco_cc_inv_0/mag_vco_main_inv_1/A" "sky130_fd_sc_hd__einvp_1_0/A" 0.544229
-cap "mag_vco_ring_vco_0/mag_vco_cc_inv_0/mag_vco_main_inv_1/A" "sky130_fd_sc_hd__einvp_1_0/Z" 0.0154936
-cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "mag_vco_ring_vco_0/pn[0]" 3.87755
-cap "mag_vco_ring_vco_0/VGND" "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" 7.54683
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "mag_vco_ring_vco_0/mag_vco_cc_inv_0/mag_vco_main_inv_1/A" 1.44709
-cap "mag_vco_ring_vco_0/VGND" "mag_vco_ring_vco_0/mag_vco_cc_inv_1/mag_vco_main_inv_0/A" 0.0858079
-cap "mag_vco_ring_vco_0/mag_vco_cc_inv_0/mag_vco_main_inv_1/A" "sky130_fd_sc_hd__einvp_1_0/A" 0.491942
-cap "sky130_fd_sc_hd__einvp_1_0/VGND" "mag_vco_ring_vco_0/VGND" 1.56198
-cap "mag_vco_ring_vco_0/mag_vco_cc_inv_0/mag_vco_main_inv_1/A" "mag_vco_ring_vco_0/VGND" 0.778536
-cap "mag_vco_ring_vco_0/VGND" "sky130_fd_sc_hd__einvp_1_0/VGND" 5.6698
-cap "mag_vco_ring_vco_0/mag_vco_cc_inv_1/mag_vco_main_inv_0/A" "sky130_fd_sc_hd__einvp_1_0/VGND" 3.2708
-cap "mag_vco_ring_vco_0/VGND" "mag_vco_ring_vco_0/mag_vco_cc_inv_1/mag_vco_main_inv_0/A" 3.15522
-cap "VCCA" "mag_vco_ring_vco_0/mag_vco_cc_inv_2/mag_vco_main_inv_1/VPWR" 0.742882
-cap "mag_vco_ring_vco_0/mag_vco_cc_inv_0/VCCA" "mag_vco_ring_vco_0/mag_vco_cc_inv_0/mag_vco_main_inv_0/VPWR" -13.288
-cap "VCCA" "mag_vco_ring_vco_0/mag_vco_cc_inv_2/mag_vco_main_inv_1/VPWR" -2.64246
-cap "VCCA" "mag_vco_ring_vco_0/mag_vco_cc_inv_2/mag_vco_main_inv_1/VPWR" 4.70488
+cap "vco_ring_osc_0/VGND" "sky130_fd_sc_hd__einvp_1_0/A" 8.90921
+cap "sky130_fd_sc_hd__einvp_1_0/a_27_47#" "sky130_fd_sc_hd__einvp_1_0/A" 2.41204
+cap "vco_ring_osc_0/GND" "vco_ring_osc_0/pn[4]" 1.04611
+cap "vco_ring_osc_0/GND" "sky130_fd_sc_hd__einvp_1_0/A" 10.1324
+cap "sky130_fd_sc_hd__einvp_1_0/a_276_297#" "sky130_fd_sc_hd__einvp_1_0/A" 1.58831
+cap "sky130_fd_sc_hd__einvp_1_0/A" "vco_ring_osc_0/pn[4]" 17.5992
+cap "vco_ring_osc_0/GND" "sky130_fd_sc_hd__einvp_1_0/TE" 0.0960622
+cap "vco_ring_osc_0/VGND" "vco_ring_osc_0/GND" 27.8622
+cap "vco_ring_osc_0/GND" "vco_ring_osc_0/vco_cc_inv_1/vco_main_inv_0/A" 3.14442
+cap "vco_ring_osc_0/VGND" "vco_ring_osc_0/GND" 40.6186
+cap "vco_ring_osc_0/VGND" "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_1/A" 9.10889
+cap "vco_ring_osc_0/VGND" "vco_ring_osc_0/vco_cc_inv_1/vco_main_inv_0/A" 3.14442
+cap "vco_ring_osc_0/VGND" "vco_ring_osc_0/pn[4]" 7.12462
+cap "vco_ring_osc_0/GND" "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_1/A" 14.734
+cap "vco_ring_osc_0/vco_cc_inv_0/VGND" "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_1/GND" 2.84217e-14
+cap "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_1/Y" 0.616769
+cap "vco_ring_osc_0/vco_cc_inv_0/VGND" "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" 0.93476
+cap "sky130_fd_sc_hd__einvp_1_0/Z" "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_1/A" 0.0154936
+cap "vco_ring_osc_0/VGND" "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" 7.54683
+cap "vco_ring_osc_0/VGND" "sky130_fd_sc_hd__einvp_1_0/TE" 0.057285
+cap "sky130_fd_sc_hd__einvp_1_0/A" "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_1/A" 0.544229
+cap "vco_ring_osc_0/VGND" "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_1/A" 4.58844
+cap "vco_ring_osc_0/pn[0]" "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" 3.87755
+cap "vco_ring_osc_0/VGND" "vco_ring_osc_0/GND" 1.56198
+cap "vco_ring_osc_0/VGND" "vco_ring_osc_0/vco_cc_inv_1/vco_main_inv_0/A" 0.0858079
+cap "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_1/A" "vco_ring_osc_0/GND" 1.44709
+cap "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_1/A" "vco_ring_osc_0/VGND" 0.778536
+cap "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_1/A" "sky130_fd_sc_hd__einvp_1_0/A" 0.491942
+cap "vco_ring_osc_0/vco_cc_inv_1/vco_main_inv_0/A" "vco_ring_osc_0/GND" 3.2708
+cap "vco_ring_osc_0/VGND" "vco_ring_osc_0/vco_cc_inv_1/vco_main_inv_0/A" 3.15522
+cap "vco_ring_osc_0/VGND" "vco_ring_osc_0/GND" 5.6698
+cap "VCCA" "vco_ring_osc_0/vco_cc_inv_2/vco_main_inv_1/VPWR" 0.742882
+cap "vco_ring_osc_0/VCCA" "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_0/VPWR" -13.288
+cap "vco_ring_osc_0/vco_cc_inv_2/vco_main_inv_1/VPWR" "VCCA" -2.64246
+cap "VCCA" "vco_ring_osc_0/vco_cc_inv_2/vco_main_inv_1/VPWR" 4.70488
 merge "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_200#" "Anlg_in" -148.702 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1216 -184 0 0 0 0 0 0 0 0 0 0
-merge "mag_vco_ring_vco_0/mag_vco_cc_inv_0/VPWR" "mag_vco_ring_vco_0/mag_vco_cc_inv_0/mag_vco_main_inv_0/VPWR" -455.822 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -70400 -1920 0 0 0 0 0 0 0 0 0 0 0 0
-merge "mag_vco_ring_vco_0/mag_vco_cc_inv_0/mag_vco_main_inv_0/VPWR" "li_780_6950#"
-merge "mag_vco_ring_vco_0/mag_vco_cc_inv_3/VGND" "mag_vco_ring_vco_0/VGND" -846.313 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11328 -1020 0 0 0 0 0 0 0 0 0 0 0 0
-merge "mag_vco_ring_vco_0/VGND" "sky130_fd_pr__res_generic_po_DKCPUZ_1/a_n48_200#"
-merge "sky130_fd_pr__res_generic_po_DKCPUZ_1/a_n48_200#" "li_6850_3480#"
+merge "vco_ring_osc_0/vco_cc_inv_3/VGND" "sky130_fd_pr__res_generic_po_DKCPUZ_1/a_n48_200#" -846.313 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11328 -1020 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__res_generic_po_DKCPUZ_1/a_n48_200#" "vco_ring_osc_0/VGND"
+merge "vco_ring_osc_0/VGND" "li_6850_3480#"
 merge "li_6850_3480#" "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_n630#"
 merge "sky130_fd_pr__res_generic_po_DKCPUZ_0/a_n48_n630#" "li_5390_3800#"
-merge "mag_vco_ring_vco_0/m1_16010_3030#" "VCCA" -1607.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -405100 -8402 0 0 0 0 0 0 0 0 0 0
-merge "mag_vco_ring_vco_0/mag_vco_cc_inv_1/mag_vco_aux_inv_1/GND" "mag_vco_ring_vco_0/mag_vco_cc_inv_3/mag_vco_main_inv_1/GND" -573.548 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4916 -1130 0 0 0 0 0 0 0 0 0 0
-merge "mag_vco_ring_vco_0/mag_vco_cc_inv_3/mag_vco_main_inv_1/GND" "sky130_fd_pr__res_generic_po_DKCPUZ_1/a_n48_n630#"
-merge "sky130_fd_pr__res_generic_po_DKCPUZ_1/a_n48_n630#" "m1_8230_3480#"
-merge "m1_8230_3480#" "mag_vco_ring_vco_0/mag_vco_cc_inv_1/GND"
-merge "mag_vco_ring_vco_0/mag_vco_cc_inv_1/GND" "sky130_fd_pr__res_generic_po_DKCPUZ_1/VSUBS"
-merge "sky130_fd_pr__res_generic_po_DKCPUZ_1/VSUBS" "sky130_fd_pr__res_generic_po_DKCPUZ_0/VSUBS"
+merge "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_1/VCCA" "m1_8400_0#" -201.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30000 -900 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__res_generic_po_DKCPUZ_1/a_n48_n630#" "vco_ring_osc_0/GND" -573.548 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4916 -1130 0 0 0 0 0 0 0 0 0 0
+merge "vco_ring_osc_0/GND" "m1_8230_3480#"
+merge "m1_8230_3480#" "sky130_fd_pr__res_generic_po_DKCPUZ_1/VSUBS"
+merge "sky130_fd_pr__res_generic_po_DKCPUZ_1/VSUBS" "vco_ring_osc_0/vco_cc_inv_1/GND"
+merge "vco_ring_osc_0/vco_cc_inv_1/GND" "sky130_fd_pr__res_generic_po_DKCPUZ_0/VSUBS"
 merge "sky130_fd_pr__res_generic_po_DKCPUZ_0/VSUBS" "sky130_fd_sc_hd__einvp_1_0/VNB"
 merge "sky130_fd_sc_hd__einvp_1_0/VNB" "sky130_fd_sc_hd__einvp_1_0/VGND"
-merge "sky130_fd_sc_hd__einvp_1_0/VGND" "mag_vco_ring_vco_0/VSUBS"
-merge "mag_vco_ring_vco_0/VSUBS" "GND"
+merge "sky130_fd_sc_hd__einvp_1_0/VGND" "vco_ring_osc_0/VSUBS"
+merge "vco_ring_osc_0/VSUBS" "GND"
 merge "sky130_fd_sc_hd__einvp_1_0/TE" "ENB" -42.9335 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -300 -130 0 0 0 0 0 0 0 0 0 0 0 0
-merge "mag_vco_ring_vco_0/mag_vco_cc_inv_3/mag_vco_main_inv_1/VCCA" "m1_8400_0#" -201.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30000 -900 0 0 0 0 0 0 0 0 0 0
-merge "mag_vco_ring_vco_0/mag_vco_cc_inv_0/VCCA" "m1_640_7230#" -277.727 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -52000 -1240 0 0 0 0 0 0 0 0 0 0
-merge "mag_vco_ring_vco_0/mag_vco_cc_inv_2/mag_vco_main_inv_1/VPWR" "VPWR" -284.235 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -1360 0 0 0 0 0 0 0 0 0 0 0 0
+merge "vco_ring_osc_0/VCCA" "m1_640_7230#" -277.727 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -52000 -1240 0 0 0 0 0 0 0 0 0 0
+merge "vco_ring_osc_0/p[4]" "p[4]" -357.685 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -70000 -1600 0 0 0 0 0 0 0 0 0 0
 merge "sky130_fd_sc_hd__einvp_1_0/VPWR" "sky130_fd_sc_hd__einvp_1_0/A" -525.371 0 0 0 0 -30720 -832 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1900 -262 0 -200 0 0 0 0 0 0 0 0 0 0
 merge "sky130_fd_sc_hd__einvp_1_0/A" "sky130_fd_sc_hd__einvp_1_0/VPB"
 merge "sky130_fd_sc_hd__einvp_1_0/VPB" "VCCD"
-merge "mag_vco_ring_vco_0/pn[4]" "m1_6310_2150#" -551.276 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -136 -16500 -920 0 0 0 0 0 0 0 0 0 0
-merge "m1_6310_2150#" "sky130_fd_sc_hd__einvp_1_0/Z"
-merge "sky130_fd_sc_hd__einvp_1_0/Z" "li_5510_2740#"
-merge "mag_vco_ring_vco_0/p[4]" "p[4]" -357.685 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -70000 -1600 0 0 0 0 0 0 0 0 0 0
+merge "vco_ring_osc_0/vco_cc_inv_2/vco_main_inv_1/VPWR" "VPWR" -284.235 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -1360 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__einvp_1_0/Z" "m1_6310_2150#" -551.276 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -136 -16500 -920 0 0 0 0 0 0 0 0 0 0
+merge "m1_6310_2150#" "vco_ring_osc_0/pn[4]"
+merge "vco_ring_osc_0/pn[4]" "li_5510_2740#"
+merge "vco_ring_osc_0/m1_16010_3030#" "VCCA" -1607.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -405100 -8402 0 0 0 0 0 0 0 0 0 0
+merge "vco_ring_osc_0/vco_cc_inv_0/VPWR" "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_0/VPWR" -455.822 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -70400 -1920 0 0 0 0 0 0 0 0 0 0 0 0
+merge "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_0/VPWR" "li_780_6950#"
+scale 1000 1 500000
+rnode "Anlg_in" 0 0 4100 3900 0
+rnode "ENB" 0 54.7543 5020 2970 0
+rnode "sky130_fd_sc_hd__einvp_1_0/TE" 0 99.0725 5158 2927 0
+rnode "ENB.t0" 0 34.461 5222 3093 0
+rnode "ENB.t1" 0 34.1907 5317 2750 0
+rnode "ENB.t2" 0 20.2712 5222 2727 0
+rnode "ENB.n0" 0 42.9749 5237 2845 0
+rnode "ENB.n1" 0 60.5726 5207 2870 0
+rnode "ENB.n2" 0 30.909 5183 2870 0
+rnode "sky130_fd_sc_hd__einvp_1_0/TE" 0 22.7938 5158 2859 0
+resist "sky130_fd_sc_hd__einvp_1_0/TE" "ENB.n2" 1.53043
+resist "ENB.n2" "sky130_fd_sc_hd__einvp_1_0/TE" 7.93043
+resist "sky130_fd_sc_hd__einvp_1_0/TE" "ENB" 28.4754
+resist "ENB.n1" "ENB.n0" 40.1667
+resist "ENB.n2" "ENB.n1" 171.945
+resist "ENB.n0" "ENB.t2" 189.587
+resist "ENB.n0" "ENB.t1" 257.067
+resist "ENB.n1" "ENB.t0" 358.287
+rnode "sky130_fd_sc_hd__einvp_1_0/A" 0 6.04375 5526 2995 0
+rnode "sky130_fd_sc_hd__einvp_1_0/VPB" 0 136.945 5158 3165 0
+rnode "VCCD.t1" 0 192.626 5492 3035 0
+rnode "sky130_fd_sc_hd__einvp_1_0/VPWR" 0 -8.88823 5128 3134 0
+rnode "sky130_fd_sc_hd__einvp_1_0/VPWR" 0 0.0871395 5128 3134 0
+rnode "sky130_fd_sc_hd__einvp_1_0/VPWR" 0 2.81388 5128 3134 0
+rnode "sky130_fd_sc_hd__einvp_1_0/VPWR" 0 4.35697 5158 3165 0
+rnode "VCCD.n0" 0 187.709 5174 3182 0
+rnode "VCCD" 0 10.8924 5160 3470 0
+rnode "VCCD.n1" 0 64.2654 5180 3370 0
+rnode "VCCD.n2" 0 344.321 5680 3370 0
+rnode "VCCD.n3" 0 17.5034 5560 2930 0
+rnode "sky130_fd_sc_hd__einvp_1_0/A" 0 0.87321 5525 2859 0
+rnode "sky130_fd_sc_hd__einvp_1_0/A" 0 -0.869579 5525 2859 0
+rnode "VCCD.t0" 0 8.10858 5492 3035 0
+rnode "VCCD.t2" 0 5.06165 5492 2750 0
+rnode "VCCD.n4" 0 15.6947 5540 2870 0
+rnode "VCCD.n5" 0 7.71911 5540 2870 0
+rnode "sky130_fd_sc_hd__einvp_1_0/A" 0 4.73639 5526 2927 0
+resist "VCCD.n0" "sky130_fd_sc_hd__einvp_1_0/VPWR" 0.02125
+resist "VCCD.n1" "VCCD" 0.025
+resist "sky130_fd_sc_hd__einvp_1_0/VPWR" "sky130_fd_sc_hd__einvp_1_0/VPWR" 0.03875
+resist "VCCD.n0" "sky130_fd_sc_hd__einvp_1_0/VPWR" 0.132812
+resist "VCCD.n1" "VCCD.n0" 0.235
+resist "sky130_fd_sc_hd__einvp_1_0/A" "VCCD.n3" 0.441379
+resist "VCCD.n2" "VCCD.n1" 0.625
+resist "VCCD.n5" "sky130_fd_sc_hd__einvp_1_0/A" 1.61839
+resist "VCCD.n0" "sky130_fd_sc_hd__einvp_1_0/VPWR" 3
+resist "VCCD.n5" "sky130_fd_sc_hd__einvp_1_0/A" 7.61081
+resist "sky130_fd_sc_hd__einvp_1_0/A" "VCCD.n5" 8.38621
+resist "VCCD.n3" "VCCD.n2" 10.7146
+resist "VCCD.n3" "sky130_fd_sc_hd__einvp_1_0/A" 12.5517
+resist "VCCD.n5" "VCCD.n4" 152
+resist "VCCD.n4" "VCCD.t2" 157.453
+resist "VCCD.n4" "VCCD.t0" 229.753
+resist "VCCD.n2" "VCCD.t1" 936.67
+resist "VCCD.t1" "sky130_fd_sc_hd__einvp_1_0/VPB" 988.474
+rnode "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_1/Y" 0 385.785 8540 1670 0
+rnode "p[4].t5" 0 871.032 10075 2170 0
+rnode "p[4].t4" 0 1107.89 10075 1060 0
+rnode "p[4].n0" 0 938.082 10010 1670 0
+rnode "p[4].n1" 0 2284.92 8580 920 0
+rnode "p[4].n2" 0 114.485 1800 5660 0
+rnode "p[4].n3" 0 21.7706 1140 5660 0
+rnode "p[4].n4" 0 21.7706 1140 5660 0
+rnode "p[4].t3" 0 1023.84 1225 6270 0
+rnode "p[4].t1" 0 794.625 1225 5160 0
+rnode "p[4].n5" 0 35.1678 1880 5660 0
+rnode "p[4].t0" 0 1023.84 2035 6270 0
+rnode "p[4].t2" 0 794.625 2035 5160 0
+rnode "p[4].n6" 0 864.595 2035 5770 0
+rnode "p[4].n7" 0 34.4633 1960 5660 0
+rnode "p[4].n8" 0 22.5469 1960 5660 0
+rnode "p[4].n9" 0 21.7706 1880 5660 0
+rnode "p[4].n10" 0 21.7706 1800 5660 0
+rnode "p[4].n11" 0 134.276 1800 5660 0
+rnode "p[4].n12" 0 814.784 1225 5770 0
+rnode "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_0/A" 0 5.44264 1020 5660 0
+rnode "p[4].n13" 0 26.4064 1060 5660 0
+rnode "p[4].n14" 0 47.5965 1140 5660 0
+rnode "p[4].n15" 0 123.45 1220 5660 0
+rnode "p[4].n16" 0 21.7706 1220 5660 0
+rnode "p[4].n17" 0 28.5739 1220 5660 0
+rnode "p[4].n18" 0 228.041 1350 5730 0
+rnode "vco_ring_osc_0/vco_cc_inv_0/inp" 0 1455.15 600 6400 0
+rnode "p[4]" 0 1310.67 6470 980 0
+rnode "vco_ring_osc_0/vco_cc_inv_3/outp" 0 220.846 6600 930 0
+resist "p[4].n13" "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_0/A" 0.0384615
+resist "p[4].n13" "p[4].n3" 0.0769231
+resist "p[4].n17" "p[4].n3" 0.0769231
+resist "p[4].n18" "p[4].n17" 0.125
+resist "vco_ring_osc_0/vco_cc_inv_3/outp" "p[4]" 0.1625
+resist "p[4].n18" "p[4].n2" 0.432692
+resist "p[4].n15" "p[4].n12" 1.14762
+resist "vco_ring_osc_0/vco_cc_inv_0/inp" "p[4].n18" 1.7125
+resist "vco_ring_osc_0/vco_cc_inv_3/outp" "p[4].n1" 2.475
+resist "p[4].n9" "p[4].n8" 2.75925
+resist "p[4].n8" "p[4].n2" 3.36152
+resist "p[4].n14" "p[4].n4" 3.62603
+resist "p[4].n10" "p[4].n9" 7.87692
+resist "p[4].n16" "p[4].n4" 7.87692
+resist "p[4].n4" "p[4].n3" 9.3
+resist "p[4].n17" "p[4].n16" 9.3
+resist "p[4].n10" "p[4].n2" 9.3
+resist "p[4].n14" "p[4].n13" 13.364
+resist "p[4]" "vco_ring_osc_0/vco_cc_inv_0/inp" 15.425
+resist "p[4].n7" "p[4].n6" 17.2143
+resist "p[4].n11" "p[4].n5" 18.3619
+resist "p[4].n7" "p[4].n5" 18.3619
+resist "p[4].n6" "p[4].t2" 26.411
+resist "p[4].n12" "p[4].t1" 26.411
+resist "p[4].n6" "p[4].t0" 33.0137
+resist "p[4].n12" "p[4].t3" 33.0137
+resist "p[4].n0" "p[4].t5" 33.0137
+resist "p[4].n0" "p[4].t4" 40.2767
+resist "p[4].n1" "p[4].n0" 56.4049
+resist "p[4].n15" "p[4].n14" 96.7754
+resist "p[4].n1" "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_1/Y" 110.116
+resist "p[4].n12" "p[4].n11" 139.321
+resist "p[4].n11" "p[4].n10" 152
+resist "p[4].n9" "p[4].n5" 152
+resist "p[4].n16" "p[4].n15" 152
+resist "p[4].n8" "p[4].n7" 154.782
+rnode "GND.n0" 0 0 16750 3130 0
+rnode "GND.n1" 0 0 19265 5690 0
+rnode "GND.n2" 0 0 16620 2530 0
+rnode "vco_ring_osc_0/vco_cc_inv_2/vco_aux_inv_1/GND" 0 0 15670 4750 0
+rnode "vco_ring_osc_0/vco_cc_inv_2/vco_aux_inv_0/GND" 0 0 14580 4750 0
+rnode "vco_ring_osc_0/vco_cc_inv_2/vco_main_inv_0/GND" 0 0 12680 4750 0
+rnode "vco_ring_osc_0/vco_cc_inv_1/vco_main_inv_1/GND" 0 0 10760 4750 0
+rnode "vco_ring_osc_0/vco_cc_inv_1/vco_aux_inv_1/GND" 0 0 9670 4750 0
+rnode "vco_ring_osc_0/vco_cc_inv_1/vco_aux_inv_0/GND" 0 0 8580 4750 0
+rnode "GND.n3" 0 0 8450 3130 0
+rnode "vco_ring_osc_0/vco_cc_inv_1/vco_main_inv_0/GND" 0 0 6680 4750 0
+rnode "GND.n4" 0 0 4760 4300 0
+rnode "GND.n5" 0 0 9670 4800 0
+rnode "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_0/GND" 0 0 10620 2580 0
+rnode "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_0/GND" 0 0 12520 2580 0
+rnode "vco_ring_osc_0/vco_cc_inv_4/vco_main_inv_1/GND" 0 0 14440 2580 0
+rnode "GND.n6" 0 0 15670 4800 0
+rnode "GND.n7" 0 0 10620 2530 0
+rnode "GND.n8" 0 0 10760 4800 0
+rnode "GND.n9" 0 0 12520 2530 0
+rnode "GND.n10" 0 0 12680 4800 0
+rnode "GND.n11" 0 0 14440 2530 0
+rnode "GND.n12" 0 0 14580 4800 0
+rnode "GND.n13" 0 0 15530 2530 0
+rnode "vco_ring_osc_0/vco_cc_inv_4/vco_aux_inv_1/GND" 0 0 15530 2580 0
+rnode "vco_ring_osc_0/vco_cc_inv_4/vco_aux_inv_0/GND" 0 0 16620 2580 0
+rnode "GND.n14" 0 0 16620 3030 0
+rnode "GND.n15" 0 0 15530 3030 0
+rnode "GND.n16" 0 0 14440 3030 0
+rnode "GND.n17" 0 0 12520 3030 0
+rnode "GND.n18" 0 0 10620 3030 0
+rnode "GND.n19" 0 0 9530 3030 0
+rnode "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_1/GND" 0 0 9530 2580 0
+rnode "GND.n20" 0 0 9530 2530 0
+rnode "GND.n21" 0 0 8580 4800 0
+rnode "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_1/GND" 0 0 8440 2580 0
+rnode "GND.n22" 0 0 8440 2530 0
+rnode "GND.n23" 0 0 6680 4800 0
+rnode "GND.n24" 0 0 6600 3665 0
+rnode "GND.n25" 0 0 2580 4800 0
+rnode "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_0/GND" 0 0 2580 4750 0
+rnode "GND.n26" 0 0 94 89 0
+rnode "GND.n27" 0 0 189 112 0
+rnode "GND.n28" 0 0 300 5690 0
+rnode "GND.n29" 0 0 364 112 0
+rnode "GND.n30" 0 0 680 4800 0
+rnode "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_0/GND" 0 0 680 4750 0
+rnode "GND.n31" 0 0 2580 4300 0
+rnode "GND.n32" 0 0 3670 4300 0
+rnode "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_1/GND" 0 0 3670 4750 0
+rnode "GND.n33" 0 0 3670 4800 0
+rnode "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_1/GND" 0 0 4760 4750 0
+rnode "GND.n34" 0 0 4760 4800 0
+rnode "sky130_fd_sc_hd__einvp_1_0/VNB" 0 0 5158 2621 0
+rnode "GND.n35" 0 0 5680 2760 0
+rnode "sky130_fd_sc_hd__einvp_1_0/VGND" 0 0 5128 2590 0
+rnode "sky130_fd_sc_hd__einvp_1_0/VGND" 0 0 5158 2621 0
+rnode "GND.n36" 0 0 6230 2750 0
+rnode "GND" 0 0 6230 3340 0
+rnode "GND.n37" 0 0 6280 4200 0
+rnode "GND.n38" 0 0 6680 4300 0
+rnode "GND.n39" 0 0 8450 4200 0
+rnode "GND.n40" 0 0 8580 4300 0
+rnode "GND.n41" 0 0 9670 4300 0
+rnode "GND.n42" 0 0 10760 4300 0
+rnode "GND.n43" 0 0 12680 4300 0
+rnode "GND.n44" 0 0 14580 4300 0
+rnode "GND.n45" 0 0 15670 4300 0
+rnode "GND.n46" 0 0 16750 4200 0
+rnode "vco_ring_osc_0/vco_cc_inv_2/vco_main_inv_1/GND" 0 0 16760 4750 0
+rnode "GND.n47" 0 0 16760 4800 0
+rnode "GND.n48" 0 0 18520 2530 0
+rnode "vco_ring_osc_0/vco_cc_inv_4/vco_main_inv_0/GND" 0 0 18520 2580 0
+resist "sky130_fd_sc_hd__einvp_1_0/VGND" "sky130_fd_sc_hd__einvp_1_0/VGND" 0.0390625
+resist "GND.n40" "GND.n39" 0.1625
+resist "GND.n14" "GND.n0" 0.1625
+resist "GND.n38" "GND.n37" 0.5
+resist "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_1/GND" "GND.n4" 0.703125
+resist "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_1/GND" "GND.n32" 0.703125
+resist "GND.n31" "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_0/GND" 0.703125
+resist "GND.n14" "vco_ring_osc_0/vco_cc_inv_4/vco_aux_inv_0/GND" 0.703125
+resist "GND.n15" "vco_ring_osc_0/vco_cc_inv_4/vco_aux_inv_1/GND" 0.703125
+resist "GND.n16" "vco_ring_osc_0/vco_cc_inv_4/vco_main_inv_1/GND" 0.703125
+resist "GND.n17" "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_0/GND" 0.703125
+resist "GND.n18" "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_0/GND" 0.703125
+resist "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_1/GND" "GND.n19" 0.703125
+resist "GND.n45" "vco_ring_osc_0/vco_cc_inv_2/vco_aux_inv_1/GND" 0.703125
+resist "GND.n44" "vco_ring_osc_0/vco_cc_inv_2/vco_aux_inv_0/GND" 0.703125
+resist "GND.n43" "vco_ring_osc_0/vco_cc_inv_2/vco_main_inv_0/GND" 0.703125
+resist "GND.n42" "vco_ring_osc_0/vco_cc_inv_1/vco_main_inv_1/GND" 0.703125
+resist "GND.n41" "vco_ring_osc_0/vco_cc_inv_1/vco_aux_inv_1/GND" 0.703125
+resist "GND.n40" "vco_ring_osc_0/vco_cc_inv_1/vco_aux_inv_0/GND" 0.703125
+resist "GND.n38" "vco_ring_osc_0/vco_cc_inv_1/vco_main_inv_0/GND" 0.703125
+resist "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_1/GND" "GND.n3" 0.715625
+resist "vco_ring_osc_0/vco_cc_inv_2/vco_main_inv_1/GND" "GND.n46" 0.715625
+resist "GND" "GND.n36" 0.7375
+resist "GND.n37" "GND" 1.075
+resist "GND.n39" "GND.n3" 1.2
+resist "GND.n46" "GND.n0" 1.3375
+resist "GND.n46" "GND.n45" 1.35
+resist "GND.n19" "GND.n3" 1.35
+resist "GND.n32" "GND.n31" 1.3625
+resist "GND.n32" "GND.n4" 1.3625
+resist "GND.n41" "GND.n40" 1.3625
+resist "GND.n42" "GND.n41" 1.3625
+resist "GND.n45" "GND.n44" 1.3625
+resist "GND.n19" "GND.n18" 1.3625
+resist "GND.n16" "GND.n15" 1.3625
+resist "GND.n15" "GND.n14" 1.3625
+resist "GND.n37" "GND.n4" 1.9
+resist "GND.n36" "sky130_fd_sc_hd__einvp_1_0/VGND" 2.0614
+resist "GND.n39" "GND.n38" 2.2125
+resist "GND.n44" "GND.n43" 2.375
+resist "GND.n18" "GND.n17" 2.375
+resist "GND.n43" "GND.n42" 2.4
+resist "GND.n17" "GND.n16" 2.4
+resist "vco_ring_osc_0/vco_cc_inv_4/vco_main_inv_0/GND" "GND.n0" 2.91563
+resist "GND.n31" "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_0/GND" 3.07812
+resist "GND.n29" "GND.n28" 49.4903
+resist "GND.n27" "GND.n26" 73.4622
+resist "GND.n28" "GND.n27" 85.8348
+resist "GND.n24" "GND.n23" 86.9136
+resist "GND.n22" "GND.n21" 152.099
+resist "GND.n20" "GND.n5" 152.099
+resist "GND.n8" "GND.n7" 152.099
+resist "GND.n12" "GND.n11" 152.099
+resist "GND.n13" "GND.n6" 152.099
+resist "GND.n47" "GND.n2" 152.099
+resist "GND.n10" "GND.n9" 173.827
+resist "GND.n30" "GND.n29" 244.359
+resist "sky130_fd_sc_hd__einvp_1_0/VNB" "GND.n34" 307.768
+resist "GND.n35" "sky130_fd_sc_hd__einvp_1_0/VNB" 403.656
+resist "GND.n35" "GND.n24" 711.424
+resist "GND.n48" "GND.n1" 809.383
+resist "GND.n33" "GND.n25" 842.882
+resist "GND.n34" "GND.n33" 842.882
+resist "GND.n21" "GND.n20" 1032.1
+resist "GND.n7" "GND.n5" 1032.1
+resist "GND.n13" "GND.n12" 1032.1
+resist "GND.n6" "GND.n2" 1032.1
+resist "vco_ring_osc_0/vco_cc_inv_4/vco_main_inv_0/GND" "GND.n48" 1179.38
+resist "GND.n34" "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_1/GND" 1179.38
+resist "GND.n33" "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_1/GND" 1179.38
+resist "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_0/GND" "GND.n25" 1179.38
+resist "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_0/GND" "GND.n30" 1179.38
+resist "vco_ring_osc_0/vco_cc_inv_4/vco_aux_inv_0/GND" "GND.n2" 1179.38
+resist "vco_ring_osc_0/vco_cc_inv_4/vco_aux_inv_1/GND" "GND.n13" 1179.38
+resist "GND.n11" "vco_ring_osc_0/vco_cc_inv_4/vco_main_inv_1/GND" 1179.38
+resist "GND.n9" "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_0/GND" 1179.38
+resist "GND.n7" "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_0/GND" 1179.38
+resist "GND.n20" "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_1/GND" 1179.38
+resist "GND.n22" "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_1/GND" 1179.38
+resist "GND.n47" "vco_ring_osc_0/vco_cc_inv_2/vco_main_inv_1/GND" 1179.38
+resist "GND.n6" "vco_ring_osc_0/vco_cc_inv_2/vco_aux_inv_1/GND" 1179.38
+resist "GND.n12" "vco_ring_osc_0/vco_cc_inv_2/vco_aux_inv_0/GND" 1179.38
+resist "GND.n10" "vco_ring_osc_0/vco_cc_inv_2/vco_main_inv_0/GND" 1179.38
+resist "GND.n8" "vco_ring_osc_0/vco_cc_inv_1/vco_main_inv_1/GND" 1179.38
+resist "GND.n5" "vco_ring_osc_0/vco_cc_inv_1/vco_aux_inv_1/GND" 1179.38
+resist "GND.n21" "vco_ring_osc_0/vco_cc_inv_1/vco_aux_inv_0/GND" 1179.38
+resist "GND.n23" "vco_ring_osc_0/vco_cc_inv_1/vco_main_inv_0/GND" 1179.38
+resist "GND.n36" "GND.n35" 1180.41
+resist "GND.n30" "GND.n25" 1469.24
+resist "GND.n23" "GND.n22" 1912.1
+resist "GND.n9" "GND.n8" 1912.1
+resist "GND.n11" "GND.n10" 1912.1
+resist "GND.n48" "GND.n47" 1912.1
+resist "GND.n24" "GND.n1" 114632
+resist "GND.n28" "GND.n1" 179898
+rnode "VCCA.n0" 0 1464.24 9530 600 0
+rnode "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_1/VCCA" 0 21.0034 9530 550 0
+rnode "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_0/VCCA" 0 21.0034 10620 550 0
+rnode "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_0/VCCA" 0 21.0034 12520 550 0
+rnode "vco_ring_osc_0/vco_cc_inv_4/vco_main_inv_1/VCCA" 0 21.0034 14440 550 0
+rnode "vco_ring_osc_0/vco_cc_inv_4/vco_aux_inv_1/VCCA" 0 21.0034 15530 550 0
+rnode "vco_ring_osc_0/vco_cc_inv_4/vco_aux_inv_0/VCCA" 0 21.0034 16620 550 0
+rnode "VCCA.n1" 0 1215.46 10620 600 0
+rnode "VCCA.n2" 0 1553.62 12520 600 0
+rnode "VCCA.n3" 0 1223.61 14440 600 0
+rnode "VCCA.n4" 0 885.448 15530 600 0
+rnode "VCCA.n5" 0 1379.44 16620 600 0
+rnode "vco_ring_osc_0/vco_cc_inv_4/vco_main_inv_0/VCCA" 0 693.579 18520 550 0
+rnode "VCCA" 0 17.5614 19900 7330 0
+rnode "vco_ring_osc_0/vco_cc_inv_2/vco_main_inv_1/VCCA" 0 1382.89 16760 6780 0
+rnode "vco_ring_osc_0/vco_cc_inv_2/vco_aux_inv_1/VCCA" 0 21.0034 15670 6780 0
+rnode "vco_ring_osc_0/vco_cc_inv_2/vco_aux_inv_0/VCCA" 0 21.0034 14580 6780 0
+rnode "vco_ring_osc_0/vco_cc_inv_2/vco_main_inv_0/VCCA" 0 21.0034 12680 6780 0
+rnode "vco_ring_osc_0/vco_cc_inv_1/vco_main_inv_1/VCCA" 0 21.0034 10760 6780 0
+rnode "vco_ring_osc_0/vco_cc_inv_1/vco_aux_inv_1/VCCA" 0 21.0034 9670 6780 0
+rnode "vco_ring_osc_0/vco_cc_inv_1/vco_aux_inv_0/VCCA" 0 21.0034 8580 6780 0
+rnode "vco_ring_osc_0/vco_cc_inv_1/vco_main_inv_0/VCCA" 0 21.0034 6680 6780 0
+rnode "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_1/VCCA" 0 21.0034 4760 6780 0
+rnode "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_1/VCCA" 0 21.0034 3670 6780 0
+rnode "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_0/VCCA" 0 21.0034 2580 6780 0
+rnode "VCCA.n6" 0 1464.24 15670 6730 0
+rnode "VCCA.n7" 0 1215.46 14580 6730 0
+rnode "VCCA.n8" 0 1553.62 12680 6730 0
+rnode "VCCA.n9" 0 1223.61 10760 6730 0
+rnode "VCCA.n10" 0 885.448 9670 6730 0
+rnode "VCCA.n11" 0 1215.46 8580 6730 0
+rnode "VCCA.n12" 0 1553.62 6680 6730 0
+rnode "VCCA.n13" 0 1223.61 4760 6730 0
+rnode "VCCA.n14" 0 885.448 3670 6730 0
+rnode "VCCA.n15" 0 1379.44 2580 6730 0
+rnode "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_0/VCCA" 0 756.992 680 6780 0
+rnode "VCCA.n16" 0 136.435 2580 7230 0
+rnode "VCCA.n17" 0 89.2121 3670 7230 0
+rnode "VCCA.n18" 0 118.364 4760 7230 0
+rnode "VCCA.n19" 0 146.814 6680 7230 0
+rnode "VCCA.n20" 0 117.662 8580 7230 0
+rnode "VCCA.n21" 0 89.2121 9670 7230 0
+rnode "VCCA.n22" 0 118.364 10760 7230 0
+rnode "VCCA.n23" 0 146.814 12680 7230 0
+rnode "VCCA.n24" 0 117.662 14580 7230 0
+rnode "VCCA.n25" 0 89.2121 15670 7230 0
+rnode "VCCA.n26" 0 145.76 16760 7230 0
+rnode "VCCA.n27" 0 394.136 19460 7230 0
+rnode "VCCA.n28" 0 365.922 18520 100 0
+rnode "VCCA.n29" 0 117.662 16620 100 0
+rnode "VCCA.n30" 0 89.2121 15530 100 0
+rnode "VCCA.n31" 0 118.364 14440 100 0
+rnode "VCCA.n32" 0 146.814 12520 100 0
+rnode "VCCA.n33" 0 117.662 10620 100 0
+rnode "VCCA.n34" 0 107.504 9530 100 0
+rnode "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_1/VCCA" 0 1418.34 8440 550 0
+resist "VCCA.n27" "VCCA" 0.55
+resist "VCCA.n28" "vco_ring_osc_0/vco_cc_inv_4/vco_main_inv_0/VCCA" 0.703125
+resist "VCCA.n29" "vco_ring_osc_0/vco_cc_inv_4/vco_aux_inv_0/VCCA" 0.703125
+resist "VCCA.n30" "vco_ring_osc_0/vco_cc_inv_4/vco_aux_inv_1/VCCA" 0.703125
+resist "VCCA.n31" "vco_ring_osc_0/vco_cc_inv_4/vco_main_inv_1/VCCA" 0.703125
+resist "VCCA.n32" "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_0/VCCA" 0.703125
+resist "VCCA.n33" "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_0/VCCA" 0.703125
+resist "VCCA.n34" "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_1/VCCA" 0.703125
+resist "VCCA.n26" "vco_ring_osc_0/vco_cc_inv_2/vco_main_inv_1/VCCA" 0.703125
+resist "VCCA.n25" "vco_ring_osc_0/vco_cc_inv_2/vco_aux_inv_1/VCCA" 0.703125
+resist "VCCA.n24" "vco_ring_osc_0/vco_cc_inv_2/vco_aux_inv_0/VCCA" 0.703125
+resist "VCCA.n23" "vco_ring_osc_0/vco_cc_inv_2/vco_main_inv_0/VCCA" 0.703125
+resist "VCCA.n22" "vco_ring_osc_0/vco_cc_inv_1/vco_main_inv_1/VCCA" 0.703125
+resist "VCCA.n21" "vco_ring_osc_0/vco_cc_inv_1/vco_aux_inv_1/VCCA" 0.703125
+resist "VCCA.n20" "vco_ring_osc_0/vco_cc_inv_1/vco_aux_inv_0/VCCA" 0.703125
+resist "VCCA.n19" "vco_ring_osc_0/vco_cc_inv_1/vco_main_inv_0/VCCA" 0.703125
+resist "VCCA.n18" "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_1/VCCA" 0.703125
+resist "VCCA.n17" "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_1/VCCA" 0.703125
+resist "VCCA.n16" "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_0/VCCA" 0.703125
+resist "VCCA.n17" "VCCA.n16" 1.3625
+resist "VCCA.n18" "VCCA.n17" 1.3625
+resist "VCCA.n21" "VCCA.n20" 1.3625
+resist "VCCA.n22" "VCCA.n21" 1.3625
+resist "VCCA.n25" "VCCA.n24" 1.3625
+resist "VCCA.n26" "VCCA.n25" 1.3625
+resist "VCCA.n34" "VCCA.n33" 1.3625
+resist "VCCA.n31" "VCCA.n30" 1.3625
+resist "VCCA.n30" "VCCA.n29" 1.3625
+resist "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_1/VCCA" "VCCA.n34" 2.06562
+resist "VCCA.n20" "VCCA.n19" 2.375
+resist "VCCA.n24" "VCCA.n23" 2.375
+resist "VCCA.n33" "VCCA.n32" 2.375
+resist "VCCA.n29" "VCCA.n28" 2.375
+resist "VCCA.n19" "VCCA.n18" 2.4
+resist "VCCA.n23" "VCCA.n22" 2.4
+resist "VCCA.n32" "VCCA.n31" 2.4
+resist "VCCA.n16" "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_0/VCCA" 3.07812
+resist "VCCA.n27" "VCCA.n26" 3.375
+resist "VCCA.n28" "VCCA.n27" 10.0875
+resist "VCCA.n5" "vco_ring_osc_0/vco_cc_inv_4/vco_aux_inv_0/VCCA" 379.378
+resist "VCCA.n4" "vco_ring_osc_0/vco_cc_inv_4/vco_aux_inv_1/VCCA" 379.378
+resist "VCCA.n3" "vco_ring_osc_0/vco_cc_inv_4/vco_main_inv_1/VCCA" 379.378
+resist "VCCA.n2" "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_0/VCCA" 379.378
+resist "VCCA.n1" "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_0/VCCA" 379.378
+resist "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_1/VCCA" "VCCA.n0" 379.378
+resist "VCCA.n6" "vco_ring_osc_0/vco_cc_inv_2/vco_aux_inv_1/VCCA" 379.378
+resist "VCCA.n7" "vco_ring_osc_0/vco_cc_inv_2/vco_aux_inv_0/VCCA" 379.378
+resist "VCCA.n8" "vco_ring_osc_0/vco_cc_inv_2/vco_main_inv_0/VCCA" 379.378
+resist "VCCA.n9" "vco_ring_osc_0/vco_cc_inv_1/vco_main_inv_1/VCCA" 379.378
+resist "VCCA.n10" "vco_ring_osc_0/vco_cc_inv_1/vco_aux_inv_1/VCCA" 379.378
+resist "VCCA.n11" "vco_ring_osc_0/vco_cc_inv_1/vco_aux_inv_0/VCCA" 379.378
+resist "VCCA.n12" "vco_ring_osc_0/vco_cc_inv_1/vco_main_inv_0/VCCA" 379.378
+resist "VCCA.n13" "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_1/VCCA" 379.378
+resist "VCCA.n14" "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_1/VCCA" 379.378
+resist "VCCA.n15" "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_0/VCCA" 379.378
+resist "VCCA.n1" "VCCA.n0" 892.672
+resist "VCCA.n4" "VCCA.n3" 892.672
+resist "VCCA.n5" "VCCA.n4" 892.672
+resist "VCCA.n15" "VCCA.n14" 892.672
+resist "VCCA.n14" "VCCA.n13" 892.672
+resist "VCCA.n11" "VCCA.n10" 892.672
+resist "VCCA.n10" "VCCA.n9" 892.672
+resist "VCCA.n7" "VCCA.n6" 892.672
+resist "vco_ring_osc_0/vco_cc_inv_3/vco_main_inv_1/VCCA" "VCCA.n0" 1272.05
+resist "VCCA.n6" "vco_ring_osc_0/vco_cc_inv_2/vco_main_inv_1/VCCA" 1272.05
+resist "VCCA.n2" "VCCA.n1" 1556.03
+resist "VCCA.n12" "VCCA.n11" 1556.03
+resist "VCCA.n8" "VCCA.n7" 1556.03
+resist "VCCA.n3" "VCCA.n2" 1572.41
+resist "VCCA.n13" "VCCA.n12" 1572.41
+resist "VCCA.n9" "VCCA.n8" 1572.41
+resist "vco_ring_osc_0/vco_cc_inv_4/vco_main_inv_0/VCCA" "VCCA.n5" 1935.41
+resist "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_0/VCCA" "VCCA.n15" 1935.41
+rnode "VPWR" 0 18.6204 19900 7030 0
+rnode "vco_ring_osc_0/vco_cc_inv_4/vco_aux_inv_0/VPWR" 0 518.887 16480 560 0
+rnode "vco_ring_osc_0/vco_cc_inv_4/vco_aux_inv_1/VPWR" 0 518.887 15390 560 0
+rnode "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_0/VPWR" 0 518.887 10480 560 0
+rnode "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_1/VPWR" 0 2169.22 9390 560 0
+rnode "VPWR.n0" 0 2300.73 10480 380 0
+rnode "VPWR.n1" 0 1671.05 15390 380 0
+rnode "VPWR.n2" 0 2402.34 16480 380 0
+rnode "VPWR.n3" 0 -23.5858 19900 7030 0
+rnode "VPWR.n4" 0 2774.51 19710 6990 0
+rnode "vco_ring_osc_0/vco_cc_inv_2/vco_aux_inv_0/VPWR" 0 518.887 14720 6770 0
+rnode "vco_ring_osc_0/vco_cc_inv_1/vco_aux_inv_1/VPWR" 0 518.887 9810 6770 0
+rnode "vco_ring_osc_0/vco_cc_inv_1/vco_aux_inv_0/VPWR" 0 518.887 8720 6770 0
+rnode "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_1/VPWR" 0 518.887 3810 6770 0
+rnode "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_0/VPWR" 0 1996.62 2720 6770 0
+rnode "VPWR.n5" 0 1915.08 3810 6950 0
+rnode "VPWR.n6" 0 2028.2 8720 6950 0
+rnode "VPWR.n7" 0 1671.05 9810 6950 0
+rnode "VPWR.n8" 0 2028.2 14720 6950 0
+rnode "VPWR.n9" 0 1196.89 15810 6950 0
+rnode "vco_ring_osc_0/vco_cc_inv_2/vco_aux_inv_1/VPWR" 0 518.887 15810 6770 0
+resist "VPWR.n4" "VPWR" 14.4
+resist "vco_ring_osc_0/vco_cc_inv_2/vco_aux_inv_1/VPWR" "VPWR.n9" 28.8
+resist "VPWR.n8" "vco_ring_osc_0/vco_cc_inv_2/vco_aux_inv_0/VPWR" 28.8
+resist "VPWR.n7" "vco_ring_osc_0/vco_cc_inv_1/vco_aux_inv_1/VPWR" 28.8
+resist "VPWR.n6" "vco_ring_osc_0/vco_cc_inv_1/vco_aux_inv_0/VPWR" 28.8
+resist "VPWR.n5" "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_1/VPWR" 28.8
+resist "VPWR.n0" "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_0/VPWR" 28.8
+resist "VPWR.n1" "vco_ring_osc_0/vco_cc_inv_4/vco_aux_inv_1/VPWR" 28.8
+resist "VPWR.n2" "vco_ring_osc_0/vco_cc_inv_4/vco_aux_inv_0/VPWR" 28.8
+resist "VPWR.n4" "VPWR.n3" 30.4
+resist "VPWR.n7" "VPWR.n6" 174.4
+resist "VPWR.n9" "VPWR.n8" 174.4
+resist "VPWR.n2" "VPWR.n1" 174.4
+resist "VPWR.n5" "vco_ring_osc_0/vco_cc_inv_0/vco_aux_inv_0/VPWR" 203.2
+resist "VPWR.n0" "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_1/VPWR" 203.2
+resist "VPWR.n9" "VPWR.n4" 624
+resist "VPWR.n6" "VPWR.n5" 785.6
+resist "VPWR.n8" "VPWR.n7" 785.6
+resist "VPWR.n1" "VPWR.n0" 785.6
+resist "VPWR.n4" "VPWR.n2" 1368
+device msubckt sky130_fd_pr__nfet_01v8 5207 2685 5208 2686  "GND" "ENB.t2" 60 0 "sky130_fd_sc_hd__einvp_1_0/a_27_47#" 84 4368,272 "GND" 84 3880,195
+device msubckt sky130_fd_pr__nfet_01v8 5302 2685 5303 2686  "GND" "ENB.t1" 60 0 "GND" 130 3880,195 "sky130_fd_sc_hd__einvp_1_0/a_204_47#" 130 9425,275
+device msubckt sky130_fd_pr__pfet_01v8_hvt 5477 2935 5478 2936  "VCCD.t1" "VCCD.t0" 60 0 "sky130_fd_sc_hd__einvp_1_0/a_276_297#" 200 7300,273 "vco_ring_osc_0/pn[4]" 200 10800,508
+device msubckt sky130_fd_pr__pfet_01v8_hvt 5207 3051 5208 3052  "VCCD" "ENB.t0" 60 0 "sky130_fd_sc_hd__einvp_1_0/a_27_47#" 84 4368,272 "VCCD" 84 12830,337
+device msubckt sky130_fd_pr__nfet_01v8 5477 2685 5478 2686  "GND" "VCCD.t2" 60 0 "sky130_fd_sc_hd__einvp_1_0/a_204_47#" 130 9425,275 "vco_ring_osc_0/pn[4]" 130 7020,368
+device msubckt sky130_fd_pr__nfet_01v8 9710 1770 9711 1771  "GND" "p[4].t5" 1460 0 "vco_ring_osc_0/VGND" 800 64000,1760 "vco_ring_osc_0/pn[4]" 800 64000,1760
+device msubckt sky130_fd_pr__pfet_01v8 9710 560 9711 561  "VCCA" "p[4].t4" 1460 0 "VPWR" 1000 80000,2160 "vco_ring_osc_0/pn[4]" 1000 80000,2160
+device msubckt sky130_fd_pr__pfet_01v8 860 5770 861 5771  "VCCA" "p[4].t3" 1460 0 "VPWR" 1000 80000,2160 "vco_ring_osc_0/p[0]" 1000 40000,1080
+device msubckt sky130_fd_pr__nfet_01v8 1670 4760 1671 4761  "GND" "p[4].t2" 1460 0 "vco_ring_osc_0/p[0]" 800 32000,880 "vco_ring_osc_0/VGND" 800 64000,1760
+device msubckt sky130_fd_pr__nfet_01v8 860 4760 861 4761  "GND" "p[4].t1" 1460 0 "vco_ring_osc_0/VGND" 800 64000,1760 "vco_ring_osc_0/p[0]" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 1670 5770 1671 5771  "VCCA" "p[4].t0" 1460 0 "vco_ring_osc_0/p[0]" 1000 40000,1080 "VPWR" 1000 80000,2160

@@ -1,0 +1,135 @@
+| units: 500000 tech: sky130A format: MIT
+x sky130_fd_sc_hd__buf_2_0/a_27_47# G_M7 VCCD VCCD s=5400,254 d=10600,506 l=30 w=200 x=-1515 y=-1747 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__buf_2_0/a_27_47# VCCD G_M7 VCCD s=5960,265 d=5400,254 l=30 w=200 x=-1515 y=-1663 sky130_fd_pr__pfet_01v8_hvt
+x Dctrl sky130_fd_sc_hd__buf_2_0/a_27_47# VCCD VCCD s=6656,360 d=5960,265 l=30 w=128 x=-1451 y=-1568 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__buf_2_0/a_27_47# GND G_M7 GND s=3880,195 d=3510,184 l=30 w=130 x=-1765 y=-1663 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__buf_2_0/a_27_47# G_M7 GND GND s=3510,184 d=6890,366 l=30 w=130 x=-1765 y=-1747 sky130_fd_pr__nfet_01v8
+x Dctrl sky130_fd_sc_hd__buf_2_0/a_27_47# GND GND s=4368,272 d=3880,195 l=30 w=84 x=-1765 y=-1568 sky130_fd_pr__nfet_01v8
+x G_M7 VCCD G_M5 VCCD s=10400,504 d=5400,254 l=30 w=200 x=-1515 y=-2230 sky130_fd_pr__pfet_01v8_hvt
+x G_M7 G_M5 GND GND s=3510,184 d=6760,364 l=30 w=130 x=-1765 y=-2314 sky130_fd_pr__nfet_01v8
+x G_M7 GND G_M5 GND s=6760,364 d=3510,184 l=30 w=130 x=-1765 y=-2230 sky130_fd_pr__nfet_01v8
+x G_M7 G_M5 VCCD VCCD s=5400,254 d=10400,504 l=30 w=200 x=-1515 y=-2314 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_pr__res_xhigh_po_0p35_RSCMUS_0/a_n35_n840# D_M7 GND GND s=30240,1004 d=30240,1004 l=1680 w=0 x=2216 y=-2993 sky130_fd_pr__res_xhigh_po_0p35
+x G_M7 D1_M4 Isup GND s=16000,480 d=32000,960 l=100 w=400 x=1660 y=-1479 sky130_fd_pr__nfet_01v8
+x Vbs1 VCCA B_M2 VCCA s=28800,880 d=28800,880 l=100 w=360 x=-319 y=0 sky130_fd_pr__pfet_01v8_hvt
+x Vbs4 D1_M3 D1_M4 D1_M3 s=28800,880 d=14400,440 l=100 w=360 x=1530 y=0 sky130_fd_pr__pfet_01v8_hvt
+x G_M5 D1_M4 D_M7 GND s=16000,480 d=32000,960 l=100 w=400 x=890 y=-1479 sky130_fd_pr__nfet_01v8
+x G_M5 D_M7 D1_M4 GND s=32000,960 d=16000,480 l=100 w=400 x=710 y=-1479 sky130_fd_pr__nfet_01v8
+x G_M5 D1_M4 Isup D1_M4 s=64000,1760 d=32000,880 l=100 w=800 x=2520 y=-1859 sky130_fd_pr__pfet_01v8_hvt
+x Vbs4 D1_M3 D1_M4 D1_M3 s=14400,440 d=28800,880 l=100 w=360 x=1890 y=0 sky130_fd_pr__pfet_01v8_hvt
+x Vbs3 VCCA D1_M3 VCCA s=28800,880 d=14400,440 l=100 w=360 x=430 y=0 sky130_fd_pr__pfet_01v8_hvt
+x Vbs2 B_M2 Isup B_M2 s=28800,880 d=28800,880 l=100 w=360 x=2630 y=-9 sky130_fd_pr__pfet_01v8_hvt
+x Vbs4 D1_M4 D1_M3 D1_M3 s=14400,440 d=14400,440 l=100 w=360 x=1710 y=0 sky130_fd_pr__pfet_01v8_hvt
+x G_M5 Isup D1_M4 D1_M4 s=32000,880 d=64000,1760 l=100 w=800 x=2700 y=-1859 sky130_fd_pr__pfet_01v8_hvt
+x G_M7 Isup D1_M4 GND s=32000,960 d=16000,480 l=100 w=400 x=1480 y=-1479 sky130_fd_pr__nfet_01v8
+x Vbs3 VCCA D1_M3 VCCA s=14400,440 d=28800,880 l=100 w=360 x=790 y=0 sky130_fd_pr__pfet_01v8_hvt
+x G_M7 D_M7 D1_M4 D1_M4 s=32000,880 d=64000,1760 l=100 w=800 x=-69 y=-1849 sky130_fd_pr__pfet_01v8_hvt
+x G_M7 D1_M4 D_M7 D1_M4 s=64000,1760 d=32000,880 l=100 w=800 x=-249 y=-1849 sky130_fd_pr__pfet_01v8_hvt
+x Vbs3 D1_M3 VCCA VCCA s=14400,440 d=14400,440 l=100 w=360 x=610 y=0 sky130_fd_pr__pfet_01v8_hvt
+C GND Isup 0.0
+C D1_M3 Isup 0.0
+C D1_M4 VCCD 0.0
+C D_M7 Isup 0.0
+C Vbs3 B_M2 0.0
+C D1_M3 B_M2 0.1
+C D_M7 B_M2 0.0
+C Dctrl VCCD 0.1
+C G_M7 sky130_fd_sc_hd__buf_2_0/a_27_47# 0.2
+C VCCD GND 0.1
+C Vbs2 Vbs4 0.0
+C G_M7 VCCA 0.0
+C D1_M4 Vbs2 0.0
+C VCCD D_M7 0.0
+C G_M5 sky130_fd_sc_hd__buf_2_0/a_27_47# 0.0
+C VCCA G_M5 0.0
+C Vbs1 VCCA 0.3
+C G_M7 Vbs4 0.0
+C B_M2 Isup 0.1
+C D1_M4 G_M7 1.3
+C D1_M4 G_M5 0.9
+C D1_M4 Vbs1 0.0
+C D1_M3 Vbs2 0.0
+C Dctrl G_M7 0.0
+C G_M7 Vbs3 0.0
+C Dctrl G_M5 0.0
+C G_M7 GND 0.2
+C G_M7 D1_M3 0.0
+C Vbs3 G_M5 0.0
+C G_M7 D_M7 0.7
+C Vbs1 Vbs3 0.0
+C GND G_M5 0.3
+C D1_M3 G_M5 0.0
+C Vbs1 D1_M3 0.0
+C D_M7 G_M5 0.7
+C Vbs2 Isup 0.0
+C VCCA Vbs4 0.0
+C Vbs2 B_M2 0.2
+C D1_M4 sky130_fd_sc_hd__buf_2_0/a_27_47# 0.0
+C D1_M4 VCCA 0.0
+C G_M7 Isup 0.4
+C G_M5 Isup 0.8
+C G_M7 B_M2 0.1
+C Dctrl sky130_fd_sc_hd__buf_2_0/a_27_47# 0.2
+C D1_M4 Vbs4 0.3
+C B_M2 G_M5 0.0
+C Vbs1 B_M2 0.1
+C VCCA Vbs3 0.9
+C GND sky130_fd_sc_hd__buf_2_0/a_27_47# 0.1
+C D_M7 sky130_fd_sc_hd__buf_2_0/a_27_47# 0.0
+C D1_M3 VCCA 0.5
+C G_M7 VCCD 0.7
+C D1_M4 Dctrl 0.0
+C Vbs4 Vbs3 0.0
+C VCCD G_M5 0.4
+C D1_M4 Vbs3 0.0
+C D1_M4 GND 0.0
+C D1_M3 Vbs4 0.7
+C D1_M4 D1_M3 0.6
+C D1_M4 D_M7 0.8
+C Dctrl GND 0.0
+C Dctrl D_M7 0.0
+C Vbs2 G_M5 0.0
+C D1_M3 Vbs3 0.3
+C Vbs3 D_M7 0.0
+C D_M7 GND 0.0
+C VCCA B_M2 0.2
+C Vbs4 Isup 0.0
+C D1_M4 Isup 1.0
+C G_M7 G_M5 0.3
+C G_M7 Vbs1 0.0
+C Vbs4 B_M2 0.0
+C VCCD sky130_fd_sc_hd__buf_2_0/a_27_47# 0.2
+C D1_M4 B_M2 0.5
+C Isup0 2.2
+R Isup 5738
+C Vbs20 0.3
+R Vbs2 312
+C Vbs40 0.8
+R Vbs4 1033
+C Vbs30 0.7
+R Vbs3 1000
+C Vbs10 0.3
+R Vbs1 320
+C VCCA0 2.9
+R VCCA 10564
+C D1_M40 6.0
+R D1_M4 21605
+C B_M20 2.0
+R B_M2 3617
+C D1_M30 1.7
+R D1_M3 7100
+R sky130_fd_pr__res_xhigh_po_0p35_RSCMUS_0/a_n35_n840# 48000
+C D_M70 2.1
+R D_M7 4239
+C GND0 0.5
+R GND 42442
+C G_M50 2.3
+R G_M5 2119
+C G_M70 2.0
+R G_M7 3619
+C VCCD0 1.3
+R VCCD 8046
+C Dctrl0 0.3
+R Dctrl 792
+C sky130_fd_sc_hd__buf_2_0/a_27_47#0 0.3
+R sky130_fd_sc_hd__buf_2_0/a_27_47# 2411

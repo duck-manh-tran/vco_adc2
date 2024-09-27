@@ -1,0 +1,25 @@
+scale 1000 1 500000
+rnode "VCCA.t0" 0 239.665 100 300 0
+rnode "VCCA" 0 60.335 -180 590 0
+resist "VCCA" "VCCA.t0" 729.378
+rnode "VPWR.t0" 0 172.91 0 300 0
+rnode "VPWR" 0 127.09 -40 600 0
+resist "VPWR" "VPWR.t0" 124.995
+rnode "GND.t0" 0 0 100 -420 0
+rnode "GND" 0 0 -180 -530 0
+resist "GND" "GND.t0" 3166.48
+rnode "Y.t0" 0 103.795 200 300 0
+rnode "Y.t1" 0 73.1216 200 -420 0
+rnode "Y" 0 123.083 280 -110 0
+resist "Y" "Y.t1" 86.3674
+resist "Y" "Y.t0" 148.995
+rnode "VGND.t0" 0 57.595 0 -420 0
+rnode "VGND" 0 42.405 -40 -620 0
+resist "VGND" "VGND.t0" 68.7671
+rnode "A.t1" 0 240.566 100 300 0
+rnode "A.t0" 0 155.66 100 -420 0
+rnode "A" 0 203.774 0 -110 0
+resist "A" "A.t0" 74.71
+resist "A" "A.t1" 98.81
+device msubckt sky130_fd_pr__pfet_01v8 0 0 1 1  "VCCA.t0" "A.t1" 400 0 "VPWR.t0" 600 48000,1360 "Y.t0" 600 48000,1360
+device msubckt sky130_fd_pr__nfet_01v8 0 -620 1 -619  "GND.t0" "A.t0" 400 0 "VGND.t0" 400 32000,960 "Y.t1" 400 32000,960

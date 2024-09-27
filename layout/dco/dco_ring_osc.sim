@@ -1,0 +1,156 @@
+| units: 500000 tech: sky130A format: MIT
+x p[0] VGND pn[0] GND s=32000,960 d=32000,960 l=200 w=400 x=1120 y=441 sky130_fd_pr__nfet_01v8
+x p[0] VPWR pn[0] VCCA s=48000,1360 d=48000,1360 l=200 w=600 x=1120 y=1060 sky130_fd_pr__pfet_01v8
+x pn[0] VGND p[0] GND s=32000,960 d=32000,960 l=200 w=400 x=1700 y=441 sky130_fd_pr__nfet_01v8
+x pn[0] VPWR p[0] VCCA s=48000,1360 d=48000,1360 l=200 w=600 x=1700 y=1060 sky130_fd_pr__pfet_01v8
+x p[4] VGND p[0] GND s=32000,960 d=16000,480 l=200 w=400 x=260 y=441 sky130_fd_pr__nfet_01v8
+x p[4] p[0] VGND GND s=16000,480 d=32000,960 l=200 w=400 x=540 y=441 sky130_fd_pr__nfet_01v8
+x p[4] p[0] VPWR VCCA s=24000,680 d=48000,1360 l=200 w=600 x=540 y=1060 sky130_fd_pr__pfet_01v8
+x p[4] VPWR p[0] VCCA s=48000,1360 d=24000,680 l=200 w=600 x=260 y=1060 sky130_fd_pr__pfet_01v8
+x pn[4] VGND pn[0] GND s=32000,960 d=16000,480 l=200 w=400 x=2280 y=441 sky130_fd_pr__nfet_01v8
+x pn[4] pn[0] VGND GND s=16000,480 d=32000,960 l=200 w=400 x=2560 y=441 sky130_fd_pr__nfet_01v8
+x pn[4] pn[0] VPWR VCCA s=24000,680 d=48000,1360 l=200 w=600 x=2560 y=1060 sky130_fd_pr__pfet_01v8
+x pn[4] VPWR pn[0] VCCA s=48000,1360 d=24000,680 l=200 w=600 x=2280 y=1060 sky130_fd_pr__pfet_01v8
+x p[1] VGND pn[1] GND s=32000,960 d=32000,960 l=200 w=400 x=4000 y=441 sky130_fd_pr__nfet_01v8
+x p[1] VPWR pn[1] VCCA s=48000,1360 d=48000,1360 l=200 w=600 x=4000 y=1060 sky130_fd_pr__pfet_01v8
+x pn[1] VGND p[1] GND s=32000,960 d=32000,960 l=200 w=400 x=4580 y=441 sky130_fd_pr__nfet_01v8
+x pn[1] VPWR p[1] VCCA s=48000,1360 d=48000,1360 l=200 w=600 x=4580 y=1060 sky130_fd_pr__pfet_01v8
+x p[0] VGND p[1] GND s=32000,960 d=16000,480 l=200 w=400 x=3140 y=441 sky130_fd_pr__nfet_01v8
+x p[0] p[1] VGND GND s=16000,480 d=32000,960 l=200 w=400 x=3420 y=441 sky130_fd_pr__nfet_01v8
+x p[0] p[1] VPWR VCCA s=24000,680 d=48000,1360 l=200 w=600 x=3420 y=1060 sky130_fd_pr__pfet_01v8
+x p[0] VPWR p[1] VCCA s=48000,1360 d=24000,680 l=200 w=600 x=3140 y=1060 sky130_fd_pr__pfet_01v8
+x pn[0] VGND pn[1] GND s=32000,960 d=16000,480 l=200 w=400 x=5160 y=441 sky130_fd_pr__nfet_01v8
+x pn[0] pn[1] VGND GND s=16000,480 d=32000,960 l=200 w=400 x=5440 y=441 sky130_fd_pr__nfet_01v8
+x pn[0] pn[1] VPWR VCCA s=24000,680 d=48000,1360 l=200 w=600 x=5440 y=1060 sky130_fd_pr__pfet_01v8
+x pn[0] VPWR pn[1] VCCA s=48000,1360 d=24000,680 l=200 w=600 x=5160 y=1060 sky130_fd_pr__pfet_01v8
+x p[2] VGND pn[2] GND s=32000,960 d=32000,960 l=200 w=400 x=6880 y=441 sky130_fd_pr__nfet_01v8
+x p[2] VPWR pn[2] VCCA s=48000,1360 d=48000,1360 l=200 w=600 x=6880 y=1060 sky130_fd_pr__pfet_01v8
+x pn[2] VGND p[2] GND s=32000,960 d=32000,960 l=200 w=400 x=7460 y=441 sky130_fd_pr__nfet_01v8
+x pn[2] VPWR p[2] VCCA s=48000,1360 d=48000,1360 l=200 w=600 x=7460 y=1060 sky130_fd_pr__pfet_01v8
+x p[1] VGND p[2] GND s=32000,960 d=16000,480 l=200 w=400 x=6020 y=441 sky130_fd_pr__nfet_01v8
+x p[1] p[2] VGND GND s=16000,480 d=32000,960 l=200 w=400 x=6300 y=441 sky130_fd_pr__nfet_01v8
+x p[1] p[2] VPWR VCCA s=24000,680 d=48000,1360 l=200 w=600 x=6300 y=1060 sky130_fd_pr__pfet_01v8
+x p[1] VPWR p[2] VCCA s=48000,1360 d=24000,680 l=200 w=600 x=6020 y=1060 sky130_fd_pr__pfet_01v8
+x pn[1] VGND pn[2] GND s=32000,960 d=16000,480 l=200 w=400 x=8040 y=441 sky130_fd_pr__nfet_01v8
+x pn[1] pn[2] VGND GND s=16000,480 d=32000,960 l=200 w=400 x=8320 y=441 sky130_fd_pr__nfet_01v8
+x pn[1] pn[2] VPWR VCCA s=24000,680 d=48000,1360 l=200 w=600 x=8320 y=1060 sky130_fd_pr__pfet_01v8
+x pn[1] VPWR pn[2] VCCA s=48000,1360 d=24000,680 l=200 w=600 x=8040 y=1060 sky130_fd_pr__pfet_01v8
+x p[4] VGND pn[4] GND s=32000,960 d=32000,960 l=200 w=400 x=4649 y=-802 sky130_fd_pr__nfet_01v8
+x p[4] VPWR pn[4] VCCA s=48000,1360 d=48000,1360 l=200 w=600 x=4649 y=-1421 sky130_fd_pr__pfet_01v8
+x pn[4] VGND p[4] GND s=32000,960 d=32000,960 l=200 w=400 x=4069 y=-802 sky130_fd_pr__nfet_01v8
+x pn[4] VPWR p[4] VCCA s=48000,1360 d=48000,1360 l=200 w=600 x=4069 y=-1421 sky130_fd_pr__pfet_01v8
+x p[3] VGND p[4] GND s=32000,960 d=16000,480 l=200 w=400 x=5509 y=-802 sky130_fd_pr__nfet_01v8
+x p[3] p[4] VGND GND s=16000,480 d=32000,960 l=200 w=400 x=5229 y=-802 sky130_fd_pr__nfet_01v8
+x p[3] p[4] VPWR VCCA s=24000,680 d=48000,1360 l=200 w=600 x=5229 y=-1421 sky130_fd_pr__pfet_01v8
+x p[3] VPWR p[4] VCCA s=48000,1360 d=24000,680 l=200 w=600 x=5509 y=-1421 sky130_fd_pr__pfet_01v8
+x pn[3] VGND pn[4] GND s=32000,960 d=16000,480 l=200 w=400 x=3489 y=-802 sky130_fd_pr__nfet_01v8
+x pn[3] pn[4] VGND GND s=16000,480 d=32000,960 l=200 w=400 x=3209 y=-802 sky130_fd_pr__nfet_01v8
+x pn[3] pn[4] VPWR VCCA s=24000,680 d=48000,1360 l=200 w=600 x=3209 y=-1421 sky130_fd_pr__pfet_01v8
+x pn[3] VPWR pn[4] VCCA s=48000,1360 d=24000,680 l=200 w=600 x=3489 y=-1421 sky130_fd_pr__pfet_01v8
+x p[3] VGND pn[3] GND s=32000,960 d=32000,960 l=200 w=400 x=7529 y=-802 sky130_fd_pr__nfet_01v8
+x p[3] VPWR pn[3] VCCA s=48000,1360 d=48000,1360 l=200 w=600 x=7529 y=-1421 sky130_fd_pr__pfet_01v8
+x pn[3] VGND p[3] GND s=32000,960 d=32000,960 l=200 w=400 x=6949 y=-802 sky130_fd_pr__nfet_01v8
+x pn[3] VPWR p[3] VCCA s=48000,1360 d=48000,1360 l=200 w=600 x=6949 y=-1421 sky130_fd_pr__pfet_01v8
+x p[2] VGND p[3] GND s=32000,960 d=16000,480 l=200 w=400 x=8389 y=-802 sky130_fd_pr__nfet_01v8
+x p[2] p[3] VGND GND s=16000,480 d=32000,960 l=200 w=400 x=8109 y=-802 sky130_fd_pr__nfet_01v8
+x p[2] p[3] VPWR VCCA s=24000,680 d=48000,1360 l=200 w=600 x=8109 y=-1421 sky130_fd_pr__pfet_01v8
+x p[2] VPWR p[3] VCCA s=48000,1360 d=24000,680 l=200 w=600 x=8389 y=-1421 sky130_fd_pr__pfet_01v8
+x pn[2] VGND pn[3] GND s=32000,960 d=16000,480 l=200 w=400 x=6369 y=-802 sky130_fd_pr__nfet_01v8
+x pn[2] pn[3] VGND GND s=16000,480 d=32000,960 l=200 w=400 x=6089 y=-802 sky130_fd_pr__nfet_01v8
+x pn[2] pn[3] VPWR VCCA s=24000,680 d=48000,1360 l=200 w=600 x=6089 y=-1421 sky130_fd_pr__pfet_01v8
+x pn[2] VPWR pn[3] VCCA s=48000,1360 d=24000,680 l=200 w=600 x=6369 y=-1421 sky130_fd_pr__pfet_01v8
+C p[3] pn[3] 1.4
+C pn[4] p[1] 0.0
+C pn[0] VCCA 0.8
+C VCCA pn[2] 0.8
+C p[3] p[4] 0.8
+C pn[3] pn[1] 0.0
+C pn[0] VGND 1.1
+C VGND pn[2] 1.1
+C p[0] pn[1] 0.0
+C pn[1] p[4] 0.0
+C VGND VCCA 0.1
+C pn[0] pn[3] 0.0
+C pn[3] pn[2] 1.2
+C p[3] p[2] 0.8
+C pn[1] p[1] 1.4
+C pn[4] VPWR 0.9
+C pn[0] p[0] 1.4
+C pn[0] p[4] 0.0
+C pn[2] p[4] 0.0
+C pn[3] VCCA 0.7
+C pn[1] p[2] 0.5
+C pn[3] VGND 1.1
+C pn[0] p[1] 0.5
+C p[0] VCCA 1.2
+C VCCA p[4] 1.2
+C pn[2] p[1] 0.0
+C p[3] VPWR 1.4
+C p[0] VGND 0.6
+C VGND p[4] 0.6
+C pn[0] p[2] 0.0
+C p[2] pn[2] 1.8
+C VCCA p[1] 1.2
+C pn[1] VPWR 0.9
+C VGND p[1] 0.6
+C VCCA p[2] 1.8
+C pn[3] p[0] 0.0
+C pn[3] p[4] 0.5
+C p[3] pn[4] 0.0
+C VGND p[2] 0.6
+C pn[0] VPWR 0.9
+C p[0] p[4] 0.8
+C VPWR pn[2] 1.2
+C pn[3] p[1] 0.0
+C p[0] p[1] 0.8
+C pn[3] p[2] 0.0
+C VPWR VCCA 6.4
+C VPWR VGND 0.4
+C pn[0] pn[4] 1.2
+C p[3] pn[1] 0.0
+C pn[4] VCCA 0.8
+C p[2] p[1] 0.8
+C pn[3] VPWR 0.9
+C pn[4] VGND 1.1
+C pn[0] p[3] 0.0
+C p[3] pn[2] 0.5
+C p[0] VPWR 1.3
+C VPWR p[4] 1.3
+C pn[0] pn[1] 1.2
+C p[3] VCCA 1.2
+C pn[1] pn[2] 1.2
+C pn[3] pn[4] 1.2
+C VPWR p[1] 1.3
+C p[3] VGND 0.6
+C p[0] pn[4] 0.5
+C pn[1] VCCA 0.8
+C pn[4] p[4] 1.9
+C VPWR p[2] 1.8
+C pn[1] VGND 1.1
+C pn[3]0 2.7
+R pn[3] 6636
+C p[3]0 2.0
+R p[3] 6512
+C pn[4]0 4.6
+R pn[4] 6643
+C VGND0 12.0
+R VGND 30903
+C p[4]0 4.7
+R p[4] 6521
+C pn[2]0 3.3
+R pn[2] 6639
+C VCCA0 40.9
+R VCCA 32466
+C p[2]0 2.8
+R p[2] 6517
+C pn[1]0 2.7
+R pn[1] 6636
+C VPWR0 8.5
+R VPWR 63434
+C p[1]0 2.0
+R p[1] 6512
+C pn[0]0 2.8
+R pn[0] 6636
+R GND 16606
+C p[0]0 2.0
+R p[0] 6512

@@ -1,28 +1,49 @@
-* NGSPICE file created from vco_ring_osc.ext - technology: sky130A
-
-.subckt vco_aux_inv A VPWR VGND Y VCCA GND
-X0 Y A VPWR VCCA sky130_fd_pr__pfet_01v8 ad=2 pd=10.8 as=2 ps=10.8 w=5 l=3.65
-X1 Y A VGND GND sky130_fd_pr__nfet_01v8 ad=1.6 pd=8.8 as=1.6 ps=8.8 w=4 l=3.65
-.ends
-
-.subckt vco_main_inv A VPWR VGND Y VCCA GND
-X0 VPWR A Y VCCA sky130_fd_pr__pfet_01v8 ad=2 pd=10.8 as=1 ps=5.4 w=5 l=3.65 M=2
-X1 Y A VGND GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.4 as=1.6 ps=8.8 w=4 l=3.65 M=2
-.ends
-
-.subckt vco_cc_inv inp inn outp outn VPWR VCCA GND VGND
-Xvco_aux_inv_0 outp VPWR VGND outn VCCA GND vco_aux_inv
-Xvco_aux_inv_1 outn VPWR VGND outp VCCA GND vco_aux_inv
-Xvco_main_inv_0 inp VPWR VGND outp VCCA GND vco_main_inv
-Xvco_main_inv_1 inn VPWR VGND outn VCCA GND vco_main_inv
-.ends
+* SPICE3 file created from vco_ring_osc.ext - technology: sky130A
 
 .subckt vco_ring_osc VGND VPWR p[0] p[1] p[2] p[3] p[4] pn[0] pn[1] pn[2] pn[3] pn[4]
 + VCCA GND
-Xvco_cc_inv_0 p[4] pn[4] p[0] pn[0] VPWR VCCA GND VGND vco_cc_inv
-Xvco_cc_inv_1 p[0] pn[0] p[1] pn[1] VPWR VCCA GND VGND vco_cc_inv
-Xvco_cc_inv_2 p[1] pn[1] p[2] pn[2] VPWR VCCA GND VGND vco_cc_inv
-Xvco_cc_inv_3 p[3] pn[3] p[4] pn[4] VPWR VCCA GND VGND vco_cc_inv
-Xvco_cc_inv_4 p[2] pn[2] p[3] pn[3] VPWR VCCA GND VGND vco_cc_inv
+C0 pn[0] pn[4] 2.563558f
+C1 pn[1] pn[0] 2.563558f
+C2 p[1] p[0] 2.296917f
+C3 pn[3] pn[4] 2.563558f
+C4 p[4] p[3] 2.296917f
+C5 p[3] VPWR 2.024411f
+C6 pn[2] p[2] 3.383091f
+C7 p[3] p[2] 2.297206f
+C8 p[1] VPWR 2.024526f
+C9 p[4] p[0] 2.297207f
+C10 p[3] VCCA 2.141539f
+C11 p[1] p[2] 2.296917f
+C12 p[1] VCCA 2.141853f
+C13 p[0] VPWR 2.024411f
+C14 p[0] VCCA 2.141539f
+C15 pn[1] pn[2] 2.590521f
+C16 pn[0] p[0] 2.817914f
+C17 p[4] VPWR 2.030815f
+C18 pn[1] p[1] 2.817913f
+C19 p[4] pn[4] 3.589511f
+C20 p[4] VCCA 2.050636f
+C21 p[2] VPWR 2.066987f
+C22 VPWR VCCA 7.939414f
+C23 pn[2] pn[3] 2.563558f
+C24 p[2] VCCA 3.160918f
+C25 p[3] pn[3] 2.817914f
+Xvco_cc_inv_0 p[4] pn[4] VPWR VGND p[0] pn[0] VCCA GND vco_cc_inv
+Xvco_cc_inv_1 p[0] pn[0] VPWR VGND p[1] pn[1] VCCA GND vco_cc_inv
+Xvco_cc_inv_2 p[1] pn[1] VPWR VGND p[2] pn[2] VCCA GND vco_cc_inv
+Xvco_cc_inv_3 p[3] pn[3] VPWR VGND p[4] pn[4] VCCA GND vco_cc_inv
+Xvco_cc_inv_4 p[2] pn[2] VPWR VGND p[3] pn[3] VCCA GND vco_cc_inv
+C26 VCCA GND 0.117309p
+C27 p[3] GND 5.839946f
+C28 pn[3] GND 7.098331f
+C29 VGND GND 19.922691f
+C30 p[4] GND 10.611836f
+C31 pn[4] GND 10.317782f
+C32 p[2] GND 7.276832f
+C33 pn[2] GND 8.351643f
+C34 p[1] GND 5.839947f
+C35 VPWR GND 15.139269f
+C36 pn[1] GND 7.099289f
+C37 p[0] GND 5.879851f
+C38 pn[0] GND 7.25434f
 .ends
-

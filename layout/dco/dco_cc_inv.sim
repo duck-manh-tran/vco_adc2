@@ -1,0 +1,49 @@
+| units: 500000 tech: sky130A format: MIT
+x outp VGND outn GND s=32000,960 d=32000,960 l=200 w=400 x=1120 y=261 sky130_fd_pr__nfet_01v8
+x outp VPWR outn VCCA s=48000,1360 d=48000,1360 l=200 w=600 x=1120 y=880 sky130_fd_pr__pfet_01v8
+x outn VGND outp GND s=32000,960 d=32000,960 l=200 w=400 x=1700 y=261 sky130_fd_pr__nfet_01v8
+x outn VPWR outp VCCA s=48000,1360 d=48000,1360 l=200 w=600 x=1700 y=880 sky130_fd_pr__pfet_01v8
+x inp VGND outp GND s=32000,960 d=16000,480 l=200 w=400 x=260 y=261 sky130_fd_pr__nfet_01v8
+x inp outp VGND GND s=16000,480 d=32000,960 l=200 w=400 x=540 y=261 sky130_fd_pr__nfet_01v8
+x inp outp VPWR VCCA s=24000,680 d=48000,1360 l=200 w=600 x=540 y=880 sky130_fd_pr__pfet_01v8
+x inp VPWR outp VCCA s=48000,1360 d=24000,680 l=200 w=600 x=260 y=880 sky130_fd_pr__pfet_01v8
+x inn VGND outn GND s=32000,960 d=16000,480 l=200 w=400 x=2280 y=261 sky130_fd_pr__nfet_01v8
+x inn outn VGND GND s=16000,480 d=32000,960 l=200 w=400 x=2560 y=261 sky130_fd_pr__nfet_01v8
+x inn outn VPWR VCCA s=24000,680 d=48000,1360 l=200 w=600 x=2560 y=880 sky130_fd_pr__pfet_01v8
+x inn VPWR outn VCCA s=48000,1360 d=24000,680 l=200 w=600 x=2280 y=880 sky130_fd_pr__pfet_01v8
+C VGND outp 0.3
+C VCCA outp 0.7
+C VPWR outp 0.9
+C inn outn 1.2
+C inp outn 0.0
+C inn outp 0.5
+C inp outp 0.8
+C outn outp 1.2
+C VGND VCCA 0.0
+C VPWR VGND 0.1
+C VPWR VCCA 1.1
+C inn VGND 0.7
+C inn VCCA 0.3
+C VPWR inn 0.3
+C VGND inp 0.2
+C VCCA inp 0.5
+C VPWR inp 0.4
+C VGND outn 0.4
+C VCCA outn 0.4
+C VPWR outn 0.6
+C inn inp 0.2
+C outn0 1.0
+R outn 5666
+R GND 2970
+C VGND0 2.3
+R VGND 5924
+C VPWR0 1.3
+R VPWR 12164
+C inn0 1.8
+R inn 855
+C VCCA0 7.6
+R VCCA 5417
+C outp0 0.9
+R outp 5542
+C inp0 1.3
+R inp 852

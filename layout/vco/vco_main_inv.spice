@@ -1,7 +1,10 @@
-* NGSPICE file created from vco_main_inv.ext - technology: sky130A
+* SPICE3 file created from vco_main_inv.ext - technology: sky130A
 
 .subckt vco_main_inv A VPWR VGND Y VCCA GND
-X0 VPWR A Y VCCA sky130_fd_pr__pfet_01v8 ad=2 pd=10.8 as=1 ps=5.4 w=5 l=3.65 M=2
-X1 Y A VGND GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.4 as=1.6 ps=8.8 w=4 l=3.65 M=2
+X0 VPWR A Y VCCA sky130_fd_pr__pfet_01v8 ad=2 pd=10.8 as=1 ps=5.4 w=5 l=3.65
+X1 Y A VGND GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.4 as=1.6 ps=8.8 w=4 l=3.65
+X2 VGND A Y GND sky130_fd_pr__nfet_01v8 ad=1.6 pd=8.8 as=0.8 ps=4.4 w=4 l=3.65
+X3 Y A VPWR VCCA sky130_fd_pr__pfet_01v8 ad=1 pd=5.4 as=2 ps=10.8 w=5 l=3.65
+C0 A GND 3.60778f
+C1 VCCA GND 6.74505f
 .ends
-
