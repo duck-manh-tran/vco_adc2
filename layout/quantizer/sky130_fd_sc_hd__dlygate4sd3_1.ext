@@ -1,0 +1,133 @@
+scale 1000 1 500000
+rnode "X" 0 20.2906 677 85 0
+rnode "X.t1" 0 38.2358 638 112 0
+rnode "X.n0" 0 19.9137 665 102 0
+rnode "X" 0 15.0381 677 153 0
+rnode "X" 0 -2.08363 677 153 0
+rnode "X.n1" 0 14.6723 691 165 0
+rnode "X" 0 21.5309 677 221 0
+rnode "X" 0 13.5436 677 289 0
+rnode "X.t0" 0 58.9809 638 397 0
+rnode "X" 0 54.2114 677 425 0
+rnode "X" 0 30.0825 677 357 0
+rnode "X.n2" 0 17.9713 691 299 0
+rnode "X" 0 -2.3875 677 289 0
+resist "X" "X.n2" 1.66234
+resist "X.n1" "X" 1.99481
+resist "X.n2" "X" 2.28571
+resist "X.n1" "X" 2.74286
+resist "X.n0" "X" 2.82597
+resist "X" "X.n0" 8.47792
+resist "X.n2" "X" 9.64156
+resist "X" "X" 11.3039
+resist "X" "X.n1" 12.8
+resist "X" "X" 15.5429
+resist "X.n0" "X.t1" 209.923
+resist "X" "X.t0" 758.307
+rnode "VNB.t3" 0 0 623 112 0
+rnode "VNB.t2" 0 0 493 89 0
+rnode "VNB.t0" 0 0 235 89 0
+rnode "VNB.t1" 0 0 116 89 0
+rnode "VNB" 0 0 29 -17 0
+resist "VNB" "VNB.t1" 1238.83
+resist "VNB.t1" "VNB.t0" 1694.5
+resist "VNB.t2" "VNB.t3" 1851.13
+resist "VNB.t0" "VNB.t2" 3673.79
+rnode "VGND.t3" 0 11.1643 608 112 0
+rnode "VGND.t2" 0 5.65067 543 89 0
+rnode "VGND.n0" 0 19.1847 575 76 0
+rnode "VGND.t0" 0 4.76775 185 89 0
+rnode "VGND.t1" 0 4.76775 131 89 0
+rnode "VGND.n1" 0 12.1568 158 76 0
+rnode "VGND.n2" 0 384.62 131 0 0
+rnode "VGND" 0 5.85248 0 -48 0
+rnode "VGND" 0 51.8356 29 -17 0
+resist "VGND" "VGND" 0.0377604
+resist "VGND" "VGND.n2" 0.163557
+resist "VGND.n0" "VGND.t3" 34.5055
+resist "VGND.n1" "VGND.t1" 38.5714
+resist "VGND.n1" "VGND.t0" 38.5714
+resist "VGND.n0" "VGND.t2" 45.7143
+resist "VGND.n2" "VGND.n0" 206.074
+resist "VGND.n2" "VGND.n1" 208.769
+killnode "a_391_47#"
+rnode "a_391_47.t2" 0 47.0471 623 397 0
+rnode "a_391_47.t3" 0 29.5428 623 112 0
+rnode "a_391_47.n0" 0 63.3105 612 232 0
+rnode "a_391_47.t1" 0 57.6045 443 89 0
+rnode "a_391_47.n1" 0 450.186 608 232 0
+rnode "a_391_47.t0" 0 52.3093 443 455 0
+resist "a_391_47.n1" "a_391_47.n0" 152.776
+resist "a_391_47.n0" "a_391_47.t3" 169.236
+resist "a_391_47.n0" "a_391_47.t2" 241.536
+resist "a_391_47.n1" "a_391_47.t1" 276.81
+resist "a_391_47.t0" "a_391_47.n1" 706.61
+killnode "a_285_47#"
+rnode "a_285_47.t1" 0 44.0393 285 89 0
+rnode "a_285_47.t3" 0 123.755 493 455 0
+rnode "a_285_47.t2" 0 84.93 493 89 0
+rnode "a_285_47.n0" 0 209.239 443 232 0
+rnode "a_285_47.n1" 0 494.357 416 232 0
+rnode "a_285_47.t0" 0 43.6793 285 455 0
+resist "a_285_47.n0" "a_285_47.t2" 68.926
+resist "a_285_47.n0" "a_285_47.t3" 107.486
+resist "a_285_47.n1" "a_285_47.n0" 171.718
+resist "a_285_47.n1" "a_285_47.t1" 242.239
+resist "a_285_47.t0" "a_285_47.n1" 672.68
+rnode "VPB.t3" 0 133.006 623 397 0
+rnode "VPB.t0" 0 119.459 493 455 0
+rnode "VPB.t1" 0 116.071 235 455 0
+rnode "VPB.t2" 0 63.4222 116 455 0
+rnode "VPB" 0 68.0414 29 527 0
+resist "VPB" "VPB.t2" 257.477
+resist "VPB.t2" "VPB.t1" 352.181
+resist "VPB.t0" "VPB.t3" 384.735
+resist "VPB.t1" "VPB.t0" 763.551
+rnode "VPWR.t3" 0 24.4091 608 397 0
+rnode "VPWR.t0" 0 6.58694 543 455 0
+rnode "VPWR.n0" 0 25.5265 575 468 0
+rnode "VPWR.t1" 0 5.55773 185 455 0
+rnode "VPWR.t2" 0 5.55773 131 455 0
+rnode "VPWR.n1" 0 12.1633 158 468 0
+rnode "VPWR.n2" 0 452.88 185 544 0
+rnode "VPWR" 0 6.82219 0 496 0
+rnode "VPWR" 0 60.4961 29 527 0
+resist "VPWR" "VPWR" 0.0377604
+resist "VPWR" "VPWR.n2" 0.163364
+resist "VPWR.n0" "VPWR.t3" 43.3869
+resist "VPWR.n1" "VPWR.t2" 63.3214
+resist "VPWR.n1" "VPWR.t1" 63.3214
+resist "VPWR.n0" "VPWR.t0" 75.0476
+resist "VPWR.n2" "VPWR.n0" 606.074
+resist "VPWR.n2" "VPWR.n1" 608.769
+killnode "a_49_47#"
+rnode "a_49_47.t1" 0 60.0544 101 89 0
+rnode "a_49_47.t3" 0 125.183 235 455 0
+rnode "a_49_47.t2" 0 85.9096 235 89 0
+rnode "a_49_47.n0" 0 179.674 212 232 0
+rnode "a_49_47.n1" 0 295.341 212 232 0
+rnode "a_49_47.t0" 0 53.8383 101 455 0
+resist "a_49_47.n0" "a_49_47.t2" 68.926
+resist "a_49_47.n0" "a_49_47.t3" 107.486
+resist "a_49_47.n1" "a_49_47.n0" 152
+resist "a_49_47.n1" "a_49_47.t1" 293.174
+resist "a_49_47.t0" "a_49_47.n1" 733.437
+rnode "A" 0 69.39 121 289 0
+rnode "A.t0" 0 49.5211 116 455 0
+rnode "A.t1" 0 33.6921 116 89 0
+rnode "A.n0" 0 106.329 98 232 0
+rnode "A.n1" 0 70.1525 98 232 0
+rnode "A" 0 70.915 29 289 0
+resist "A.n1" "A" 2.62857
+resist "A" "A.n1" 7.88571
+resist "A.n1" "A.n0" 152
+resist "A.n0" "A.t1" 203.243
+resist "A.n0" "A.t0" 331.777
+device msubckt sky130_fd_pr__nfet_01v8 608 47 609 48  "VNB.t3" "a_391_47.t3" 60 0 "VGND.t3" 130 3880,195 "X.t1" 130 6760,364
+device msubckt sky130_fd_pr__pfet_01v8_hvt 185 413 186 414  "VPB.t1" "a_49_47.t3" 200 0 "VPWR.t1" 84 2268,138 "a_285_47.t0" 84 4368,272
+device msubckt sky130_fd_pr__nfet_01v8 185 47 186 48  "VNB.t0" "a_49_47.t2" 200 0 "VGND.t0" 84 2268,138 "a_285_47.t1" 84 4368,272
+device msubckt sky130_fd_pr__pfet_01v8_hvt 443 413 444 414  "VPB.t0" "a_285_47.t3" 200 0 "a_391_47.t0" 84 4368,272 "VPWR.t0" 84 5630,265
+device msubckt sky130_fd_pr__nfet_01v8 101 47 102 48  "VNB.t1" "A.t1" 60 0 "a_49_47.t1" 84 4368,272 "VGND.t1" 84 2268,138
+device msubckt sky130_fd_pr__pfet_01v8_hvt 608 297 609 298  "VPB.t3" "a_391_47.t2" 60 0 "VPWR.t3" 200 5630,265 "X.t0" 200 10400,504
+device msubckt sky130_fd_pr__nfet_01v8 443 47 444 48  "VNB.t2" "a_285_47.t2" 200 0 "a_391_47.t1" 84 4368,272 "VGND.t2" 84 3880,195
+device msubckt sky130_fd_pr__pfet_01v8_hvt 101 413 102 414  "VPB.t2" "A.t0" 60 0 "a_49_47.t0" 84 4368,272 "VPWR.t2" 84 2268,138

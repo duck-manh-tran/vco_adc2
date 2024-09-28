@@ -1,65 +1,3143 @@
-* NGSPICE file created from dco.ext - technology: sky130A
+* SPICE3 file created from dco.ext - technology: sky130A
 
-.subck
-.subckt dco_freq clk clkDiv2 VNB VGND VPB VPWR
-Xsky130_fd_sc_hd__buf_4_0 Q_N VGND VNB VPB VPWR Q_N_buf sky130_fd_sc_hd__buf_4
+.subckt sky130_fd_sc_hd__buf_4 A VGND VNB VPB VPWR X a_27_47#
+X0 VPWR a_27_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+X1 X a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X2 VPWR a_27_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X3 X a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X4 X a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.08775 ps=0.92 w=0.65 l=0.15
+X5 X a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.08775 ps=0.92 w=0.65 l=0.15
+X6 VGND a_27_47# X VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.08775 ps=0.92 w=0.65 l=0.15
+X7 VGND a_27_47# X VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.08775 ps=0.92 w=0.65 l=0.15
+X8 VPWR A a_27_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X9 VGND A a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+C0 VGND a_27_47# 0.162638f
+C1 X a_27_47# 0.206515f
+C2 VPWR a_27_47# 0.218122f
+C3 A a_27_47# 0.170177f
+C4 VPB a_27_47# 0.132153f
+C5 X VGND 0.229885f
+C6 VPWR VGND 0.072027f
+C7 VPWR X 0.332544f
+C8 A VGND 0.019369f
+C9 VPB VGND 0.007955f
+C10 A X 4.66e-19
+C11 A VPWR 0.016006f
+C12 VPB X 0.008994f
+C13 VPB VPWR 0.071068f
+C14 VPB A 0.03609f
+C15 VGND VNB 0.37777f
+C16 X VNB 0.039034f
+C17 VPWR VNB 0.325078f
+C18 A VNB 0.139971f
+C19 VPB VNB 0.604764f
+C20 a_27_47# VNB 0.461463f
+.ends
+
+.subckt sky130_fd_sc_hd__inv_4 A VGND VNB VPB VPWR Y
+X0 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X2 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X3 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X4 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.08775 ps=0.92 w=0.65 l=0.15
+X5 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X6 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.08775 ps=0.92 w=0.65 l=0.15
+X7 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.08775 ps=0.92 w=0.65 l=0.15
+C0 Y VGND 0.262586f
+C1 VPWR VGND 0.050092f
+C2 VPWR Y 0.361779f
+C3 A VGND 0.081909f
+C4 VPB VGND 0.006668f
+C5 A Y 0.359887f
+C6 A VPWR 0.098226f
+C7 VPB Y 0.015896f
+C8 VPB VPWR 0.065385f
+C9 VPB A 0.141975f
+C10 VGND VNB 0.326816f
+C11 Y VNB 0.084947f
+C12 VPWR VNB 0.296394f
+C13 A VNB 0.451855f
+C14 VPB VNB 0.516168f
+.ends
+
+.subckt sky130_fd_sc_hd__dfxtp_1 CLK D VGND VNB VPB VPWR Q a_975_413# a_891_413# a_466_413#
++ a_592_47# a_1059_315# a_193_47# a_561_413# a_634_159# a_381_47# a_1017_47# a_27_47#
+X0 Q a_1059_315# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.08775 ps=0.92 w=0.65 l=0.15
+X1 a_891_413# a_193_47# a_634_159# VNB sky130_fd_pr__special_nfet_01v8 ad=0.0684 pd=0.74 as=0.0989 ps=0.995 w=0.36 l=0.15
+X2 a_561_413# a_27_47# a_466_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.07665 pd=0.785 as=0.06825 ps=0.745 w=0.42 l=0.15
+X3 VPWR CLK a_27_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0864 pd=0.91 as=0.1664 ps=1.8 w=0.64 l=0.15
+X4 Q a_1059_315# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+X5 a_381_47# D VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.05775 pd=0.695 as=0.1092 ps=1.36 w=0.42 l=0.15
+X6 VGND a_634_159# a_592_47# VNB sky130_fd_pr__nfet_01v8 ad=0.12095 pd=1.085 as=0.0696 ps=0.765 w=0.42 l=0.15
+X7 VPWR a_891_413# a_1059_315# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.27 ps=2.54 w=1 l=0.15
+X8 a_466_413# a_193_47# a_381_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.06825 pd=0.745 as=0.05775 ps=0.695 w=0.42 l=0.15
+X9 VPWR a_634_159# a_561_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.178875 pd=1.26 as=0.07665 ps=0.785 w=0.42 l=0.15
+X10 a_634_159# a_466_413# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0989 pd=0.995 as=0.12095 ps=1.085 w=0.64 l=0.15
+X11 a_634_159# a_466_413# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.1095 pd=1.075 as=0.178875 ps=1.26 w=0.75 l=0.15
+X12 a_975_413# a_193_47# a_891_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0882 pd=0.84 as=0.0567 ps=0.69 w=0.42 l=0.15
+X13 VGND a_1059_315# a_1017_47# VNB sky130_fd_pr__nfet_01v8 ad=0.1092 pd=1.36 as=0.066 ps=0.745 w=0.42 l=0.15
+X14 a_193_47# a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.1092 pd=1.36 as=0.0567 ps=0.69 w=0.42 l=0.15
+X15 a_891_413# a_27_47# a_634_159# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0567 pd=0.69 as=0.1095 ps=1.075 w=0.42 l=0.15
+X16 a_592_47# a_193_47# a_466_413# VNB sky130_fd_pr__special_nfet_01v8 ad=0.0696 pd=0.765 as=0.0621 ps=0.705 w=0.36 l=0.15
+X17 VPWR a_1059_315# a_975_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.1113 pd=1.37 as=0.0882 ps=0.84 w=0.42 l=0.15
+X18 a_1017_47# a_27_47# a_891_413# VNB sky130_fd_pr__special_nfet_01v8 ad=0.066 pd=0.745 as=0.0684 ps=0.74 w=0.36 l=0.15
+X19 a_193_47# a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.1664 pd=1.8 as=0.0864 ps=0.91 w=0.64 l=0.15
+X20 a_466_413# a_27_47# a_381_47# VNB sky130_fd_pr__special_nfet_01v8 ad=0.0621 pd=0.705 as=0.0813 ps=0.83 w=0.36 l=0.15
+X21 VGND a_891_413# a_1059_315# VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X22 a_381_47# D VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0813 pd=0.83 as=0.1092 ps=1.36 w=0.42 l=0.15
+X23 VGND CLK a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0567 pd=0.69 as=0.1092 ps=1.36 w=0.42 l=0.15
+C0 VPWR a_466_413# 0.170985f
+C1 a_592_47# a_466_413# 0.005525f
+C2 a_381_47# a_466_413# 0.037333f
+C3 VPWR a_634_159# 0.102126f
+C4 a_592_47# a_634_159# 4.62e-19
+C5 VPWR a_975_413# 0.004638f
+C6 a_381_47# a_634_159# 3.39e-19
+C7 VPWR a_193_47# 0.117215f
+C8 a_592_47# a_193_47# 0.001351f
+C9 a_381_47# a_193_47# 0.101638f
+C10 VPWR a_27_47# 0.379856f
+C11 a_381_47# a_27_47# 0.062224f
+C12 VPWR Q 0.110929f
+C13 VGND a_1017_47# 0.004473f
+C14 D VPB 0.096334f
+C15 CLK a_193_47# 0.002646f
+C16 CLK a_27_47# 0.213838f
+C17 a_466_413# a_561_413# 0.007724f
+C18 a_27_47# a_561_413# 0.002698f
+C19 VPB a_891_413# 0.069773f
+C20 D a_193_47# 0.175777f
+C21 VPB a_1059_315# 0.154738f
+C22 D a_27_47# 0.065857f
+C23 VPB a_466_413# 0.074456f
+C24 VPB a_634_159# 0.07647f
+C25 VPWR VGND 0.063886f
+C26 VGND a_592_47# 0.007478f
+C27 VPB a_193_47# 0.176133f
+C28 VPWR a_1017_47# 4.56e-19
+C29 VGND a_381_47# 0.052221f
+C30 VPB a_27_47# 0.247821f
+C31 Q VPB 0.013828f
+C32 VGND CLK 0.019463f
+C33 a_1059_315# a_891_413# 0.310858f
+C34 a_634_159# a_891_413# 0.036838f
+C35 a_975_413# a_891_413# 0.008508f
+C36 a_193_47# a_891_413# 0.196846f
+C37 a_634_159# a_1059_315# 1.28e-19
+C38 a_193_47# a_1059_315# 0.034054f
+C39 a_634_159# a_466_413# 0.239923f
+C40 a_27_47# a_891_413# 0.032244f
+C41 a_27_47# a_1059_315# 0.048748f
+C42 a_193_47# a_466_413# 0.083013f
+C43 a_975_413# a_634_159# 9.73e-19
+C44 Q a_891_413# 0.002146f
+C45 a_193_47# a_634_159# 0.127288f
+C46 a_27_47# a_466_413# 0.273138f
+C47 a_975_413# a_193_47# 6.32e-19
+C48 Q a_1059_315# 0.081249f
+C49 a_27_47# a_634_159# 0.141453f
+C50 a_27_47# a_193_47# 0.974525f
+C51 D VGND 0.038993f
+C52 Q a_193_47# 2.58e-19
+C53 VPWR a_381_47# 0.061283f
+C54 Q a_27_47# 2.34e-19
+C55 VPWR CLK 0.019411f
+C56 VGND VPB 0.012227f
+C57 VPWR a_561_413# 0.002923f
+C58 a_381_47# a_561_413# 0.001229f
+C59 VGND a_891_413# 0.131537f
+C60 a_1017_47# a_891_413# 0.006169f
+C61 VGND a_1059_315# 0.155119f
+C62 a_1017_47# a_1059_315# 7.84e-20
+C63 VGND a_466_413# 0.088802f
+C64 VGND a_634_159# 0.124877f
+C65 a_1017_47# a_634_159# 4.67e-20
+C66 VGND a_975_413# 4.07e-19
+C67 D VPWR 0.025067f
+C68 VGND a_193_47# 0.200101f
+C69 D a_381_47# 0.112186f
+C70 VGND a_27_47# 0.136686f
+C71 VGND Q 0.076612f
+C72 VPWR VPB 0.168181f
+C73 a_381_47# VPB 0.014142f
+C74 VPB CLK 0.070057f
+C75 VPWR a_891_413# 0.115323f
+C76 VPWR a_1059_315# 0.232446f
+C77 Q VNB 0.088256f
+C78 VGND VNB 0.84362f
+C79 VPWR VNB 0.681368f
+C80 D VNB 0.142509f
+C81 CLK VNB 0.195983f
+C82 VPB VNB 1.49072f
+C83 a_381_47# VNB 0.015369f
+C84 a_891_413# VNB 0.161052f
+C85 a_1059_315# VNB 0.248849f
+C86 a_466_413# VNB 0.133203f
+C87 a_634_159# VNB 0.142309f
+C88 a_193_47# VNB 0.284262f
+C89 a_27_47# VNB 0.449511f
+.ends
+
+.subckt sky130_fd_sc_hd__dfxbp_2 CLK D VGND VNB VPB VPWR Q Q_N a_975_413# a_891_413#
++ a_466_413# a_592_47# a_1059_315# a_193_47# a_561_413# a_634_159# a_381_47# a_1589_47#
++ a_1017_47# a_27_47#
+X0 Q a_1059_315# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.08775 ps=0.92 w=0.65 l=0.15
+X1 a_891_413# a_193_47# a_634_159# VNB sky130_fd_pr__special_nfet_01v8 ad=0.0684 pd=0.74 as=0.0989 ps=0.995 w=0.36 l=0.15
+X2 a_561_413# a_27_47# a_466_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.07665 pd=0.785 as=0.06825 ps=0.745 w=0.42 l=0.15
+X3 VPWR CLK a_27_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0864 pd=0.91 as=0.1664 ps=1.8 w=0.64 l=0.15
+X4 a_381_47# D VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.05775 pd=0.695 as=0.1092 ps=1.36 w=0.42 l=0.15
+X5 VGND a_1059_315# a_1589_47# VNB sky130_fd_pr__nfet_01v8 ad=0.10025 pd=0.985 as=0.1092 ps=1.36 w=0.42 l=0.15
+X6 VGND a_634_159# a_592_47# VNB sky130_fd_pr__nfet_01v8 ad=0.12095 pd=1.085 as=0.0696 ps=0.765 w=0.42 l=0.15
+X7 VPWR a_1589_47# Q_N VPB sky130_fd_pr__pfet_01v8_hvt ad=0.265 pd=2.53 as=0.135 ps=1.27 w=1 l=0.15
+X8 VPWR a_1059_315# Q VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+X9 VGND a_1589_47# Q_N VNB sky130_fd_pr__nfet_01v8 ad=0.17225 pd=1.83 as=0.08775 ps=0.92 w=0.65 l=0.15
+X10 a_466_413# a_193_47# a_381_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.06825 pd=0.745 as=0.05775 ps=0.695 w=0.42 l=0.15
+X11 VPWR a_634_159# a_561_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.178875 pd=1.26 as=0.07665 ps=0.785 w=0.42 l=0.15
+X12 a_634_159# a_466_413# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0989 pd=0.995 as=0.12095 ps=1.085 w=0.64 l=0.15
+X13 Q a_1059_315# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X14 a_634_159# a_466_413# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.1095 pd=1.075 as=0.178875 ps=1.26 w=0.75 l=0.15
+X15 a_975_413# a_193_47# a_891_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0882 pd=0.84 as=0.0567 ps=0.69 w=0.42 l=0.15
+X16 Q_N a_1589_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.154 ps=1.335 w=1 l=0.15
+X17 VGND a_1059_315# a_1017_47# VNB sky130_fd_pr__nfet_01v8 ad=0.1092 pd=1.36 as=0.066 ps=0.745 w=0.42 l=0.15
+X18 a_193_47# a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.1092 pd=1.36 as=0.0567 ps=0.69 w=0.42 l=0.15
+X19 a_891_413# a_27_47# a_634_159# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0567 pd=0.69 as=0.1095 ps=1.075 w=0.42 l=0.15
+X20 VPWR a_891_413# a_1059_315# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.27 ps=2.54 w=1 l=0.15
+X21 a_592_47# a_193_47# a_466_413# VNB sky130_fd_pr__special_nfet_01v8 ad=0.0696 pd=0.765 as=0.0621 ps=0.705 w=0.36 l=0.15
+X22 VPWR a_1059_315# a_1589_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.154 pd=1.335 as=0.1664 ps=1.8 w=0.64 l=0.15
+X23 Q_N a_1589_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.10025 ps=0.985 w=0.65 l=0.15
+X24 VPWR a_1059_315# a_975_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.1113 pd=1.37 as=0.0882 ps=0.84 w=0.42 l=0.15
+X25 a_1017_47# a_27_47# a_891_413# VNB sky130_fd_pr__special_nfet_01v8 ad=0.066 pd=0.745 as=0.0684 ps=0.74 w=0.36 l=0.15
+X26 a_193_47# a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.1664 pd=1.8 as=0.0864 ps=0.91 w=0.64 l=0.15
+X27 a_466_413# a_27_47# a_381_47# VNB sky130_fd_pr__special_nfet_01v8 ad=0.0621 pd=0.705 as=0.0813 ps=0.83 w=0.36 l=0.15
+X28 VGND a_891_413# a_1059_315# VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X29 VGND a_1059_315# Q VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.08775 ps=0.92 w=0.65 l=0.15
+X30 a_381_47# D VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0813 pd=0.83 as=0.1092 ps=1.36 w=0.42 l=0.15
+X31 VGND CLK a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0567 pd=0.69 as=0.1092 ps=1.36 w=0.42 l=0.15
+C0 a_1059_315# Q 0.133519f
+C1 VPWR Q 0.172468f
+C2 a_1059_315# a_1589_47# 0.116766f
+C3 a_1059_315# a_27_47# 0.048913f
+C4 a_466_413# a_193_47# 0.083013f
+C5 a_381_47# a_27_47# 0.062224f
+C6 a_1589_47# VPWR 0.224154f
+C7 a_891_413# VGND 0.131689f
+C8 a_193_47# Q_N 7.03e-20
+C9 D a_193_47# 0.175777f
+C10 VPWR a_27_47# 0.380167f
+C11 VPB CLK 0.070057f
+C12 a_27_47# a_634_159# 0.141453f
+C13 a_466_413# VPB 0.074456f
+C14 a_891_413# a_1017_47# 0.006169f
+C15 VPB D 0.096334f
+C16 VPB Q_N 0.005492f
+C17 VGND a_1017_47# 0.004473f
+C18 VPB a_193_47# 0.176551f
+C19 CLK a_27_47# 0.213838f
+C20 a_1059_315# a_891_413# 0.310618f
+C21 a_466_413# a_27_47# 0.273138f
+C22 a_891_413# a_975_413# 0.008508f
+C23 a_1059_315# VGND 0.202744f
+C24 a_1589_47# Q_N 0.098975f
+C25 a_891_413# VPWR 0.11532f
+C26 D a_27_47# 0.065857f
+C27 a_27_47# Q_N 7.25e-20
+C28 VGND a_381_47# 0.052221f
+C29 a_193_47# Q 2.66e-19
+C30 a_975_413# VGND 4.07e-19
+C31 VPWR VGND 0.134094f
+C32 a_891_413# a_634_159# 0.036838f
+C33 a_1589_47# a_193_47# 2.12e-19
+C34 a_27_47# a_193_47# 0.974525f
+C35 VGND a_634_159# 0.124877f
+C36 VGND a_592_47# 0.007478f
+C37 a_1059_315# a_1017_47# 7.8e-20
+C38 VPB Q 0.006781f
+C39 VPWR a_1017_47# 4.56e-19
+C40 a_1589_47# VPB 0.082201f
+C41 VPB a_27_47# 0.247886f
+C42 a_1017_47# a_634_159# 4.67e-20
+C43 a_381_47# a_561_413# 0.001229f
+C44 CLK VGND 0.019463f
+C45 VPWR a_561_413# 0.002923f
+C46 a_466_413# VGND 0.088802f
+C47 a_1589_47# Q 0.034766f
+C48 a_1059_315# VPWR 0.282094f
+C49 a_27_47# Q 2.33e-19
+C50 VPWR a_381_47# 0.061283f
+C51 a_975_413# VPWR 0.004638f
+C52 D VGND 0.038993f
+C53 VGND Q_N 0.139334f
+C54 a_891_413# a_193_47# 0.196845f
+C55 a_1059_315# a_634_159# 1.28e-19
+C56 a_1589_47# a_27_47# 1.98e-19
+C57 a_381_47# a_634_159# 3.39e-19
+C58 a_975_413# a_634_159# 9.73e-19
+C59 VGND a_193_47# 0.200101f
+C60 VPWR a_634_159# 0.102126f
+C61 a_634_159# a_592_47# 4.62e-19
+C62 a_891_413# VPB 0.069859f
+C63 a_466_413# a_561_413# 0.007724f
+C64 CLK VPWR 0.019411f
+C65 VPB VGND 0.020423f
+C66 a_466_413# a_381_47# 0.037333f
+C67 a_891_413# Q 0.002146f
+C68 a_466_413# VPWR 0.170985f
+C69 a_1059_315# Q_N 0.003204f
+C70 D a_381_47# 0.112186f
+C71 VPWR Q_N 0.209726f
+C72 D VPWR 0.025067f
+C73 VGND Q 0.105043f
+C74 a_891_413# a_27_47# 0.032244f
+C75 a_466_413# a_634_159# 0.239923f
+C76 a_1059_315# a_193_47# 0.034192f
+C77 a_381_47# a_193_47# 0.101638f
+C78 a_1589_47# VGND 0.160615f
+C79 a_975_413# a_193_47# 6.32e-19
+C80 VPWR a_193_47# 0.117533f
+C81 VGND a_27_47# 0.136707f
+C82 a_193_47# a_634_159# 0.127288f
+C83 a_466_413# a_592_47# 0.005525f
+C84 a_193_47# a_592_47# 0.001351f
+C85 a_1059_315# VPB 0.292541f
+C86 VPB a_381_47# 0.014142f
+C87 VPB VPWR 0.23281f
+C88 CLK a_193_47# 0.002646f
+C89 VPB a_634_159# 0.07647f
+C90 a_27_47# a_561_413# 0.002698f
+C91 Q_N VNB 0.024053f
+C92 Q VNB 0.005604f
+C93 VGND VNB 1.1138f
+C94 VPWR VNB 0.910748f
+C95 D VNB 0.142509f
+C96 CLK VNB 0.195983f
+C97 VPB VNB 1.9337f
+C98 a_381_47# VNB 0.015369f
+C99 a_1589_47# VNB 0.22524f
+C100 a_891_413# VNB 0.161329f
+C101 a_1059_315# VNB 0.491081f
+C102 a_466_413# VNB 0.133203f
+C103 a_634_159# VNB 0.142309f
+C104 a_193_47# VNB 0.282684f
+C105 a_27_47# VNB 0.448183f
+.ends
+
+.subckt dco_freq clk clkDiv2 sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# sky130_fd_sc_hd__dfxtp_1_0/a_891_413#
++ Q_N VNB sky130_fd_sc_hd__dfxtp_1_0/a_466_413# sky130_fd_sc_hd__dfxtp_1_0/a_193_47#
++ sky130_fd_sc_hd__dfxbp_2_0/a_891_413# D sky130_fd_sc_hd__dfxtp_1_0/a_381_47# sky130_fd_sc_hd__dfxtp_1_0/a_27_47#
++ sky130_fd_sc_hd__dfxbp_2_0/a_466_413# sky130_fd_sc_hd__dfxtp_1_0/a_634_159# sky130_fd_sc_hd__dfxtp_1_0/a_561_413#
++ sky130_fd_sc_hd__dfxbp_2_0/a_193_47# sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# sky130_fd_sc_hd__dfxbp_2_0/a_381_47#
++ VPB sky130_fd_sc_hd__dfxbp_2_0/a_634_159# Q_N_buf VGND sky130_fd_sc_hd__dfxbp_2_0/a_27_47#
++ VPWR sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# sky130_fd_sc_hd__buf_4_0/a_27_47# clkinv
+Xsky130_fd_sc_hd__buf_4_0 Q_N VGND VNB VPB VPWR Q_N_buf sky130_fd_sc_hd__buf_4_0/a_27_47#
++ sky130_fd_sc_hd__buf_4
 Xsky130_fd_sc_hd__inv_4_0 clk VGND VNB VPB VPWR clkinv sky130_fd_sc_hd__inv_4
-Xsky130_fd_sc_hd__dfxtp_1_0 clkinv Q_N_buf VGND VNB VPB VPWR D sky130_fd_sc_hd__dfxtp_1
-Xsky130_fd_sc_hd__dfxbp_2_0 clk D VGND VNB VPB VPWR clkDiv2 Q_N sky130_fd_sc_hd__dfxbp_2
+Xsky130_fd_sc_hd__dfxtp_1_0 clkinv Q_N_buf VGND VNB VPB VPWR D sky130_fd_sc_hd__dfxtp_1_0/a_975_413#
++ sky130_fd_sc_hd__dfxtp_1_0/a_891_413# sky130_fd_sc_hd__dfxtp_1_0/a_466_413# sky130_fd_sc_hd__dfxtp_1_0/a_592_47#
++ sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# sky130_fd_sc_hd__dfxtp_1_0/a_561_413#
++ sky130_fd_sc_hd__dfxtp_1_0/a_634_159# sky130_fd_sc_hd__dfxtp_1_0/a_381_47# sky130_fd_sc_hd__dfxtp_1_0/a_1017_47#
++ sky130_fd_sc_hd__dfxtp_1_0/a_27_47# sky130_fd_sc_hd__dfxtp_1
+Xsky130_fd_sc_hd__dfxbp_2_0 clk D VGND VNB VPB VPWR clkDiv2 Q_N sky130_fd_sc_hd__dfxbp_2_0/a_975_413#
++ sky130_fd_sc_hd__dfxbp_2_0/a_891_413# sky130_fd_sc_hd__dfxbp_2_0/a_466_413# sky130_fd_sc_hd__dfxbp_2_0/a_592_47#
++ sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# sky130_fd_sc_hd__dfxbp_2_0/a_193_47# sky130_fd_sc_hd__dfxbp_2_0/a_561_413#
++ sky130_fd_sc_hd__dfxbp_2_0/a_634_159# sky130_fd_sc_hd__dfxbp_2_0/a_381_47# sky130_fd_sc_hd__dfxbp_2_0/a_1589_47#
++ sky130_fd_sc_hd__dfxbp_2_0/a_1017_47# sky130_fd_sc_hd__dfxbp_2_0/a_27_47# sky130_fd_sc_hd__dfxbp_2
+X0 VGND clk.t4 clkinv VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.08775 ps=0.92 w=0 l=0
+X1 VPWR clk.t0 clkinv VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=0 l=0
+X2 clkinv clk.t1 VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=0 l=0
+X3 clkinv clk.t2 VGND VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.169 ps=1.82 w=0 l=0
+X4 clkinv clk.t7 VGND VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.08775 ps=0.92 w=0 l=0
+X5 VPWR clk.t8 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0864 pd=0.91 as=0.1664 ps=1.8 w=0 l=0
+X6 VPWR clk.t3 clkinv VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=0 l=0
+X7 VGND clk.t6 clkinv VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.08775 ps=0.92 w=0 l=0
+X8 VGND clk.t9 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0567 pd=0.69 as=0.1092 ps=1.36 w=0 l=0
+X9 clkinv clk.t5 VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=0 l=0
+R0 clk.n20 clk.t8 294.557
+R1 clk.n6 clk.t0 224.131
+R2 clk.n4 clk.t5 219.221
+R3 clk.n4 clk.t3 219.221
+R4 clk.n4 clk.t1 219.221
+R5 clk.n20 clk.t9 211.01
+R6 clk.n18 clk.n17 163.044
+R7 clk.n16 clk.t2 162.095
+R8 clk.n11 clk.t4 162.095
+R9 clk.n9 clk.t7 162.095
+R10 clk.n8 clk 154.304
+R11 clk.n13 clk.n12 152
+R12 clk.n15 clk.n14 152
+R13 clk.n21 clk.n20 152
+R14 clk.n4 clk.n3 147.814
+R15 clk.n4 clk.n2 147.814
+R16 clk.n4 clk.n1 147.814
+R17 clk.n6 clk.t6 143.637
+R18 clk.n4 clk.n0 40.1672
+R19 clk.n13 clk 19.2005
+R20 clk.n7 clk.n6 18.2383
+R21 clk.n14 clk 17.1525
+R22 clk.n18 clk 17.1525
+R23 clk clk.n19 12.6182
+R24 clk.n21 clk 11.4468
+R25 clk.n16 clk.n15 10.6045
+R26 clk.n12 clk.n11 10.6045
+R27 clk.n9 clk.n8 10.6045
+R28 clk.n17 clk.n16 8.68211
+R29 clk.n8 clk.n7 7.9524
+R30 clk.n11 clk.n5 7.50383
+R31 clk.n10 clk.n9 7.50383
+R32 clk.n7 clk.n4 7.15289
+R33 clk.n15 clk.n5 7.13096
+R34 clk.n12 clk.n10 7.13096
+R35 clk.n5 clk.n4 6.67018
+R36 clk.n10 clk.n4 6.67018
+R37 clk.n14 clk 6.4005
+R38 clk.n19 clk 5.8885
+R39 clk.n17 clk.n4 4.96365
+R40 clk clk.n13 4.3525
+R41 clk clk.n21 1.96973
+R42 clk.n19 clk.n18 0.5125
+R43 clkDiv2 clkDiv2 19.6138
+C0 sky130_fd_sc_hd__dfxbp_2_0/a_561_413# clkDiv2 1.34e-19
+C1 sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# clkDiv2 1.62e-19
+C2 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# sky130_fd_sc_hd__buf_4_0/a_27_47# 1.71e-20
+C3 Q_N_buf clkDiv2 4.41e-20
+C4 sky130_fd_sc_hd__dfxbp_2_0/a_193_47# sky130_fd_sc_hd__dfxtp_1_0/a_466_413# 4.92e-19
+C5 sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# sky130_fd_sc_hd__dfxtp_1_0/a_891_413# 5.68e-32
+C6 Q_N_buf sky130_fd_sc_hd__dfxtp_1_0/a_891_413# 6.78e-19
+C7 sky130_fd_sc_hd__dfxtp_1_0/a_975_413# VPWR 1.27e-20
+C8 sky130_fd_sc_hd__dfxbp_2_0/a_891_413# sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.002209f
+C9 VPB VGND 0.06173f
+C10 Q_N_buf sky130_fd_sc_hd__dfxtp_1_0/a_466_413# 0.002029f
+C11 clkinv clk 0.011257f
+C12 VPB sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.003672f
+C13 sky130_fd_sc_hd__dfxbp_2_0/a_193_47# sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# -2.12e-19
+C14 VPB Q_N 0.136184f
+C15 sky130_fd_sc_hd__dfxbp_2_0/a_634_159# clkDiv2 0.001678f
+C16 VPB sky130_fd_sc_hd__dfxbp_2_0/a_466_413# -1.42e-32
+C17 D sky130_fd_sc_hd__dfxbp_2_0/a_592_47# 5.91e-19
+C18 VPB VPWR 0.280994f
+C19 sky130_fd_sc_hd__dfxbp_2_0/a_975_413# clkDiv2 2.62e-19
+C20 sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# 9.24e-20
+C21 clkinv D 0.002512f
+C22 VPB sky130_fd_sc_hd__dfxbp_2_0/a_27_47# 0.007289f
+C23 sky130_fd_sc_hd__dfxbp_2_0/a_891_413# VGND 5.21e-19
+C24 VGND clkDiv2 0.210184f
+C25 clk D 0.147589f
+C26 sky130_fd_sc_hd__dfxbp_2_0/a_891_413# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.001629f
+C27 sky130_fd_sc_hd__dfxbp_2_0/a_891_413# Q_N 6.11e-19
+C28 VPB sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 9.79e-19
+C29 Q_N clkDiv2 0.049217f
+C30 sky130_fd_sc_hd__dfxbp_2_0/a_466_413# clkDiv2 0.00106f
+C31 VPB sky130_fd_sc_hd__dfxtp_1_0/a_381_47# 5.71e-22
+C32 VPB sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 0.003544f
+C33 D sky130_fd_sc_hd__dfxbp_2_0/a_1017_47# 1.2e-19
+C34 sky130_fd_sc_hd__dfxtp_1_0/a_891_413# VGND -7.08e-33
+C35 VGND sky130_fd_sc_hd__dfxtp_1_0/a_466_413# 3.62e-20
+C36 sky130_fd_sc_hd__dfxbp_2_0/a_891_413# VPWR 2.15e-20
+C37 VPWR clkDiv2 0.492485f
+C38 Q_N sky130_fd_sc_hd__dfxtp_1_0/a_466_413# 1.63e-20
+C39 sky130_fd_sc_hd__dfxbp_2_0/a_466_413# sky130_fd_sc_hd__dfxtp_1_0/a_466_413# 4.55e-20
+C40 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# sky130_fd_sc_hd__dfxbp_2_0/a_891_413# 7.11e-33
+C41 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# clkDiv2 0.005545f
+C42 sky130_fd_sc_hd__buf_4_0/a_27_47# clk 0.015701f
+C43 sky130_fd_sc_hd__dfxtp_1_0/a_891_413# VPWR 7.27e-19
+C44 sky130_fd_sc_hd__dfxtp_1_0/a_466_413# VPWR 4.39e-19
+C45 sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# VGND 0.001098f
+C46 sky130_fd_sc_hd__dfxbp_2_0/a_891_413# sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 4.34e-20
+C47 sky130_fd_sc_hd__dfxbp_2_0/a_381_47# sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 7.78e-20
+C48 sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# Q_N 0.016361f
+C49 sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# sky130_fd_sc_hd__dfxbp_2_0/a_891_413# 1.42e-32
+C50 sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# clkDiv2 0.075295f
+C51 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# sky130_fd_sc_hd__dfxtp_1_0/a_466_413# 3.24e-19
+C52 sky130_fd_sc_hd__buf_4_0/a_27_47# D 0.001328f
+C53 Q_N_buf sky130_fd_sc_hd__dfxbp_2_0/a_193_47# 6.76e-20
+C54 sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# VPWR -0.020363f
+C55 sky130_fd_sc_hd__dfxtp_1_0/a_1017_47# D 2.88e-19
+C56 sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# sky130_fd_sc_hd__dfxtp_1_0/a_891_413# 0.003484f
+C57 sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# sky130_fd_sc_hd__dfxtp_1_0/a_466_413# 0.001438f
+C58 VPB clkinv 0.110131f
+C59 Q_N_buf sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 5.47e-19
+C60 sky130_fd_sc_hd__dfxbp_2_0/a_193_47# sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.001856f
+C61 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# -1.85e-19
+C62 VPB clk 0.375747f
+C63 Q_N_buf sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.084404f
+C64 sky130_fd_sc_hd__dfxtp_1_0/a_592_47# D 1.4e-19
+C65 Q_N_buf sky130_fd_sc_hd__dfxbp_2_0/a_634_159# 0.001278f
+C66 clkDiv2 sky130_fd_sc_hd__dfxbp_2_0/a_592_47# 8.51e-20
+C67 sky130_fd_sc_hd__dfxbp_2_0/a_381_47# VPWR 3.34e-21
+C68 VPB D 0.007991f
+C69 sky130_fd_sc_hd__dfxbp_2_0/a_193_47# VGND -0.030275f
+C70 sky130_fd_sc_hd__dfxbp_2_0/a_634_159# sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 6.24e-21
+C71 sky130_fd_sc_hd__dfxbp_2_0/a_193_47# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 2.29e-19
+C72 sky130_fd_sc_hd__dfxbp_2_0/a_193_47# Q_N 7.66e-19
+C73 sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# VGND 1.11e-20
+C74 sky130_fd_sc_hd__dfxbp_2_0/a_891_413# clk 1.62e-19
+C75 clk clkDiv2 7.54e-19
+C76 Q_N_buf VGND 0.36335f
+C77 sky130_fd_sc_hd__dfxbp_2_0/a_193_47# VPWR -2.67e-19
+C78 sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# Q_N 4.17e-21
+C79 Q_N_buf sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.085717f
+C80 Q_N_buf Q_N 2.77e-19
+C81 Q_N_buf sky130_fd_sc_hd__dfxbp_2_0/a_466_413# 1.11e-19
+C82 VPB sky130_fd_sc_hd__buf_4_0/a_27_47# 0.046623f
+C83 clkDiv2 sky130_fd_sc_hd__dfxbp_2_0/a_1017_47# 1.58e-19
+C84 sky130_fd_sc_hd__dfxbp_2_0/a_561_413# VPWR 6.38e-21
+C85 sky130_fd_sc_hd__dfxbp_2_0/a_891_413# D 0.001382f
+C86 sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# VPWR 0.002573f
+C87 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# sky130_fd_sc_hd__dfxbp_2_0/a_193_47# -4.55e-31
+C88 D clkDiv2 0.006781f
+C89 sky130_fd_sc_hd__dfxtp_1_0/a_466_413# clk 4.74e-20
+C90 VGND sky130_fd_sc_hd__dfxtp_1_0/a_27_47# -0.023699f
+C91 Q_N_buf VPWR 0.33415f
+C92 Q_N sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 1.74e-20
+C93 sky130_fd_sc_hd__dfxbp_2_0/a_634_159# VGND 3.07e-19
+C94 sky130_fd_sc_hd__dfxbp_2_0/a_193_47# sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 0.001814f
+C95 sky130_fd_sc_hd__dfxbp_2_0/a_466_413# sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.002066f
+C96 sky130_fd_sc_hd__dfxbp_2_0/a_634_159# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 2.39e-19
+C97 sky130_fd_sc_hd__dfxbp_2_0/a_634_159# Q_N 4.18e-19
+C98 sky130_fd_sc_hd__dfxbp_2_0/a_193_47# sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# -1.99e-19
+C99 sky130_fd_sc_hd__dfxtp_1_0/a_891_413# D 0.002337f
+C100 Q_N_buf sky130_fd_sc_hd__dfxbp_2_0/a_27_47# 0.02909f
+C101 sky130_fd_sc_hd__dfxtp_1_0/a_466_413# D 2.82e-19
+C102 VPWR sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.004045f
+C103 sky130_fd_sc_hd__dfxbp_2_0/a_634_159# VPWR 4.21e-20
+C104 Q_N_buf sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 0.002605f
+C105 sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 0.004084f
+C106 Q_N_buf sky130_fd_sc_hd__dfxtp_1_0/a_381_47# 0.015874f
+C107 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 1.05e-19
+C108 sky130_fd_sc_hd__dfxbp_2_0/a_975_413# VPWR 1.48e-20
+C109 sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# D 0.001458f
+C110 sky130_fd_sc_hd__dfxtp_1_0/a_193_47# VGND -0.030405f
+C111 Q_N VGND 0.61648f
+C112 clkinv sky130_fd_sc_hd__dfxbp_2_0/a_381_47# 9.41e-20
+C113 sky130_fd_sc_hd__dfxbp_2_0/a_466_413# VGND 4.31e-19
+C114 sky130_fd_sc_hd__dfxtp_1_0/a_193_47# Q_N 1.55e-20
+C115 sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 4.86e-19
+C116 sky130_fd_sc_hd__dfxbp_2_0/a_466_413# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 8.17e-19
+C117 sky130_fd_sc_hd__dfxbp_2_0/a_466_413# Q_N 4.45e-19
+C118 sky130_fd_sc_hd__dfxbp_2_0/a_634_159# sky130_fd_sc_hd__dfxtp_1_0/a_381_47# 1.4e-19
+C119 VGND VPWR 0.571705f
+C120 sky130_fd_sc_hd__dfxtp_1_0/a_193_47# VPWR 0.001013f
+C121 Q_N VPWR 0.021075f
+C122 sky130_fd_sc_hd__dfxbp_2_0/a_381_47# clk 3.38e-19
+C123 sky130_fd_sc_hd__dfxbp_2_0/a_466_413# VPWR 7.7e-21
+C124 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# VGND -0.018952f
+C125 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 9.95e-19
+C126 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# Q_N 0.001165f
+C127 sky130_fd_sc_hd__dfxbp_2_0/a_381_47# D 0.019054f
+C128 VPB sky130_fd_sc_hd__dfxbp_2_0/a_891_413# 4.11e-20
+C129 VPB clkDiv2 0.127574f
+C130 sky130_fd_sc_hd__dfxtp_1_0/a_381_47# VGND 7.11e-33
+C131 sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# VGND -0.002008f
+C132 Q_N_buf clkinv 0.090116f
+C133 sky130_fd_sc_hd__dfxbp_2_0/a_193_47# clk 0.013275f
+C134 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# VPWR -9.47e-19
+C135 sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 1.87e-19
+C136 sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# Q_N 0.001989f
+C137 sky130_fd_sc_hd__dfxbp_2_0/a_466_413# sky130_fd_sc_hd__dfxtp_1_0/a_381_47# 1.17e-20
+C138 VPWR sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 3.82e-19
+C139 VPB sky130_fd_sc_hd__dfxtp_1_0/a_891_413# 0.002207f
+C140 VPB sky130_fd_sc_hd__dfxtp_1_0/a_466_413# 0.001132f
+C141 sky130_fd_sc_hd__dfxbp_2_0/a_561_413# clk 1.38e-19
+C142 clkinv sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.006293f
+C143 sky130_fd_sc_hd__dfxtp_1_0/a_381_47# VPWR 3.56e-20
+C144 sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# VPWR -0.009602f
+C145 sky130_fd_sc_hd__dfxbp_2_0/a_193_47# D 0.088026f
+C146 Q_N_buf clk 0.114782f
+C147 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 6.89e-19
+C148 sky130_fd_sc_hd__dfxbp_2_0/a_891_413# clkDiv2 0.010318f
+C149 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# -1.97e-19
+C150 sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# D 0.009268f
+C151 VPB sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# 0.008136f
+C152 clk sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 4.59e-19
+C153 Q_N_buf D 0.013368f
+C154 sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 1.41e-19
+C155 sky130_fd_sc_hd__dfxbp_2_0/a_634_159# clk 2.07e-19
+C156 sky130_fd_sc_hd__dfxtp_1_0/a_891_413# sky130_fd_sc_hd__dfxbp_2_0/a_891_413# 5.66e-20
+C157 sky130_fd_sc_hd__dfxtp_1_0/a_891_413# clkDiv2 1.47e-19
+C158 sky130_fd_sc_hd__dfxbp_2_0/a_891_413# sky130_fd_sc_hd__dfxtp_1_0/a_466_413# 2.01e-19
+C159 sky130_fd_sc_hd__dfxtp_1_0/a_27_47# D 7.9e-19
+C160 clkinv VGND 0.006746f
+C161 sky130_fd_sc_hd__dfxbp_2_0/a_975_413# clk 6.97e-20
+C162 clkinv sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.00275f
+C163 sky130_fd_sc_hd__dfxbp_2_0/a_634_159# D 0.00325f
+C164 clkinv Q_N 4.38e-21
+C165 Q_N_buf sky130_fd_sc_hd__buf_4_0/a_27_47# 0.016687f
+C166 sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# clkDiv2 0.065324f
+C167 clkinv VPWR 0.036262f
+C168 VGND clk 0.151576f
+C169 VPB sky130_fd_sc_hd__dfxbp_2_0/a_381_47# -3.55e-33
+C170 sky130_fd_sc_hd__dfxtp_1_0/a_193_47# clk 2.12e-19
+C171 Q_N clk 0.004942f
+C172 Q_N_buf sky130_fd_sc_hd__dfxtp_1_0/a_1017_47# 8.22e-20
+C173 sky130_fd_sc_hd__dfxbp_2_0/a_466_413# clk 6.09e-19
+C174 VGND sky130_fd_sc_hd__dfxbp_2_0/a_1017_47# 3.73e-20
+C175 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# clkinv 1.32e-19
+C176 VGND D 1.178677f
+C177 sky130_fd_sc_hd__dfxtp_1_0/a_561_413# VPWR 2.85e-20
+C178 clk VPWR 0.436912f
+C179 sky130_fd_sc_hd__dfxtp_1_0/a_193_47# D 7.32e-19
+C180 Q_N D 0.376492f
+C181 sky130_fd_sc_hd__dfxbp_2_0/a_466_413# D 0.003297f
+C182 VPB sky130_fd_sc_hd__dfxbp_2_0/a_193_47# -7.28e-19
+C183 Q_N_buf sky130_fd_sc_hd__dfxtp_1_0/a_592_47# 4.28e-19
+C184 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# clk 0.027013f
+C185 VPWR D 0.144864f
+C186 sky130_fd_sc_hd__dfxbp_2_0/a_381_47# clkDiv2 2.48e-19
+C187 clk sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 9.5e-21
+C188 VPB sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 0.001566f
+C189 Q_N_buf VPB 0.153117f
+C190 sky130_fd_sc_hd__buf_4_0/a_27_47# VGND -3.08e-19
+C191 sky130_fd_sc_hd__dfxtp_1_0/a_381_47# clk 1.56e-20
+C192 sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# clk 1.1e-19
+C193 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# D 0.068909f
+C194 sky130_fd_sc_hd__buf_4_0/a_27_47# Q_N 0.009679f
+C195 sky130_fd_sc_hd__dfxtp_1_0/a_634_159# D 8.82e-19
+C196 VPB sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.018123f
+C197 sky130_fd_sc_hd__dfxtp_1_0/a_381_47# D 1.36e-19
+C198 sky130_fd_sc_hd__dfxbp_2_0/a_193_47# clkDiv2 0.006974f
+C199 sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# D 0.002234f
+C200 sky130_fd_sc_hd__buf_4_0/a_27_47# VPWR -2.08e-19
+C201 VPB sky130_fd_sc_hd__dfxbp_2_0/a_634_159# 2.22e-19
+C202 clk.n0 VNB 0.048816f
+C203 clk.n1 VNB 0.033912f
+C204 clk.t1 VNB 0.033072f
+C205 clk.n2 VNB 0.033912f
+C206 clk.t3 VNB 0.033072f
+C207 clk.n3 VNB 0.033912f
+C208 clk.t5 VNB 0.033072f
+C209 clk.n4 VNB 0.119189f
+C210 clk.t2 VNB 0.021273f
+C211 clk.n5 VNB 0.002491f
+C212 clk.t7 VNB 0.021273f
+C213 clk.t0 VNB 0.033456f
+C214 clk.t6 VNB 0.01961f
+C215 clk.n6 VNB 0.041515f
+C216 clk.n7 VNB 0.004017f
+C217 clk.n8 VNB 0.007387f
+C218 clk.n9 VNB 0.030377f
+C219 clk.n10 VNB 0.002491f
+C220 clk.t4 VNB 0.021273f
+C221 clk.n11 VNB 0.030377f
+C222 clk.n12 VNB 0.005019f
+C223 clk.n13 VNB 0.017808f
+C224 clk.n14 VNB 0.017808f
+C225 clk.n15 VNB 0.005019f
+C226 clk.n16 VNB 0.031028f
+C227 clk.n17 VNB 0.018962f
+C228 clk.n18 VNB 0.014432f
+C229 clk.n19 VNB 0.116369f
+C230 clk.t8 VNB 0.033933f
+C231 clk.t9 VNB 0.022703f
+C232 clk.n20 VNB 0.062008f
+C233 clk.n21 VNB 0.094489f
+C234 clkDiv2 VNB 1.456416f
+C235 D VNB 2.047045f
+C236 sky130_fd_sc_hd__dfxbp_2_0/a_1017_47# VNB 2.86e-20
+C237 sky130_fd_sc_hd__dfxbp_2_0/a_592_47# VNB 2.96e-20
+C238 sky130_fd_sc_hd__dfxbp_2_0/a_381_47# VNB 0.015392f
+C239 sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# VNB 0.227277f
+C240 sky130_fd_sc_hd__dfxbp_2_0/a_891_413# VNB 0.161453f
+C241 sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# VNB 0.491955f
+C242 sky130_fd_sc_hd__dfxbp_2_0/a_466_413# VNB 0.133243f
+C243 sky130_fd_sc_hd__dfxbp_2_0/a_634_159# VNB 0.14236f
+C244 sky130_fd_sc_hd__dfxbp_2_0/a_193_47# VNB 0.282704f
+C245 sky130_fd_sc_hd__dfxbp_2_0/a_27_47# VNB 0.44822f
+C246 Q_N_buf VNB 0.526356f
+C247 sky130_fd_sc_hd__dfxtp_1_0/a_381_47# VNB 0.015369f
+C248 sky130_fd_sc_hd__dfxtp_1_0/a_891_413# VNB 0.161052f
+C249 sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# VNB 0.248849f
+C250 sky130_fd_sc_hd__dfxtp_1_0/a_466_413# VNB 0.133203f
+C251 sky130_fd_sc_hd__dfxtp_1_0/a_634_159# VNB 0.142309f
+C252 sky130_fd_sc_hd__dfxtp_1_0/a_193_47# VNB 0.284272f
+C253 sky130_fd_sc_hd__dfxtp_1_0/a_27_47# VNB 0.449527f
+C254 VGND VNB 2.06316f
+C255 clkinv VNB 0.304336f
+C256 VPWR VNB 2.189027f
+C257 clk VNB 2.380451f
+C258 VPB VNB 7.033115f
+C259 Q_N VNB 2.148623f
+C260 sky130_fd_sc_hd__buf_4_0/a_27_47# VNB 0.480841f
+.ends
+
+.subckt sky130_fd_sc_hd__buf_2 A VGND VNB VPB VPWR X a_27_47#
+X0 VPWR a_27_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0.265 pd=2.53 as=0.135 ps=1.27 w=1 l=0.15
+X1 X a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.149 ps=1.325 w=1 l=0.15
+X2 VPWR A a_27_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.149 pd=1.325 as=0.1664 ps=1.8 w=0.64 l=0.15
+X3 X a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.097 ps=0.975 w=0.65 l=0.15
+X4 VGND a_27_47# X VNB sky130_fd_pr__nfet_01v8 ad=0.17225 pd=1.83 as=0.08775 ps=0.92 w=0.65 l=0.15
+X5 VGND A a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.097 pd=0.975 as=0.1092 ps=1.36 w=0.42 l=0.15
+C0 VGND VPB 0.006417f
+C1 X a_27_47# 0.148785f
+C2 VGND VPWR 0.051753f
+C3 VGND A 0.019887f
+C4 X VPB 0.004428f
+C5 VPWR X 0.168994f
+C6 X A 0.003062f
+C7 VPB a_27_47# 0.074969f
+C8 VPWR a_27_47# 0.153302f
+C9 VGND X 0.111264f
+C10 A a_27_47# 0.157874f
+C11 VPWR VPB 0.05279f
+C12 VPB A 0.069727f
+C13 VGND a_27_47# 0.12719f
+C14 VPWR A 0.022108f
+C15 VGND VNB 0.284185f
+C16 X VNB 0.021498f
+C17 VPWR VNB 0.249629f
+C18 A VNB 0.187471f
+C19 VPB VNB 0.427572f
+C20 a_27_47# VNB 0.28447f
 .ends
 
 .subckt dco_aux_inv VPWR VCCA A Y GND VGND
 X0 Y A VGND GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.8 ps=4.8 w=2 l=1
 X1 Y A VPWR VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=1.2 ps=6.8 w=3 l=1
+C0 VCCA A 0.1512f
+C1 VGND A 0.071471f
+C2 Y VCCA 0.026893f
+C3 VCCA VPWR 0.083606f
+C4 Y VGND 0.044737f
+C5 VGND VPWR 0.008226f
+C6 Y A 0.229354f
+C7 A VPWR 0.107207f
+C8 VGND VCCA 0.002127f
+C9 Y VPWR 0.067105f
+C10 VGND GND 0.119951f
+C11 Y GND 0.298503f
+C12 VPWR GND 0.081096f
+C13 A GND 0.605603f
+C14 VCCA GND 1.40308f
 .ends
 
 .subckt dco_main_inv VPWR VCCA Y GND VGND A
-X0 Y A VGND GND sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.4 as=0.8 ps=4.8 w=2 l=1 M=2
-X1 VPWR A Y VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=0.6 ps=3.4 w=3 l=1 M=2
+X0 Y A VGND GND sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.4 as=0.8 ps=4.8 w=2 l=1
+X1 VGND A Y GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.4 ps=2.4 w=2 l=1
+X2 VPWR A Y VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=0.6 ps=3.4 w=3 l=1
+X3 Y A VPWR VCCA sky130_fd_pr__pfet_01v8 ad=0.6 pd=3.4 as=1.2 ps=6.8 w=3 l=1
+C0 VCCA A 0.301294f
+C1 VGND A 0.247237f
+C2 Y VCCA 0.015451f
+C3 VCCA VPWR 0.120628f
+C4 Y VGND 0.099281f
+C5 VGND VPWR 0.01994f
+C6 Y A 0.593512f
+C7 A VPWR 0.3177f
+C8 VGND VCCA 0.004254f
+C9 Y VPWR 0.144018f
+C10 VGND GND 0.557904f
+C11 Y GND 0.041604f
+C12 VPWR GND 0.52293f
+C13 A GND 1.24627f
+C14 VCCA GND 2.03676f
 .ends
 
-.subckt dco_cc_inv outp inp inn outn VCCA VGND VPWR GND
+.subckt dco_cc_inv inp outp inn VCCA VGND outn VPWR GND
 Xdco_aux_inv_0 VPWR VCCA outp outn GND VGND dco_aux_inv
 Xdco_aux_inv_1 VPWR VCCA outn outp GND VGND dco_aux_inv
 Xdco_main_inv_0 VPWR VCCA outp GND VGND inp dco_main_inv
 Xdco_main_inv_1 VPWR VCCA outn GND VGND inn dco_main_inv
+C0 VPWR inn 0.00494f
+C1 outp inn 0.452271f
+C2 inn inp 0.220229f
+C3 VPWR VCCA 0.683086f
+C4 outp VCCA 0.497554f
+C5 inp VCCA 0.159922f
+C6 VPWR outn 0.247519f
+C7 outp outn 0.745882f
+C8 VPWR VGND -7.72e-19
+C9 outn inp 0.001471f
+C10 outp VGND 0.09558f
+C11 VGND inp 4.47e-20
+C12 inn VCCA 0.045189f
+C13 inn outn 0.626223f
+C14 VGND inn 0.42265f
+C15 outn VCCA 0.191159f
+C16 VGND VCCA 0.004348f
+C17 VPWR outp 0.57771f
+C18 VPWR inp 0.120655f
+C19 VGND outn 0.186403f
+C20 outp inp 0.247138f
+C21 VGND GND 2.28475f
+C22 outn GND 1.025072f
+C23 VPWR GND 1.309666f
+C24 inn GND 1.760718f
+C25 VCCA GND 7.56174f
+C26 outp GND 0.851628f
+C27 inp GND 1.27211f
 .ends
 
-.subckt dco_ring_osc p[1] p[2] p[3] p[4] pn[0] pn[1] pn[2] pn[3] pn[4] VGND p[0] VPWR
+.subckt dco_ring_osc p[1] pn[1] pn[2] pn[0] pn[3] VGND p[4] p[0] VPWR pn[4] p[3] p[2]
 + GND VCCA
-Xdco_cc_inv_0 p[0] p[4] pn[4] pn[0] VCCA VGND VPWR GND dco_cc_inv
-Xdco_cc_inv_1 p[1] p[0] pn[0] pn[1] VCCA VGND VPWR GND dco_cc_inv
-Xdco_cc_inv_2 p[2] p[1] pn[1] pn[2] VCCA VGND VPWR GND dco_cc_inv
-Xdco_cc_inv_3 p[4] p[3] pn[3] pn[4] VCCA VGND VPWR GND dco_cc_inv
-Xdco_cc_inv_4 p[3] p[2] pn[2] pn[3] VCCA VGND VPWR GND dco_cc_inv
+Xdco_cc_inv_0 p[4] p[0] pn[4] VCCA VGND pn[0] VPWR GND dco_cc_inv
+Xdco_cc_inv_1 p[0] p[1] pn[0] VCCA VGND pn[1] VPWR GND dco_cc_inv
+Xdco_cc_inv_2 p[1] p[2] pn[1] VCCA VGND pn[2] VPWR GND dco_cc_inv
+Xdco_cc_inv_3 p[3] p[4] pn[3] VCCA VGND pn[4] VPWR GND dco_cc_inv
+Xdco_cc_inv_4 p[2] p[3] pn[2] VCCA VGND pn[3] VPWR GND dco_cc_inv
+X0 VPWR pn[4].t2 pn[0] VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=0.6 ps=3.4 w=0 l=0
+X1 VPWR p[3].t2 p[4] VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=0.6 ps=3.4 w=0 l=0
+X2 VGND pn[3].t1 pn[4] GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.4 ps=2.4 w=0 l=0
+X3 p[2] p[1].t5 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=0.6 pd=3.4 as=1.2 ps=6.8 w=0 l=0
+X4 pn[0] pn[4].t3 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=0.6 pd=3.4 as=1.2 ps=6.8 w=0 l=0
+X5 VGND p[2].t3 p[3] GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.4 ps=2.4 w=0 l=0
+X6 VPWR p[4].t2 p[0] VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=0.6 ps=3.4 w=0 l=0
+X7 VPWR pn[1].t4 pn[2] VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=0.6 ps=3.4 w=0 l=0
+X8 pn[3] p[3].t4 VGND GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.8 ps=4.8 w=0 l=0
+X9 p[1] pn[1].t1 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=1.2 ps=6.8 w=0 l=0
+X10 pn[4] p[4].t5 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=1.2 ps=6.8 w=0 l=0
+X11 pn[0] p[0].t1 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=1.2 ps=6.8 w=0 l=0
+X12 VGND pn[4].t1 pn[0] GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.4 ps=2.4 w=0 l=0
+X13 p[1] pn[1].t0 VGND GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.8 ps=4.8 w=0 l=0
+X14 p[4] p[3].t3 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=0.6 pd=3.4 as=1.2 ps=6.8 w=0 l=0
+X15 p[0] p[4].t0 VGND GND sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.4 as=0.8 ps=4.8 w=0 l=0
+X16 p[0] p[4].t3 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=0.6 pd=3.4 as=1.2 ps=6.8 w=0 l=0
+X17 pn[2] pn[1].t5 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=0.6 pd=3.4 as=1.2 ps=6.8 w=0 l=0
+X18 VGND p[0].t3 p[1] GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.4 ps=2.4 w=0 l=0
+X19 pn[2] p[2].t1 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=1.2 ps=6.8 w=0 l=0
+X20 VGND pn[2].t3 pn[3] GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.4 ps=2.4 w=0 l=0
+X21 VPWR p[0].t4 p[1] VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=0.6 ps=3.4 w=0 l=0
+X22 VGND pn[0].t3 pn[1] GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.4 ps=2.4 w=0 l=0
+X23 p[2] pn[2].t0 VGND GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.8 ps=4.8 w=0 l=0
+X24 p[3] pn[3].t4 VGND GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.8 ps=4.8 w=0 l=0
+X25 p[4] pn[4].t5 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=1.2 ps=6.8 w=0 l=0
+X26 p[0] pn[0].t1 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=1.2 ps=6.8 w=0 l=0
+X27 VGND p[1].t3 p[2] GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.4 ps=2.4 w=0 l=0
+X28 VGND pn[1].t3 pn[2] GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.4 ps=2.4 w=0 l=0
+X29 p[3] p[2].t5 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=0.6 pd=3.4 as=1.2 ps=6.8 w=0 l=0
+X30 pn[3] pn[2].t2 VGND GND sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.4 as=0.8 ps=4.8 w=0 l=0
+X31 p[0] pn[0].t0 VGND GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.8 ps=4.8 w=0 l=0
+X32 pn[4] pn[3].t3 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=0.6 pd=3.4 as=1.2 ps=6.8 w=0 l=0
+X33 p[1] p[0].t5 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=0.6 pd=3.4 as=1.2 ps=6.8 w=0 l=0
+X34 VGND p[3].t1 p[4] GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.4 ps=2.4 w=0 l=0
+X35 VPWR pn[0].t4 pn[1] VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=0.6 ps=3.4 w=0 l=0
+X36 VPWR pn[3].t2 pn[4] VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=0.6 ps=3.4 w=0 l=0
+X37 pn[0] pn[4].t0 VGND GND sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.4 as=0.8 ps=4.8 w=0 l=0
+X38 VPWR p[2].t4 p[3] VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=0.6 ps=3.4 w=0 l=0
+X39 pn[4] p[4].t4 VGND GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.8 ps=4.8 w=0 l=0
+X40 pn[0] p[0].t0 VGND GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.8 ps=4.8 w=0 l=0
+X41 p[1] p[0].t2 VGND GND sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.4 as=0.8 ps=4.8 w=0 l=0
+X42 pn[1] pn[0].t2 VGND GND sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.4 as=0.8 ps=4.8 w=0 l=0
+X43 pn[1] pn[0].t5 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=0.6 pd=3.4 as=1.2 ps=6.8 w=0 l=0
+X44 p[4] p[3].t0 VGND GND sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.4 as=0.8 ps=4.8 w=0 l=0
+X45 pn[3] p[3].t5 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=1.2 ps=6.8 w=0 l=0
+X46 pn[1] p[1].t0 VGND GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.8 ps=4.8 w=0 l=0
+X47 p[2] pn[2].t1 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=1.2 ps=6.8 w=0 l=0
+X48 p[2] p[1].t2 VGND GND sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.4 as=0.8 ps=4.8 w=0 l=0
+X49 pn[2] pn[1].t2 VGND GND sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.4 as=0.8 ps=4.8 w=0 l=0
+X50 pn[1] p[1].t1 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=1.2 ps=6.8 w=0 l=0
+X51 p[4] pn[4].t4 VGND GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.8 ps=4.8 w=0 l=0
+X52 VPWR pn[2].t4 pn[3] VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=0.6 ps=3.4 w=0 l=0
+X53 pn[2] p[2].t0 VGND GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.8 ps=4.8 w=0 l=0
+X54 p[3] pn[3].t5 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=1.2 ps=6.8 w=0 l=0
+X55 p[3] p[2].t2 VGND GND sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.4 as=0.8 ps=4.8 w=0 l=0
+X56 VGND p[4].t1 p[0] GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.4 ps=2.4 w=0 l=0
+X57 pn[4] pn[3].t0 VGND GND sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.4 as=0.8 ps=4.8 w=0 l=0
+X58 VPWR p[1].t4 p[2] VCCA sky130_fd_pr__pfet_01v8 ad=1.2 pd=6.8 as=0.6 ps=3.4 w=0 l=0
+X59 pn[3] pn[2].t5 VPWR VCCA sky130_fd_pr__pfet_01v8 ad=0.6 pd=3.4 as=1.2 ps=6.8 w=0 l=0
+R0 p[0] p[0] 164.52
+R1 p[0] p[0].t1 98.8105
+R2 p[0].n0 p[0].t4 98.8105
+R3 p[0].n1 p[0].t5 98.8105
+R4 p[0] p[0].t0 74.7105
+R5 p[0].n0 p[0].t3 74.7105
+R6 p[0].n1 p[0].t2 74.7105
+R7 p[0].n3 p[0].n2 67.3512
+R8 p[0].n2 p[0].n0 26.8353
+R9 p[0].n2 p[0].n1 26.7684
+R10 p[0] p[0].n3 1.01612
+R11 p[0] p[0] 0.078625
+R12 p[0].n3 p[0] 0.0560556
+R13 VGND.n9 VGND.n0 414.401
+R14 VGND.n2 VGND.n1 368
+R15 VGND.n8 VGND.n7 368
+R16 VGND.n6 VGND 233.601
+R17 VGND.n5 VGND.n4 209.601
+R18 VGND.n5 VGND.n3 158.4
+R19 VGND.n4 VGND 121.6
+R20 VGND.n1 VGND.n0 92.8005
+R21 VGND.n3 VGND.n2 92.8005
+R22 VGND.n9 VGND.n8 92.8005
+R23 VGND.n7 VGND.n6 92.8005
+R24 VGND VGND.n5 64.0005
+R25 VGND.n0 VGND 28.8005
+R26 VGND.n1 VGND 28.8005
+R27 VGND.n2 VGND 28.8005
+R28 VGND.n3 VGND 28.8005
+R29 VGND.n4 VGND 28.8005
+R30 VGND.n6 VGND 28.8005
+R31 VGND.n7 VGND 28.8005
+R32 VGND.n8 VGND 28.8005
+R33 VGND VGND.n9 28.8005
+R34 pn[0].n3 pn[0].n0 161.696
+R35 pn[0].n2 pn[0].n1 161.3
+R36 pn[0].n4 pn[0] 157.298
+R37 pn[0] pn[0].t1 98.8105
+R38 pn[0].n0 pn[0].t4 98.8105
+R39 pn[0].n1 pn[0].t5 98.8105
+R40 pn[0] pn[0].n4 87.3596
+R41 pn[0] pn[0].t0 74.7105
+R42 pn[0].n0 pn[0].t3 74.7105
+R43 pn[0].n1 pn[0].t2 74.7105
+R44 pn[0].n1 pn[0].n0 64.2672
+R45 pn[0].n4 pn[0] 22.4326
+R46 pn[0] pn[0].n3 3.89286
+R47 pn[0] pn[0] 0.109875
+R48 pn[0].n2 pn[0] 0.0560556
+R49 pn[0].n3 pn[0].n2 0.00744444
+R50 GND.n33 GND.n21 104800
+R51 GND.n33 GND.n32 65754.9
+R52 GND.n35 GND.n34 1346.55
+R53 GND.n10 GND.n5 1346.55
+R54 GND.n11 GND.n4 1346.55
+R55 GND.n22 GND.n1 1346.55
+R56 GND.n28 GND.n21 1181.27
+R57 GND.n36 GND.n35 1181.03
+R58 GND.n43 GND.n1 1179.93
+R59 GND.n42 GND.n2 1179.93
+R60 GND.n41 GND.n3 1179.93
+R61 GND.n40 GND.n4 1179.93
+R62 GND.n39 GND.n5 1179.93
+R63 GND.n38 GND.n6 1179.93
+R64 GND.n37 GND.n7 1179.93
+R65 GND.n31 GND.n30 1179.93
+R66 GND.n29 GND.n23 1179.93
+R67 GND.n28 GND.n27 1179.93
+R68 GND.n34 GND.n20 1179.93
+R69 GND.n19 GND.n8 1179.93
+R70 GND.n18 GND.n9 1179.93
+R71 GND.n17 GND.n10 1179.93
+R72 GND.n16 GND.n11 1179.93
+R73 GND.n15 GND.n12 1179.93
+R74 GND.n14 GND.n13 1179.93
+R75 GND.n24 GND.n22 1179.93
+R76 GND.n32 GND.n31 993.144
+R77 GND.n35 GND.n33 891.38
+R78 GND.n8 GND.n7 815.518
+R79 GND.n9 GND.n6 815.518
+R80 GND.n12 GND.n3 815.518
+R81 GND.n13 GND.n2 815.518
+R82 GND.n31 GND.n23 729.144
+R83 GND.n27 GND.n23 729.144
+R84 GND.n27 GND.n26 704
+R85 GND.n26 GND.n25 352
+R86 GND.n34 GND.n7 284.483
+R87 GND.n8 GND.n6 284.483
+R88 GND.n9 GND.n5 284.483
+R89 GND.n10 GND.n4 284.483
+R90 GND.n11 GND.n3 284.483
+R91 GND.n12 GND.n2 284.483
+R92 GND.n13 GND.n1 284.483
+R93 GND.n32 GND.n22 132.76
+R94 GND.n25 GND.n21 25.1434
+R95 GND.n18 GND.n17 1.34425
+R96 GND.n17 GND.n16 1.34425
+R97 GND.n30 GND.n24 1.34425
+R98 GND.n40 GND.n39 1.34425
+R99 GND.n41 GND.n40 1.34425
+R100 GND.n24 GND.n0 1.10988
+R101 GND.n20 GND.n19 0.90675
+R102 GND.n19 GND.n18 0.90675
+R103 GND.n16 GND.n15 0.90675
+R104 GND.n15 GND.n14 0.90675
+R105 GND.n30 GND.n29 0.90675
+R106 GND.n29 GND.n28 0.90675
+R107 GND.n38 GND.n37 0.90675
+R108 GND.n39 GND.n38 0.90675
+R109 GND.n42 GND.n41 0.90675
+R110 GND.n43 GND.n42 0.90675
+R111 GND.n36 GND.n20 0.563
+R112 GND GND.n0 0.313
+R113 GND GND.n43 0.2505
+R114 GND.n14 GND.n0 0.234875
+R115 GND.n37 GND.n36 0.234875
+R116 VPWR.n5 VPWR 872
+R117 VPWR.n7 VPWR.n6 368
+R118 VPWR.n3 VPWR.n2 368
+R119 VPWR.n1 VPWR.n0 368
+R120 VPWR VPWR.n4 230.4
+R121 VPWR.n0 VPWR 121.6
+R122 VPWR VPWR.n7 121.6
+R123 VPWR.n6 VPWR.n5 92.8005
+R124 VPWR.n4 VPWR.n3 92.8005
+R125 VPWR.n2 VPWR.n1 92.8005
+R126 VPWR.n0 VPWR 28.8005
+R127 VPWR.n1 VPWR 28.8005
+R128 VPWR.n2 VPWR 28.8005
+R129 VPWR.n3 VPWR 28.8005
+R130 VPWR.n4 VPWR 28.8005
+R131 VPWR.n5 VPWR 28.8005
+R132 VPWR.n6 VPWR 28.8005
+R133 VPWR.n7 VPWR 28.8005
+R134 VCCA.n0 VCCA 1454.38
+R135 VCCA VCCA.n22 1454.38
+R136 VCCA VCCA.n5 1104.38
+R137 VCCA VCCA.n33 1104.38
+R138 VCCA.n3 VCCA.n2 1075
+R139 VCCA.n4 VCCA.n3 1075
+R140 VCCA.n15 VCCA.n14 1075
+R141 VCCA.n16 VCCA.n15 1075
+R142 VCCA.n19 VCCA.n18 1075
+R143 VCCA.n20 VCCA.n19 1075
+R144 VCCA.n1 VCCA.n0 725
+R145 VCCA.n2 VCCA.n1 725
+R146 VCCA.n5 VCCA.n4 725
+R147 VCCA.n33 VCCA.n14 725
+R148 VCCA.n17 VCCA.n16 725
+R149 VCCA.n18 VCCA.n17 725
+R150 VCCA.n21 VCCA.n20 725
+R151 VCCA.n22 VCCA.n21 725
+R152 VCCA.n5 VCCA 379.378
+R153 VCCA.n4 VCCA 379.378
+R154 VCCA.n3 VCCA 379.378
+R155 VCCA.n2 VCCA 379.378
+R156 VCCA.n1 VCCA 379.378
+R157 VCCA.n0 VCCA 379.378
+R158 VCCA.n22 VCCA 379.378
+R159 VCCA.n21 VCCA 379.378
+R160 VCCA.n20 VCCA 379.378
+R161 VCCA.n19 VCCA 379.378
+R162 VCCA.n18 VCCA 379.378
+R163 VCCA.n17 VCCA 379.378
+R164 VCCA.n16 VCCA 379.378
+R165 VCCA.n15 VCCA 379.378
+R166 VCCA VCCA.n14 379.378
+R167 VCCA.n33 VCCA 379.378
+R168 VCCA.n13 VCCA.n12 9.26612
+R169 VCCA.n23 VCCA 1.98488
+R170 VCCA.n6 VCCA 1.54738
+R171 VCCA.n12 VCCA.n11 1.34425
+R172 VCCA.n9 VCCA.n8 1.34425
+R173 VCCA.n8 VCCA.n7 1.34425
+R174 VCCA.n31 VCCA.n30 1.34425
+R175 VCCA.n30 VCCA.n29 1.34425
+R176 VCCA.n27 VCCA.n26 1.34425
+R177 VCCA.n26 VCCA.n25 1.34425
+R178 VCCA.n11 VCCA.n10 0.90675
+R179 VCCA.n10 VCCA.n9 0.90675
+R180 VCCA.n7 VCCA.n6 0.90675
+R181 VCCA.n32 VCCA.n13 0.90675
+R182 VCCA.n32 VCCA.n31 0.90675
+R183 VCCA.n29 VCCA.n28 0.90675
+R184 VCCA.n28 VCCA.n27 0.90675
+R185 VCCA.n24 VCCA.n23 0.90675
+R186 VCCA.n6 VCCA 0.672375
+R187 VCCA.n7 VCCA 0.672375
+R188 VCCA.n10 VCCA 0.672375
+R189 VCCA.n11 VCCA 0.672375
+R190 VCCA.n23 VCCA 0.672375
+R191 VCCA.n24 VCCA 0.672375
+R192 VCCA.n27 VCCA 0.672375
+R193 VCCA.n28 VCCA 0.672375
+R194 VCCA.n31 VCCA 0.672375
+R195 VCCA VCCA.n32 0.672375
+R196 VCCA VCCA.n24 0.65675
+R197 VCCA.n8 VCCA 0.641125
+R198 VCCA.n9 VCCA 0.641125
+R199 VCCA.n12 VCCA 0.641125
+R200 VCCA.n25 VCCA 0.641125
+R201 VCCA.n26 VCCA 0.641125
+R202 VCCA.n29 VCCA 0.641125
+R203 VCCA.n30 VCCA 0.641125
+R204 VCCA VCCA.n13 0.641125
+R205 VCCA.n25 VCCA 0.2505
+R206 p[4].n1 p[4].n0 163.107
+R207 p[4].n3 p[4].t3 98.8105
+R208 p[4].n4 p[4].t2 98.8105
+R209 p[4].n0 p[4].t5 98.8105
+R210 p[4].t0 p[4].n2 96.8387
+R211 p[4].n4 p[4].t1 74.7105
+R212 p[4].n0 p[4].t4 74.7105
+R213 p[4].n6 p[4].n5 67.3512
+R214 p[4].n1 p[4] 61.6511
+R215 p[4].n3 p[4].t0 55.4305
+R216 p[4].n5 p[4].n4 26.8353
+R217 p[4].n5 p[4].n3 26.7684
+R218 p[4] p[4] 9.5255
+R219 p[4] p[4].n1 1.41377
+R220 p[4] p[4].n6 1.09425
+R221 p[4] p[4] 0.141125
+R222 p[4].n6 p[4] 0.0560556
+R223 pn[4].n5 pn[4].n2 161.696
+R224 pn[4].n4 pn[4].n3 161.3
+R225 pn[4].n1 pn[4].n0 157.298
+R226 pn[4].n0 pn[4].t5 98.8105
+R227 pn[4].n3 pn[4].t3 98.8105
+R228 pn[4].n2 pn[4].t2 98.8105
+R229 pn[4] pn[4].n1 87.3605
+R230 pn[4].n0 pn[4].t4 74.7105
+R231 pn[4].n3 pn[4].t0 74.7105
+R232 pn[4].n2 pn[4].t1 74.7105
+R233 pn[4].n3 pn[4].n2 64.2672
+R234 pn[4].n1 pn[4] 22.4326
+R235 pn[4] pn[4] 6.738
+R236 pn[4] pn[4].n5 4.00224
+R237 pn[4] pn[4] 0.141125
+R238 pn[4].n4 pn[4] 0.0560556
+R239 pn[4].n5 pn[4].n4 0.00744444
+R240 p[1] p[1] 164.52
+R241 p[1] p[1].t1 98.8105
+R242 p[1].n0 p[1].t4 98.8105
+R243 p[1].n1 p[1].t5 98.8105
+R244 p[1] p[1].t0 74.7105
+R245 p[1].n0 p[1].t3 74.7105
+R246 p[1].n1 p[1].t2 74.7105
+R247 p[1].n3 p[1].n2 67.3512
+R248 p[1].n2 p[1].n0 26.8353
+R249 p[1].n2 p[1].n1 26.7684
+R250 p[1] p[1].n3 1.0005
+R251 p[1] p[1] 0.09425
+R252 p[1].n3 p[1] 0.0560556
+R253 pn[1].n3 pn[1].n0 161.696
+R254 pn[1].n2 pn[1].n1 161.3
+R255 pn[1].n4 pn[1] 157.298
+R256 pn[1] pn[1].t1 98.8105
+R257 pn[1].n0 pn[1].t4 98.8105
+R258 pn[1].n1 pn[1].t5 98.8105
+R259 pn[1] pn[1].n4 87.3596
+R260 pn[1] pn[1].t0 74.7105
+R261 pn[1].n0 pn[1].t3 74.7105
+R262 pn[1].n1 pn[1].t2 74.7105
+R263 pn[1].n1 pn[1].n0 64.2672
+R264 pn[1].n4 pn[1] 22.4326
+R265 pn[1] pn[1].n3 3.90849
+R266 pn[1] pn[1] 0.09425
+R267 pn[1].n2 pn[1] 0.0560556
+R268 pn[1].n3 pn[1].n2 0.00744444
+R269 p[2] p[2] 164.52
+R270 p[2] p[2].t1 98.8105
+R271 p[2].n0 p[2].t5 98.8105
+R272 p[2].n1 p[2].t4 98.8105
+R273 p[2] p[2].t0 74.7105
+R274 p[2].n0 p[2].t2 74.7105
+R275 p[2].n1 p[2].t3 74.7105
+R276 p[2] p[2].n2 68.4449
+R277 p[2].n2 p[2].n1 26.8353
+R278 p[2].n2 p[2].n0 26.7684
+R279 p[2] p[2] 4.94738
+R280 p[2] p[2] 0.188
+R281 pn[2].n3 pn[2] 157.298
+R282 pn[2] pn[2].t1 98.8105
+R283 pn[2].n0 pn[2].t5 98.8105
+R284 pn[2].n1 pn[2].t4 98.8105
+R285 pn[2] pn[2].n3 87.3596
+R286 pn[2] pn[2].t0 74.7105
+R287 pn[2].n0 pn[2].t2 74.7105
+R288 pn[2].n1 pn[2].t3 74.7105
+R289 pn[2] pn[2].n2 71.3529
+R290 pn[2].n2 pn[2].n1 26.8341
+R291 pn[2].n2 pn[2].n0 26.7696
+R292 pn[2].n3 pn[2] 22.4326
+R293 pn[2] pn[2] 2.238
+R294 pn[2] pn[2] 0.109875
+R295 p[3].n1 p[3].n0 163.107
+R296 p[3].n0 p[3].t5 98.8105
+R297 p[3].n2 p[3].t3 98.8105
+R298 p[3].n3 p[3].t2 98.8105
+R299 p[3].n0 p[3].t4 74.7105
+R300 p[3].n2 p[3].t0 74.7105
+R301 p[3].n3 p[3].t1 74.7105
+R302 p[3] p[3].n4 68.3355
+R303 p[3].n1 p[3] 61.6511
+R304 p[3].n4 p[3].n3 26.8353
+R305 p[3].n4 p[3].n2 26.7684
+R306 p[3] p[3].n1 1.41377
+R307 p[3] p[3] 0.109875
+R308 pn[3].n1 pn[3].n0 157.298
+R309 pn[3].n0 pn[3].t5 98.8105
+R310 pn[3].n3 pn[3].t3 98.8105
+R311 pn[3].n4 pn[3].t2 98.8105
+R312 pn[3] pn[3].n1 87.3605
+R313 pn[3].n0 pn[3].t4 74.7105
+R314 pn[3].n3 pn[3].t0 74.7105
+R315 pn[3].n4 pn[3].t1 74.7105
+R316 pn[3].n6 pn[3].n5 67.3699
+R317 pn[3].n5 pn[3].n4 26.8341
+R318 pn[3].n5 pn[3].n3 26.7696
+R319 pn[3].n1 pn[3] 22.4326
+R320 pn[3] pn[3].n6 3.54738
+R321 pn[3].n6 pn[3].n2 0.946333
+R322 pn[3] pn[3] 0.09425
+C0 VGND p[1] 0.001512f
+C1 pn[4] p[4] 0.509864f
+C2 VGND p[0] 0.001104f
+C3 VCCA p[4] 0.010797f
+C4 pn[1] pn[3] 5e-20
+C5 VCCA pn[2] 0.045951f
+C6 p[2] pn[2] 0.34406f
+C7 p[1] pn[0] 0.046494f
+C8 VPWR p[4] 0.014548f
+C9 VPWR pn[2] 0.290285f
+C10 p[3] VCCA 0.062131f
+C11 p[2] p[3] 6.32e-19
+C12 pn[0] p[0] 0.01434f
+C13 VPWR p[3] 0.016851f
+C14 pn[1] p[4] 0.001037f
+C15 p[1] pn[4] 0.003862f
+C16 pn[1] pn[2] 0.01433f
+C17 p[4] pn[3] 0.004891f
+C18 pn[2] pn[3] 4.4e-20
+C19 pn[4] p[0] 0.042377f
+C20 p[3] pn[1] 3.45e-19
+C21 p[1] VCCA 0.060935f
+C22 p[1] p[2] 0.002496f
+C23 p[3] pn[3] 0.01434f
+C24 VPWR p[1] 0.01248f
+C25 VCCA p[0] 0.059133f
+C26 VPWR p[0] 0.012037f
+C27 pn[2] p[4] 0.002825f
+C28 VGND pn[0] 0.011717f
+C29 p[1] pn[1] 0.01434f
+C30 p[3] p[4] 0.002496f
+C31 p[3] pn[2] 0.043166f
+C32 p[1] pn[3] 3.45e-19
+C33 p[0] pn[3] 0.00284f
+C34 VGND pn[4] 0.019797f
+C35 VGND VCCA 0.009825f
+C36 VGND p[2] 0.002704f
+C37 p[1] pn[2] 0.00284f
+C38 pn[0] pn[4] 1.68e-19
+C39 VPWR VGND 0.135824f
+C40 p[0] p[4] 7.44e-19
+C41 pn[0] VCCA 0.051942f
+C42 p[2] pn[0] 0.002825f
+C43 VPWR pn[0] 8.98e-19
+C44 VGND pn[1] 0.013901f
+C45 VGND pn[3] 0.011279f
+C46 pn[4] VCCA 0.044554f
+C47 VPWR pn[4] 4.33e-19
+C48 pn[0] pn[3] 5e-20
+C49 p[1] p[0] 0.002496f
+C50 p[2] VCCA 0.690664f
+C51 VGND p[4] 0.002547f
+C52 VPWR VCCA 0.965573f
+C53 VPWR p[2] 0.511727f
+C54 VGND pn[2] 0.059316f
+C55 VGND p[3] 0.001512f
+C56 pn[4] pn[3] -1.42e-32
+C57 pn[0] p[4] 1.85e-19
+C58 pn[1] VCCA 0.028954f
+C59 p[2] pn[1] 0.03362f
+C60 pn[0] p[3] 0.00284f
+C61 VCCA pn[3] 0.007389f
+C62 VPWR pn[1] 0.010708f
+C63 p[2] pn[3] 0.001037f
+C64 VPWR pn[3] 4.64e-19
+C65 pn[3].t4 GND 0.26506f
+C66 pn[3].t5 GND 0.409639f
+C67 pn[3].n0 GND 0.350076f
+C68 pn[3].n1 GND 1.45869f
+C69 pn[3].n2 GND -1.64096f
+C70 pn[3].t0 GND 0.26506f
+C71 pn[3].t3 GND 0.409639f
+C72 pn[3].n3 GND 0.360807f
+C73 pn[3].t1 GND 0.26506f
+C74 pn[3].t2 GND 0.409639f
+C75 pn[3].n4 GND 0.361089f
+C76 pn[3].n5 GND 9.22e-20
+C77 pn[3].n6 GND 2.44235f
+C78 p[3].t4 GND 0.271936f
+C79 p[3].t5 GND 0.420264f
+C80 p[3].n0 GND 0.369077f
+C81 p[3].n1 GND 2.32533f
+C82 p[3].t0 GND 0.271936f
+C83 p[3].t3 GND 0.420264f
+C84 p[3].n2 GND 0.370164f
+C85 p[3].t1 GND 0.271936f
+C86 p[3].t2 GND 0.420264f
+C87 p[3].n3 GND 0.370463f
+C88 p[3].n4 GND 0.005351f
+C89 pn[2].t2 GND 0.261633f
+C90 pn[2].t5 GND 0.404342f
+C91 pn[2].n0 GND 0.356142f
+C92 pn[2].t3 GND 0.261633f
+C93 pn[2].t4 GND 0.404342f
+C94 pn[2].n1 GND 0.35642f
+C95 pn[2].n2 GND 0.042397f
+C96 pn[2].t1 GND 0.404342f
+C97 pn[2].t0 GND 0.261633f
+C98 pn[2].n3 GND 1.43983f
+C99 p[2].t2 GND 0.256285f
+C100 p[2].t5 GND 0.396077f
+C101 p[2].n0 GND 0.34886f
+C102 p[2].t3 GND 0.256285f
+C103 p[2].t4 GND 0.396077f
+C104 p[2].n1 GND 0.349142f
+C105 p[2].n2 GND 0.005816f
+C106 p[2].t1 GND 0.396077f
+C107 p[2].t0 GND 0.256285f
+C108 pn[1].t4 GND 0.415491f
+C109 pn[1].t3 GND 0.268847f
+C110 pn[1].n0 GND 0.366247f
+C111 pn[1].t5 GND 0.415491f
+C112 pn[1].t2 GND 0.268847f
+C113 pn[1].n1 GND 0.365959f
+C114 pn[1].n2 GND 0.047209f
+C115 pn[1].n3 GND 0.708998f
+C116 pn[1].t1 GND 0.415491f
+C117 pn[1].t0 GND 0.268847f
+C118 pn[1].n4 GND 1.47953f
+C119 p[1].t4 GND 0.413992f
+C120 p[1].t3 GND 0.267877f
+C121 p[1].n0 GND 0.364934f
+C122 p[1].t5 GND 0.413992f
+C123 p[1].t2 GND 0.267877f
+C124 p[1].n1 GND 0.364639f
+C125 p[1].n3 GND 0.359225f
+C126 p[1].t1 GND 0.413992f
+C127 p[1].t0 GND 0.267877f
+C128 pn[4].t4 GND 0.223326f
+C129 pn[4].t5 GND 0.345141f
+C130 pn[4].n0 GND 0.294957f
+C131 pn[4].n1 GND 1.22902f
+C132 pn[4].t2 GND 0.345141f
+C133 pn[4].t1 GND 0.223326f
+C134 pn[4].n2 GND 0.304235f
+C135 pn[4].t3 GND 0.345141f
+C136 pn[4].t0 GND 0.223326f
+C137 pn[4].n3 GND 0.303996f
+C138 pn[4].n4 GND 0.039216f
+C139 pn[4].n5 GND 0.598751f
+C140 p[4].t4 GND 0.187822f
+C141 p[4].t5 GND 0.29027f
+C142 p[4].n0 GND 0.254916f
+C143 p[4].n1 GND 1.60607f
+C144 p[4].t3 GND 0.29027f
+C145 p[4].n2 GND 0.357855f
+C146 p[4].t0 GND 0.228832f
+C147 p[4].n3 GND 0.228347f
+C148 p[4].t2 GND 0.29027f
+C149 p[4].t1 GND 0.187822f
+C150 p[4].n4 GND 0.255873f
+C151 p[4].n6 GND 0.260579f
+C152 VCCA.n0 GND 0.81352f
+C153 VCCA.n1 GND 0.552429f
+C154 VCCA.n2 GND 0.686965f
+C155 VCCA.n3 GND 0.8215f
+C156 VCCA.n4 GND 0.686965f
+C157 VCCA.n5 GND 0.903956f
+C158 VCCA.n6 GND 0.10283f
+C159 VCCA.n7 GND 0.094579f
+C160 VCCA.n8 GND 0.107729f
+C161 VCCA.n9 GND 0.093568f
+C162 VCCA.n10 GND 0.080418f
+C163 VCCA.n11 GND 0.094579f
+C164 VCCA.n12 GND 0.487049f
+C165 VCCA.n13 GND 0.446606f
+C166 VCCA.n14 GND 0.686965f
+C167 VCCA.n15 GND 0.8215f
+C168 VCCA.n16 GND 0.686965f
+C169 VCCA.n17 GND 0.552429f
+C170 VCCA.n18 GND 0.686965f
+C171 VCCA.n19 GND 0.8215f
+C172 VCCA.n20 GND 0.686965f
+C173 VCCA.n21 GND 0.552429f
+C174 VCCA.n22 GND 0.81352f
+C175 VCCA.n23 GND 0.116622f
+C176 VCCA.n24 GND 0.072325f
+C177 VCCA.n25 GND 0.072325f
+C178 VCCA.n26 GND 0.107729f
+C179 VCCA.n27 GND 0.094579f
+C180 VCCA.n28 GND 0.080418f
+C181 VCCA.n29 GND 0.093568f
+C182 VCCA.n30 GND 0.107729f
+C183 VCCA.n31 GND 0.094579f
+C184 VCCA.n32 GND 0.080418f
+C185 VCCA.n33 GND 0.903956f
+C186 VPWR.n0 GND 1.52419f
+C187 VPWR.n1 GND 1.43579f
+C188 VPWR.n2 GND 1.22722f
+C189 VPWR.n3 GND 1.43579f
+C190 VPWR.n4 GND 0.686443f
+C191 VPWR.n5 GND 1.73865f
+C192 VPWR.n6 GND 1.22722f
+C193 VPWR.n7 GND 1.75335f
+C194 pn[0].t4 GND 0.41549f
+C195 pn[0].t3 GND 0.268847f
+C196 pn[0].n0 GND 0.366247f
+C197 pn[0].t5 GND 0.41549f
+C198 pn[0].t2 GND 0.268847f
+C199 pn[0].n1 GND 0.365959f
+C200 pn[0].n2 GND 0.047209f
+C201 pn[0].n3 GND 0.707032f
+C202 pn[0].t1 GND 0.41549f
+C203 pn[0].t0 GND 0.268847f
+C204 pn[0].n4 GND 1.47953f
+C205 VGND.n0 GND 0.721062f
+C206 VGND.n1 GND 0.749051f
+C207 VGND.n2 GND 0.653181f
+C208 VGND.n3 GND 0.338849f
+C209 VGND.n4 GND 0.497341f
+C210 VGND.n5 GND 0.760379f
+C211 VGND.n6 GND 0.386567f
+C212 VGND.n7 GND 0.749051f
+C213 VGND.n8 GND 0.653181f
+C214 VGND.n9 GND 0.781617f
+C215 p[0].t4 GND 0.414972f
+C216 p[0].t3 GND 0.268511f
+C217 p[0].n0 GND 0.365797f
+C218 p[0].t5 GND 0.414972f
+C219 p[0].t2 GND 0.268511f
+C220 p[0].n1 GND 0.365502f
+C221 p[0].n3 GND 0.36216f
+C222 p[0].t1 GND 0.414972f
+C223 p[0].t0 GND 0.268511f
+C224 pn[3] GND 4.058872f
+C225 p[3] GND 3.039988f
+C226 pn[4] GND 7.363493f
+C227 p[4] GND 7.310463f
+C228 pn[2] GND 6.617379f
+C229 VCCA GND 43.92112f
+C230 p[2] GND 8.175395f
+C231 VGND GND 11.747159f
+C232 pn[1] GND 4.494035f
+C233 p[1] GND 5.322568f
+C234 pn[0] GND 4.529583f
+C235 VPWR GND 16.167898f
+C236 p[0] GND 5.313177f
+.ends
+
+.subckt sky130_fd_sc_hd__inv_2 A VGND VNB VPB VPWR Y
+X0 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X1 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.08775 ps=0.92 w=0.65 l=0.15
+X2 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X3 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+C0 VGND VPWR 0.042274f
+C1 VPWR A 0.06305f
+C2 VGND Y 0.154601f
+C3 A Y 0.089386f
+C4 VPWR VPB 0.052063f
+C5 VPB Y 0.006097f
+C6 VGND A 0.063754f
+C7 VGND VPB 0.006491f
+C8 VPWR Y 0.209105f
+C9 VPB A 0.074183f
+C10 VGND VNB 0.266187f
+C11 Y VNB 0.03316f
+C12 VPWR VNB 0.246044f
+C13 A VNB 0.262807f
+C14 VPB VNB 0.338976f
 .ends
 
 .subckt sky130_fd_pr__res_xhigh_po_0p35_RSCMUS a_n35_n1272# a_n35_840# a_n165_n1402#
 X0 a_n35_840# a_n35_n1272# a_n165_n1402# sky130_fd_pr__res_xhigh_po_0p35 l=8.56
+C0 a_n35_n1272# a_n165_n1402# 0.597536f
+C1 a_n35_840# a_n165_n1402# 0.597536f
 .ends
 
-.subckt dco_idac Dctrl Vbs1 Vbs2 Vbs3 Vbs4 Isup VCCD VCCA GND
-Xsky130_fd_sc_hd__buf_2_0 Dctrl GND GND VCCD VCCD G_M7 sky130_fd_sc_hd__buf_2
+.subckt dco_idac Dctrl Vbs1 Vbs2 Vbs3 Vbs4 Isup VCCD G_M7 B_M2 G_M5 sky130_fd_sc_hd__buf_2_0/a_27_47#
++ D_M7 D1_M3 VCCA GND D1_M4
+Xsky130_fd_sc_hd__buf_2_0 Dctrl GND GND VCCD VCCD G_M7 sky130_fd_sc_hd__buf_2_0/a_27_47#
++ sky130_fd_sc_hd__buf_2
 Xsky130_fd_sc_hd__inv_2_0 G_M7 GND GND VCCD VCCD G_M5 sky130_fd_sc_hd__inv_2
 Xsky130_fd_pr__res_xhigh_po_0p35_RSCMUS_0 GND D_M7 GND sky130_fd_pr__res_xhigh_po_0p35_RSCMUS
-X0 Isup G_M7 D1_M4 GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.4 ps=2.4 w=2 l=0.5 M=2
-X1 B_M2 Vbs1 VCCA VCCA sky130_fd_pr__pfet_01v8_hvt ad=0.72 pd=4.4 as=0.72 ps=4.4 w=1.8 l=0.5
-X2 D1_M4 Vbs4 D1_M3 D1_M3 sky130_fd_pr__pfet_01v8_hvt ad=0.36 pd=2.2 as=0.72 ps=4.4 w=1.8 l=0.5 M=3
-X3 D_M7 G_M5 D1_M4 GND sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.4 ps=2.4 w=2 l=0.5 M=2
-X4 Isup G_M5 D1_M4 D1_M4 sky130_fd_pr__pfet_01v8_hvt ad=0.8 pd=4.4 as=1.6 ps=8.8 w=4 l=0.5 M=2
-X5 D1_M3 Vbs3 VCCA VCCA sky130_fd_pr__pfet_01v8_hvt ad=0.36 pd=2.2 as=0.72 ps=4.4 w=1.8 l=0.5 M=3
-X6 Isup Vbs2 B_M2 B_M2 sky130_fd_pr__pfet_01v8_hvt ad=0.72 pd=4.4 as=0.72 ps=4.4 w=1.8 l=0.5
-X7 D1_M4 G_M7 D_M7 D1_M4 sky130_fd_pr__pfet_01v8_hvt ad=1.6 pd=8.8 as=0.8 ps=4.4 w=4 l=0.5 M=2
+X0 Isup.t4 G_M7 D1_M4.t12 GND.t3 sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.4 ps=2.4 w=2 l=0.5
+X1 B_M2.t2 Vbs1.t0 VCCA.t5 VCCA.t4 sky130_fd_pr__pfet_01v8_hvt ad=0.72 pd=4.4 as=0.72 ps=4.4 w=1.8 l=0.5
+X2 D1_M4.t6 Vbs4.t0 D1_M3.t7 D1_M3.t6 sky130_fd_pr__pfet_01v8_hvt ad=0.36 pd=2.2 as=0.72 ps=4.4 w=1.8 l=0.5
+X3 D_M7 G_M5 D1_M4.t5 GND.t1 sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.4 ps=2.4 w=2 l=0.5
+X4 D1_M4.t4 G_M5 D_M7 GND.t0 sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.4 as=0.8 ps=4.8 w=2 l=0.5
+X5 Isup.t1 G_M5 D1_M4.t3 D1_M4.t2 sky130_fd_pr__pfet_01v8_hvt ad=0.8 pd=4.4 as=1.6 ps=8.8 w=4 l=0.5
+X6 D1_M4.t13 Vbs4.t1 D1_M3.t5 D1_M3.t4 sky130_fd_pr__pfet_01v8_hvt ad=0.72 pd=4.4 as=0.36 ps=2.2 w=1.8 l=0.5
+X7 D1_M3.t8 Vbs3.t0 VCCA.t7 VCCA.t6 sky130_fd_pr__pfet_01v8_hvt ad=0.36 pd=2.2 as=0.72 ps=4.4 w=1.8 l=0.5
+X8 Isup.t2 Vbs2.t0 B_M2.t1 B_M2.t0 sky130_fd_pr__pfet_01v8_hvt ad=0.72 pd=4.4 as=0.72 ps=4.4 w=1.8 l=0.5
+X9 VCCD Dctrl.t0 sky130_fd_sc_hd__buf_2_0/a_27_47# VCCD sky130_fd_pr__pfet_01v8_hvt ad=0.149 pd=1.325 as=0.1664 ps=1.8 w=0 l=0
+X10 D1_M3.t3 Vbs4.t2 D1_M4.t14 D1_M3.t2 sky130_fd_pr__pfet_01v8_hvt ad=0.36 pd=2.2 as=0.36 ps=2.2 w=1.8 l=0.5
+X11 D1_M4.t1 G_M5 Isup.t0 D1_M4.t0 sky130_fd_pr__pfet_01v8_hvt ad=1.6 pd=8.8 as=0.8 ps=4.4 w=4 l=0.5
+X12 D1_M4.t9 G_M7 Isup.t3 GND.t2 sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.4 as=0.8 ps=4.8 w=2 l=0.5
+X13 D1_M3.t1 Vbs3.t1 VCCA.t3 VCCA.t2 sky130_fd_pr__pfet_01v8_hvt ad=0.72 pd=4.4 as=0.36 ps=2.2 w=1.8 l=0.5
+X14 D1_M4.t11 G_M7 D_M7 D1_M4.t10 sky130_fd_pr__pfet_01v8_hvt ad=1.6 pd=8.8 as=0.8 ps=4.4 w=4 l=0.5
+X15 D_M7 G_M7 D1_M4.t8 D1_M4.t7 sky130_fd_pr__pfet_01v8_hvt ad=0.8 pd=4.4 as=1.6 ps=8.8 w=4 l=0.5
+X16 VCCA.t1 Vbs3.t2 D1_M3.t0 VCCA.t0 sky130_fd_pr__pfet_01v8_hvt ad=0.36 pd=2.2 as=0.36 ps=2.2 w=1.8 l=0.5
+X17 GND Dctrl.t1 sky130_fd_sc_hd__buf_2_0/a_27_47# GND sky130_fd_pr__nfet_01v8 ad=0.097 pd=0.975 as=0.1092 ps=1.36 w=0 l=0
+R0 VCCD.n0 VCCD 1151.25
+R1 VCCD.n0 VCCD 802.025
+R2 VCCD.n3 VCCD.n0 379.473
+R3 VCCD VCCD.n5 25.3312
+R4 VCCD.n6 VCCD 15.7005
+R5 VCCD VCCD.n7 0.458
+R6 VCCD.n2 VCCD 0.343
+R7 VCCD.n1 VCCD 0.278589
+R8 VCCD.n3 VCCD.n2 0.263
+R9 VCCD.n5 VCCD.n4 0.255549
+R10 VCCD.n7 VCCD 0.188
+R11 VCCD.n5 VCCD 0.135868
+R12 VCCD VCCD.n3 0.1055
+R13 VCCD.n2 VCCD.n1 0.0803503
+R14 VCCD.n7 VCCD.n6 0.0577917
+R15 VCCD.n6 VCCD 0.0226354
+R16 VCCD.n4 VCCD 0.0083125
+R17 VCCD.n4 VCCD 0.008
+R18 VCCD.n1 VCCD 0.00106513
+R19 Dctrl.n0 Dctrl.t0 276.464
+R20 Dctrl.n0 Dctrl.t1 196.131
+R21 Dctrl.n1 Dctrl.n0 152
+R22 Dctrl.n1 Dctrl 9.613
+R23 Dctrl Dctrl.n1 1.9836
+R24 GND.n19 GND.n16 57200
+R25 GND.n17 GND.n6 42240
+R26 GND.n15 GND.n14 21743.6
+R27 GND.n19 GND.n17 14960
+R28 GND.n16 GND.n15 14373.3
+R29 GND.n15 GND.n9 8800
+R30 GND.n13 GND.n4 8783.88
+R31 GND.n31 GND.n4 8783.88
+R32 GND.n31 GND.n5 8783.88
+R33 GND.n13 GND.n5 8783.88
+R34 GND.n29 GND 7862.49
+R35 GND.n28 GND 5858.12
+R36 GND.n20 GND.n19 4576
+R37 GND.n22 GND.n21 3753.5
+R38 GND GND.n28 3638.19
+R39 GND.n22 GND.n7 3353.48
+R40 GND.n30 GND.n29 3087.15
+R41 GND.n23 GND.n22 3014.81
+R42 GND.n29 GND.n23 2933.33
+R43 GND.n20 GND.n7 2652.05
+R44 GND.n14 GND.n13 2219.44
+R45 GND.n18 GND.n7 1566.4
+R46 GND GND.n23 1438.19
+R47 GND.n8 GND.n1 1180.47
+R48 GND.n28 GND.n27 1179.38
+R49 GND.n11 GND 1179.33
+R50 GND.n21 GND.n20 904.111
+R51 GND.n12 GND.n3 570.73
+R52 GND.n32 GND.n3 570.73
+R53 GND.n30 GND.n22 561.626
+R54 GND.n12 GND.n2 548.141
+R55 GND.n8 GND.n6 528.572
+R56 GND.n33 GND.n2 510.118
+R57 GND.n19 GND.n18 457.601
+R58 GND.n14 GND.n11 404.224
+R59 GND.n10 GND.n9 340
+R60 GND.n11 GND.t3 328.572
+R61 GND.t0 GND.n8 328.572
+R62 GND.n13 GND.n12 292.5
+R63 GND.n32 GND.n31 292.5
+R64 GND.n31 GND.n30 292.5
+R65 GND.n9 GND.t1 285.714
+R66 GND.t3 GND.t2 257.144
+R67 GND.t1 GND.t0 257.144
+R68 GND.t2 GND.n10 217.143
+R69 GND.n34 GND.n1 162.734
+R70 GND.n21 GND.n16 146.667
+R71 GND.n33 GND.n32 39.144
+R72 GND.n24 GND 25.3312
+R73 GND.n5 GND.n2 15.3952
+R74 GND.n10 GND.n5 15.3952
+R75 GND.n4 GND.n3 15.3952
+R76 GND.n10 GND.n4 15.3952
+R77 GND.n22 GND.n6 14.2862
+R78 GND GND.n33 9.53488
+R79 GND GND.n34 3.25988
+R80 GND GND.n1 2.84425
+R81 GND.n26 GND 0.343
+R82 GND.n34 GND 0.328625
+R83 GND GND.n0 0.278589
+R84 GND.n25 GND.n24 0.255549
+R85 GND.n27 GND.n26 0.238
+R86 GND.n24 GND 0.135868
+R87 GND.n27 GND 0.1305
+R88 GND.n26 GND.n0 0.0803503
+R89 GND.n25 GND 0.0083125
+R90 GND GND.n25 0.008
+R91 GND.n0 GND 0.00106513
+R92 D1_M4.n9 D1_M4.t7 700.324
+R93 D1_M4.n5 D1_M4.t2 642.404
+R94 D1_M4.n3 D1_M4.t13 197.962
+R95 D1_M4.t2 D1_M4.t0 178.125
+R96 D1_M4.t7 D1_M4.t10 178.125
+R97 D1_M4.n3 D1_M4.n2 157.097
+R98 D1_M4.n7 D1_M4.n1 144.409
+R99 D1_M4.n8 D1_M4.n0 134.809
+R100 D1_M4.n9 D1_M4.n8 113.921
+R101 D1_M4.n6 D1_M4.n5 101.76
+R102 D1_M4.n6 D1_M4.n3 99.2005
+R103 D1_M4.n8 D1_M4.n7 98.5605
+R104 D1_M4.n4 D1_M4.t1 76.4205
+R105 D1_M4.n10 D1_M4.t8 76.4205
+R106 D1_M4.n5 D1_M4.n4 73.5546
+R107 D1_M4.n4 D1_M4.t3 72.6259
+R108 D1_M4.t11 D1_M4.n10 72.6259
+R109 D1_M4.n10 D1_M4.n9 55.3146
+R110 D1_M4.n2 D1_M4.t14 21.8894
+R111 D1_M4.n2 D1_M4.t6 21.8894
+R112 D1_M4.n0 D1_M4.t5 12.0005
+R113 D1_M4.n0 D1_M4.t4 12.0005
+R114 D1_M4.n1 D1_M4.t12 12.0005
+R115 D1_M4.n1 D1_M4.t9 12.0005
+R116 D1_M4.n7 D1_M4.n6 6.4005
+R117 Isup Isup.n2 363.521
+R118 Isup.n2 Isup.n1 232.66
+R119 Isup Isup.t2 197.748
+R120 Isup.n2 Isup.n0 134.701
+R121 Isup.n1 Isup.t3 81.5636
+R122 Isup.n1 Isup.t4 52.7909
+R123 Isup.n0 Isup.t0 9.8505
+R124 Isup.n0 Isup.t1 9.8505
+R125 Vbs1 Vbs1.t0 310.784
+R126 VCCA VCCA.t4 866.992
+R127 VCCA.n2 VCCA.t6 844.592
+R128 VCCA.t0 VCCA.t2 328.846
+R129 VCCA.t6 VCCA.t0 328.846
+R130 VCCA.n3 VCCA.t5 233.386
+R131 VCCA.n1 VCCA.t7 181.309
+R132 VCCA.n1 VCCA.n0 151.496
+R133 VCCA.n2 VCCA.n1 137.192
+R134 VCCA.n3 VCCA.n2 97.6005
+R135 VCCA.n0 VCCA.t3 21.8894
+R136 VCCA.n0 VCCA.t1 21.8894
+R137 VCCA VCCA.n3 1.6005
+R138 B_M2.n0 B_M2.t0 800.571
+R139 B_M2.n0 B_M2.t2 181.994
+R140 B_M2.t1 B_M2.n0 178.089
+R141 Vbs4.n2 Vbs4.n0 157.243
+R142 Vbs4.n3 Vbs4.n1 152
+R143 Vbs4.n5 Vbs4.n4 152
+R144 Vbs4.n4 Vbs4.t0 125.32
+R145 Vbs4.n3 Vbs4.t2 125.32
+R146 Vbs4.n2 Vbs4.t1 125.32
+R147 Vbs4.n3 Vbs4.n2 86.7605
+R148 Vbs4.n4 Vbs4.n3 86.7605
+R149 Vbs4.n5 Vbs4.n1 23.0405
+R150 Vbs4 Vbs4.n5 9.438
+R151 Vbs4.n1 Vbs4.n0 5.11917
+R152 Vbs4 Vbs4.n0 2.20441
+R153 D1_M3.n2 D1_M3.t6 790.192
+R154 D1_M3.t2 D1_M3.t4 328.846
+R155 D1_M3.t6 D1_M3.t2 328.846
+R156 D1_M3.n1 D1_M3.t1 178.987
+R157 D1_M3.n1 D1_M3.n0 176.148
+R158 D1_M3.n4 D1_M3.n3 170.49
+R159 D1_M3.n4 D1_M3.t7 162.274
+R160 D2_M3 D1_M3.n5 91.2005
+R161 D1_M3.n5 D1_M3.n4 75.6184
+R162 D1_M3.n5 D1_M3.n2 75.2005
+R163 D1_M3.n3 D1_M3.t5 21.8894
+R164 D1_M3.n3 D1_M3.t3 21.8894
+R165 D1_M3.n0 D1_M3.t0 21.8894
+R166 D1_M3.n0 D1_M3.t8 21.8894
+R167 D2_M3 D1_M3.n1 12.8005
+R168 D1_M3.n2 B_M4 9.3505
+R169 Vbs3.n0 Vbs3.t1 212.081
+R170 Vbs3.n1 Vbs3.t0 165.472
+R171 Vbs3.n0 Vbs3.t2 125.32
+R172 Vbs3 Vbs3.n1 70.2472
+R173 Vbs3.n1 Vbs3.n0 40.1525
+R174 Vbs2 Vbs2.t0 310.784
+C0 Dctrl VCCD 0.048586f
+C1 Vbs1 Vbs3 0.012686f
+C2 G_M5 sky130_fd_sc_hd__buf_2_0/a_27_47# 5.52e-19
+C3 G_M5 D_M7 0.732722f
+C4 G_M5 Vbs2 6.33e-19
+C5 G_M5 G_M7 0.197317f
+C6 GND sky130_fd_sc_hd__buf_2_0/a_27_47# 0.001479f
+C7 GND D_M7 0.048682f
+C8 GND G_M7 0.037475f
+C9 Dctrl G_M5 5.85e-19
+C10 G_M5 Vbs3 0.002102f
+C11 VCCA G_M7 4.77e-19
+C12 Vbs4 VCCA 0.004667f
+C13 Dctrl GND 0.019109f
+C14 D_M7 sky130_fd_sc_hd__buf_2_0/a_27_47# 5.44e-20
+C15 sky130_fd_sc_hd__buf_2_0/a_27_47# G_M7 0.021502f
+C16 G_M5 VCCD 0.211144f
+C17 D_M7 G_M7 0.681769f
+C18 Vbs4 G_M7 0.002835f
+C19 Vbs4 Vbs2 0.015383f
+C20 GND VCCD -0.03993f
+C21 VCCA Vbs3 0.906363f
+C22 G_M5 Isup 0.807301f
+C23 Dctrl sky130_fd_sc_hd__buf_2_0/a_27_47# 0.021731f
+C24 Dctrl D_M7 3.14e-20
+C25 Dctrl G_M7 0.004699f
+C26 Vbs1 VCCA 0.271798f
+C27 GND Isup 0.001158f
+C28 D_M7 Vbs3 2.53e-19
+C29 Vbs3 G_M7 4.85e-19
+C30 Vbs4 Vbs3 0.013439f
+C31 sky130_fd_sc_hd__buf_2_0/a_27_47# VCCD 0.01005f
+C32 Vbs1 G_M7 5.89e-19
+C33 G_M5 GND 0.180378f
+C34 D_M7 VCCD 0.016265f
+C35 G_M7 VCCD 0.418116f
+C36 D_M7 Isup 0.030384f
+C37 Vbs2 Isup 0.047773f
+C38 Isup G_M7 0.434447f
+C39 Vbs4 Isup 3.65e-19
+C40 VCCA G_M5 0.001369f
+C41 Isup 0 2.747836f
+C42 Vbs2 0 0.421345f
+C43 Vbs4 0 1.001453f
+C44 Vbs3 0 1.047082f
+C45 Vbs1 0 0.444713f
+C46 VCCA 0 3.015075f
+C47 Vbs2.t0 0 0.110444f
+C48 Vbs3.t0 0 0.156911f
+C49 Vbs3.t2 0 0.125455f
+C50 Vbs3.t1 0 0.185702f
+C51 Vbs3.n0 0 0.238487f
+C52 Vbs3.n1 0 0.140414f
+C53 D1_M3.t1 0 0.070459f
+C54 D1_M3.t0 0 0.018308f
+C55 D1_M3.t8 0 0.018308f
+C56 D1_M3.n0 0 0.054154f
+C57 D1_M3.n1 0 0.227306f
+C58 D1_M3.t4 0 0.343782f
+C59 D1_M3.t2 0 0.238003f
+C60 D1_M3.t6 0 0.387026f
+C61 B_M4 0 0.02026f
+C62 D1_M3.n2 0 0.179584f
+C63 D1_M3.t7 0 0.065914f
+C64 D1_M3.t5 0 0.018308f
+C65 D1_M3.t3 0 0.018308f
+C66 D1_M3.n3 0 0.058703f
+C67 D1_M3.n4 0 0.246542f
+C68 D1_M3.n5 0 0.162928f
+C69 D2_M3 0 0.072108f
+C70 Vbs4.n0 0 0.060536f
+C71 Vbs4.n1 0 0.073171f
+C72 Vbs4.t0 0 0.093496f
+C73 Vbs4.t2 0 0.093496f
+C74 Vbs4.t1 0 0.093496f
+C75 Vbs4.n2 0 0.111698f
+C76 Vbs4.n3 0 0.126016f
+C77 Vbs4.n4 0 0.109756f
+C78 Vbs4.n5 0 0.057532f
+C79 B_M2.t0 0 0.339979f
+C80 B_M2.t2 0 0.055757f
+C81 B_M2.n0 0 0.855623f
+C82 B_M2.t1 0 0.048641f
+C83 VCCA.t5 0 0.065766f
+C84 VCCA.t2 0 0.238028f
+C85 VCCA.t0 0 0.164789f
+C86 VCCA.t6 0 0.274478f
+C87 VCCA.t3 0 0.012676f
+C88 VCCA.t1 0 0.012676f
+C89 VCCA.n0 0 0.027567f
+C90 VCCA.t7 0 0.051503f
+C91 VCCA.n1 0 0.214447f
+C92 VCCA.n2 0 0.22426f
+C93 VCCA.n3 0 0.121558f
+C94 VCCA.t4 0 0.351168f
+C95 Vbs1.t0 0 0.234362f
+C96 Isup.t0 0 0.045908f
+C97 Isup.t1 0 0.045908f
+C98 Isup.n0 0 0.203331f
+C99 Isup.t3 0 0.126162f
+C100 Isup.t4 0 0.076697f
+C101 Isup.n1 0 0.390315f
+C102 Isup.n2 0 0.788832f
+C103 Isup.t2 0 0.08883f
+C104 D1_M4.t8 0 0.15434f
+C105 D1_M4.t5 0 0.015916f
+C106 D1_M4.t4 0 0.015916f
+C107 D1_M4.n0 0 0.092169f
+C108 D1_M4.t12 0 0.015916f
+C109 D1_M4.t9 0 0.015916f
+C110 D1_M4.n1 0 0.090405f
+C111 D1_M4.t14 0 0.014325f
+C112 D1_M4.t6 0 0.014325f
+C113 D1_M4.n2 0 0.032166f
+C114 D1_M4.t13 0 0.065864f
+C115 D1_M4.n3 0 0.24417f
+C116 D1_M4.t0 0 0.496588f
+C117 D1_M4.t2 0 0.627331f
+C118 D1_M4.t3 0 0.145523f
+C119 D1_M4.t1 0 0.15434f
+C120 D1_M4.n4 0 0.344947f
+C121 D1_M4.n5 0 0.315061f
+C122 D1_M4.n6 0 0.133946f
+C123 D1_M4.n7 0 0.156696f
+C124 D1_M4.n8 0 0.23961f
+C125 D1_M4.t10 0 0.496588f
+C126 D1_M4.t7 0 0.645011f
+C127 D1_M4.n9 0 0.401362f
+C128 D1_M4.n10 0 0.326045f
+C129 D1_M4.t11 0 0.145523f
+C130 GND.n0 0 8.03e-19
+C131 GND.n1 0 0.007968f
+C132 GND.n2 0 0.001822f
+C133 GND.n3 0 0.001714f
+C134 GND.n4 0 0.001714f
+C135 GND.n5 0 0.001714f
+C136 GND.n6 0 0.019486f
+C137 GND.n7 0 -1.25e-19
+C138 GND.n8 0 0.030537f
+C139 GND.t0 0 0.020956f
+C140 GND.t1 0 0.019423f
+C141 GND.n9 0 0.024631f
+C142 GND.n10 0 0.019934f
+C143 GND.t2 0 0.016969f
+C144 GND.t3 0 0.020956f
+C145 GND.n11 0 0.026553f
+C146 GND.n12 0 0.003147f
+C147 GND.n13 0 0.014702f
+C148 GND.n14 0 0.10249f
+C149 GND.n15 0 0.01815f
+C150 GND.n16 0 0.005015f
+C151 GND.n17 0 8.63e-20
+C152 GND.n18 0 0.001016f
+C153 GND.n19 0 0.001295f
+C154 GND.n20 0 0.008226f
+C155 GND.n21 0 0.035457f
+C156 GND.n22 0 0.064581f
+C157 GND.n23 0 0.026976f
+C158 GND.n24 0 9.34e-19
+C159 GND.n25 0 7.7e-19
+C160 GND.n26 0 9.96e-19
+C161 GND.n27 0 8.85e-19
+C162 GND.n28 0 0.003181f
+C163 GND.n29 0 0.046167f
+C164 GND.n30 0 0.02082f
+C165 GND.n31 0 0.001746f
+C166 GND.n32 0 9.34e-19
+C167 GND.n33 0 0.001017f
+C168 GND.n34 0 0.005649f
+C169 Dctrl.t0 0 0.028824f
+C170 Dctrl.t1 0 0.018393f
+C171 Dctrl.n0 0 0.067463f
+C172 Dctrl.n1 0 0.0267f
+C173 VCCD.n0 0 0.280597f
+C174 VCCD.n1 0 0.085703f
+C175 VCCD.n2 0 0.090943f
+C176 VCCD.n3 0 0.087762f
+C177 VCCD.n4 0 0.077786f
+C178 VCCD.n5 0 0.098099f
+C179 VCCD.n6 0 0.010296f
+C180 VCCD.n7 0 0.078022f
+C181 D_M7 0 2.063498f
+C182 GND 0 0.499991f
+C183 G_M5 0 2.26932f
+C184 G_M7 0 1.967356f
+C185 VCCD 0 1.959004f
+C186 Dctrl 0 0.4138f
+C187 sky130_fd_sc_hd__buf_2_0/a_27_47# 0 0.28447f
+.ends
+
+.subckt sky130_fd_sc_hd__einvp_1 A TE VGND VNB VPB VPWR Z a_204_47# a_276_297# a_27_47#
+X0 a_276_297# a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.1825 pd=1.365 as=0.32075 ps=1.685 w=1 l=0.15
+X1 Z A a_204_47# VNB sky130_fd_pr__nfet_01v8 ad=0.1755 pd=1.84 as=0.235625 ps=1.375 w=0.65 l=0.15
+X2 VPWR TE a_27_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.32075 pd=1.685 as=0.1092 ps=1.36 w=0.42 l=0.15
+X3 Z A a_276_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.27 pd=2.54 as=0.1825 ps=1.365 w=1 l=0.15
+X4 a_204_47# TE VGND VNB sky130_fd_pr__nfet_01v8 ad=0.235625 pd=1.375 as=0.097 ps=0.975 w=0.65 l=0.15
+X5 VGND TE a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.097 pd=0.975 as=0.1092 ps=1.36 w=0.42 l=0.15
+C0 Z VPB 0.00678f
+C1 Z A 0.171086f
+C2 VPWR VPB 0.04882f
+C3 a_27_47# VPB 0.048391f
+C4 A VPWR 0.01187f
+C5 A a_27_47# 0.035267f
+C6 Z a_204_47# 0.009649f
+C7 VGND VPB 0.004742f
+C8 a_204_47# VPWR 0.001533f
+C9 A VGND 0.011538f
+C10 Z a_276_297# 0.012338f
+C11 a_204_47# a_27_47# 0.010027f
+C12 a_276_297# VPWR 0.007353f
+C13 a_276_297# a_27_47# 0.006006f
+C14 a_204_47# VGND 0.014069f
+C15 Z VPWR 0.096503f
+C16 Z a_27_47# 0.125984f
+C17 TE VPB 0.120084f
+C18 a_276_297# VGND 0.001886f
+C19 a_27_47# VPWR 0.193414f
+C20 TE A 0.005655f
+C21 Z VGND 0.09789f
+C22 VPWR VGND 0.047226f
+C23 a_27_47# VGND 0.163999f
+C24 A VPB 0.044798f
+C25 Z TE 0.002295f
+C26 TE VPWR 0.02085f
+C27 TE a_27_47# 0.22282f
+C28 TE VGND 0.032026f
+C29 VGND VNB 0.295665f
+C30 Z VNB 0.052382f
+C31 VPWR VNB 0.247074f
+C32 A VNB 0.174637f
+C33 TE VNB 0.288109f
+C34 VPB VNB 0.516168f
+C35 a_27_47# VNB 0.132445f
 .ends
 
 .subckt dco VCCD VCCA Dctrl ENB Vbs_12 Vbs_34 pha_DCO GND
-Xdco_freq_0 pha_ro ro_div2 GND GND VCCD VCCD dco_freq
-Xdco_freq_1 ro_div2 pha_DCO GND GND VCCD VCCD dco_freq
-Xsky130_fd_sc_hd__buf_2_0 p_osc GND GND VCCD VCCD pha_ro sky130_fd_sc_hd__buf_2
-Xdco_ring_osc_0 dco_ring_osc_0/p[1] dco_ring_osc_0/p[2] dco_ring_osc_0/p[3] p_osc
-+ dco_ring_osc_0/pn[0] dco_ring_osc_0/pn[1] dco_ring_osc_0/pn[2] dco_ring_osc_0/pn[3]
-+ dco_ring_osc_0/pn[4] GND dco_ring_osc_0/p[0] Isup GND Isup dco_ring_osc
-Xdco_idac_0 Dctrl Vbs_12 Vbs_12 Vbs_34 Vbs_34 Isup VCCD VCCA GND dco_idac
-Xsky130_fd_sc_hd__einvp_1_0 VCCD ENB GND GND VCCD VCCD dco_ring_osc_0/pn[4] sky130_fd_sc_hd__einvp_1
+Xdco_freq_0 pha_ro ro_div2 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_891_413#
++ dco_freq_0/Q_N GND dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_193_47#
++ dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# dco_freq_0/D dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_381_47#
++ dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_466_413#
++ dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_634_159# dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_561_413#
++ dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_193_47# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315#
++ dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_381_47# VCCD dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_634_159#
++ dco_freq_0/Q_N_buf GND dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# VCCD dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_1059_315#
++ dco_freq_0/sky130_fd_sc_hd__buf_4_0/a_27_47# dco_freq_0/clkinv dco_freq
+Xdco_freq_1 ro_div2 pha_DCO dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_891_413#
++ dco_freq_1/Q_N GND dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_193_47#
++ dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# dco_freq_1/D dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_381_47#
++ dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_466_413#
++ dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_634_159# dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_561_413#
++ dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_193_47# dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315#
++ dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_381_47# VCCD dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_634_159#
++ dco_freq_1/Q_N_buf GND dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# VCCD dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_1059_315#
++ dco_freq_1/sky130_fd_sc_hd__buf_4_0/a_27_47# dco_freq_1/clkinv dco_freq
+Xsky130_fd_sc_hd__buf_2_0 p_osc GND GND VCCD VCCD pha_ro sky130_fd_sc_hd__buf_2_0/a_27_47#
++ sky130_fd_sc_hd__buf_2
+Xdco_ring_osc_0 dco_ring_osc_0/p[1] dco_ring_osc_0/pn[1] dco_ring_osc_0/pn[2] dco_ring_osc_0/pn[0]
++ dco_ring_osc_0/pn[3] GND p_osc dco_ring_osc_0/p[0] Isup dco_ring_osc_0/pn[4] dco_ring_osc_0/p[3]
++ dco_ring_osc_0/p[2] GND Isup dco_ring_osc
+Xdco_idac_0 Dctrl Vbs_12 Vbs_12 Vbs_34 Vbs_34 Isup VCCD dco_idac_0/G_M7 dco_idac_0/B_M2
++ dco_idac_0/G_M5 dco_idac_0/sky130_fd_sc_hd__buf_2_0/a_27_47# dco_idac_0/D_M7 dco_idac_0/D1_M3
++ VCCA GND dco_idac_0/D1_M4 dco_idac
+Xsky130_fd_sc_hd__einvp_1_0 VCCD ENB GND GND VCCD VCCD dco_ring_osc_0/pn[4] sky130_fd_sc_hd__einvp_1_0/a_204_47#
++ sky130_fd_sc_hd__einvp_1_0/a_276_297# sky130_fd_sc_hd__einvp_1_0/a_27_47# sky130_fd_sc_hd__einvp_1
+X0 GND ENB.t2 sky130_fd_sc_hd__einvp_1_0/a_27_47# GND sky130_fd_pr__nfet_01v8 ad=0.097 pd=0.975 as=0.1092 ps=1.36 w=0 l=0
+X1 sky130_fd_sc_hd__einvp_1_0/a_204_47# ENB.t1 GND GND sky130_fd_pr__nfet_01v8 ad=0.235625 pd=1.375 as=0.097 ps=0.975 w=0 l=0
+X2 GND Dctrl.t1 dco_idac_0/sky130_fd_sc_hd__buf_2_0/a_27_47# GND sky130_fd_pr__nfet_01v8 ad=0.097 pd=0.975 as=0.1092 ps=1.36 w=0 l=0
+X3 dco_ring_osc_0/pn[4] VCCD.t2 sky130_fd_sc_hd__einvp_1_0/a_204_47# GND sky130_fd_pr__nfet_01v8 ad=0.1755 pd=1.84 as=0.235625 ps=1.375 w=0 l=0
+X4 VCCD ENB.t0 sky130_fd_sc_hd__einvp_1_0/a_27_47# VCCD sky130_fd_pr__pfet_01v8_hvt ad=0.32075 pd=1.685 as=0.1092 ps=1.36 w=0 l=0
+X5 VCCD Dctrl.t0 dco_idac_0/sky130_fd_sc_hd__buf_2_0/a_27_47# VCCD sky130_fd_pr__pfet_01v8_hvt ad=0.149 pd=1.325 as=0.1664 ps=1.8 w=0 l=0
+X6 dco_ring_osc_0/pn[4] VCCD.t0 sky130_fd_sc_hd__einvp_1_0/a_276_297# VCCD.t1 sky130_fd_pr__pfet_01v8_hvt ad=0.27 pd=2.54 as=0.1825 ps=1.365 w=0 l=0
+R0 VCCD VCCD 3155.37
+R1 VCCD VCCD 3155.37
+R2 VCCD VCCD 2615.65
+R3 VCCD VCCD 2615.65
+R4 VCCD.n18 VCCD 1947.76
+R5 VCCD.n24 VCCD 1468.67
+R6 VCCD.n2 VCCD 1458.92
+R7 VCCD.n32 VCCD 1151.25
+R8 VCCD VCCD.t1 988.475
+R9 VCCD.n32 VCCD 802.025
+R10 VCCD.n2 VCCD 799.246
+R11 VCCD.n23 VCCD 788.653
+R12 VCCD.n28 VCCD 756.971
+R13 VCCD.n35 VCCD.n32 379.473
+R14 VCCD.n26 VCCD.t0 229.754
+R15 VCCD VCCD 188.829
+R16 VCCD VCCD 188.829
+R17 VCCD.n26 VCCD.t2 157.453
+R18 VCCD.n27 VCCD.n26 152
+R19 VCCD.n14 VCCD.n2 97.2805
+R20 VCCD.n8 VCCD.n7 93.9805
+R21 VCCD VCCD.n4 73.2819
+R22 VCCD.n22 VCCD 73.2819
+R23 VCCD VCCD.n37 25.3312
+R24 VCCD.n38 VCCD 15.7005
+R25 VCCD.n29 VCCD.n27 15.6646
+R26 VCCD.n17 VCCD 13.5656
+R27 VCCD.n8 VCCD.n3 13.5317
+R28 VCCD.n4 VCCD 13.3175
+R29 VCCD.n22 VCCD 13.3175
+R30 VCCD.n27 VCCD 12.1875
+R31 VCCD.n12 VCCD.n3 10.2405
+R32 VCCD.n13 VCCD.n12 10.2405
+R33 VCCD.n14 VCCD.n13 10.2405
+R34 VCCD.n25 VCCD.n24 9.78175
+R35 VCCD.n10 VCCD.n3 9.3005
+R36 VCCD.n12 VCCD.n11 9.3005
+R37 VCCD.n13 VCCD.n1 9.3005
+R38 VCCD.n15 VCCD.n14 9.3005
+R39 VCCD VCCD.n31 7.93175
+R40 VCCD.n31 VCCD.n25 6.79217
+R41 VCCD.n30 VCCD.n29 5.18106
+R42 VCCD.n9 VCCD.n0 4.7005
+R43 VCCD.n19 VCCD.n18 4.688
+R44 VCCD.n29 VCCD.n28 4.5005
+R45 VCCD.n11 VCCD.n0 4.5005
+R46 VCCD.n16 VCCD.n15 4.5005
+R47 VCCD.n31 VCCD.n30 4.48076
+R48 VCCD.n9 VCCD.n8 3.02173
+R49 VCCD.n27 VCCD 1.82907
+R50 VCCD.n30 VCCD 1.51037
+R51 VCCD.n19 VCCD.n16 1.04911
+R52 VCCD.n25 VCCD.n19 0.847722
+R53 VCCD.n24 VCCD.n23 0.84425
+R54 VCCD.n6 VCCD 0.5855
+R55 VCCD VCCD.n20 0.5855
+R56 VCCD.n6 VCCD 0.5655
+R57 VCCD.n20 VCCD 0.5655
+R58 VCCD.n20 VCCD 0.553539
+R59 VCCD.n7 VCCD.n6 0.486144
+R60 VCCD.n39 VCCD 0.458
+R61 VCCD.n18 VCCD.n17 0.390755
+R62 VCCD.n34 VCCD 0.343
+R63 VCCD.n23 VCCD 0.303278
+R64 VCCD.n33 VCCD 0.278589
+R65 VCCD.n35 VCCD.n34 0.263
+R66 VCCD.n37 VCCD.n36 0.255549
+R67 VCCD.n16 VCCD.n0 0.2005
+R68 VCCD VCCD.n39 0.188
+R69 VCCD.n37 VCCD 0.135868
+R70 VCCD.n28 VCCD 0.122722
+R71 VCCD VCCD.n35 0.1055
+R72 VCCD.n10 VCCD.n9 0.1005
+R73 VCCD.n11 VCCD.n10 0.1005
+R74 VCCD.n11 VCCD.n1 0.1005
+R75 VCCD.n15 VCCD.n1 0.1005
+R76 VCCD.n34 VCCD.n33 0.0803503
+R77 VCCD.n7 VCCD 0.0677399
+R78 VCCD.n4 VCCD 0.064384
+R79 VCCD VCCD.n22 0.064384
+R80 VCCD.n17 VCCD 0.0586985
+R81 VCCD.n39 VCCD.n38 0.0577917
+R82 VCCD.n5 VCCD 0.0291458
+R83 VCCD.n21 VCCD 0.0291458
+R84 VCCD VCCD.n5 0.028
+R85 VCCD.n21 VCCD 0.028
+R86 VCCD.n38 VCCD 0.0226354
+R87 VCCD.n5 VCCD 0.00961458
+R88 VCCD VCCD.n21 0.00961458
+R89 VCCD.n36 VCCD 0.0083125
+R90 VCCD.n36 VCCD 0.008
+R91 VCCD.n33 VCCD 0.00106513
+R92 GND.n109 GND.n51 814000
+R93 GND.n160 GND.n159 614900
+R94 GND.n170 GND.n169 609400
+R95 GND.n99 GND.n52 497179
+R96 GND.n100 GND.n99 486200
+R97 GND.n169 GND.n168 363000
+R98 GND.n168 GND.n160 303600
+R99 GND.n101 GND.n100 281600
+R100 GND.n112 GND.n51 277897
+R101 GND.n155 GND.n17 224465
+R102 GND.n170 GND.n12 217800
+R103 GND.n103 GND.n10 110699
+R104 GND.n156 GND.n19 97623.4
+R105 GND GND.n103 62476.4
+R106 GND.n122 GND.n11 22145.4
+R107 GND.n163 GND.n0 18697.9
+R108 GND.n172 GND.n1 18401.1
+R109 GND.n180 GND.n179 14907.7
+R110 GND.n102 GND 12411.6
+R111 GND.n105 GND 12411.6
+R112 GND.n102 GND 12208.8
+R113 GND.n110 GND.n109 11660
+R114 GND GND.n188 9212.5
+R115 GND.n99 GND.n98 8800
+R116 GND.n176 GND.n2 8783.88
+R117 GND.n186 GND.n2 8783.88
+R118 GND.n176 GND.n3 8783.88
+R119 GND.n186 GND.n3 8783.88
+R120 GND.n108 GND.n106 8740.09
+R121 GND.n104 GND 8724.79
+R122 GND.n109 GND.n108 8712
+R123 GND.n100 GND.n53 8474.07
+R124 GND GND 7857.06
+R125 GND GND 7857.06
+R126 GND.n107 GND.n52 7355.09
+R127 GND.n14 GND 7303.6
+R128 GND.n160 GND.n1 6954.02
+R129 GND.n178 GND.n172 6816.8
+R130 GND.n110 GND.n50 6764.15
+R131 GND.n188 GND.n187 6404.78
+R132 GND.n107 GND.n51 5945.95
+R133 GND.n158 GND.n13 5408.33
+R134 GND.n110 GND.n18 4488.94
+R135 GND.n15 GND.n14 4271.67
+R136 GND GND 4053.58
+R137 GND.n105 GND.n104 4012.05
+R138 GND.n106 GND.n105 3886.18
+R139 GND.n106 GND.n19 3753.58
+R140 GND.n177 GND.n173 3466.44
+R141 GND.n187 GND.n1 3371.33
+R142 GND GND 3262.47
+R143 GND GND.n10 3191.09
+R144 GND GND.n50 3191.09
+R145 GND.n111 GND.n52 3158.87
+R146 GND.n178 GND.n177 2870.76
+R147 GND.n108 GND.n107 2310
+R148 GND.n168 GND.n167 2219.72
+R149 GND.n104 GND.n102 2219.1
+R150 GND.n111 GND.n101 2175.09
+R151 GND.n171 GND.n170 2133.33
+R152 GND.n12 GND.n11 2129.79
+R153 GND.n18 GND.n12 2082.98
+R154 GND.n23 GND.n22 1700.77
+R155 GND.n82 GND.n19 1668.97
+R156 GND.n159 GND.n158 1650
+R157 GND.n26 GND.n25 1599.23
+R158 GND.n82 GND.n81 1346.55
+R159 GND.n65 GND.n64 1346.55
+R160 GND.n63 GND.n62 1346.55
+R161 GND.n93 GND.n92 1346.55
+R162 GND.n119 GND.n6 1302.4
+R163 GND.n114 GND.n112 1244.67
+R164 GND.n121 GND.n50 1236.56
+R165 GND.n180 GND.n10 1236.56
+R166 GND.n183 GND.n182 1228.16
+R167 GND.n96 GND.n49 1202.82
+R168 GND.n94 GND.n52 1187.62
+R169 GND.n147 GND.n146 1181.27
+R170 GND.n83 GND.n82 1181.03
+R171 GND.n81 GND.n40 1179.93
+R172 GND.n80 GND.n79 1179.71
+R173 GND.n68 GND.n67 1179.71
+R174 GND.n65 GND.n58 1179.71
+R175 GND.n63 GND.n57 1179.71
+R176 GND.n61 GND.n56 1179.71
+R177 GND.n59 GND.n55 1179.71
+R178 GND.n92 GND.n91 1179.71
+R179 GND.n135 GND.n41 1179.71
+R180 GND.n66 GND.n39 1179.71
+R181 GND.n64 GND.n38 1179.71
+R182 GND.n62 GND.n37 1179.71
+R183 GND.n60 GND.n36 1179.71
+R184 GND.n54 GND.n35 1179.71
+R185 GND.n93 GND.n34 1179.71
+R186 GND.n97 GND.n33 1179.71
+R187 GND.n95 GND.n32 1179.71
+R188 GND.n31 GND.n30 1179.71
+R189 GND GND.n111 1156.17
+R190 GND.n169 GND.n13 1145.83
+R191 GND.n155 GND.n147 937.391
+R192 GND.n28 GND.n27 896.923
+R193 GND.n155 GND.n154 880
+R194 GND.n29 GND.n28 854.615
+R195 GND.n154 GND.n153 837.692
+R196 GND.n153 GND.n152 837.692
+R197 GND.n157 GND.n16 837.692
+R198 GND.n147 GND.n30 822.61
+R199 GND.n22 GND.n21 820.769
+R200 GND.n80 GND.n41 815.518
+R201 GND.n67 GND.n66 815.518
+R202 GND.n61 GND.n60 815.518
+R203 GND.n59 GND.n54 815.518
+R204 GND.n27 GND.n26 803.846
+R205 GND.n172 GND.n171 757.039
+R206 GND.n150 GND.n149 744.615
+R207 GND.n24 GND.n23 719.231
+R208 GND.n21 GND.n20 710.769
+R209 GND.n25 GND.n24 710.769
+R210 GND.n149 GND.n148 710.769
+R211 GND.n148 GND.n16 710.769
+R212 GND.n179 GND.n178 697.447
+R213 GND.n151 GND.n150 626.154
+R214 GND.n112 GND 603.831
+R215 GND.n185 GND.n4 570.73
+R216 GND.n175 GND.n4 570.73
+R217 GND.n175 GND.n174 570.73
+R218 GND.n98 GND.n94 545.217
+R219 GND.n174 GND.n5 518.777
+R220 GND.n169 GND.n15 504.168
+R221 GND.n157 GND.n156 459.13
+R222 GND.n97 GND 441.913
+R223 GND.n152 GND.n151 406.154
+R224 GND.n78 GND.n42 392
+R225 GND.n115 GND.n6 346.401
+R226 GND.n183 GND.n6 338.401
+R227 GND.n124 GND.n123 324.8
+R228 GND.n186 GND.n185 292.5
+R229 GND.n187 GND.n186 292.5
+R230 GND.n176 GND.n175 292.5
+R231 GND.n177 GND.n176 292.5
+R232 GND.n95 GND.n53 291.74
+R233 GND.n156 GND.n155 286.957
+R234 GND.n81 GND.n80 284.483
+R235 GND.n67 GND.n41 284.483
+R236 GND.n66 GND.n65 284.483
+R237 GND.n64 GND.n63 284.483
+R238 GND.n62 GND.n61 284.483
+R239 GND.n60 GND.n59 284.483
+R240 GND.n92 GND.n54 284.483
+R241 GND.n53 GND.n30 263.043
+R242 GND.n123 GND.n122 232.466
+R243 GND.n179 GND 230.954
+R244 GND.n182 GND.n9 228.648
+R245 GND.n98 GND.n97 210.435
+R246 GND.n119 GND.n118 201.09
+R247 GND.n184 GND 189.185
+R248 GND.n169 GND.n157 176.236
+R249 GND.n167 GND.n166 164.113
+R250 GND GND.n183 142.081
+R251 GND.n171 GND.n11 140.427
+R252 GND.n132 GND.n131 137.601
+R253 GND.n131 GND.n130 137.601
+R254 GND.n47 GND.n46 137.601
+R255 GND.n74 GND.n73 137.601
+R256 GND.n73 GND.n72 137.601
+R257 GND.n126 GND.n125 136
+R258 GND.n94 GND.n93 132.76
+R259 GND.n155 GND.n29 126.924
+R260 GND.n117 GND.n116 115.203
+R261 GND.n8 GND.n7 115.203
+R262 GND.n124 GND.n48 112.001
+R263 GND.n181 GND.n6 112.001
+R264 GND GND.n96 101.391
+R265 GND.n173 GND.n1 95.1086
+R266 GND.n182 GND.n181 80.0005
+R267 GND.n134 GND.n133 70.4005
+R268 GND.n130 GND.n129 70.4005
+R269 GND.n128 GND.n127 70.4005
+R270 GND.n46 GND.n45 70.4005
+R271 GND.n44 GND.n43 70.4005
+R272 GND.n77 GND.n76 70.4005
+R273 GND.n75 GND.n74 70.4005
+R274 GND.n71 GND.n70 70.4005
+R275 GND.n69 GND.n48 70.4005
+R276 GND.n101 GND.n17 65.3699
+R277 GND.n125 GND 64.0005
+R278 GND.n123 GND.n49 56.9605
+R279 GND GND.n124 51.2005
+R280 GND.n120 GND.n119 51.2005
+R281 GND.n188 GND.n0 50.0005
+R282 GND.n157 GND.n18 45.1015
+R283 GND.n115 GND.n114 41.6005
+R284 GND.n185 GND.n184 39.944
+R285 GND.n121 GND.n120 39.6805
+R286 GND.n14 GND.n0 39.6401
+R287 GND.n181 GND.n180 38.4005
+R288 GND.n114 GND.n113 35.4836
+R289 GND.n157 GND.n17 34.569
+R290 GND.n43 GND.n31 31.7005
+R291 GND.n42 GND 28.8005
+R292 GND.n133 GND 28.8005
+R293 GND.n129 GND 28.8005
+R294 GND.n127 GND 28.8005
+R295 GND.n45 GND 28.8005
+R296 GND.n43 GND 28.8005
+R297 GND.n69 GND 28.8005
+R298 GND.n71 GND 28.8005
+R299 GND.n75 GND 28.8005
+R300 GND.n77 GND 28.8005
+R301 GND.n103 GND.n11 25.8829
+R302 GND.n161 GND 25.3312
+R303 GND.n111 GND.n110 23.4048
+R304 GND.n134 GND.n42 22.4005
+R305 GND.n133 GND.n132 22.4005
+R306 GND.n129 GND.n128 22.4005
+R307 GND.n127 GND.n126 22.4005
+R308 GND.n45 GND.n44 22.4005
+R309 GND.n78 GND.n77 22.4005
+R310 GND.n76 GND.n75 22.4005
+R311 GND.n72 GND.n71 22.4005
+R312 GND.n70 GND.n69 22.4005
+R313 GND.n49 GND 18.2618
+R314 GND.n4 GND.n2 15.3952
+R315 GND.n173 GND.n2 15.3952
+R316 GND.n174 GND.n3 15.3952
+R317 GND.n173 GND.n3 15.3952
+R318 GND.n113 GND 13.4326
+R319 GND.n116 GND 13.0617
+R320 GND.n7 GND 13.0617
+R321 GND.n96 GND.n95 11.4788
+R322 GND.n166 GND.n5 9.863
+R323 GND.n135 GND.n134 9.3005
+R324 GND.n132 GND.n39 9.3005
+R325 GND.n131 GND.n38 9.3005
+R326 GND.n130 GND.n37 9.3005
+R327 GND.n128 GND.n36 9.3005
+R328 GND.n126 GND.n35 9.3005
+R329 GND.n47 GND.n34 9.3005
+R330 GND.n46 GND.n33 9.3005
+R331 GND.n44 GND.n32 9.3005
+R332 GND.n76 GND.n68 9.3005
+R333 GND.n74 GND.n58 9.3005
+R334 GND.n73 GND.n57 9.3005
+R335 GND.n72 GND.n56 9.3005
+R336 GND.n70 GND.n55 9.3005
+R337 GND.n91 GND.n48 9.3005
+R338 GND.n79 GND.n78 9.3005
+R339 GND.n122 GND.n121 9.3005
+R340 GND GND.n117 6.90547
+R341 GND GND.n8 6.90547
+R342 GND.n184 GND.n5 3.76521
+R343 GND.n166 GND 3.25988
+R344 GND.n125 GND.n47 1.6005
+R345 GND.n167 GND 1.46667
+R346 GND.n138 GND.n137 1.34425
+R347 GND.n139 GND.n138 1.34425
+R348 GND.n144 GND.n143 1.34425
+R349 GND.n87 GND.n86 1.34425
+R350 GND.n88 GND.n87 1.34425
+R351 GND.n118 GND 1.33146
+R352 GND.n9 GND 1.33046
+R353 GND.n120 GND.n115 1.2805
+R354 GND.n143 GND.n142 1.10988
+R355 GND.n136 GND.n40 0.90675
+R356 GND.n137 GND.n136 0.90675
+R357 GND.n140 GND.n139 0.90675
+R358 GND.n141 GND.n140 0.90675
+R359 GND.n145 GND.n144 0.90675
+R360 GND.n146 GND.n145 0.90675
+R361 GND.n85 GND.n84 0.90675
+R362 GND.n86 GND.n85 0.90675
+R363 GND.n89 GND.n88 0.90675
+R364 GND.n90 GND.n89 0.90675
+R365 GND.n83 GND.n40 0.563
+R366 GND.n164 GND 0.343
+R367 GND.n142 GND 0.313
+R368 GND GND.n165 0.278589
+R369 GND.n162 GND.n161 0.255549
+R370 GND.n90 GND 0.2505
+R371 GND.n164 GND.n163 0.238
+R372 GND.n142 GND.n141 0.234875
+R373 GND.n84 GND.n83 0.234875
+R374 GND.n91 GND.n90 0.21925
+R375 GND.n89 GND.n55 0.21925
+R376 GND.n88 GND.n56 0.21925
+R377 GND.n87 GND.n57 0.21925
+R378 GND.n86 GND.n58 0.21925
+R379 GND.n85 GND.n68 0.21925
+R380 GND.n137 GND.n39 0.21925
+R381 GND.n138 GND.n38 0.21925
+R382 GND.n139 GND.n37 0.21925
+R383 GND.n140 GND.n36 0.21925
+R384 GND.n141 GND.n35 0.21925
+R385 GND.n143 GND.n34 0.21925
+R386 GND.n144 GND.n33 0.21925
+R387 GND.n145 GND.n32 0.21925
+R388 GND.n146 GND.n31 0.21925
+R389 GND.n136 GND.n135 0.21925
+R390 GND.n84 GND.n79 0.21925
+R391 GND.n113 GND 0.190676
+R392 GND.n161 GND 0.135868
+R393 GND.n163 GND 0.1305
+R394 GND.n165 GND.n164 0.0803503
+R395 GND.n116 GND 0.0675903
+R396 GND.n7 GND 0.0675903
+R397 GND.n117 GND 0.0615499
+R398 GND.n8 GND 0.0615499
+R399 GND.n9 GND 0.0554671
+R400 GND.n118 GND 0.0544759
+R401 GND.n162 GND 0.0083125
+R402 GND GND.n162 0.008
+R403 GND.n165 GND 0.00106513
+R404 pha_DCO.n0 pha_DCO 19.5888
+R405 pha_DCO.n0 pha_DCO 5.363
+R406 pha_DCO pha_DCO.n0 0.0255
+R407 Dctrl.n0 Dctrl.t0 276.464
+R408 Dctrl.n0 Dctrl.t1 196.131
+R409 Dctrl.n1 Dctrl.n0 152
+R410 Dctrl Dctrl.n1 9.613
+R411 Dctrl.n1 Dctrl 1.9836
+R412 Dctrl Dctrl 0.09425
+R413 Vbs_12 Vbs_12.t1 310.784
+R414 Vbs_12 Vbs_12.t0 212.103
+R415 Vbs_12 Vbs_12.n0 4.063
+R416 Vbs_12.n0 Vbs_12 0.363
+R417 Vbs_12.n0 Vbs_12 0.113
+R418 Vbs_34.n7 Vbs_34.t4 212.081
+R419 Vbs_34.n8 Vbs_34.t2 165.476
+R420 Vbs_34.n2 Vbs_34.n0 157.243
+R421 Vbs_34.n5 Vbs_34.n4 152
+R422 Vbs_34.n3 Vbs_34.n1 152
+R423 Vbs_34.n7 Vbs_34.t5 125.32
+R424 Vbs_34.n2 Vbs_34.t1 125.32
+R425 Vbs_34.n3 Vbs_34.t3 125.32
+R426 Vbs_34.n4 Vbs_34.t0 125.32
+R427 Vbs_34.n3 Vbs_34.n2 86.7605
+R428 Vbs_34.n4 Vbs_34.n3 86.7605
+R429 Vbs_34.n9 Vbs_34.n8 70.9096
+R430 Vbs_34.n8 Vbs_34.n7 40.1491
+R431 Vbs_34.n5 Vbs_34.n1 23.0405
+R432 Vbs_34.n6 Vbs_34.n5 9.3005
+R433 Vbs_34.n1 Vbs_34.n0 5.11917
+R434 Vbs_34.n6 Vbs_34.n0 2.34191
+R435 Vbs_34.n9 Vbs_34.n6 0.538
+R436 Vbs_34 Vbs_34.n9 0.138
+R437 ENB.n2 ENB.t0 358.288
+R438 ENB.n1 ENB.t1 257.067
+R439 ENB.n1 ENB.t2 189.588
+R440 ENB.n3 ENB.n2 171.946
+R441 ENB.n2 ENB.n1 40.1672
+R442 ENB.n0 ENB 10.1282
+R443 ENB.n0 ENB 6.53963
+R444 ENB ENB.n3 1.53093
+R445 ENB.n3 ENB.n0 1.3918
+C0 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# VCCD -4.58e-19
+C1 ENB p_osc 1.35e-19
+C2 dco_freq_0/Q_N dco_freq_1/sky130_fd_sc_hd__buf_4_0/a_27_47# 2.95e-20
+C3 dco_ring_osc_0/pn[0] dco_ring_osc_0/pn[4] -7.9e-20
+C4 dco_ring_osc_0/p[3] sky130_fd_sc_hd__buf_2_0/a_27_47# 0.002153f
+C5 ro_div2 dco_freq_1/Q_N_buf 7.24e-19
+C6 GND sky130_fd_sc_hd__buf_2_0/a_27_47# 0.002767f
+C7 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# dco_ring_osc_0/p[2] 0.001019f
+C8 dco_freq_1/clkinv dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_381_47# 1.82e-20
+C9 dco_freq_1/D dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 9.84e-21
+C10 dco_freq_0/Q_N dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 2.46e-22
+C11 pha_DCO GND 0.145881f
+C12 ENB dco_ring_osc_0/p[0] 9.11e-20
+C13 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_381_47# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_634_159# 6.55e-20
+C14 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_466_413# dco_freq_1/Q_N_buf 2.8e-20
+C15 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_381_47# VCCD -3.55e-32
+C16 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 3.69e-19
+C17 Isup dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 7.77e-19
+C18 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_891_413# VCCD -1.42e-32
+C19 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_193_47# 2.64e-19
+C20 GND dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# 1.92e-20
+C21 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_891_413# dco_ring_osc_0/p[2] 5.91e-23
+C22 dco_freq_1/clkinv dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# 2.79e-20
+C23 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# VCCD 8.35e-20
+C24 Isup sky130_fd_sc_hd__buf_2_0/a_27_47# 0.012573f
+C25 dco_freq_1/Q_N GND 0.032885f
+C26 GND dco_ring_osc_0/pn[4] 0.335435f
+C27 ro_div2 GND 0.293919f
+C28 dco_freq_0/D dco_freq_1/D 3.83e-21
+C29 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_193_47# VCCD 6.57e-19
+C30 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# VCCD 1.71e-31
+C31 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# dco_freq_0/D 2.24e-19
+C32 dco_freq_0/Q_N dco_freq_1/Q_N_buf 8.94e-20
+C33 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_193_47# 2.85e-20
+C34 VCCA Vbs_34 0.01567f
+C35 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 0.001807f
+C36 dco_freq_1/clkinv ro_div2 0.008378f
+C37 VCCA p_osc 4.79e-19
+C38 dco_freq_0/sky130_fd_sc_hd__buf_4_0/a_27_47# pha_ro 7.47e-19
+C39 pha_ro dco_freq_0/Q_N_buf 5.51e-20
+C40 GND sky130_fd_sc_hd__einvp_1_0/a_276_297# 5.8e-21
+C41 dco_freq_0/D dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# 5e-20
+C42 VCCD pha_ro 0.594015f
+C43 Vbs_34 VCCD 0.013972f
+C44 ro_div2 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_634_159# 1.18e-19
+C45 VCCD p_osc 0.87006f
+C46 GND dco_idac_0/G_M5 0.004182f
+C47 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_891_413# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 0.00171f
+C48 dco_freq_0/clkinv dco_ring_osc_0/p[3] 6.35e-20
+C49 GND dco_ring_osc_0/p[1] 1.21e-31
+C50 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# pha_ro 8.11e-20
+C51 dco_freq_1/D dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# 1.01e-19
+C52 dco_freq_0/clkinv GND 0.001645f
+C53 VCCD dco_ring_osc_0/p[0] 0.014568f
+C54 ro_div2 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_381_47# 6.12e-20
+C55 ro_div2 Isup 1.82e-20
+C56 Isup dco_ring_osc_0/pn[4] -1.75e-30
+C57 ENB VCCD 0.113546f
+C58 VCCD dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 2.38e-20
+C59 GND dco_ring_osc_0/pn[3] 0.021567f
+C60 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_634_159# GND 5.64e-20
+C61 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_634_159# VCCD 8.52e-32
+C62 dco_freq_0/D dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 3.4e-19
+C63 GND Vbs_12 0.009912f
+C64 dco_freq_1/Q_N pha_DCO 0.005397f
+C65 GND dco_freq_0/Q_N 0.047859f
+C66 VCCD dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_891_413# -1.42e-32
+C67 dco_freq_0/clkinv dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 2.84e-32
+C68 ro_div2 pha_DCO 0.002215f
+C69 GND dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# 2.18e-21
+C70 dco_freq_0/D dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_634_159# 1.75e-21
+C71 GND sky130_fd_sc_hd__einvp_1_0/a_204_47# 0.001278f
+C72 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# VCCD 4.26e-32
+C73 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 1.49e-19
+C74 dco_freq_1/clkinv dco_freq_0/Q_N 0.012859f
+C75 dco_idac_0/sky130_fd_sc_hd__buf_2_0/a_27_47# VCCD 3.07e-19
+C76 sky130_fd_sc_hd__einvp_1_0/a_27_47# p_osc 3.57e-20
+C77 dco_freq_0/D dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_891_413# 2.77e-19
+C78 Isup dco_ring_osc_0/p[1] 5.86e-31
+C79 Isup dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 8.87e-20
+C80 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# dco_ring_osc_0/p[2] 2.32e-22
+C81 Isup dco_freq_0/clkinv 0.009513f
+C82 ro_div2 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# 3.65e-19
+C83 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_193_47# dco_freq_1/Q_N_buf 3.78e-19
+C84 dco_freq_0/Q_N dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_634_159# -5.55e-35
+C85 sky130_fd_sc_hd__einvp_1_0/a_27_47# dco_ring_osc_0/p[0] 2.98e-20
+C86 ENB sky130_fd_sc_hd__einvp_1_0/a_27_47# 0.034591f
+C87 Isup dco_ring_osc_0/pn[3] -1.43e-30
+C88 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 7.2e-21
+C89 VCCD dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 0.001463f
+C90 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 4.36e-20
+C91 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# VCCD -7.51e-19
+C92 Isup Vbs_12 0.018678f
+C93 dco_freq_1/Q_N_buf pha_ro 4.18e-20
+C94 ro_div2 dco_freq_1/Q_N -3.84e-19
+C95 ro_div2 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# 4.23e-21
+C96 dco_freq_0/D dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 5.76e-19
+C97 VCCA VCCD 0.051169f
+C98 ro_div2 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_466_413# 1.42e-19
+C99 Isup dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 5.56e-19
+C100 dco_freq_0/sky130_fd_sc_hd__buf_4_0/a_27_47# VCCD 0.002565f
+C101 VCCD dco_freq_0/Q_N_buf 5.09e-19
+C102 pha_DCO dco_freq_0/Q_N 5.73e-19
+C103 ENB dco_ring_osc_0/pn[0] 0.002171f
+C104 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# GND 7.42e-20
+C105 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_634_159# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# 4.28e-19
+C106 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# VCCD -4.15e-19
+C107 dco_ring_osc_0/pn[2] pha_ro 3.88e-19
+C108 dco_ring_osc_0/p[2] dco_freq_0/Q_N_buf 8e-19
+C109 Vbs_34 dco_idac_0/G_M7 2.61e-20
+C110 GND dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_193_47# 1.49e-20
+C111 VCCD dco_ring_osc_0/p[2] 0.001108f
+C112 dco_freq_0/D VCCD 0.004541f
+C113 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# -1.42e-32
+C114 dco_freq_0/Q_N dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# 2.22e-34
+C115 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# VCCD 1.42e-32
+C116 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_891_413# Isup 1.97e-19
+C117 dco_freq_0/D dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 4e-19
+C118 ro_div2 dco_freq_0/clkinv 1.91e-21
+C119 ro_div2 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_193_47# 3.83e-20
+C120 VCCD dco_freq_1/sky130_fd_sc_hd__buf_4_0/a_27_47# 2.84e-32
+C121 dco_ring_osc_0/p[3] pha_ro 1.63e-19
+C122 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# dco_ring_osc_0/p[2] 0.001018f
+C123 dco_ring_osc_0/pn[3] dco_ring_osc_0/pn[4] 1.4e-19
+C124 ro_div2 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 4.78e-19
+C125 ro_div2 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# 1.16e-19
+C126 dco_ring_osc_0/p[3] p_osc 0.001509f
+C127 GND pha_ro 0.158896f
+C128 GND Vbs_34 0.00544f
+C129 VCCD dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 6.82e-31
+C130 dco_freq_1/Q_N dco_freq_0/Q_N 7.37e-21
+C131 GND p_osc 0.172888f
+C132 Vbs_12 dco_ring_osc_0/pn[4] 5.72e-19
+C133 dco_freq_1/clkinv pha_ro 3.33e-20
+C134 ro_div2 dco_freq_0/Q_N 0.026994f
+C135 ro_div2 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# 2.01e-19
+C136 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# dco_freq_0/Q_N 7.37e-22
+C137 sky130_fd_sc_hd__einvp_1_0/a_204_47# dco_ring_osc_0/pn[4] 1.97e-20
+C138 dco_freq_0/D dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 1.88e-20
+C139 VCCD sky130_fd_sc_hd__einvp_1_0/a_27_47# 0.060723f
+C140 VCCD dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# 4.11e-19
+C141 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# pha_ro 0.002054f
+C142 GND ENB 0.039598f
+C143 GND dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 1.06e-19
+C144 ro_div2 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 1.43e-21
+C145 pha_DCO dco_freq_1/D 0.142328f
+C146 dco_freq_0/clkinv dco_ring_osc_0/pn[3] 5.2e-20
+C147 pha_ro dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_381_47# 6.38e-20
+C148 ro_div2 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_561_413# 6.94e-22
+C149 GND dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_891_413# 1.09e-19
+C150 Isup pha_ro 0.049806f
+C151 Isup Vbs_34 0.005711f
+C152 Isup p_osc 0.352994f
+C153 VCCD dco_ring_osc_0/pn[0] 0.01489f
+C154 VCCD dco_freq_1/Q_N_buf 1.55e-20
+C155 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# 4.44e-19
+C156 Vbs_12 dco_ring_osc_0/pn[3] 3.91e-19
+C157 sky130_fd_sc_hd__buf_2_0/a_27_47# pha_ro 0.035809f
+C158 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_634_159# dco_freq_0/Q_N 6.39e-20
+C159 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# dco_freq_0/Q_N 1.47e-20
+C160 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_634_159# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# 1.39e-20
+C161 sky130_fd_sc_hd__buf_2_0/a_27_47# p_osc 0.021647f
+C162 dco_freq_0/D dco_freq_1/Q_N_buf 2.2e-19
+C163 Isup ENB 1.13e-19
+C164 dco_freq_0/Q_N dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# 1.11e-34
+C165 GND dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 1.55e-20
+C166 ro_div2 dco_freq_1/D 0.068287f
+C167 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# ro_div2 7.37e-19
+C168 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# GND 2.06e-19
+C169 VCCD dco_ring_osc_0/pn[2] 0.021585f
+C170 dco_idac_0/G_M7 VCCD 0.005624f
+C171 Isup dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 1.93e-19
+C172 ro_div2 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_193_47# 2.49e-19
+C173 dco_freq_1/clkinv dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 2.84e-32
+C174 ro_div2 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# 1.26e-19
+C175 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_466_413# 1.34e-20
+C176 GND VCCA 0.012474f
+C177 dco_ring_osc_0/pn[1] GND 1.14e-31
+C178 sky130_fd_sc_hd__einvp_1_0/a_27_47# dco_ring_osc_0/pn[0] 0.00144f
+C179 dco_ring_osc_0/p[3] VCCD 0.028656f
+C180 dco_freq_0/sky130_fd_sc_hd__buf_4_0/a_27_47# GND 0.005377f
+C181 GND dco_freq_0/Q_N_buf 0.002007f
+C182 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_634_159# 4.95e-20
+C183 ro_div2 pha_ro 0.013361f
+C184 GND VCCD 0.688553f
+C185 VCCD dco_idac_0/D_M7 6.19e-19
+C186 dco_ring_osc_0/pn[4] p_osc 0.001826f
+C187 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# GND 1.52e-19
+C188 dco_freq_1/clkinv VCCD -0.001381f
+C189 GND dco_ring_osc_0/p[2] 1.28e-31
+C190 dco_idac_0/sky130_fd_sc_hd__buf_2_0/a_27_47# Dctrl 3.15e-20
+C191 GND dco_freq_1/sky130_fd_sc_hd__buf_4_0/a_27_47# 0.005162f
+C192 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_381_47# 1e-20
+C193 dco_freq_1/clkinv dco_freq_0/D 0.002068f
+C194 ENB dco_ring_osc_0/pn[4] 0.037739f
+C195 ro_div2 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 0.001108f
+C196 VCCD dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_634_159# 2.73e-19
+C197 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# VCCD -9.97e-19
+C198 Vbs_34 dco_idac_0/G_M5 5.23e-20
+C199 dco_freq_1/D dco_freq_0/Q_N 1.73e-19
+C200 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_634_159# 8.67e-20
+C201 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_634_159# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_193_47# 4.58e-19
+C202 Isup dco_ring_osc_0/pn[1] 1.35e-31
+C203 ro_div2 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_634_159# 2.63e-20
+C204 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# dco_freq_0/Q_N 9.19e-20
+C205 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# 6.72e-20
+C206 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# dco_ring_osc_0/p[2] 3.76e-20
+C207 dco_freq_0/clkinv pha_ro 0.006572f
+C208 Isup dco_freq_0/Q_N_buf 1.71e-19
+C209 ENB sky130_fd_sc_hd__einvp_1_0/a_276_297# 5.48e-20
+C210 VCCD dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_381_47# -5.71e-22
+C211 VCCD dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_381_47# -5.71e-22
+C212 ro_div2 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_891_413# 7.88e-19
+C213 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_193_47# dco_freq_0/Q_N 1.11e-34
+C214 Isup VCCD 1.121834f
+C215 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# dco_freq_0/Q_N 1.87e-20
+C216 dco_ring_osc_0/pn[3] pha_ro 0.002241f
+C217 GND sky130_fd_sc_hd__einvp_1_0/a_27_47# 0.030251f
+C218 Vbs_34 dco_ring_osc_0/pn[3] 0.001803f
+C219 GND dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# 2.44e-20
+C220 VCCD dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_381_47# -3.55e-32
+C221 dco_ring_osc_0/p[2] dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_381_47# 3.36e-20
+C222 dco_ring_osc_0/pn[3] p_osc 0.018017f
+C223 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# 7.45e-19
+C224 Isup dco_ring_osc_0/p[2] 1.35e-31
+C225 Isup dco_freq_0/D 0.013024f
+C226 Vbs_12 Vbs_34 0.225886f
+C227 sky130_fd_sc_hd__buf_2_0/a_27_47# VCCD 0.028165f
+C228 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# Isup 1.54e-19
+C229 dco_freq_0/Q_N pha_ro -1.03e-19
+C230 Vbs_12 p_osc 0.02054f
+C231 pha_DCO VCCD 0.0306f
+C232 Dctrl VCCD 0.012307f
+C233 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_561_413# pha_ro 2.19e-20
+C234 ro_div2 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 6.76e-19
+C235 dco_freq_0/D pha_DCO 8.29e-19
+C236 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# pha_ro 0.001755f
+C237 ro_div2 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.003685f
+C238 GND dco_ring_osc_0/pn[0] 4.57e-20
+C239 GND dco_freq_1/Q_N_buf 0.001694f
+C240 VCCD dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# 0.001004f
+C241 dco_freq_0/Q_N dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 1.37e-19
+C242 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# 6.19e-20
+C243 Isup sky130_fd_sc_hd__einvp_1_0/a_27_47# 6.88e-21
+C244 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_634_159# dco_freq_0/Q_N 7.37e-22
+C245 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_466_413# 2.34e-20
+C246 dco_freq_0/Q_N dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_891_413# 1.15e-19
+C247 ro_div2 dco_freq_0/sky130_fd_sc_hd__buf_4_0/a_27_47# 8.33e-19
+C248 ro_div2 dco_freq_0/Q_N_buf 2.83e-19
+C249 dco_freq_1/Q_N VCCD 0.00254f
+C250 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_891_413# 2.12e-20
+C251 dco_freq_1/Q_N_buf dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_634_159# 3.8e-19
+C252 ro_div2 VCCD 0.863283f
+C253 VCCD dco_ring_osc_0/pn[4] 0.354813f
+C254 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# VCCD -1.85e-31
+C255 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_193_47# 2.9e-20
+C256 ro_div2 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.002933f
+C257 GND dco_ring_osc_0/pn[2] -3.62e-31
+C258 GND dco_idac_0/G_M7 3.12e-19
+C259 VCCD dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_466_413# 3.47e-19
+C260 ro_div2 dco_freq_0/D 0.800059f
+C261 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_634_159# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 6.11e-20
+C262 dco_freq_0/D dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# 1.75e-21
+C263 VCCD sky130_fd_sc_hd__einvp_1_0/a_276_297# 0.004286f
+C264 Isup dco_ring_osc_0/pn[0] 2.35e-31
+C265 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_466_413# 0.001252f
+C266 ro_div2 dco_freq_1/sky130_fd_sc_hd__buf_4_0/a_27_47# 7.07e-19
+C267 dco_ring_osc_0/p[3] GND 1.97e-19
+C268 VCCD dco_idac_0/G_M5 0.006354f
+C269 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 5.68e-32
+C270 ro_div2 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 6.9e-20
+C271 GND dco_idac_0/D_M7 0.014087f
+C272 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# dco_freq_0/Q_N 2.25e-19
+C273 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# 8.56e-19
+C274 VCCD dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 1.28e-31
+C275 dco_freq_0/clkinv VCCD -0.001405f
+C276 VCCD dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_193_47# -5.68e-32
+C277 dco_freq_1/clkinv GND 0.00174f
+C278 VCCA Vbs_12 0.243638f
+C279 dco_ring_osc_0/p[2] dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 7.99e-19
+C280 sky130_fd_sc_hd__einvp_1_0/a_27_47# dco_ring_osc_0/pn[4] 2.14e-19
+C281 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# dco_ring_osc_0/p[3] 4.38e-20
+C282 VCCD dco_ring_osc_0/pn[3] 0.026145f
+C283 ro_div2 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# 4.07e-19
+C284 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_634_159# VCCD 9.95e-32
+C285 Isup dco_ring_osc_0/pn[2] 1.08e-30
+C286 dco_freq_0/D dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_193_47# 1.1e-21
+C287 GND dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_634_159# 1.31e-20
+C288 pha_ro p_osc 0.033728f
+C289 Vbs_34 p_osc 0.001448f
+C290 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# dco_freq_1/Q_N_buf 3.73e-20
+C291 Vbs_12 VCCD 0.04095f
+C292 dco_freq_0/Q_N VCCD 0.109793f
+C293 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_634_159# dco_freq_0/D 1.56e-19
+C294 dco_freq_0/D dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# 3.5e-20
+C295 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# VCCD 4.5e-19
+C296 sky130_fd_sc_hd__einvp_1_0/a_204_47# VCCD 0.001169f
+C297 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# dco_freq_0/Q_N 1.63e-19
+C298 Isup dco_ring_osc_0/p[3] 8.52e-31
+C299 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# 8.92e-19
+C300 dco_freq_0/D dco_freq_0/Q_N 5.68e-32
+C301 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_466_413# VCCD 5.68e-32
+C302 Isup GND 0.084845f
+C303 ENB.n0 0 0.036921f
+C304 ENB.t0 0 0.032462f
+C305 ENB.t1 0 0.032207f
+C306 ENB.t2 0 0.019095f
+C307 ENB.n1 0 0.040482f
+C308 ENB.n2 0 0.057059f
+C309 ENB.n3 0 0.010768f
+C310 Vbs_34.n0 0 0.084325f
+C311 Vbs_34.n1 0 0.089834f
+C312 Vbs_34.t0 0 0.114787f
+C313 Vbs_34.t3 0 0.114787f
+C314 Vbs_34.t1 0 0.114787f
+C315 Vbs_34.n2 0 0.137135f
+C316 Vbs_34.n3 0 0.154714f
+C317 Vbs_34.n4 0 0.13475f
+C318 Vbs_34.n5 0 0.069871f
+C319 Vbs_34.n6 0 0.295084f
+C320 Vbs_34.t2 0 0.143574f
+C321 Vbs_34.t5 0 0.114787f
+C322 Vbs_34.t4 0 0.169913f
+C323 Vbs_34.n7 0 0.218191f
+C324 Vbs_34.n8 0 0.131456f
+C325 Vbs_34.n9 0 0.584556f
+C326 Vbs_12.t0 0 0.171069f
+C327 Vbs_12.n0 0 0.420611f
+C328 Vbs_12.t1 0 0.081995f
+C329 Dctrl.t0 0 0.034276f
+C330 Dctrl.t1 0 0.021872f
+C331 Dctrl.n0 0 0.080222f
+C332 Dctrl.n1 0 0.031751f
+C333 pha_DCO.n0 0 0.70422f
+C334 VCCD.n0 0 0.085976f
+C335 VCCD.n1 0 0.018557f
+C336 VCCD.n2 0 0.649254f
+C337 VCCD.n3 0 0.023071f
+C338 VCCD.n4 0 0.289415f
+C339 VCCD.n5 0 0.005781f
+C340 VCCD.n6 0 0.161353f
+C341 VCCD.n7 0 0.197737f
+C342 VCCD.n8 0 0.117347f
+C343 VCCD.n9 0 0.043679f
+C344 VCCD.n10 0 0.018557f
+C345 VCCD.n11 0 0.018557f
+C346 VCCD.n12 0 0.018557f
+C347 VCCD.n13 0 0.018557f
+C348 VCCD.n14 0 0.109025f
+C349 VCCD.n15 0 0.020877f
+C350 VCCD.n16 0 0.099506f
+C351 VCCD.n17 0 0.075413f
+C352 VCCD.n18 0 0.323399f
+C353 VCCD.n19 0 0.143802f
+C354 VCCD.n20 0 0.176126f
+C355 VCCD.n21 0 0.005781f
+C356 VCCD.n22 0 0.289415f
+C357 VCCD.n23 0 0.245839f
+C358 VCCD.n24 0 0.730877f
+C359 VCCD.n25 0 1.19435f
+C360 VCCD.t0 0 0.010361f
+C361 VCCD.t2 0 0.006468f
+C362 VCCD.n26 0 0.020054f
+C363 VCCD.n27 0 0.058466f
+C364 VCCD.t1 0 0.224129f
+C365 VCCD.n28 0 0.105398f
+C366 VCCD.n29 0 0.628606f
+C367 VCCD.n30 0 2.2559f
+C368 VCCD.n31 0 1.70085f
+C369 VCCD.n32 0 0.232854f
+C370 VCCD.n33 0 0.071121f
+C371 VCCD.n34 0 0.075469f
+C372 VCCD.n35 0 0.072829f
+C373 VCCD.n36 0 0.064551f
+C374 VCCD.n37 0 0.081408f
+C375 VCCD.n38 0 0.008544f
+C376 VCCD.n39 0 0.064747f
+C377 ENB 0 0.773903f
+C378 sky130_fd_sc_hd__einvp_1_0/a_27_47# 0 0.132445f
+C379 Vbs_34 0 2.101284f
+C380 Vbs_12 0 3.156828f
+C381 VCCA 0 5.264452f
+C382 dco_idac_0/Vbs2.t0 0 0.110444f **FLOATING
+C383 dco_idac_0/Vbs3.t0 0 0.156911f **FLOATING
+C384 dco_idac_0/Vbs3.t2 0 0.125455f **FLOATING
+C385 dco_idac_0/Vbs3.t1 0 0.185702f **FLOATING
+C386 dco_idac_0/Vbs3.n0 0 0.238487f **FLOATING
+C387 dco_idac_0/Vbs3.n1 0 0.140414f **FLOATING
+C388 dco_idac_0/D1_M3.t1 0 0.070459f **FLOATING
+C389 dco_idac_0/D1_M3.t0 0 0.018308f **FLOATING
+C390 dco_idac_0/D1_M3.t8 0 0.018308f **FLOATING
+C391 dco_idac_0/D1_M3.n0 0 0.054154f **FLOATING
+C392 dco_idac_0/D1_M3.n1 0 0.227306f **FLOATING
+C393 dco_idac_0/D1_M3.t4 0 0.343782f **FLOATING
+C394 dco_idac_0/D1_M3.t2 0 0.238003f **FLOATING
+C395 dco_idac_0/D1_M3.t6 0 0.387026f **FLOATING
+C396 dco_idac_0/B_M4 0 0.02026f **FLOATING
+C397 dco_idac_0/D1_M3.n2 0 0.179584f **FLOATING
+C398 dco_idac_0/D1_M3.t7 0 0.065914f **FLOATING
+C399 dco_idac_0/D1_M3.t5 0 0.018308f **FLOATING
+C400 dco_idac_0/D1_M3.t3 0 0.018308f **FLOATING
+C401 dco_idac_0/D1_M3.n3 0 0.058703f **FLOATING
+C402 dco_idac_0/D1_M3.n4 0 0.246542f **FLOATING
+C403 dco_idac_0/D1_M3.n5 0 0.162928f **FLOATING
+C404 dco_idac_0/D2_M3 0 0.072108f **FLOATING
+C405 dco_idac_0/Vbs4.n0 0 0.060536f **FLOATING
+C406 dco_idac_0/Vbs4.n1 0 0.073171f **FLOATING
+C407 dco_idac_0/Vbs4.t0 0 0.093496f **FLOATING
+C408 dco_idac_0/Vbs4.t2 0 0.093496f **FLOATING
+C409 dco_idac_0/Vbs4.t1 0 0.093496f **FLOATING
+C410 dco_idac_0/Vbs4.n2 0 0.111698f **FLOATING
+C411 dco_idac_0/Vbs4.n3 0 0.126016f **FLOATING
+C412 dco_idac_0/Vbs4.n4 0 0.109756f **FLOATING
+C413 dco_idac_0/Vbs4.n5 0 0.057532f **FLOATING
+C414 dco_idac_0/B_M2.t0 0 0.339979f **FLOATING
+C415 dco_idac_0/B_M2.t2 0 0.055757f **FLOATING
+C416 dco_idac_0/B_M2.n0 0 0.855623f **FLOATING
+C417 dco_idac_0/B_M2.t1 0 0.048641f **FLOATING
+C418 dco_idac_0/VCCA.t5 0 0.065766f **FLOATING
+C419 dco_idac_0/VCCA.t2 0 0.238028f **FLOATING
+C420 dco_idac_0/VCCA.t0 0 0.164789f **FLOATING
+C421 dco_idac_0/VCCA.t6 0 0.274478f **FLOATING
+C422 dco_idac_0/VCCA.t3 0 0.012676f **FLOATING
+C423 dco_idac_0/VCCA.t1 0 0.012676f **FLOATING
+C424 dco_idac_0/VCCA.n0 0 0.027567f **FLOATING
+C425 dco_idac_0/VCCA.t7 0 0.051503f **FLOATING
+C426 dco_idac_0/VCCA.n1 0 0.214447f **FLOATING
+C427 dco_idac_0/VCCA.n2 0 0.22426f **FLOATING
+C428 dco_idac_0/VCCA.n3 0 0.121558f **FLOATING
+C429 dco_idac_0/VCCA.t4 0 0.351168f **FLOATING
+C430 dco_idac_0/Vbs1.t0 0 0.234362f **FLOATING
+C431 dco_idac_0/Isup.t0 0 0.045908f **FLOATING
+C432 dco_idac_0/Isup.t1 0 0.045908f **FLOATING
+C433 dco_idac_0/Isup.n0 0 0.203331f **FLOATING
+C434 dco_idac_0/Isup.t3 0 0.126162f **FLOATING
+C435 dco_idac_0/Isup.t4 0 0.076697f **FLOATING
+C436 dco_idac_0/Isup.n1 0 0.390315f **FLOATING
+C437 dco_idac_0/Isup.n2 0 0.788832f **FLOATING
+C438 dco_idac_0/Isup.t2 0 0.08883f **FLOATING
+C439 dco_idac_0/D1_M4.t8 0 0.15434f **FLOATING
+C440 dco_idac_0/D1_M4.t5 0 0.015916f **FLOATING
+C441 dco_idac_0/D1_M4.t4 0 0.015916f **FLOATING
+C442 dco_idac_0/D1_M4.n0 0 0.092169f **FLOATING
+C443 dco_idac_0/D1_M4.t12 0 0.015916f **FLOATING
+C444 dco_idac_0/D1_M4.t9 0 0.015916f **FLOATING
+C445 dco_idac_0/D1_M4.n1 0 0.090405f **FLOATING
+C446 dco_idac_0/D1_M4.t14 0 0.014325f **FLOATING
+C447 dco_idac_0/D1_M4.t6 0 0.014325f **FLOATING
+C448 dco_idac_0/D1_M4.n2 0 0.032166f **FLOATING
+C449 dco_idac_0/D1_M4.t13 0 0.065864f **FLOATING
+C450 dco_idac_0/D1_M4.n3 0 0.24417f **FLOATING
+C451 dco_idac_0/D1_M4.t0 0 0.496588f **FLOATING
+C452 dco_idac_0/D1_M4.t2 0 0.627331f **FLOATING
+C453 dco_idac_0/D1_M4.t3 0 0.145523f **FLOATING
+C454 dco_idac_0/D1_M4.t1 0 0.15434f **FLOATING
+C455 dco_idac_0/D1_M4.n4 0 0.344947f **FLOATING
+C456 dco_idac_0/D1_M4.n5 0 0.315061f **FLOATING
+C457 dco_idac_0/D1_M4.n6 0 0.133946f **FLOATING
+C458 dco_idac_0/D1_M4.n7 0 0.156696f **FLOATING
+C459 dco_idac_0/D1_M4.n8 0 0.23961f **FLOATING
+C460 dco_idac_0/D1_M4.t10 0 0.496588f **FLOATING
+C461 dco_idac_0/D1_M4.t7 0 0.645011f **FLOATING
+C462 dco_idac_0/D1_M4.n9 0 0.401362f **FLOATING
+C463 dco_idac_0/D1_M4.n10 0 0.326045f **FLOATING
+C464 dco_idac_0/D1_M4.t11 0 0.145523f **FLOATING
+C465 dco_idac_0/GND.n0 0 8.03e-19 **FLOATING
+C466 dco_idac_0/GND.n1 0 0.007968f **FLOATING
+C467 dco_idac_0/GND.n2 0 0.001822f **FLOATING
+C468 dco_idac_0/GND.n3 0 0.001714f **FLOATING
+C469 dco_idac_0/GND.n4 0 0.001714f **FLOATING
+C470 dco_idac_0/GND.n5 0 0.001714f **FLOATING
+C471 dco_idac_0/GND.n6 0 0.019486f **FLOATING
+C472 dco_idac_0/GND.n7 0 -1.25e-19 **FLOATING
+C473 dco_idac_0/GND.n8 0 0.030537f **FLOATING
+C474 dco_idac_0/GND.t0 0 0.020956f **FLOATING
+C475 dco_idac_0/GND.t1 0 0.019423f **FLOATING
+C476 dco_idac_0/GND.n9 0 0.024631f **FLOATING
+C477 dco_idac_0/GND.n10 0 0.019934f **FLOATING
+C478 dco_idac_0/GND.t2 0 0.016969f **FLOATING
+C479 dco_idac_0/GND.t3 0 0.020956f **FLOATING
+C480 dco_idac_0/GND.n11 0 0.026553f **FLOATING
+C481 dco_idac_0/GND.n12 0 0.003147f **FLOATING
+C482 dco_idac_0/GND.n13 0 0.014702f **FLOATING
+C483 dco_idac_0/GND.n14 0 0.10249f **FLOATING
+C484 dco_idac_0/GND.n15 0 0.01815f **FLOATING
+C485 dco_idac_0/GND.n16 0 0.005015f **FLOATING
+C486 dco_idac_0/GND.n17 0 8.63e-20 **FLOATING
+C487 dco_idac_0/GND.n18 0 0.001016f **FLOATING
+C488 dco_idac_0/GND.n19 0 0.001295f **FLOATING
+C489 dco_idac_0/GND.n20 0 0.008226f **FLOATING
+C490 dco_idac_0/GND.n21 0 0.035457f **FLOATING
+C491 dco_idac_0/GND.n22 0 0.064581f **FLOATING
+C492 dco_idac_0/GND.n23 0 0.026976f **FLOATING
+C493 dco_idac_0/GND.n24 0 9.34e-19 **FLOATING
+C494 dco_idac_0/GND.n25 0 7.7e-19 **FLOATING
+C495 dco_idac_0/GND.n26 0 9.96e-19 **FLOATING
+C496 dco_idac_0/GND.n27 0 8.85e-19 **FLOATING
+C497 dco_idac_0/GND.n28 0 0.003181f **FLOATING
+C498 dco_idac_0/GND.n29 0 0.046167f **FLOATING
+C499 dco_idac_0/GND.n30 0 0.02082f **FLOATING
+C500 dco_idac_0/GND.n31 0 0.001746f **FLOATING
+C501 dco_idac_0/GND.n32 0 9.34e-19 **FLOATING
+C502 dco_idac_0/GND.n33 0 0.001017f **FLOATING
+C503 dco_idac_0/GND.n34 0 0.005649f **FLOATING
+C504 dco_idac_0/Dctrl.t0 0 0.028824f **FLOATING
+C505 dco_idac_0/Dctrl.t1 0 0.018393f **FLOATING
+C506 dco_idac_0/Dctrl.n0 0 0.067463f **FLOATING
+C507 dco_idac_0/Dctrl.n1 0 0.0267f **FLOATING
+C508 dco_idac_0/VCCD.n0 0 0.280597f **FLOATING
+C509 dco_idac_0/VCCD.n1 0 0.085703f **FLOATING
+C510 dco_idac_0/VCCD.n2 0 0.090943f **FLOATING
+C511 dco_idac_0/VCCD.n3 0 0.087762f **FLOATING
+C512 dco_idac_0/VCCD.n4 0 0.077786f **FLOATING
+C513 dco_idac_0/VCCD.n5 0 0.098099f **FLOATING
+C514 dco_idac_0/VCCD.n6 0 0.010296f **FLOATING
+C515 dco_idac_0/VCCD.n7 0 0.078022f **FLOATING
+C516 dco_idac_0/D_M7 0 2.063498f
+C517 GND 0 15.137897f
+C518 dco_idac_0/G_M5 0 2.26932f
+C519 dco_idac_0/G_M7 0 1.967356f
+C520 VCCD 0 43.66809f
+C521 Dctrl 0 0.664941f
+C522 dco_idac_0/sky130_fd_sc_hd__buf_2_0/a_27_47# 0 0.28447f
+C523 dco_ring_osc_0/pn[3].t4 0 0.26506f **FLOATING
+C524 dco_ring_osc_0/pn[3].t5 0 0.409639f **FLOATING
+C525 dco_ring_osc_0/pn[3].n0 0 0.350076f **FLOATING
+C526 dco_ring_osc_0/pn[3].n1 0 1.45869f **FLOATING
+C527 dco_ring_osc_0/pn[3].n2 0 -1.64096f **FLOATING
+C528 dco_ring_osc_0/pn[3].t0 0 0.26506f **FLOATING
+C529 dco_ring_osc_0/pn[3].t3 0 0.409639f **FLOATING
+C530 dco_ring_osc_0/pn[3].n3 0 0.360807f **FLOATING
+C531 dco_ring_osc_0/pn[3].t1 0 0.26506f **FLOATING
+C532 dco_ring_osc_0/pn[3].t2 0 0.409639f **FLOATING
+C533 dco_ring_osc_0/pn[3].n4 0 0.361089f **FLOATING
+C534 dco_ring_osc_0/pn[3].n5 0 9.22e-20 **FLOATING
+C535 dco_ring_osc_0/pn[3].n6 0 2.44235f **FLOATING
+C536 dco_ring_osc_0/p[3].t4 0 0.271936f **FLOATING
+C537 dco_ring_osc_0/p[3].t5 0 0.420264f **FLOATING
+C538 dco_ring_osc_0/p[3].n0 0 0.369077f **FLOATING
+C539 dco_ring_osc_0/p[3].n1 0 2.32533f **FLOATING
+C540 dco_ring_osc_0/p[3].t0 0 0.271936f **FLOATING
+C541 dco_ring_osc_0/p[3].t3 0 0.420264f **FLOATING
+C542 dco_ring_osc_0/p[3].n2 0 0.370164f **FLOATING
+C543 dco_ring_osc_0/p[3].t1 0 0.271936f **FLOATING
+C544 dco_ring_osc_0/p[3].t2 0 0.420264f **FLOATING
+C545 dco_ring_osc_0/p[3].n3 0 0.370463f **FLOATING
+C546 dco_ring_osc_0/p[3].n4 0 0.005351f **FLOATING
+C547 dco_ring_osc_0/pn[2].t2 0 0.261633f **FLOATING
+C548 dco_ring_osc_0/pn[2].t5 0 0.404342f **FLOATING
+C549 dco_ring_osc_0/pn[2].n0 0 0.356142f **FLOATING
+C550 dco_ring_osc_0/pn[2].t3 0 0.261633f **FLOATING
+C551 dco_ring_osc_0/pn[2].t4 0 0.404342f **FLOATING
+C552 dco_ring_osc_0/pn[2].n1 0 0.35642f **FLOATING
+C553 dco_ring_osc_0/pn[2].n2 0 0.042397f **FLOATING
+C554 dco_ring_osc_0/pn[2].t1 0 0.404342f **FLOATING
+C555 dco_ring_osc_0/pn[2].t0 0 0.261633f **FLOATING
+C556 dco_ring_osc_0/pn[2].n3 0 1.43983f **FLOATING
+C557 dco_ring_osc_0/p[2].t2 0 0.256285f **FLOATING
+C558 dco_ring_osc_0/p[2].t5 0 0.396077f **FLOATING
+C559 dco_ring_osc_0/p[2].n0 0 0.34886f **FLOATING
+C560 dco_ring_osc_0/p[2].t3 0 0.256285f **FLOATING
+C561 dco_ring_osc_0/p[2].t4 0 0.396077f **FLOATING
+C562 dco_ring_osc_0/p[2].n1 0 0.349142f **FLOATING
+C563 dco_ring_osc_0/p[2].n2 0 0.005816f **FLOATING
+C564 dco_ring_osc_0/p[2].t1 0 0.396077f **FLOATING
+C565 dco_ring_osc_0/p[2].t0 0 0.256285f **FLOATING
+C566 dco_ring_osc_0/pn[1].t4 0 0.415491f **FLOATING
+C567 dco_ring_osc_0/pn[1].t3 0 0.268847f **FLOATING
+C568 dco_ring_osc_0/pn[1].n0 0 0.366247f **FLOATING
+C569 dco_ring_osc_0/pn[1].t5 0 0.415491f **FLOATING
+C570 dco_ring_osc_0/pn[1].t2 0 0.268847f **FLOATING
+C571 dco_ring_osc_0/pn[1].n1 0 0.365959f **FLOATING
+C572 dco_ring_osc_0/pn[1].n2 0 0.047209f **FLOATING
+C573 dco_ring_osc_0/pn[1].n3 0 0.708998f **FLOATING
+C574 dco_ring_osc_0/pn[1].t1 0 0.415491f **FLOATING
+C575 dco_ring_osc_0/pn[1].t0 0 0.268847f **FLOATING
+C576 dco_ring_osc_0/pn[1].n4 0 1.47953f **FLOATING
+C577 dco_ring_osc_0/p[1].t4 0 0.413992f **FLOATING
+C578 dco_ring_osc_0/p[1].t3 0 0.267877f **FLOATING
+C579 dco_ring_osc_0/p[1].n0 0 0.364934f **FLOATING
+C580 dco_ring_osc_0/p[1].t5 0 0.413992f **FLOATING
+C581 dco_ring_osc_0/p[1].t2 0 0.267877f **FLOATING
+C582 dco_ring_osc_0/p[1].n1 0 0.364639f **FLOATING
+C583 dco_ring_osc_0/p[1].n3 0 0.359225f **FLOATING
+C584 dco_ring_osc_0/p[1].t1 0 0.413992f **FLOATING
+C585 dco_ring_osc_0/p[1].t0 0 0.267877f **FLOATING
+C586 dco_ring_osc_0/pn[4].t4 0 0.223326f **FLOATING
+C587 dco_ring_osc_0/pn[4].t5 0 0.345141f **FLOATING
+C588 dco_ring_osc_0/pn[4].n0 0 0.294957f **FLOATING
+C589 dco_ring_osc_0/pn[4].n1 0 1.22902f **FLOATING
+C590 dco_ring_osc_0/pn[4].t2 0 0.345141f **FLOATING
+C591 dco_ring_osc_0/pn[4].t1 0 0.223326f **FLOATING
+C592 dco_ring_osc_0/pn[4].n2 0 0.304235f **FLOATING
+C593 dco_ring_osc_0/pn[4].t3 0 0.345141f **FLOATING
+C594 dco_ring_osc_0/pn[4].t0 0 0.223326f **FLOATING
+C595 dco_ring_osc_0/pn[4].n3 0 0.303996f **FLOATING
+C596 dco_ring_osc_0/pn[4].n4 0 0.039216f **FLOATING
+C597 dco_ring_osc_0/pn[4].n5 0 0.598751f **FLOATING
+C598 dco_ring_osc_0/p[4].t4 0 0.187822f **FLOATING
+C599 dco_ring_osc_0/p[4].t5 0 0.29027f **FLOATING
+C600 dco_ring_osc_0/p[4].n0 0 0.254916f **FLOATING
+C601 dco_ring_osc_0/p[4].n1 0 1.60607f **FLOATING
+C602 dco_ring_osc_0/p[4].t3 0 0.29027f **FLOATING
+C603 dco_ring_osc_0/p[4].n2 0 0.357855f **FLOATING
+C604 dco_ring_osc_0/p[4].t0 0 0.228832f **FLOATING
+C605 dco_ring_osc_0/p[4].n3 0 0.228347f **FLOATING
+C606 dco_ring_osc_0/p[4].t2 0 0.29027f **FLOATING
+C607 dco_ring_osc_0/p[4].t1 0 0.187822f **FLOATING
+C608 dco_ring_osc_0/p[4].n4 0 0.255873f **FLOATING
+C609 dco_ring_osc_0/p[4].n6 0 0.260579f **FLOATING
+C610 dco_ring_osc_0/VCCA.n0 0 0.81352f **FLOATING
+C611 dco_ring_osc_0/VCCA.n1 0 0.552429f **FLOATING
+C612 dco_ring_osc_0/VCCA.n2 0 0.686965f **FLOATING
+C613 dco_ring_osc_0/VCCA.n3 0 0.8215f **FLOATING
+C614 dco_ring_osc_0/VCCA.n4 0 0.686965f **FLOATING
+C615 dco_ring_osc_0/VCCA.n5 0 0.903956f **FLOATING
+C616 dco_ring_osc_0/VCCA.n6 0 0.10283f **FLOATING
+C617 dco_ring_osc_0/VCCA.n7 0 0.094579f **FLOATING
+C618 dco_ring_osc_0/VCCA.n8 0 0.107729f **FLOATING
+C619 dco_ring_osc_0/VCCA.n9 0 0.093568f **FLOATING
+C620 dco_ring_osc_0/VCCA.n10 0 0.080418f **FLOATING
+C621 dco_ring_osc_0/VCCA.n11 0 0.094579f **FLOATING
+C622 dco_ring_osc_0/VCCA.n12 0 0.487049f **FLOATING
+C623 dco_ring_osc_0/VCCA.n13 0 0.446606f **FLOATING
+C624 dco_ring_osc_0/VCCA.n14 0 0.686965f **FLOATING
+C625 dco_ring_osc_0/VCCA.n15 0 0.8215f **FLOATING
+C626 dco_ring_osc_0/VCCA.n16 0 0.686965f **FLOATING
+C627 dco_ring_osc_0/VCCA.n17 0 0.552429f **FLOATING
+C628 dco_ring_osc_0/VCCA.n18 0 0.686965f **FLOATING
+C629 dco_ring_osc_0/VCCA.n19 0 0.8215f **FLOATING
+C630 dco_ring_osc_0/VCCA.n20 0 0.686965f **FLOATING
+C631 dco_ring_osc_0/VCCA.n21 0 0.552429f **FLOATING
+C632 dco_ring_osc_0/VCCA.n22 0 0.81352f **FLOATING
+C633 dco_ring_osc_0/VCCA.n23 0 0.116622f **FLOATING
+C634 dco_ring_osc_0/VCCA.n24 0 0.072325f **FLOATING
+C635 dco_ring_osc_0/VCCA.n25 0 0.072325f **FLOATING
+C636 dco_ring_osc_0/VCCA.n26 0 0.107729f **FLOATING
+C637 dco_ring_osc_0/VCCA.n27 0 0.094579f **FLOATING
+C638 dco_ring_osc_0/VCCA.n28 0 0.080418f **FLOATING
+C639 dco_ring_osc_0/VCCA.n29 0 0.093568f **FLOATING
+C640 dco_ring_osc_0/VCCA.n30 0 0.107729f **FLOATING
+C641 dco_ring_osc_0/VCCA.n31 0 0.094579f **FLOATING
+C642 dco_ring_osc_0/VCCA.n32 0 0.080418f **FLOATING
+C643 dco_ring_osc_0/VCCA.n33 0 0.903956f **FLOATING
+C644 dco_ring_osc_0/VPWR.n0 0 1.52419f **FLOATING
+C645 dco_ring_osc_0/VPWR.n1 0 1.43579f **FLOATING
+C646 dco_ring_osc_0/VPWR.n2 0 1.22722f **FLOATING
+C647 dco_ring_osc_0/VPWR.n3 0 1.43579f **FLOATING
+C648 dco_ring_osc_0/VPWR.n4 0 0.686443f **FLOATING
+C649 dco_ring_osc_0/VPWR.n5 0 1.73865f **FLOATING
+C650 dco_ring_osc_0/VPWR.n6 0 1.22722f **FLOATING
+C651 dco_ring_osc_0/VPWR.n7 0 1.75335f **FLOATING
+C652 dco_ring_osc_0/pn[0].t4 0 0.41549f **FLOATING
+C653 dco_ring_osc_0/pn[0].t3 0 0.268847f **FLOATING
+C654 dco_ring_osc_0/pn[0].n0 0 0.366247f **FLOATING
+C655 dco_ring_osc_0/pn[0].t5 0 0.41549f **FLOATING
+C656 dco_ring_osc_0/pn[0].t2 0 0.268847f **FLOATING
+C657 dco_ring_osc_0/pn[0].n1 0 0.365959f **FLOATING
+C658 dco_ring_osc_0/pn[0].n2 0 0.047209f **FLOATING
+C659 dco_ring_osc_0/pn[0].n3 0 0.707032f **FLOATING
+C660 dco_ring_osc_0/pn[0].t1 0 0.41549f **FLOATING
+C661 dco_ring_osc_0/pn[0].t0 0 0.268847f **FLOATING
+C662 dco_ring_osc_0/pn[0].n4 0 1.47953f **FLOATING
+C663 dco_ring_osc_0/VGND.n0 0 0.721062f **FLOATING
+C664 dco_ring_osc_0/VGND.n1 0 0.749051f **FLOATING
+C665 dco_ring_osc_0/VGND.n2 0 0.653181f **FLOATING
+C666 dco_ring_osc_0/VGND.n3 0 0.338849f **FLOATING
+C667 dco_ring_osc_0/VGND.n4 0 0.497341f **FLOATING
+C668 dco_ring_osc_0/VGND.n5 0 0.760379f **FLOATING
+C669 dco_ring_osc_0/VGND.n6 0 0.386567f **FLOATING
+C670 dco_ring_osc_0/VGND.n7 0 0.749051f **FLOATING
+C671 dco_ring_osc_0/VGND.n8 0 0.653181f **FLOATING
+C672 dco_ring_osc_0/VGND.n9 0 0.781617f **FLOATING
+C673 dco_ring_osc_0/p[0].t4 0 0.414972f **FLOATING
+C674 dco_ring_osc_0/p[0].t3 0 0.268511f **FLOATING
+C675 dco_ring_osc_0/p[0].n0 0 0.365797f **FLOATING
+C676 dco_ring_osc_0/p[0].t5 0 0.414972f **FLOATING
+C677 dco_ring_osc_0/p[0].t2 0 0.268511f **FLOATING
+C678 dco_ring_osc_0/p[0].n1 0 0.365502f **FLOATING
+C679 dco_ring_osc_0/p[0].n3 0 0.36216f **FLOATING
+C680 dco_ring_osc_0/p[0].t1 0 0.414972f **FLOATING
+C681 dco_ring_osc_0/p[0].t0 0 0.268511f **FLOATING
+C682 dco_ring_osc_0/pn[3] 0 4.001618f
+C683 dco_ring_osc_0/p[3] 0 3.039036f
+C684 dco_ring_osc_0/pn[4] 0 7.34216f
+C685 p_osc 0 8.924508f
+C686 dco_ring_osc_0/pn[2] 0 6.374736f
+C687 Isup 0 60.351734f
+C688 dco_ring_osc_0/p[2] 0 8.175092f
+C689 dco_ring_osc_0/pn[1] 0 4.436901f
+C690 dco_ring_osc_0/p[1] 0 5.321617f
+C691 dco_ring_osc_0/pn[0] 0 4.433182f
+C692 dco_ring_osc_0/p[0] 0 5.313177f
+C693 sky130_fd_sc_hd__buf_2_0/a_27_47# 0 0.28447f
+C694 dco_freq_1/clk.n0 0 0.048816f **FLOATING
+C695 dco_freq_1/clk.n1 0 0.033912f **FLOATING
+C696 dco_freq_1/clk.t1 0 0.033072f **FLOATING
+C697 dco_freq_1/clk.n2 0 0.033912f **FLOATING
+C698 dco_freq_1/clk.t3 0 0.033072f **FLOATING
+C699 dco_freq_1/clk.n3 0 0.033912f **FLOATING
+C700 dco_freq_1/clk.t5 0 0.033072f **FLOATING
+C701 dco_freq_1/clk.n4 0 0.119189f **FLOATING
+C702 dco_freq_1/clk.t2 0 0.021273f **FLOATING
+C703 dco_freq_1/clk.n5 0 0.002491f **FLOATING
+C704 dco_freq_1/clk.t7 0 0.021273f **FLOATING
+C705 dco_freq_1/clk.t0 0 0.033456f **FLOATING
+C706 dco_freq_1/clk.t6 0 0.01961f **FLOATING
+C707 dco_freq_1/clk.n6 0 0.041515f **FLOATING
+C708 dco_freq_1/clk.n7 0 0.004017f **FLOATING
+C709 dco_freq_1/clk.n8 0 0.007387f **FLOATING
+C710 dco_freq_1/clk.n9 0 0.030377f **FLOATING
+C711 dco_freq_1/clk.n10 0 0.002491f **FLOATING
+C712 dco_freq_1/clk.t4 0 0.021273f **FLOATING
+C713 dco_freq_1/clk.n11 0 0.030377f **FLOATING
+C714 dco_freq_1/clk.n12 0 0.005019f **FLOATING
+C715 dco_freq_1/clk.n13 0 0.017808f **FLOATING
+C716 dco_freq_1/clk.n14 0 0.017808f **FLOATING
+C717 dco_freq_1/clk.n15 0 0.005019f **FLOATING
+C718 dco_freq_1/clk.n16 0 0.031028f **FLOATING
+C719 dco_freq_1/clk.n17 0 0.018962f **FLOATING
+C720 dco_freq_1/clk.n18 0 0.014432f **FLOATING
+C721 dco_freq_1/clk.n19 0 0.116369f **FLOATING
+C722 dco_freq_1/clk.t8 0 0.033933f **FLOATING
+C723 dco_freq_1/clk.t9 0 0.022703f **FLOATING
+C724 dco_freq_1/clk.n20 0 0.062008f **FLOATING
+C725 dco_freq_1/clk.n21 0 0.094489f **FLOATING
+C726 pha_DCO 0 2.34813f
+C727 dco_freq_1/D 0 2.048741f
+C728 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_381_47# 0 0.015369f
+C729 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# 0 0.22524f
+C730 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# 0 0.161329f
+C731 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 0 0.491081f
+C732 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_466_413# 0 0.133203f
+C733 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_634_159# 0 0.142309f
+C734 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_193_47# 0 0.282684f
+C735 dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# 0 0.448183f
+C736 dco_freq_1/Q_N_buf 0 0.526677f
+C737 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_381_47# 0 0.015369f
+C738 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_891_413# 0 0.161052f
+C739 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 0 0.248849f
+C740 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# 0 0.133203f
+C741 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 0 0.142309f
+C742 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0 0.284262f
+C743 dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0 0.449511f
+C744 dco_freq_1/clkinv 0 0.30101f
+C745 ro_div2 0 5.481327f
+C746 dco_freq_1/Q_N 0 2.146443f
+C747 dco_freq_1/sky130_fd_sc_hd__buf_4_0/a_27_47# 0 0.461463f
+C748 dco_freq_0/clk.n0 0 0.048816f **FLOATING
+C749 dco_freq_0/clk.n1 0 0.033912f **FLOATING
+C750 dco_freq_0/clk.t1 0 0.033072f **FLOATING
+C751 dco_freq_0/clk.n2 0 0.033912f **FLOATING
+C752 dco_freq_0/clk.t3 0 0.033072f **FLOATING
+C753 dco_freq_0/clk.n3 0 0.033912f **FLOATING
+C754 dco_freq_0/clk.t5 0 0.033072f **FLOATING
+C755 dco_freq_0/clk.n4 0 0.119189f **FLOATING
+C756 dco_freq_0/clk.t2 0 0.021273f **FLOATING
+C757 dco_freq_0/clk.n5 0 0.002491f **FLOATING
+C758 dco_freq_0/clk.t7 0 0.021273f **FLOATING
+C759 dco_freq_0/clk.t0 0 0.033456f **FLOATING
+C760 dco_freq_0/clk.t6 0 0.01961f **FLOATING
+C761 dco_freq_0/clk.n6 0 0.041515f **FLOATING
+C762 dco_freq_0/clk.n7 0 0.004017f **FLOATING
+C763 dco_freq_0/clk.n8 0 0.007387f **FLOATING
+C764 dco_freq_0/clk.n9 0 0.030377f **FLOATING
+C765 dco_freq_0/clk.n10 0 0.002491f **FLOATING
+C766 dco_freq_0/clk.t4 0 0.021273f **FLOATING
+C767 dco_freq_0/clk.n11 0 0.030377f **FLOATING
+C768 dco_freq_0/clk.n12 0 0.005019f **FLOATING
+C769 dco_freq_0/clk.n13 0 0.017808f **FLOATING
+C770 dco_freq_0/clk.n14 0 0.017808f **FLOATING
+C771 dco_freq_0/clk.n15 0 0.005019f **FLOATING
+C772 dco_freq_0/clk.n16 0 0.031028f **FLOATING
+C773 dco_freq_0/clk.n17 0 0.018962f **FLOATING
+C774 dco_freq_0/clk.n18 0 0.014432f **FLOATING
+C775 dco_freq_0/clk.n19 0 0.116369f **FLOATING
+C776 dco_freq_0/clk.t8 0 0.033933f **FLOATING
+C777 dco_freq_0/clk.t9 0 0.022703f **FLOATING
+C778 dco_freq_0/clk.n20 0 0.062008f **FLOATING
+C779 dco_freq_0/clk.n21 0 0.094489f **FLOATING
+C780 dco_freq_0/D 0 2.048741f
+C781 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_381_47# 0 0.015369f
+C782 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1589_47# 0 0.22524f
+C783 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_891_413# 0 0.161329f
+C784 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_1059_315# 0 0.491081f
+C785 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_466_413# 0 0.133203f
+C786 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_634_159# 0 0.142309f
+C787 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_193_47# 0 0.282684f
+C788 dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/a_27_47# 0 0.448183f
+C789 dco_freq_0/Q_N_buf 0 0.526677f
+C790 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_381_47# 0 0.015369f
+C791 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_891_413# 0 0.161052f
+C792 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 0 0.248849f
+C793 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_466_413# 0 0.133203f
+C794 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 0 0.142309f
+C795 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0 0.284262f
+C796 dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0 0.449511f
+C797 dco_freq_0/clkinv 0 0.30101f
+C798 pha_ro 0 2.724794f
+C799 dco_freq_0/Q_N 0 2.146443f
+C800 dco_freq_0/sky130_fd_sc_hd__buf_4_0/a_27_47# 0 0.461463f
 .ends
 

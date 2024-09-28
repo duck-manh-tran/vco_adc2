@@ -18,72 +18,17 @@ node "VPWR" 3742 522.93 240 860 li 0 0 0 0 0 0 0 0 0 0 96000 2720 0 0 0 0 0 0 0 
 node "A" 851 1246.27 50 -110 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 556800 6360 0 0 16200 720 33300 920 0 0 0 0 0 0 0 0 0 0
 node "VCCA" 1241 2036.76 -180 610 m1 0 0 0 0 653600 3240 0 0 8000 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8000 360 8000 360 0 0 0 0 0 0 0 0 0 0
 substrate "GND" 0 0 -180 -530 m1 0 0 0 0 0 0 0 0 0 0 8000 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8000 360 8000 360 0 0 0 0 0 0 0 0 0 0
+cap "VGND" "VCCA" 4.25444
+cap "A" "VPWR" 317.7
+cap "VPWR" "VCCA" 120.628
+cap "A" "VCCA" 301.294
+cap "VGND" "Y" 99.2814
+cap "VPWR" "Y" 144.018
+cap "A" "Y" 593.512
+cap "Y" "VCCA" 15.4507
 cap "VPWR" "VGND" 19.9404
 cap "A" "VGND" 247.237
-cap "A" "VPWR" 317.7
-cap "VCCA" "VGND" 4.25444
-cap "VCCA" "VPWR" 120.628
-cap "VCCA" "A" 301.294
-cap "Y" "VGND" 99.2814
-cap "VPWR" "Y" 144.018
-cap "VCCA" "Y" 15.4507
-cap "A" "Y" 593.512
 device msubckt sky130_fd_pr__nfet_01v8 280 -620 281 -619 l=200 w=400 "GND" "A" 400 0 "Y" 400 16000,480 "VGND" 400 32000,960
 device msubckt sky130_fd_pr__nfet_01v8 0 -620 1 -619 l=200 w=400 "GND" "A" 400 0 "VGND" 400 32000,960 "Y" 400 16000,480
 device msubckt sky130_fd_pr__pfet_01v8 280 0 281 1 l=200 w=600 "VCCA" "A" 400 0 "Y" 600 24000,680 "VPWR" 600 48000,1360
 device msubckt sky130_fd_pr__pfet_01v8 0 0 1 1 l=200 w=600 "VCCA" "A" 400 0 "VPWR" 600 48000,1360 "Y" 600 24000,680
-scale 1000 1 500000
-rnode "VCCA.t1" 0 165.417 380 300 0
-rnode "VCCA.t0" 0 180.011 100 300 0
-rnode "VCCA" 0 54.5715 -180 610 0
-resist "VCCA.t0" "VCCA.t1" 350
-resist "VCCA" "VCCA.t0" 729.378
-rnode "VPWR.t1" 0 143.28 480 300 0
-rnode "VPWR.t0" 0 143.28 0 300 0
-rnode "VPWR" 0 213.44 240 860 0
-resist "VPWR" "VPWR.t0" 198.595
-resist "VPWR" "VPWR.t1" 198.595
-rnode "GND.t0" 0 0 380 -420 0
-rnode "GND.t1" 0 0 100 -420 0
-rnode "GND" 0 0 -180 -530 0
-resist "GND.t1" "GND.t0" 1540
-resist "GND" "GND.t1" 2719.38
-rnode "Y.t2" 0 54.0541 280 300 0
-rnode "Y.t3" 0 54.0541 200 300 0
-rnode "Y.n0" 0 108.108 240 480 0
-rnode "Y.t0" 0 36.036 280 -420 0
-rnode "Y.t1" 0 36.036 200 -420 0
-rnode "Y.n1" 0 238.424 240 -260 0
-rnode "Y.n2" 0 208.702 240 400 0
-rnode "Y" 0 64.5852 240 600 0
-resist "Y.n1" "Y.t1" 12
-resist "Y.n1" "Y.t0" 12
-resist "Y.n0" "Y.t3" 13.1333
-resist "Y.n0" "Y.t2" 13.1333
-resist "Y" "Y.n2" 41.2685
-resist "Y.n2" "Y.n0" 70.5939
-resist "Y.n2" "Y.n1" 139.635
-rnode "VGND.t1" 0 88.5728 480 -420 0
-rnode "VGND.t0" 0 88.5726 0 -420 0
-rnode "VGND" 0 122.855 240 -800 0
-resist "VGND" "VGND.t1" 142.367
-resist "VGND" "VGND.t0" 142.367
-rnode "A.t3" 0 248.798 100 300 0
-rnode "A.t0" 0 160.987 100 -420 0
-rnode "A.n0" 0 219.138 200 -110 0
-rnode "A.t2" 0 248.798 380 300 0
-rnode "A.t1" 0 160.987 380 -420 0
-rnode "A.n1" 0 219.315 380 -110 0
-rnode "A.n2" 0 0.112674 380 -110 0
-rnode "A" 0 141.864 50 -110 0
-resist "A.n2" "A.n0" 26.7679
-resist "A.n2" "A.n1" 26.8348
-resist "A" "A.n2" 67.4062
-resist "A.n1" "A.t1" 74.71
-resist "A.n0" "A.t0" 74.71
-resist "A.n1" "A.t2" 98.81
-resist "A.n0" "A.t3" 98.81
-device msubckt sky130_fd_pr__pfet_01v8 0 0 1 1  "VCCA.t0" "A.t3" 400 0 "VPWR.t0" 600 48000,1360 "Y.t3" 600 24000,680
-device msubckt sky130_fd_pr__pfet_01v8 280 0 281 1  "VCCA.t1" "A.t2" 400 0 "Y.t2" 600 24000,680 "VPWR.t1" 600 48000,1360
-device msubckt sky130_fd_pr__nfet_01v8 280 -620 281 -619  "GND.t0" "A.t1" 400 0 "Y.t0" 400 16000,480 "VGND.t1" 400 32000,960
-device msubckt sky130_fd_pr__nfet_01v8 0 -620 1 -619  "GND.t1" "A.t0" 400 0 "VGND.t0" 400 32000,960 "Y.t1" 400 16000,480

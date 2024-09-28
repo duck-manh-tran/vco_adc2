@@ -514,17 +514,17 @@ resist "GND.n10" "GND.n5" 1346.55
 resist "GND.n35" "GND.n34" 1346.55
 resist "GND.n33" "GND.n32" 65754.9
 resist "GND.n33" "GND.n21" 104800
-rnode "pn[0].t4" 0 415.491 5540 1360 0
+rnode "pn[0].t4" 0 415.49 5540 1360 0
 rnode "pn[0].t3" 0 268.847 5540 640 0
 rnode "pn[0].n0" 0 366.247 5440 950 0
 rnode "dco_cc_inv_1/dco_main_inv_1/A" 0 8.79862 5210 950 0
-rnode "pn[0].t5" 0 415.491 5260 1360 0
+rnode "pn[0].t5" 0 415.49 5260 1360 0
 rnode "pn[0].t2" 0 268.847 5260 640 0
 rnode "pn[0].n1" 0 365.959 5250 950 0
 rnode "pn[0].n2" 0 47.2094 5250 950 0
 rnode "pn[0].n3" 0 707.032 5255 900 0
 rnode "pn[0]" 0 503.507 2950 680 0
-rnode "pn[0].t1" 0 415.491 1800 1360 0
+rnode "pn[0].t1" 0 415.49 1800 1360 0
 rnode "pn[0].t0" 0 268.847 1800 640 0
 rnode "dco_cc_inv_0/dco_aux_inv_1/A" 0 355.077 1790 950 0
 rnode "dco_cc_inv_0/dco_aux_inv_0/Y" 0 531.863 1400 950 0
@@ -588,17 +588,17 @@ resist "VGND.n6" "VGND" 233.6
 resist "VGND.n8" "VGND.n7" 368
 resist "VGND.n2" "VGND.n1" 368
 resist "VGND.n9" "VGND.n0" 414.4
-rnode "p[0].t4" 0 414.971 3520 1360 0
+rnode "p[0].t4" 0 414.972 3520 1360 0
 rnode "p[0].t3" 0 268.511 3520 640 0
 rnode "p[0].n0" 0 365.797 3420 950 0
-rnode "p[0].t5" 0 414.971 3240 1360 0
+rnode "p[0].t5" 0 414.972 3240 1360 0
 rnode "p[0].t2" 0 268.511 3240 640 0
 rnode "p[0].n1" 0 365.502 3230 950 0
 rnode "p[0].n2" 0 0 3230 990 0
 rnode "dco_cc_inv_1/dco_main_inv_0/A" 0 8.78763 3190 950 0
 rnode "p[0].n3" 0 362.16 3230 990 0
 rnode "p[0]" 0 145.109 2930 1420 0
-rnode "p[0].t1" 0 414.971 1220 1360 0
+rnode "p[0].t1" 0 414.972 1220 1360 0
 rnode "p[0].t0" 0 268.511 1220 640 0
 rnode "dco_cc_inv_0/dco_aux_inv_0/A" 0 387.953 1210 950 0
 rnode "dco_cc_inv_0/outp" 0 2914.24 2880 1380 0

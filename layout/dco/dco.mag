@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1727163546
+timestamp 1727491931
 << nwell >>
 rect 3080 3500 3256 3820
 rect 7210 900 7340 1220
@@ -347,7 +347,7 @@ timestamp 1726743291
 transform 1 0 8320 0 1 -2290
 box -880 -1250 3330 640
 use dco_idac  dco_idac_0
-timestamp 1727082698
+timestamp 1727488410
 transform 1 0 2860 0 1 -60
 box -1860 -3160 3220 740
 use dco_ring_osc  dco_ring_osc_0

@@ -1,0 +1,29 @@
+| units: 500000 tech: sky130A format: MIT
+x A Y VPWR VPB s=5400,254 d=10400,504 l=30 w=200 x=341 y=297 sky130_fd_pr__pfet_01v8_hvt
+x A VPWR Y VPB s=5400,254 d=5400,254 l=30 w=200 x=257 y=297 sky130_fd_pr__pfet_01v8_hvt
+x A VGND Y VNB s=6760,364 d=3510,184 l=30 w=130 x=89 y=47 sky130_fd_pr__nfet_01v8
+x A Y VPWR VPB s=5400,254 d=5400,254 l=30 w=200 x=173 y=297 sky130_fd_pr__pfet_01v8_hvt
+x A Y VGND VNB s=3510,184 d=3510,184 l=30 w=130 x=173 y=47 sky130_fd_pr__nfet_01v8
+x A VPWR Y VPB s=10400,504 d=5400,254 l=30 w=200 x=89 y=297 sky130_fd_pr__pfet_01v8_hvt
+x A Y VGND VNB s=3510,184 d=6760,364 l=30 w=130 x=341 y=47 sky130_fd_pr__nfet_01v8
+x A VGND Y VNB s=3510,184 d=3510,184 l=30 w=130 x=257 y=47 sky130_fd_pr__nfet_01v8
+C VPB Y 0.0
+C A VPB 0.1
+C VPB VPWR 0.1
+C Y VGND 0.3
+C A VGND 0.1
+C A Y 0.4
+C VGND VPWR 0.1
+C Y VPWR 0.4
+C A VPWR 0.1
+C VPB VGND 0.0
+C VGND0 0.3
+R VGND 1748
+C Y0 0.1
+R Y 3153
+C VPWR0 0.3
+R VPWR 3478
+C A0 0.5
+R A 2968
+C VPB0 0.5
+R VPB 1586

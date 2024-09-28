@@ -1,0 +1,58 @@
+scale 1000 1 500000
+rnode "VGND.t0" 0 27.8875 83 112 0
+rnode "VGND" 0 5.22917 0 -48 0
+rnode "VGND" 0 166.883 28 -17 0
+resist "VGND" "VGND" 0.0364583
+resist "VGND" "VGND.t0" 158.045
+rnode "B.t1" 0 45.4317 98 397 0
+rnode "B.t0" 0 28.3536 98 112 0
+rnode "B.n0" 0 90.3287 53 232 0
+rnode "B" 0 35.8861 28 221 0
+resist "B.n0" "B.t0" 157.069
+resist "B" "B.n0" 157.926
+resist "B.n0" "B.t1" 229.369
+rnode "VNB.t1" 0 0 182 112 0
+rnode "VNB.t0" 0 0 98 112 0
+rnode "VNB" 0 0 28 -17 0
+resist "VNB" "VNB.t0" 996.764
+resist "VNB.t0" "VNB.t1" 1196.12
+rnode "VPB.t0" 0 49.4318 182 397 0
+rnode "VPB.t1" 0 21.875 98 397 0
+rnode "VPB" 0 28.6932 28 527 0
+resist "VPB" "VPB.t1" 207.165
+resist "VPB.t1" "VPB.t0" 248.598
+rnode "VPWR.t0" 0 42.4048 197 397 0
+rnode "VPWR.t1" 0 42.444 83 397 0
+rnode "VPWR.n0" 0 122.729 73 544 0
+rnode "VPWR" 0 5.10431 0 496 0
+rnode "VPWR" 0 87.3177 28 527 0
+resist "VPWR" "VPWR" 0.0364583
+resist "VPWR" "VPWR.n0" 0.492874
+resist "VPWR.n0" "VPWR.t1" 254.129
+resist "VPWR.n0" "VPWR.t0" 256.344
+rnode "Y.t0" 0 20.7333 167 397 0
+rnode "Y.t2" 0 20.7333 113 397 0
+rnode "Y.n0" 0 60.0848 140 400 0
+rnode "Y" 0 106.304 120 221 0
+rnode "Y.t1" 0 46.0057 197 112 0
+rnode "Y" 0 8.22423 120 85 0
+rnode "Y.n1" 0 141.047 137 177 0
+rnode "Y" 0 -3.13304 120 153 0
+resist "Y.n1" "Y" 1.72698
+resist "Y" "Y.n1" 9.03529
+resist "Y.n1" "Y" 16.5647
+resist "Y.n0" "Y.t2" 26.595
+resist "Y.n0" "Y.t0" 26.595
+resist "Y.n1" "Y.t1" 140.529
+resist "Y" "Y.n0" 237.577
+rnode "A.t0" 0 46.7597 182 397 0
+rnode "A.t1" 0 29.1959 182 112 0
+rnode "A.n0" 0 89.3755 221 232 0
+rnode "A" 0 34.6689 212 221 0
+resist "A" "A.n0" 154.102
+resist "A.n0" "A.t1" 157.855
+resist "A.n0" "A.t0" 230.155
+device msubckt sky130_fd_pr__pfet_01v8_hvt 83 297 84 298  "VPB.t1" "B.t1" 60 0 "VPWR.t1" 200 10400,504 "Y.t2" 200 5400,254
+device msubckt sky130_fd_pr__nfet_01v8 83 47 84 48  "VNB.t0" "B.t0" 60 0 "VGND.t0" 130 6760,364 "a_113_47#" 130 3510,184
+device msubckt sky130_fd_pr__nfet_01v8 167 47 168 48  "VNB.t1" "A.t1" 60 0 "a_113_47#" 130 3510,184 "Y.t1" 130 6760,364
+device msubckt sky130_fd_pr__pfet_01v8_hvt 167 297 168 298  "VPB.t0" "A.t0" 60 0 "Y.t0" 200 5400,254 "VPWR.t0" 200 10400,504

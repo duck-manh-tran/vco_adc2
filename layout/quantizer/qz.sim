@@ -1,0 +1,448 @@
+| units: 500000 tech: sky130A format: MIT
+x CLK sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47# VCCD VCCD s=4368,272 d=2268,138 l=30 w=84 x=829 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_0/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_0/a_391_47# GND GND s=4368,272 d=3880,195 l=100 w=84 x=1171 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_0/a_391_47# VCCD DL1 VCCD s=5630,265 d=10400,504 l=30 w=200 x=1336 y=435 sky130_fd_pr__pfet_01v8_hvt
+x CLK sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47# GND GND s=4368,272 d=2268,138 l=30 w=84 x=829 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_0/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_0/a_391_47# VCCD VCCD s=4368,272 d=5630,265 l=100 w=84 x=1171 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47# GND sky130_fd_sc_hd__dlygate4sd3_1_0/a_285_47# GND s=2268,138 d=4368,272 l=100 w=84 x=913 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47# VCCD sky130_fd_sc_hd__dlygate4sd3_1_0/a_285_47# VCCD s=2268,138 d=4368,272 l=100 w=84 x=913 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_0/a_391_47# GND DL1 GND s=3880,195 d=6760,364 l=30 w=130 x=1336 y=185 sky130_fd_pr__nfet_01v8
+x DL1 sky130_fd_sc_hd__dlygate4sd3_1_1/a_49_47# VCCD VCCD s=4368,272 d=2268,138 l=30 w=84 x=1649 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_1/a_391_47# GND GND s=4368,272 d=3880,195 l=100 w=84 x=1991 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_1/a_391_47# VCCD DL2 VCCD s=5630,265 d=10400,504 l=30 w=200 x=2156 y=435 sky130_fd_pr__pfet_01v8_hvt
+x DL1 sky130_fd_sc_hd__dlygate4sd3_1_1/a_49_47# GND GND s=4368,272 d=2268,138 l=30 w=84 x=1649 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_1/a_391_47# VCCD VCCD s=4368,272 d=5630,265 l=100 w=84 x=1991 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_1/a_49_47# GND sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47# GND s=2268,138 d=4368,272 l=100 w=84 x=1733 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_1/a_49_47# VCCD sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47# VCCD s=2268,138 d=4368,272 l=100 w=84 x=1733 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_1/a_391_47# GND DL2 GND s=3880,195 d=6760,364 l=30 w=130 x=2156 y=185 sky130_fd_pr__nfet_01v8
+x FBack_inv VCCD FBack VCCD s=10400,504 d=5400,254 l=30 w=200 x=3949 y=-365 sky130_fd_pr__pfet_01v8_hvt
+x FBack_inv FBack GND GND s=3510,184 d=6760,364 l=30 w=130 x=4033 y=-615 sky130_fd_pr__nfet_01v8
+x FBack_inv GND FBack GND s=6760,364 d=3510,184 l=30 w=130 x=3949 y=-615 sky130_fd_pr__nfet_01v8
+x FBack_inv FBack VCCD VCCD s=5400,254 d=10400,504 l=30 w=200 x=4033 y=-365 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__buf_2_0/a_27_47# sky130_fd_sc_hd__buf_2_0/X VCCD VCCD s=5400,254 d=10600,506 l=30 w=200 x=986 y=-365 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__buf_2_0/a_27_47# VCCD sky130_fd_sc_hd__buf_2_0/X VCCD s=5960,265 d=5400,254 l=30 w=200 x=902 y=-365 sky130_fd_pr__pfet_01v8_hvt
+x D sky130_fd_sc_hd__buf_2_0/a_27_47# VCCD VCCD s=6656,360 d=5960,265 l=30 w=128 x=807 y=-301 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__buf_2_0/a_27_47# GND sky130_fd_sc_hd__buf_2_0/X GND s=3880,195 d=3510,184 l=30 w=130 x=902 y=-615 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__buf_2_0/a_27_47# sky130_fd_sc_hd__buf_2_0/X GND GND s=3510,184 d=6890,366 l=30 w=130 x=986 y=-615 sky130_fd_pr__nfet_01v8
+x D sky130_fd_sc_hd__buf_2_0/a_27_47# GND GND s=4368,272 d=3880,195 l=30 w=84 x=807 y=-615 sky130_fd_pr__nfet_01v8
+x DL2 sky130_fd_sc_hd__dlygate4sd3_1_2/a_49_47# VCCD VCCD s=4368,272 d=2268,138 l=30 w=84 x=2469 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_2/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_2/a_391_47# GND GND s=4368,272 d=3880,195 l=100 w=84 x=2811 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_2/a_391_47# VCCD DL3 VCCD s=5630,265 d=10400,504 l=30 w=200 x=2976 y=435 sky130_fd_pr__pfet_01v8_hvt
+x DL2 sky130_fd_sc_hd__dlygate4sd3_1_2/a_49_47# GND GND s=4368,272 d=2268,138 l=30 w=84 x=2469 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_2/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_2/a_391_47# VCCD VCCD s=4368,272 d=5630,265 l=100 w=84 x=2811 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_2/a_49_47# GND sky130_fd_sc_hd__dlygate4sd3_1_2/a_285_47# GND s=2268,138 d=4368,272 l=100 w=84 x=2553 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_2/a_49_47# VCCD sky130_fd_sc_hd__dlygate4sd3_1_2/a_285_47# VCCD s=2268,138 d=4368,272 l=100 w=84 x=2553 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_2/a_391_47# GND DL3 GND s=3880,195 d=6760,364 l=30 w=130 x=2976 y=185 sky130_fd_pr__nfet_01v8
+x DL3 sky130_fd_sc_hd__dlygate4sd3_1_3/a_49_47# VCCD VCCD s=4368,272 d=2268,138 l=30 w=84 x=3349 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_3/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_3/a_391_47# GND GND s=4368,272 d=3880,195 l=100 w=84 x=3691 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_3/a_391_47# VCCD DL4 VCCD s=5630,265 d=10400,504 l=30 w=200 x=3856 y=435 sky130_fd_pr__pfet_01v8_hvt
+x DL3 sky130_fd_sc_hd__dlygate4sd3_1_3/a_49_47# GND GND s=4368,272 d=2268,138 l=30 w=84 x=3349 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_3/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_3/a_391_47# VCCD VCCD s=4368,272 d=5630,265 l=100 w=84 x=3691 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_3/a_49_47# GND sky130_fd_sc_hd__dlygate4sd3_1_3/a_285_47# GND s=2268,138 d=4368,272 l=100 w=84 x=3433 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_3/a_49_47# VCCD sky130_fd_sc_hd__dlygate4sd3_1_3/a_285_47# VCCD s=2268,138 d=4368,272 l=100 w=84 x=3433 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_3/a_391_47# GND DL4 GND s=3880,195 d=6760,364 l=30 w=130 x=3856 y=185 sky130_fd_pr__nfet_01v8
+x DL4 sky130_fd_sc_hd__dlygate4sd3_1_4/a_49_47# VCCD VCCD s=4368,272 d=2268,138 l=30 w=84 x=4169 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_4/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_4/a_391_47# GND GND s=4368,272 d=3880,195 l=100 w=84 x=4511 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_4/a_391_47# VCCD DL5 VCCD s=5630,265 d=10400,504 l=30 w=200 x=4676 y=435 sky130_fd_pr__pfet_01v8_hvt
+x DL4 sky130_fd_sc_hd__dlygate4sd3_1_4/a_49_47# GND GND s=4368,272 d=2268,138 l=30 w=84 x=4169 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_4/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_4/a_391_47# VCCD VCCD s=4368,272 d=5630,265 l=100 w=84 x=4511 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_4/a_49_47# GND sky130_fd_sc_hd__dlygate4sd3_1_4/a_285_47# GND s=2268,138 d=4368,272 l=100 w=84 x=4253 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_4/a_49_47# VCCD sky130_fd_sc_hd__dlygate4sd3_1_4/a_285_47# VCCD s=2268,138 d=4368,272 l=100 w=84 x=4253 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_4/a_391_47# GND DL5 GND s=3880,195 d=6760,364 l=30 w=130 x=4676 y=185 sky130_fd_pr__nfet_01v8
+x DL5 sky130_fd_sc_hd__dlygate4sd3_1_5/a_49_47# VCCD VCCD s=4368,272 d=2268,138 l=30 w=84 x=4989 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_5/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_5/a_391_47# GND GND s=4368,272 d=3880,195 l=100 w=84 x=5331 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_5/a_391_47# VCCD CLK_dly VCCD s=5630,265 d=10400,504 l=30 w=200 x=5496 y=435 sky130_fd_pr__pfet_01v8_hvt
+x DL5 sky130_fd_sc_hd__dlygate4sd3_1_5/a_49_47# GND GND s=4368,272 d=2268,138 l=30 w=84 x=4989 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_5/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_5/a_391_47# VCCD VCCD s=4368,272 d=5630,265 l=100 w=84 x=5331 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_5/a_49_47# GND sky130_fd_sc_hd__dlygate4sd3_1_5/a_285_47# GND s=2268,138 d=4368,272 l=100 w=84 x=5073 y=185 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dlygate4sd3_1_5/a_49_47# VCCD sky130_fd_sc_hd__dlygate4sd3_1_5/a_285_47# VCCD s=2268,138 d=4368,272 l=100 w=84 x=5073 y=551 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dlygate4sd3_1_5/a_391_47# GND CLK_dly GND s=3880,195 d=6760,364 l=30 w=130 x=5496 y=185 sky130_fd_pr__nfet_01v8
+x CLK_dly FBack_inv VCCD VCCD s=5400,254 d=10400,504 l=30 w=200 x=3505 y=-365 sky130_fd_pr__pfet_01v8_hvt
+x CLK_dly sky130_fd_sc_hd__nand2_1_0/a_113_47# FBack_inv GND s=3510,184 d=6760,364 l=30 w=130 x=3505 y=-615 sky130_fd_pr__nfet_01v8
+x Dout GND sky130_fd_sc_hd__nand2_1_0/a_113_47# GND s=6760,364 d=3510,184 l=30 w=130 x=3421 y=-615 sky130_fd_pr__nfet_01v8
+x Dout VCCD FBack_inv VCCD s=10400,504 d=5400,254 l=30 w=200 x=3421 y=-365 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# GND Dout GND s=3510,184 d=6760,364 l=30 w=130 x=2843 y=-615 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dfxtp_1_0/a_193_47# sky130_fd_sc_hd__dfxtp_1_0/a_634_159# sky130_fd_sc_hd__dfxtp_1_0/a_891_413# GND s=3956,199 d=2736,148 l=30 w=72 x=2369 y=-615 sky130_fd_pr__special_nfet_01v8
+x sky130_fd_sc_hd__dfxtp_1_0/a_27_47# sky130_fd_sc_hd__dfxtp_1_0/a_466_413# sky130_fd_sc_hd__dfxtp_1_0/a_561_413# VCCD s=2730,149 d=3066,157 l=30 w=84 x=2019 y=-249 sky130_fd_pr__pfet_01v8_hvt
+x CLK sky130_fd_sc_hd__dfxtp_1_0/a_27_47# VCCD VCCD s=6656,360 d=3456,182 l=30 w=128 x=1567 y=-299 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# VCCD Dout VCCD s=5400,254 d=10400,504 l=30 w=200 x=2841 y=-365 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__buf_2_0/X VCCD sky130_fd_sc_hd__dfxtp_1_0/a_381_47# VCCD s=4368,272 d=2310,139 l=30 w=84 x=1839 y=-249 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dfxtp_1_0/a_634_159# sky130_fd_sc_hd__dfxtp_1_0/a_592_47# GND GND s=2784,153 d=4838,217 l=30 w=84 x=2149 y=-615 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dfxtp_1_0/a_891_413# sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# VCCD VCCD s=10800,508 d=5400,254 l=30 w=200 x=2757 y=-365 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dfxtp_1_0/a_193_47# sky130_fd_sc_hd__dfxtp_1_0/a_381_47# sky130_fd_sc_hd__dfxtp_1_0/a_466_413# VCCD s=2310,139 d=2730,149 l=30 w=84 x=1924 y=-249 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dfxtp_1_0/a_634_159# sky130_fd_sc_hd__dfxtp_1_0/a_561_413# VCCD VCCD s=3066,157 d=7155,252 l=30 w=84 x=2122 y=-249 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dfxtp_1_0/a_466_413# GND sky130_fd_sc_hd__dfxtp_1_0/a_634_159# GND s=4838,217 d=3956,199 l=30 w=128 x=2268 y=-615 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dfxtp_1_0/a_466_413# VCCD sky130_fd_sc_hd__dfxtp_1_0/a_634_159# VCCD s=7155,252 d=4380,215 l=30 w=150 x=2254 y=-315 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dfxtp_1_0/a_193_47# sky130_fd_sc_hd__dfxtp_1_0/a_891_413# sky130_fd_sc_hd__dfxtp_1_0/a_975_413# VCCD s=2268,138 d=3528,168 l=30 w=84 x=2433 y=-249 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# sky130_fd_sc_hd__dfxtp_1_0/a_1017_47# GND GND s=2640,149 d=4368,272 l=30 w=84 x=2570 y=-615 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dfxtp_1_0/a_27_47# GND sky130_fd_sc_hd__dfxtp_1_0/a_193_47# GND s=2268,138 d=4368,272 l=30 w=84 x=1651 y=-615 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__dfxtp_1_0/a_27_47# sky130_fd_sc_hd__dfxtp_1_0/a_634_159# sky130_fd_sc_hd__dfxtp_1_0/a_891_413# VCCD s=4380,215 d=2268,138 l=30 w=84 x=2349 y=-249 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dfxtp_1_0/a_193_47# sky130_fd_sc_hd__dfxtp_1_0/a_466_413# sky130_fd_sc_hd__dfxtp_1_0/a_592_47# GND s=2484,141 d=2784,153 l=30 w=72 x=2050 y=-615 sky130_fd_pr__special_nfet_01v8
+x sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# sky130_fd_sc_hd__dfxtp_1_0/a_975_413# VCCD VCCD s=3528,168 d=4452,274 l=30 w=84 x=2547 y=-249 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dfxtp_1_0/a_27_47# sky130_fd_sc_hd__dfxtp_1_0/a_891_413# sky130_fd_sc_hd__dfxtp_1_0/a_1017_47# GND s=2736,148 d=2640,149 l=30 w=72 x=2475 y=-615 sky130_fd_pr__special_nfet_01v8
+x sky130_fd_sc_hd__dfxtp_1_0/a_27_47# VCCD sky130_fd_sc_hd__dfxtp_1_0/a_193_47# VCCD s=3456,182 d=6656,360 l=30 w=128 x=1651 y=-299 sky130_fd_pr__pfet_01v8_hvt
+x sky130_fd_sc_hd__dfxtp_1_0/a_27_47# sky130_fd_sc_hd__dfxtp_1_0/a_381_47# sky130_fd_sc_hd__dfxtp_1_0/a_466_413# GND s=3252,166 d=2484,141 l=30 w=72 x=1951 y=-615 sky130_fd_pr__special_nfet_01v8
+x sky130_fd_sc_hd__dfxtp_1_0/a_891_413# sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# GND GND s=6760,364 d=3510,184 l=30 w=130 x=2759 y=-615 sky130_fd_pr__nfet_01v8
+x sky130_fd_sc_hd__buf_2_0/X GND sky130_fd_sc_hd__dfxtp_1_0/a_381_47# GND s=4368,272 d=3252,166 l=30 w=84 x=1839 y=-615 sky130_fd_pr__nfet_01v8
+x CLK sky130_fd_sc_hd__dfxtp_1_0/a_27_47# GND GND s=4368,272 d=2268,138 l=30 w=84 x=1567 y=-615 sky130_fd_pr__nfet_01v8
+C DL4 CLK_dly 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413# Dout 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_634_159# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.1
+C GND CLK 0.4
+C Dout sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_466_413# sky130_fd_sc_hd__dfxtp_1_0/a_381_47# 0.0
+C sky130_fd_sc_hd__buf_2_0/X sky130_fd_sc_hd__dfxtp_1_0/a_592_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_193_47# CLK 0.0
+C GND sky130_fd_sc_hd__dlygate4sd3_1_5/a_391_47# 0.1
+C sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# FBack 0.0
+C GND DL5 0.1
+C FBack_inv sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 0.0
+C VCCD sky130_fd_sc_hd__dfxtp_1_0/a_975_413# 0.0
+C DL3 sky130_fd_sc_hd__dlygate4sd3_1_3/a_49_47# 0.3
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413# sky130_fd_sc_hd__dlygate4sd3_1_2/a_49_47# 0.0
+C sky130_fd_sc_hd__buf_2_0/X sky130_fd_sc_hd__dfxtp_1_0/a_1017_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_27_47# sky130_fd_sc_hd__dlygate4sd3_1_2/a_49_47# 0.0
+C GND sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.2
+C DL2 sky130_fd_sc_hd__dlygate4sd3_1_2/a_49_47# 0.3
+C VCCD DL1 0.3
+C D sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47# 0.0
+C GND sky130_fd_sc_hd__nand2_1_0/a_113_47# 0.0
+C sky130_fd_sc_hd__buf_2_0/a_27_47# D 0.2
+C DL3 sky130_fd_sc_hd__dlygate4sd3_1_2/a_391_47# 0.1
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_3/a_49_47# 0.3
+C sky130_fd_sc_hd__dfxtp_1_0/a_466_413# sky130_fd_sc_hd__buf_2_0/X 0.0
+C FBack_inv sky130_fd_sc_hd__dfxtp_1_0/a_381_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_975_413# sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_5/a_49_47# CLK_dly 0.0
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_3/a_391_47# 0.2
+C sky130_fd_sc_hd__dlygate4sd3_1_2/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_3/a_49_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_27_47# D 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_975_413# CLK 0.0
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_2/a_391_47# 0.2
+C VCCD sky130_fd_sc_hd__dfxtp_1_0/a_1017_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_592_47# sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 0.0
+C DL3 sky130_fd_sc_hd__dlygate4sd3_1_3/a_285_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_2/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_2/a_391_47# 0.4
+C DL1 CLK 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_27_47# CLK_dly 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_466_413# VCCD 0.3
+C Dout sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 0.1
+C sky130_fd_sc_hd__dlygate4sd3_1_0/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47# 0.2
+C sky130_fd_sc_hd__dfxtp_1_0/a_975_413# GND 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_0/a_285_47# sky130_fd_sc_hd__buf_2_0/a_27_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_5/a_285_47# CLK_dly 0.0
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_3/a_285_47# 0.3
+C sky130_fd_sc_hd__buf_2_0/X FBack_inv 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_634_159# sky130_fd_sc_hd__dfxtp_1_0/a_1017_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_975_413# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.0
+C GND DL1 0.1
+C sky130_fd_sc_hd__buf_2_0/a_27_47# sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_27_47# sky130_fd_sc_hd__dfxtp_1_0/a_561_413# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_592_47# GND 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_466_413# sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 0.2
+C GND sky130_fd_sc_hd__dlygate4sd3_1_3/a_49_47# 0.2
+C sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# sky130_fd_sc_hd__dlygate4sd3_1_2/a_49_47# 0.0
+C GND sky130_fd_sc_hd__dlygate4sd3_1_3/a_391_47# 0.1
+C sky130_fd_sc_hd__dfxtp_1_0/a_592_47# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.0
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_4/a_391_47# 0.2
+C sky130_fd_sc_hd__dfxtp_1_0/a_466_413# CLK 0.0
+C VCCD FBack 0.3
+C sky130_fd_sc_hd__buf_2_0/a_27_47# sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_2/a_49_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_5/a_49_47# sky130_fd_sc_hd__dlygate4sd3_1_5/a_285_47# 0.2
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_4/a_49_47# 0.3
+C VCCD FBack_inv 0.5
+C sky130_fd_sc_hd__dlygate4sd3_1_2/a_391_47# GND 0.1
+C GND sky130_fd_sc_hd__dfxtp_1_0/a_1017_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_4/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_4/a_391_47# 0.4
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413# sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413# DL2 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_4/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_4/a_49_47# 0.2
+C DL2 sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_466_413# GND 0.1
+C FBack_inv sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 0.0
+C GND sky130_fd_sc_hd__dlygate4sd3_1_3/a_285_47# 0.1
+C sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# CLK_dly 0.0
+C sky130_fd_sc_hd__buf_2_0/X Dout 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_466_413# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.1
+C sky130_fd_sc_hd__dlygate4sd3_1_0/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_1/a_49_47# 0.0
+C D sky130_fd_sc_hd__dfxtp_1_0/a_381_47# 0.0
+C DL5 sky130_fd_sc_hd__dlygate4sd3_1_4/a_391_47# 0.1
+C DL3 Dout 0.0
+C GND sky130_fd_sc_hd__dlygate4sd3_1_4/a_391_47# 0.1
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_391_47# sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.0
+C GND FBack 0.2
+C DL2 sky130_fd_sc_hd__dlygate4sd3_1_1/a_391_47# 0.1
+C GND sky130_fd_sc_hd__dlygate4sd3_1_4/a_49_47# 0.1
+C FBack_inv GND 0.4
+C VCCD Dout 0.3
+C sky130_fd_sc_hd__dfxtp_1_0/a_193_47# FBack 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_27_47# sky130_fd_sc_hd__dlygate4sd3_1_1/a_49_47# 0.0
+C FBack_inv sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_3/a_49_47# sky130_fd_sc_hd__dlygate4sd3_1_3/a_391_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_2/a_285_47# Dout 0.0
+C FBack_inv sky130_fd_sc_hd__nand2_1_0/a_113_47# 0.0
+C sky130_fd_sc_hd__buf_2_0/X D 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413# sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 0.3
+C sky130_fd_sc_hd__dfxtp_1_0/a_381_47# sky130_fd_sc_hd__dfxtp_1_0/a_561_413# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_27_47# sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 0.0
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_2/a_49_47# 0.3
+C sky130_fd_sc_hd__dfxtp_1_0/a_466_413# sky130_fd_sc_hd__dfxtp_1_0/a_592_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47# sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.0
+C Dout CLK 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_2/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_2/a_49_47# 0.2
+C DL2 sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_3/a_49_47# sky130_fd_sc_hd__dlygate4sd3_1_3/a_285_47# 0.2
+C DL4 VCCD 0.3
+C sky130_fd_sc_hd__dlygate4sd3_1_0/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_0/a_391_47# 0.4
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_391_47# sky130_fd_sc_hd__dlygate4sd3_1_1/a_49_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_3/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_3/a_391_47# 0.4
+C sky130_fd_sc_hd__dfxtp_1_0/a_975_413# FBack 0.0
+C VCCD D 0.2
+C sky130_fd_sc_hd__dfxtp_1_0/a_27_47# sky130_fd_sc_hd__dfxtp_1_0/a_381_47# 0.1
+C DL4 sky130_fd_sc_hd__dlygate4sd3_1_4/a_285_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47# sky130_fd_sc_hd__dlygate4sd3_1_0/a_391_47# 0.0
+C Dout GND 0.2
+C sky130_fd_sc_hd__buf_2_0/X sky130_fd_sc_hd__dlygate4sd3_1_0/a_285_47# 0.0
+C VCCD CLK_dly 0.6
+C Dout sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.0
+C FBack_inv sky130_fd_sc_hd__dfxtp_1_0/a_592_47# 0.0
+C sky130_fd_sc_hd__buf_2_0/X sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47# 0.0
+C D sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 0.0
+C FBack_inv sky130_fd_sc_hd__dlygate4sd3_1_3/a_49_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_1/a_391_47# 0.4
+C sky130_fd_sc_hd__buf_2_0/X sky130_fd_sc_hd__buf_2_0/a_27_47# 0.2
+C sky130_fd_sc_hd__dlygate4sd3_1_4/a_285_47# CLK_dly 0.0
+C FBack_inv sky130_fd_sc_hd__dlygate4sd3_1_3/a_391_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413# sky130_fd_sc_hd__buf_2_0/X 0.0
+C D CLK 0.0
+C GND sky130_fd_sc_hd__dlygate4sd3_1_2/a_49_47# 0.1
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_1/a_49_47# 0.2
+C sky130_fd_sc_hd__buf_2_0/X sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.1
+C VCCD sky130_fd_sc_hd__dfxtp_1_0/a_561_413# 0.0
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_0/a_285_47# 0.3
+C FBack_inv sky130_fd_sc_hd__dfxtp_1_0/a_1017_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_193_47# sky130_fd_sc_hd__dlygate4sd3_1_2/a_49_47# 0.0
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_5/a_49_47# 0.3
+C DL4 GND 0.1
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47# 0.3
+C VCCD sky130_fd_sc_hd__buf_2_0/a_27_47# 0.2
+C D GND 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_466_413# FBack_inv 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_5/a_49_47# sky130_fd_sc_hd__dlygate4sd3_1_4/a_285_47# 0.0
+C CLK_dly sky130_fd_sc_hd__dlygate4sd3_1_5/a_391_47# 0.1
+C sky130_fd_sc_hd__dlygate4sd3_1_4/a_49_47# sky130_fd_sc_hd__dlygate4sd3_1_3/a_285_47# 0.0
+C FBack_inv sky130_fd_sc_hd__dlygate4sd3_1_3/a_285_47# 0.0
+C CLK_dly DL5 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413# VCCD 0.2
+C D sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.0
+C VCCD sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.7
+C GND CLK_dly 0.9
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413# sky130_fd_sc_hd__dlygate4sd3_1_2/a_285_47# 0.0
+C VCCD DL2 0.3
+C sky130_fd_sc_hd__dfxtp_1_0/a_561_413# CLK 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_0/a_285_47# CLK 0.0
+C DL2 sky130_fd_sc_hd__dlygate4sd3_1_2/a_285_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_193_47# CLK_dly 0.0
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_5/a_285_47# 0.3
+C Dout sky130_fd_sc_hd__dlygate4sd3_1_3/a_49_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_4/a_49_47# sky130_fd_sc_hd__dlygate4sd3_1_4/a_391_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47# CLK 0.3
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413# sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 0.0
+C sky130_fd_sc_hd__buf_2_0/a_27_47# CLK 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_4/a_49_47# FBack 0.0
+C sky130_fd_sc_hd__buf_2_0/X sky130_fd_sc_hd__dlygate4sd3_1_1/a_49_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_5/a_49_47# sky130_fd_sc_hd__dlygate4sd3_1_5/a_391_47# 0.0
+C FBack_inv FBack 0.1
+C sky130_fd_sc_hd__dfxtp_1_0/a_27_47# sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 0.1
+C sky130_fd_sc_hd__dlygate4sd3_1_5/a_49_47# DL5 0.3
+C DL2 sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_0/a_285_47# GND 0.1
+C sky130_fd_sc_hd__dlygate4sd3_1_2/a_391_47# Dout 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413# CLK 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_5/a_49_47# GND 0.1
+C sky130_fd_sc_hd__dfxtp_1_0/a_27_47# CLK 0.3
+C DL2 CLK 0.0
+C GND sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47# 0.1
+C sky130_fd_sc_hd__buf_2_0/X sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 0.0
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_1/a_391_47# 0.2
+C sky130_fd_sc_hd__buf_2_0/a_27_47# GND 0.1
+C sky130_fd_sc_hd__buf_2_0/X sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413# GND 0.1
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_1/a_49_47# 0.3
+C sky130_fd_sc_hd__dlygate4sd3_1_2/a_391_47# sky130_fd_sc_hd__dlygate4sd3_1_2/a_49_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_27_47# GND 0.1
+C sky130_fd_sc_hd__dlygate4sd3_1_5/a_285_47# sky130_fd_sc_hd__dlygate4sd3_1_5/a_391_47# 0.4
+C DL2 GND 0.1
+C sky130_fd_sc_hd__dlygate4sd3_1_5/a_285_47# DL5 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.2
+C DL4 sky130_fd_sc_hd__dlygate4sd3_1_3/a_391_47# 0.1
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_391_47# sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_27_47# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 1.0
+C sky130_fd_sc_hd__buf_2_0/X sky130_fd_sc_hd__dfxtp_1_0/a_381_47# 0.1
+C GND sky130_fd_sc_hd__dlygate4sd3_1_5/a_285_47# 0.1
+C DL2 sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.0
+C VCCD sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 0.4
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_391_47# CLK 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_3/a_49_47# CLK_dly 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_2/a_285_47# sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 0.0
+C Dout FBack 0.0
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47# 0.3
+C CLK_dly sky130_fd_sc_hd__dlygate4sd3_1_3/a_391_47# 0.0
+C FBack_inv Dout 0.1
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_49_47# CLK 0.0
+C sky130_fd_sc_hd__buf_2_0/X sky130_fd_sc_hd__dlygate4sd3_1_0/a_391_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_0/a_285_47# DL1 0.0
+C DL4 sky130_fd_sc_hd__dlygate4sd3_1_3/a_285_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_391_47# GND 0.1
+C VCCD sky130_fd_sc_hd__dfxtp_1_0/a_381_47# 0.1
+C sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# CLK 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413# sky130_fd_sc_hd__dfxtp_1_0/a_975_413# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_391_47# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_49_47# GND 0.1
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47# CLK 0.0
+C CLK_dly sky130_fd_sc_hd__dlygate4sd3_1_3/a_285_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_49_47# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.0
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_0/a_391_47# 0.2
+C sky130_fd_sc_hd__dfxtp_1_0/a_381_47# sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 0.0
+C DL4 FBack 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_27_47# DL1 0.0
+C DL4 FBack_inv 0.0
+C DL4 sky130_fd_sc_hd__dlygate4sd3_1_4/a_49_47# 0.3
+C sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# GND 0.2
+C sky130_fd_sc_hd__dfxtp_1_0/a_381_47# CLK 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_466_413# sky130_fd_sc_hd__dfxtp_1_0/a_561_413# 0.0
+C sky130_fd_sc_hd__buf_2_0/X VCCD 0.5
+C sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47# GND 0.1
+C CLK_dly sky130_fd_sc_hd__dlygate4sd3_1_4/a_391_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413# sky130_fd_sc_hd__dlygate4sd3_1_2/a_391_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413# sky130_fd_sc_hd__dfxtp_1_0/a_1017_47# 0.0
+C CLK_dly FBack 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_4/a_49_47# CLK_dly 0.0
+C FBack_inv CLK_dly 0.2
+C VCCD DL3 0.3
+C sky130_fd_sc_hd__dfxtp_1_0/a_381_47# GND 0.1
+C sky130_fd_sc_hd__dlygate4sd3_1_0/a_391_47# CLK 0.0
+C DL3 sky130_fd_sc_hd__dlygate4sd3_1_2/a_285_47# 0.0
+C sky130_fd_sc_hd__buf_2_0/X sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_381_47# sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.1
+C sky130_fd_sc_hd__dfxtp_1_0/a_466_413# sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.3
+C sky130_fd_sc_hd__dfxtp_1_0/a_466_413# DL2 0.0
+C sky130_fd_sc_hd__buf_2_0/X CLK 0.1
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_2/a_285_47# 0.3
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_49_47# DL1 0.3
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_4/a_285_47# 0.3
+C GND sky130_fd_sc_hd__dlygate4sd3_1_0/a_391_47# 0.1
+C VCCD sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 0.2
+C sky130_fd_sc_hd__buf_2_0/X GND 0.4
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413# FBack 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413# FBack_inv 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_27_47# FBack 0.0
+C VCCD CLK 1.0
+C sky130_fd_sc_hd__buf_2_0/X sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.2
+C FBack_inv sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_466_413# sky130_fd_sc_hd__dlygate4sd3_1_1/a_391_47# 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47# DL1 0.0
+C DL3 GND 0.1
+C Dout CLK_dly 0.1
+C VCCD sky130_fd_sc_hd__dlygate4sd3_1_5/a_391_47# 0.2
+C VCCD DL5 0.2
+C sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# sky130_fd_sc_hd__dfxtp_1_0/a_1017_47# 0.0
+C VCCD GND 1.5
+C sky130_fd_sc_hd__dfxtp_1_0/a_634_159# CLK 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_4/a_285_47# DL5 0.0
+C sky130_fd_sc_hd__dlygate4sd3_1_2/a_285_47# GND 0.1
+C VCCD sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 0.3
+C sky130_fd_sc_hd__dlygate4sd3_1_4/a_285_47# GND 0.1
+C VCCD sky130_fd_sc_hd__nand2_1_0/a_113_47# 0.0
+C sky130_fd_sc_hd__dfxtp_1_0/a_466_413# sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47# 0.0
+C DL1 sky130_fd_sc_hd__dlygate4sd3_1_0/a_391_47# 0.1
+C sky130_fd_sc_hd__dfxtp_1_0/a_634_159# GND 0.1
+C Dout0 0.3
+R Dout 2099
+C CLK0 0.6
+R CLK 1870
+R sky130_fd_sc_hd__dfxtp_1_0/a_1017_47# 188
+R sky130_fd_sc_hd__dfxtp_1_0/a_592_47# 188
+R sky130_fd_sc_hd__dfxtp_1_0/a_975_413# 197
+R sky130_fd_sc_hd__dfxtp_1_0/a_561_413# 227
+C sky130_fd_sc_hd__dfxtp_1_0/a_381_47#0 0.0
+R sky130_fd_sc_hd__dfxtp_1_0/a_381_47# 667
+C sky130_fd_sc_hd__dfxtp_1_0/a_891_413#0 0.2
+R sky130_fd_sc_hd__dfxtp_1_0/a_891_413# 1479
+C sky130_fd_sc_hd__dfxtp_1_0/a_1059_315#0 0.2
+R sky130_fd_sc_hd__dfxtp_1_0/a_1059_315# 2865
+C sky130_fd_sc_hd__dfxtp_1_0/a_466_413#0 0.1
+R sky130_fd_sc_hd__dfxtp_1_0/a_466_413# 1529
+C sky130_fd_sc_hd__dfxtp_1_0/a_634_159#0 0.1
+R sky130_fd_sc_hd__dfxtp_1_0/a_634_159# 1904
+C sky130_fd_sc_hd__dfxtp_1_0/a_193_47#0 0.3
+R sky130_fd_sc_hd__dfxtp_1_0/a_193_47# 2763
+C sky130_fd_sc_hd__dfxtp_1_0/a_27_47#0 0.4
+R sky130_fd_sc_hd__dfxtp_1_0/a_27_47# 3805
+C FBack_inv0 0.3
+R FBack_inv 2670
+C CLK_dly0 1.1
+R CLK_dly 2547
+R sky130_fd_sc_hd__nand2_1_0/a_113_47# 289
+C sky130_fd_sc_hd__dlygate4sd3_1_5/a_391_47#0 0.1
+R sky130_fd_sc_hd__dlygate4sd3_1_5/a_391_47# 1472
+C sky130_fd_sc_hd__dlygate4sd3_1_5/a_285_47#0 0.3
+R sky130_fd_sc_hd__dlygate4sd3_1_5/a_285_47# 875
+C sky130_fd_sc_hd__dlygate4sd3_1_5/a_49_47#0 0.3
+R sky130_fd_sc_hd__dlygate4sd3_1_5/a_49_47# 965
+C DL50 0.2
+R DL5 1961
+C sky130_fd_sc_hd__dlygate4sd3_1_4/a_391_47#0 0.1
+R sky130_fd_sc_hd__dlygate4sd3_1_4/a_391_47# 1472
+C sky130_fd_sc_hd__dlygate4sd3_1_4/a_285_47#0 0.3
+R sky130_fd_sc_hd__dlygate4sd3_1_4/a_285_47# 875
+C sky130_fd_sc_hd__dlygate4sd3_1_4/a_49_47#0 0.3
+R sky130_fd_sc_hd__dlygate4sd3_1_4/a_49_47# 965
+C DL40 0.2
+R DL4 1961
+C sky130_fd_sc_hd__dlygate4sd3_1_3/a_391_47#0 0.1
+R sky130_fd_sc_hd__dlygate4sd3_1_3/a_391_47# 1472
+C sky130_fd_sc_hd__dlygate4sd3_1_3/a_285_47#0 0.3
+R sky130_fd_sc_hd__dlygate4sd3_1_3/a_285_47# 875
+C sky130_fd_sc_hd__dlygate4sd3_1_3/a_49_47#0 0.3
+R sky130_fd_sc_hd__dlygate4sd3_1_3/a_49_47# 965
+C DL30 0.2
+R DL3 1967
+C sky130_fd_sc_hd__dlygate4sd3_1_2/a_391_47#0 0.1
+R sky130_fd_sc_hd__dlygate4sd3_1_2/a_391_47# 1472
+C sky130_fd_sc_hd__dlygate4sd3_1_2/a_285_47#0 0.3
+R sky130_fd_sc_hd__dlygate4sd3_1_2/a_285_47# 875
+C sky130_fd_sc_hd__dlygate4sd3_1_2/a_49_47#0 0.3
+R sky130_fd_sc_hd__dlygate4sd3_1_2/a_49_47# 965
+C GND0 3.1
+R GND 16293
+C sky130_fd_sc_hd__buf_2_0/X0 0.4
+R sky130_fd_sc_hd__buf_2_0/X 2022
+C D0 0.3
+R D 793
+C VCCD0 11.1
+R VCCD 53302
+C sky130_fd_sc_hd__buf_2_0/a_27_47#0 0.3
+R sky130_fd_sc_hd__buf_2_0/a_27_47# 2411
+C FBack0 0.1
+R FBack 1121
+C DL20 0.2
+R DL2 1961
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_391_47#0 0.1
+R sky130_fd_sc_hd__dlygate4sd3_1_1/a_391_47# 1472
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47#0 0.3
+R sky130_fd_sc_hd__dlygate4sd3_1_1/a_285_47# 875
+C sky130_fd_sc_hd__dlygate4sd3_1_1/a_49_47#0 0.3
+R sky130_fd_sc_hd__dlygate4sd3_1_1/a_49_47# 965
+C DL10 0.2
+R DL1 1961
+C sky130_fd_sc_hd__dlygate4sd3_1_0/a_391_47#0 0.1
+R sky130_fd_sc_hd__dlygate4sd3_1_0/a_391_47# 1472
+C sky130_fd_sc_hd__dlygate4sd3_1_0/a_285_47#0 0.3
+R sky130_fd_sc_hd__dlygate4sd3_1_0/a_285_47# 875
+C sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47#0 0.3
+R sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47# 965

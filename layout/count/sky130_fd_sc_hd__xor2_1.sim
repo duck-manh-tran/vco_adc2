@@ -1,0 +1,67 @@
+| units: 500000 tech: sky130A format: MIT
+x a_35_297# a_285_297# X VPB s=10400,504 d=12000,520 l=30 w=200 x=527 y=297 sky130_fd_pr__pfet_01v8_hvt
+x B a_285_47# X VNB s=3510,184 d=10010,284 l=30 w=130 x=339 y=47 sky130_fd_pr__nfet_01v8
+x B VGND a_35_297# VNB s=6760,364 d=3510,184 l=30 w=130 x=87 y=47 sky130_fd_pr__nfet_01v8
+x B a_35_297# a_117_297# VPB s=10400,504 d=5400,254 l=30 w=200 x=87 y=297 sky130_fd_pr__pfet_01v8_hvt
+x B a_285_297# VPWR VPB s=5400,254 d=10400,504 l=30 w=200 x=339 y=297 sky130_fd_pr__pfet_01v8_hvt
+x A a_35_297# VGND VNB s=3510,184 d=3510,184 l=30 w=130 x=171 y=47 sky130_fd_pr__nfet_01v8
+x a_35_297# X VGND VNB s=10010,284 d=8320,388 l=30 w=130 x=523 y=47 sky130_fd_pr__nfet_01v8
+x A VPWR a_285_297# VPB s=5400,254 d=5400,254 l=30 w=200 x=255 y=297 sky130_fd_pr__pfet_01v8_hvt
+x A a_117_297# VPWR VPB s=5400,254 d=5400,254 l=30 w=200 x=171 y=297 sky130_fd_pr__pfet_01v8_hvt
+x A VGND a_285_47# VNB s=3510,184 d=3510,184 l=30 w=130 x=255 y=47 sky130_fd_pr__nfet_01v8
+C a_285_47# VGND 0.0
+C a_285_47# B 0.0
+C a_285_47# X 0.0
+C a_285_47# a_35_297# 0.0
+C VGND a_285_297# 0.0
+C B a_285_297# 0.1
+C B VGND 0.0
+C a_285_47# VPWR 0.0
+C X a_285_297# 0.1
+C VGND X 0.2
+C B X 0.0
+C A a_285_297# 0.0
+C a_117_297# VGND 0.0
+C VGND A 0.0
+C a_285_297# a_35_297# 0.0
+C a_117_297# B 0.0
+C B A 0.2
+C VGND a_35_297# 0.2
+C VPB a_285_297# 0.0
+C B a_35_297# 0.2
+C VPB VGND 0.0
+C VPB B 0.1
+C VPWR a_285_297# 0.2
+C VGND VPWR 0.1
+C a_117_297# X 0.0
+C X A 0.0
+C B VPWR 0.1
+C X a_35_297# 0.2
+C VPB X 0.0
+C a_117_297# a_35_297# 0.0
+C A a_35_297# 0.1
+C VPWR X 0.1
+C VPB A 0.1
+C VPB a_35_297# 0.1
+C a_117_297# VPWR 0.0
+C VPWR A 0.0
+C VPWR a_35_297# 0.1
+C VPB VPWR 0.1
+C VGND0 0.4
+R VGND 1734
+C X0 0.1
+R X 999
+C VPWR0 0.3
+R VPWR 2311
+C A0 0.2
+R A 1521
+C B0 0.2
+R B 1852
+C VPB0 0.7
+R VPB 2131
+R a_285_47# 289
+C a_285_297#0 0.0
+R a_285_297# 2068
+R a_117_297# 730
+C a_35_297#0 0.3
+R a_35_297# 2156

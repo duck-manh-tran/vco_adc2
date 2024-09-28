@@ -1,0 +1,42 @@
+* SPICE3 file created from dco.ext - technology: sky130A
+
+.subckt dco VCCD VCCA Dctrl ENB Vbs_12 Vbs_34 pha_DCO GND
+C0 Isup dco_ring_osc_0/p[3] 2.565691f
+C1 dco_ring_osc_0/p[2] Isup 3.689101f
+C2 dco_ring_osc_0/p[1] Isup 2.560124f
+C3 dco_ring_osc_0/p[0] Isup 2.557879f
+C4 p_osc Isup 2.865048f
+C5 ro_div2 VCCD 2.804919f
+Xdco_freq_0 pha_ro ro_div2 dco_freq
+Xdco_freq_1 ro_div2 pha_DCO dco_freq
+Xsky130_fd_sc_hd__buf_2_0 p_osc GND GND VCCD VCCD pha_ro sky130_fd_sc_hd__buf_2
+Xdco_ring_osc_0 Isup GND GND Isup dco_ring_osc_0/p[0] dco_ring_osc_0/p[1] dco_ring_osc_0/p[2]
++ dco_ring_osc_0/p[3] p_osc dco_ring_osc_0/pn[0] dco_ring_osc_0/pn[1] dco_ring_osc_0/pn[2]
++ dco_ring_osc_0/pn[3] dco_ring_osc_0/pn[4] dco_ring_osc
+Xdco_idac_0 VCCA Dctrl Vbs_12 Vbs_12 Vbs_34 Vbs_34 Isup GND VCCD dco_idac
+Xsky130_fd_sc_hd__einvp_1_0 VCCD ENB GND GND VCCD VCCD dco_ring_osc_0/pn[4] sky130_fd_sc_hd__einvp_1
+C6 Vbs_12 GND 2.385221f
+C7 VCCA GND 2.935841f
+C8 dco_idac_0/D1_M4 GND 6.010999f **FLOATING
+C9 dco_idac_0/B_M2 GND 2.038646f **FLOATING
+C10 dco_idac_0/D_M7 GND 2.126267f **FLOATING
+C11 dco_idac_0/G_M5 GND 2.60848f
+C12 dco_idac_0/G_M7 GND 2.180161f
+C13 dco_ring_osc_0/pn[3] GND 3.842829f
+C14 dco_ring_osc_0/p[3] GND 2.511793f
+C15 dco_ring_osc_0/pn[4] GND 6.391574f
+C16 p_osc GND 7.112562f
+C17 dco_ring_osc_0/pn[2] GND 4.464278f
+C18 Isup GND 49.697628f
+C19 dco_ring_osc_0/p[2] GND 3.392114f
+C20 dco_ring_osc_0/pn[1] GND 3.823762f
+C21 dco_ring_osc_0/p[1] GND 2.511596f
+C22 dco_ring_osc_0/pn[0] GND 3.855207f
+C23 dco_ring_osc_0/p[0] GND 2.511309f
+C24 VCCD GND 31.148153f
+C25 dco_freq_1/D GND 3.341328f
+C26 ro_div2 GND 3.686911f
+C27 dco_freq_1/Q_N GND 2.956692f
+C28 dco_freq_0/D GND 3.341328f
+C29 dco_freq_0/Q_N GND 2.971666f
+.ends

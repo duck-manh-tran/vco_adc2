@@ -1,9 +1,13 @@
-* NGSPICE file created from dco_freq.ext - technology: sky130A
+* SPICE3 file created from dco_freq.ext - technology: sky130A
 
 .subckt dco_freq clk clkDiv2
 Xsky130_fd_sc_hd__buf_4_0 Q_N VGND VNB VPB VPWR Q_N_buf sky130_fd_sc_hd__buf_4
 Xsky130_fd_sc_hd__inv_4_0 clk VGND VNB VPB VPWR clkinv sky130_fd_sc_hd__inv_4
 Xsky130_fd_sc_hd__dfxtp_1_0 clkinv Q_N_buf VGND VNB VPB VPWR D sky130_fd_sc_hd__dfxtp_1
 Xsky130_fd_sc_hd__dfxbp_2_0 clk D VGND VNB VPB VPWR clkDiv2 Q_N sky130_fd_sc_hd__dfxbp_2
+C0 VPB VNB 7.033115f
+C1 D VNB 2.047045f
+C2 VGND VNB 2.06316f
+C3 VPWR VNB 2.189027f
+C4 Q_N VNB 2.148623f
 .ends
-

@@ -1,0 +1,6 @@
+VGND 0 -47 m1
+Y 397 289 li
+VPWR 0 496 m1
+A 305 221 li
+VPB 29 527 nw
+VNB 29 -16 pw

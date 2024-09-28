@@ -1,0 +1,95 @@
+scale 1000 1 500000
+rnode "clkDiv2" 0 1180.94 2810 -130 0
+rnode "sky130_fd_sc_hd__dfxbp_2_0/Q" 0 219.059 2068 -707 0
+resist "sky130_fd_sc_hd__dfxbp_2_0/Q" "clkDiv2" 19.6133
+rnode "sky130_fd_sc_hd__inv_4_0/A" 0 17.8076 159 269 0
+rnode "clk.n0" 0 48.8161 104 330 0
+rnode "clk.n1" 0 33.9119 356 397 0
+rnode "clk.t1" 0 33.0721 310 445 0
+rnode "clk.n2" 0 33.9119 272 397 0
+rnode "clk.t3" 0 33.0721 226 445 0
+rnode "clk.n3" 0 33.9119 188 397 0
+rnode "clk.t5" 0 33.0721 142 445 0
+rnode "clk.n4" 0 119.189 89 305 0
+rnode "clk.t2" 0 21.2729 142 160 0
+rnode "clk.n5" 0 2.49123 188 297 0
+rnode "sky130_fd_sc_hd__inv_4_0/A" 0 30.5594 343 269 0
+rnode "clk.t7" 0 21.2729 310 160 0
+rnode "clk.t0" 0 33.4557 394 445 0
+rnode "clk.t6" 0 19.6105 394 160 0
+rnode "clk.n6" 0 41.5155 390 297 0
+rnode "clk.n7" 0 4.01724 89 305 0
+rnode "clk.n8" 0 7.38735 352 280 0
+rnode "clk.n9" 0 30.3769 341 272 0
+rnode "clk.n10" 0 2.49123 272 297 0
+rnode "clk.t4" 0 21.2729 226 160 0
+rnode "clk.n11" 0 30.3769 257 272 0
+rnode "clk.n12" 0 5.01893 268 280 0
+rnode "clk.n13" 0 17.8076 268 280 0
+rnode "sky130_fd_sc_hd__inv_4_0/A" 0 16.2591 251 269 0
+rnode "clk.n14" 0 17.8076 184 280 0
+rnode "clk.n15" 0 5.01893 184 280 0
+rnode "clk.n16" 0 31.028 173 272 0
+rnode "clk.n17" 0 18.9615 89 305 0
+rnode "clk.n18" 0 14.4322 92 280 0
+rnode "sky130_fd_sc_hd__inv_4_0/A" 0 7.54888 67 269 0
+rnode "clk.n19" 0 116.369 90 290 0
+rnode "clk" 0 1162.61 230 -70 0
+rnode "clk.t8" 0 33.9334 772 -365 0
+rnode "clk.t9" 0 22.7032 772 -703 0
+rnode "clk.n20" 0 62.0085 727 -560 0
+rnode "clk.n21" 0 94.4893 727 -560 0
+rnode "sky130_fd_sc_hd__dfxbp_2_0/CLK" 0 21.1369 707 -571 0
+resist "clk.n19" "clk.n18" 0.512
+resist "sky130_fd_sc_hd__dfxbp_2_0/CLK" "clk.n21" 1.96923
+resist "sky130_fd_sc_hd__inv_4_0/A" "clk.n13" 4.352
+resist "clk.n17" "clk.n4" 4.96315
+resist "clk.n19" "sky130_fd_sc_hd__inv_4_0/A" 5.888
+resist "clk.n14" "sky130_fd_sc_hd__inv_4_0/A" 6.4
+resist "clk.n10" "clk.n4" 6.66968
+resist "clk.n5" "clk.n4" 6.66968
+resist "clk.n12" "clk.n10" 7.13046
+resist "clk.n15" "clk.n5" 7.13046
+resist "clk.n7" "clk.n4" 7.15239
+resist "clk.n10" "clk.n9" 7.50333
+resist "clk.n11" "clk.n5" 7.50333
+resist "clk.n8" "clk.n7" 7.9519
+resist "clk.n17" "clk.n16" 8.68161
+resist "clk.n9" "clk.n8" 10.604
+resist "clk.n12" "clk.n11" 10.604
+resist "clk.n16" "clk.n15" 10.604
+resist "clk.n21" "clk" 11.4463
+resist "clk" "clk.n19" 12.6177
+resist "clk.n18" "sky130_fd_sc_hd__inv_4_0/A" 17.152
+resist "clk.n14" "sky130_fd_sc_hd__inv_4_0/A" 17.152
+resist "clk.n7" "clk.n6" 18.2378
+resist "clk.n13" "sky130_fd_sc_hd__inv_4_0/A" 19.2
+resist "clk.n4" "clk.n0" 40.1667
+resist "clk.n6" "clk.t6" 143.636
+resist "clk.n4" "clk.n1" 147.813
+resist "clk.n4" "clk.n2" 147.813
+resist "clk.n4" "clk.n3" 147.813
+resist "clk.n21" "clk.n20" 152
+resist "clk.n15" "clk.n14" 152
+resist "clk.n13" "clk.n12" 152
+resist "clk.n8" "sky130_fd_sc_hd__inv_4_0/A" 154.304
+resist "clk.n9" "clk.t7" 162.095
+resist "clk.n11" "clk.t4" 162.095
+resist "clk.n16" "clk.t2" 162.095
+resist "clk.n18" "clk.n17" 163.044
+resist "clk.n20" "clk.t9" 211.009
+resist "clk.n4" "clk.t1" 219.221
+resist "clk.n4" "clk.t3" 219.221
+resist "clk.n4" "clk.t5" 219.221
+resist "clk.n6" "clk.t0" 224.13
+resist "clk.n20" "clk.t8" 294.556
+device msubckt sky130_fd_pr__nfet_01v8 757 -745 758 -744  "VNB" "clk.t9" 60 0 "sky130_fd_sc_hd__dfxbp_2_0/a_27_47#" 84 4368,272 "VGND" 84 2268,138
+device msubckt sky130_fd_pr__pfet_01v8_hvt 757 -429 758 -428  "VPB" "clk.t8" 60 0 "sky130_fd_sc_hd__dfxbp_2_0/a_27_47#" 128 6656,360 "VPWR" 128 3456,182
+device msubckt sky130_fd_pr__nfet_01v8 295 95 296 96  "VNB" "clk.t7" 60 0 "VGND" 130 3510,184 "clkinv" 130 3510,184
+device msubckt sky130_fd_pr__nfet_01v8 379 95 380 96  "VNB" "clk.t6" 60 0 "clkinv" 130 3510,184 "VGND" 130 6760,364
+device msubckt sky130_fd_pr__pfet_01v8_hvt 127 345 128 346  "VPB" "clk.t5" 60 0 "VPWR" 200 10400,504 "clkinv" 200 5400,254
+device msubckt sky130_fd_pr__nfet_01v8 211 95 212 96  "VNB" "clk.t4" 60 0 "clkinv" 130 3510,184 "VGND" 130 3510,184
+device msubckt sky130_fd_pr__pfet_01v8_hvt 211 345 212 346  "VPB" "clk.t3" 60 0 "clkinv" 200 5400,254 "VPWR" 200 5400,254
+device msubckt sky130_fd_pr__nfet_01v8 127 95 128 96  "VNB" "clk.t2" 60 0 "VGND" 130 6760,364 "clkinv" 130 3510,184
+device msubckt sky130_fd_pr__pfet_01v8_hvt 295 345 296 346  "VPB" "clk.t1" 60 0 "VPWR" 200 5400,254 "clkinv" 200 5400,254
+device msubckt sky130_fd_pr__pfet_01v8_hvt 379 345 380 346  "VPB" "clk.t0" 60 0 "clkinv" 200 5400,254 "VPWR" 200 10400,504

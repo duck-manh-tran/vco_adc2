@@ -1,0 +1,7 @@
+VGND 0 -47 m1
+X 306 153 li
+VPWR 0 496 m1
+A 30 221 li
+VPB 30 527 nw
+VNB 30 -16 pw
+a_27_47# 27 47 ndif

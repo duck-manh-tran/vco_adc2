@@ -1,0 +1,49 @@
+* SPICE3 file created from vco.ext - technology: sky130A
+
+.subckt vco VCCD ENB p[4] Anlg_in VCCA VPWR GND
+R0 Anlg_in vco_ring_osc_0/VGND sky130_fd_pr__res_generic_po w=0.48 l=2
+R1 vco_ring_osc_0/VGND GND sky130_fd_pr__res_generic_po w=0.48 l=2
+C0 vco_ring_osc_0/pn[2] vco_ring_osc_0/pn[1] 2.590521f
+C1 vco_ring_osc_0/pn[3] vco_ring_osc_0/p[3] 2.817914f
+C2 vco_ring_osc_0/p[2] vco_ring_osc_0/p[1] 2.296917f
+C3 vco_ring_osc_0/pn[4] vco_ring_osc_0/pn[0] 2.563558f
+C4 vco_ring_osc_0/p[0] p[4] 2.297207f
+C5 vco_ring_osc_0/p[3] VCCA 2.141539f
+C6 vco_ring_osc_0/p[2] VCCA 3.160918f
+C7 vco_ring_osc_0/pn[2] vco_ring_osc_0/p[2] 3.383091f
+C8 VPWR vco_ring_osc_0/p[1] 2.024526f
+C9 p[4] VCCA 2.050636f
+C10 vco_ring_osc_0/pn[3] vco_ring_osc_0/pn[4] 2.563558f
+C11 VPWR vco_ring_osc_0/p[0] 2.024411f
+C12 VPWR VCCA 7.959994f
+C13 vco_ring_osc_0/p[0] vco_ring_osc_0/pn[0] 2.817914f
+C14 vco_ring_osc_0/p[0] vco_ring_osc_0/p[1] 2.296917f
+C15 vco_ring_osc_0/pn[1] vco_ring_osc_0/pn[0] 2.563558f
+C16 vco_ring_osc_0/p[2] vco_ring_osc_0/p[3] 2.297206f
+C17 p[4] vco_ring_osc_0/p[3] 2.296917f
+C18 vco_ring_osc_0/p[1] VCCA 2.141853f
+C19 vco_ring_osc_0/pn[3] vco_ring_osc_0/pn[2] 2.563558f
+C20 vco_ring_osc_0/pn[1] vco_ring_osc_0/p[1] 2.817913f
+C21 vco_ring_osc_0/p[0] VCCA 2.141539f
+C22 VPWR vco_ring_osc_0/p[3] 2.024411f
+C23 VPWR vco_ring_osc_0/p[2] 2.066987f
+C24 VPWR p[4] 2.030815f
+C25 vco_ring_osc_0/pn[4] p[4] 3.589511f
+Xvco_ring_osc_0 vco_ring_osc_0/VGND VPWR vco_ring_osc_0/p[0] vco_ring_osc_0/p[1] vco_ring_osc_0/p[2]
++ vco_ring_osc_0/p[3] p[4] vco_ring_osc_0/pn[0] vco_ring_osc_0/pn[1] vco_ring_osc_0/pn[2]
++ vco_ring_osc_0/pn[3] vco_ring_osc_0/pn[4] VCCA GND vco_ring_osc
+Xsky130_fd_sc_hd__einvp_1_0 VCCD ENB GND GND VCCD VCCD vco_ring_osc_0/pn[4] sky130_fd_sc_hd__einvp_1
+C26 VCCA GND 0.116003p
+C27 vco_ring_osc_0/p[3] GND 5.839946f
+C28 vco_ring_osc_0/pn[3] GND 7.125296f
+C29 vco_ring_osc_0/VGND GND 21.748072f
+C30 p[4] GND 10.611836f
+C31 vco_ring_osc_0/pn[4] GND 11.005135f
+C32 vco_ring_osc_0/p[2] GND 7.276832f
+C33 vco_ring_osc_0/pn[2] GND 8.351643f
+C34 vco_ring_osc_0/p[1] GND 5.839947f
+C35 VPWR GND 15.139269f
+C36 vco_ring_osc_0/pn[1] GND 7.099289f
+C37 vco_ring_osc_0/p[0] GND 5.886267f
+C38 vco_ring_osc_0/pn[0] GND 7.25434f
+.ends
