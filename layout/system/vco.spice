@@ -3,32 +3,32 @@
 .subckt vco VCCD ENB p[4] Anlg_in VCCA VPWR GND
 R0 Anlg_in vco_ring_osc_0/VGND sky130_fd_pr__res_generic_po w=0.48 l=2
 R1 vco_ring_osc_0/VGND GND sky130_fd_pr__res_generic_po w=0.48 l=2
-C0 vco_ring_osc_0/pn[2] vco_ring_osc_0/pn[1] 2.590521f
-C1 vco_ring_osc_0/pn[3] vco_ring_osc_0/p[3] 2.817914f
-C2 vco_ring_osc_0/p[2] vco_ring_osc_0/p[1] 2.296917f
-C3 vco_ring_osc_0/pn[4] vco_ring_osc_0/pn[0] 2.563558f
-C4 vco_ring_osc_0/p[0] p[4] 2.297207f
-C5 vco_ring_osc_0/p[3] VCCA 2.141539f
-C6 vco_ring_osc_0/p[2] VCCA 3.160918f
-C7 vco_ring_osc_0/pn[2] vco_ring_osc_0/p[2] 3.383091f
-C8 VPWR vco_ring_osc_0/p[1] 2.024526f
+C0 p[4] vco_ring_osc_0/p[0] 2.297207f
+C1 vco_ring_osc_0/p[1] VPWR 2.024526f
+C2 vco_ring_osc_0/p[0] vco_ring_osc_0/pn[0] 2.817914f
+C3 vco_ring_osc_0/p[1] VCCA 2.141853f
+C4 p[4] vco_ring_osc_0/p[3] 2.296917f
+C5 vco_ring_osc_0/pn[3] vco_ring_osc_0/p[3] 2.817914f
+C6 vco_ring_osc_0/p[1] vco_ring_osc_0/pn[1] 2.817913f
+C7 vco_ring_osc_0/pn[2] vco_ring_osc_0/pn[1] 2.590521f
+C8 p[4] VPWR 2.030815f
 C9 p[4] VCCA 2.050636f
-C10 vco_ring_osc_0/pn[3] vco_ring_osc_0/pn[4] 2.563558f
-C11 VPWR vco_ring_osc_0/p[0] 2.024411f
-C12 VPWR VCCA 7.959994f
-C13 vco_ring_osc_0/p[0] vco_ring_osc_0/pn[0] 2.817914f
-C14 vco_ring_osc_0/p[0] vco_ring_osc_0/p[1] 2.296917f
-C15 vco_ring_osc_0/pn[1] vco_ring_osc_0/pn[0] 2.563558f
-C16 vco_ring_osc_0/p[2] vco_ring_osc_0/p[3] 2.297206f
-C17 p[4] vco_ring_osc_0/p[3] 2.296917f
-C18 vco_ring_osc_0/p[1] VCCA 2.141853f
-C19 vco_ring_osc_0/pn[3] vco_ring_osc_0/pn[2] 2.563558f
-C20 vco_ring_osc_0/pn[1] vco_ring_osc_0/p[1] 2.817913f
-C21 vco_ring_osc_0/p[0] VCCA 2.141539f
-C22 VPWR vco_ring_osc_0/p[3] 2.024411f
-C23 VPWR vco_ring_osc_0/p[2] 2.066987f
-C24 VPWR p[4] 2.030815f
-C25 vco_ring_osc_0/pn[4] p[4] 3.589511f
+C10 vco_ring_osc_0/pn[2] vco_ring_osc_0/pn[3] 2.563558f
+C11 p[4] vco_ring_osc_0/pn[4] 3.589511f
+C12 vco_ring_osc_0/p[2] vco_ring_osc_0/p[3] 2.297206f
+C13 vco_ring_osc_0/pn[4] vco_ring_osc_0/pn[3] 2.563558f
+C14 vco_ring_osc_0/pn[1] vco_ring_osc_0/pn[0] 2.563558f
+C15 vco_ring_osc_0/pn[4] vco_ring_osc_0/pn[0] 2.563558f
+C16 VPWR vco_ring_osc_0/p[0] 2.024411f
+C17 vco_ring_osc_0/p[0] VCCA 2.141539f
+C18 VPWR vco_ring_osc_0/p[3] 2.024411f
+C19 VPWR vco_ring_osc_0/p[2] 2.066987f
+C20 vco_ring_osc_0/p[1] vco_ring_osc_0/p[0] 2.296917f
+C21 VCCA vco_ring_osc_0/p[3] 2.141539f
+C22 vco_ring_osc_0/p[2] VCCA 3.160918f
+C23 vco_ring_osc_0/p[1] vco_ring_osc_0/p[2] 2.296917f
+C24 vco_ring_osc_0/pn[2] vco_ring_osc_0/p[2] 3.383091f
+C25 VPWR VCCA 7.959993f
 Xvco_ring_osc_0 vco_ring_osc_0/VGND VPWR vco_ring_osc_0/p[0] vco_ring_osc_0/p[1] vco_ring_osc_0/p[2]
 + vco_ring_osc_0/p[3] p[4] vco_ring_osc_0/pn[0] vco_ring_osc_0/pn[1] vco_ring_osc_0/pn[2]
 + vco_ring_osc_0/pn[3] vco_ring_osc_0/pn[4] VCCA GND vco_ring_osc

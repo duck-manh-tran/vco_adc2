@@ -345,3 +345,350 @@ device msubckt sky130_fd_pr__nfet_01v8 807 -615 808 -614  "GND" "D.t1" 60 0 "sky
 device msubckt sky130_fd_pr__pfet_01v8_hvt 807 -301 808 -300  "VCCD" "D.t0" 60 0 "sky130_fd_sc_hd__buf_2_0/a_27_47#" 128 6656,360 "VCCD" 128 5960,265
 device msubckt sky130_fd_pr__nfet_01v8 829 185 830 186  "GND" "CLK.t1" 60 0 "sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47#" 84 4368,272 "GND" 84 2268,138
 device msubckt sky130_fd_pr__pfet_01v8_hvt 829 551 830 552  "VCCD" "CLK.t0" 60 0 "sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47#" 84 4368,272 "VCCD" 84 2268,138
+scale 1000 1 500000
+rnode "Dout.t1" 0 43.7186 3436 -265 0
+rnode "Dout.t0" 0 27.2844 3436 -550 0
+rnode "Dout.n0" 0 86.9225 3391 -430 0
+rnode "sky130_fd_sc_hd__nand2_1_0/B" 0 85.614 3366 -441 0
+rnode "Dout" 0 254.525 3140 -400 0
+rnode "sky130_fd_sc_hd__dfxtp_1_0/Q" 0 301.935 2878 -577 0
+resist "Dout" "sky130_fd_sc_hd__nand2_1_0/B" 57.6853
+resist "sky130_fd_sc_hd__dfxtp_1_0/Q" "Dout" 98.7512
+resist "Dout.n0" "Dout.t0" 157.069
+resist "sky130_fd_sc_hd__nand2_1_0/B" "Dout.n0" 157.926
+resist "Dout.n0" "Dout.t1" 229.369
+rnode "D.t0" 0 31.3121 822 -237 0
+rnode "D.t1" 0 19.9811 822 -573 0
+rnode "D.n0" 0 73.3344 782 -430 0
+rnode "D" 0 227.613 540 -390 0
+rnode "D.n1" 0 33.443 780 -430 0
+rnode "sky130_fd_sc_hd__buf_2_0/A" 0 14.3169 757 -441 0
+resist "sky130_fd_sc_hd__buf_2_0/A" "D.n1" 3.97838
+resist "D.n1" "D" 9.7127
+resist "D.n1" "D.n0" 152.346
+resist "D.n0" "D.t1" 196.131
+resist "D.n0" "D.t0" 276.464
+rnode "sky130_fd_sc_hd__inv_2_0/Y" 0 115.624 3989 -509 0
+rnode "sky130_fd_sc_hd__inv_2_0/Y" 0 -4.76998 3989 -509 0
+rnode "FBack.n0" 0 19.8113 4014 -485 0
+rnode "sky130_fd_sc_hd__inv_2_0/Y" 0 22.2599 3989 -441 0
+rnode "sky130_fd_sc_hd__inv_2_0/Y" 0 15.1049 3989 -373 0
+rnode "FBack" 0 335.398 4230 -250 0
+rnode "FBack.n1" 0 98.67 4014 -365 0
+rnode "sky130_fd_sc_hd__inv_2_0/Y" 0 -2.09879 3989 -373 0
+resist "sky130_fd_sc_hd__inv_2_0/Y" "FBack.n1" 1.55152
+resist "FBack.n1" "sky130_fd_sc_hd__inv_2_0/Y" 2.048
+resist "FBack.n0" "sky130_fd_sc_hd__inv_2_0/Y" 4.65455
+resist "FBack.n0" "sky130_fd_sc_hd__inv_2_0/Y" 6.144
+resist "sky130_fd_sc_hd__inv_2_0/Y" "FBack.n0" 11.264
+resist "sky130_fd_sc_hd__inv_2_0/Y" "sky130_fd_sc_hd__inv_2_0/Y" 17.408
+resist "FBack.n1" "FBack" 27.9831
+rnode "sky130_fd_sc_hd__dfxtp_1_0/VGND" 0 -0.0338548 1488 -710 0
+rnode "GND.n0" 0 0.526161 1490 -662 0
+rnode "sky130_fd_sc_hd__dfxtp_1_0/VNB" 0 19.5578 1517 -679 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_5/VNB" 0 492.076 4917 121 0
+rnode "sky130_fd_sc_hd__dfxtp_1_0/VNB" 0 101.1 1534 -662 0
+rnode "sky130_fd_sc_hd__nand2_1_0/VNB" 0 126.302 3366 -679 0
+rnode "sky130_fd_sc_hd__inv_2_0/VNB" 0 44.355 3897 -679 0
+rnode "GND.n1" 0 164.478 4190 -560 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_4/VNB" 0 72.9502 4097 121 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_3/VNB" 0 74.8083 3277 121 0
+rnode "sky130_fd_sc_hd__dfxtp_1_0/VGND" 0 44.5918 1517 -679 0
+rnode "sky130_fd_sc_hd__nand2_1_0/VGND" 0 39.4707 3338 -710 0
+rnode "sky130_fd_sc_hd__nand2_1_0/VGND" 0 -0.0338548 3338 -710 0
+rnode "GND.n2" 0 0.509232 3340 -662 0
+rnode "sky130_fd_sc_hd__nand2_1_0/VGND" 0 10.9341 3366 -679 0
+rnode "sky130_fd_sc_hd__nand2_1_0/VGND" 0 -4.79609 3338 -710 0
+rnode "GND.n3" 0 15.8959 3610 -662 0
+rnode "sky130_fd_sc_hd__inv_2_0/VGND" 0 4.5845 3868 -710 0
+rnode "sky130_fd_sc_hd__inv_2_0/VGND" 0 -0.0338548 3868 -710 0
+rnode "GND.n4" 0 0.52616 3870 -662 0
+rnode "sky130_fd_sc_hd__inv_2_0/VGND" 0 10.8141 3897 -679 0
+rnode "sky130_fd_sc_hd__inv_2_0/VGND" 0 -4.61977 3868 -710 0
+rnode "GND.n5" 0 20.0177 4130 -662 0
+rnode "GND" 0 24.0517 4470 -610 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_5/VGND" 0 36.6263 4917 121 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_5/VGND" 0 3.12639 4888 90 0
+rnode "GND.n6" 0 37.1469 4758 138 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_4/VGND" 0 16.1348 4097 121 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_4/VGND" 0 19.8272 4068 90 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_3/VGND" 0 19.973 3277 121 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_3/VGND" 0 -0.0338548 3248 90 0
+rnode "GND.n7" 0 0.52616 3250 138 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_3/VGND" 0 1.39298 3248 90 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_0/VGND" 0 0.490894 728 90 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_0/VGND" 0 20.0069 757 121 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_1/VGND" 0 19.8272 1548 90 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_1/VGND" 0 20.0069 1577 121 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_2/VGND" 0 19.8272 2368 90 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_2/VGND" 0 17.7732 2397 121 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_2/VGND" 0 -12.9071 2368 90 0
+rnode "GND.n8" 0 32.8767 3100 138 0
+rnode "GND.n9" 0 5.83674 3171 190 0
+rnode "GND.n10" 0 70.8717 3173 241 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_2/VNB" 0 132.439 2397 121 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_1/VNB" 0 85.1437 1577 121 0
+rnode "GND.n11" 0 23.6536 1370 112 0
+rnode "GND.n12" 0 22.1041 1286 112 0
+rnode "GND.n13" 0 23.3724 1097 89 0
+rnode "GND.n14" 0 16.6576 1002 83 0
+rnode "GND.n15" 0 17.1549 896 83 0
+rnode "GND.n16" 0 11.5194 795 111 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_0/VNB" 0 8.70174 757 121 0
+rnode "GND.n17" 0 65.7629 184 154 0
+rnode "GND.n18" 0 55.8604 366 89 0
+rnode "GND.n19" 0 53.5752 493 89 0
+rnode "GND.n20" 0 33.0084 577 83 0
+rnode "GND.n21" 0 25.1372 623 112 0
+rnode "GND.n22" 0 15.8518 676 89 0
+rnode "GND.n23" 0 13.7768 690 155 0
+rnode "sky130_fd_sc_hd__buf_2_0/VNB" 0 26.2009 757 -679 0
+rnode "GND.n24" 0 39.2322 1170 -540 0
+rnode "sky130_fd_sc_hd__buf_2_0/VGND" 0 1.28959 757 -679 0
+rnode "sky130_fd_sc_hd__buf_2_0/VGND" 0 0.490894 728 -710 0
+rnode "sky130_fd_sc_hd__buf_2_0/VGND" 0 2.46555 757 -679 0
+rnode "GND.n25" 0 8.97271 774 -662 0
+rnode "sky130_fd_sc_hd__buf_2_0/VGND" 0 -6.38304 728 -710 0
+rnode "GND.n26" 0 19.2046 1090 -662 0
+rnode "GND.n27" 0 11.8024 1170 -610 0
+rnode "sky130_fd_sc_hd__dfxtp_1_0/VGND" 0 5.64246 1488 -710 0
+resist "sky130_fd_sc_hd__dfxtp_1_0/VGND" "GND.n0" 0.0025
+resist "sky130_fd_sc_hd__dlygate4sd3_1_3/VGND" "GND.n7" 0.0025
+resist "GND.n4" "sky130_fd_sc_hd__inv_2_0/VGND" 0.0025
+resist "GND.n2" "sky130_fd_sc_hd__nand2_1_0/VGND" 0.0025
+resist "GND.n7" "sky130_fd_sc_hd__dlygate4sd3_1_3/VGND" 0.00260417
+resist "GND.n4" "sky130_fd_sc_hd__inv_2_0/VGND" 0.00260417
+resist "GND.n2" "sky130_fd_sc_hd__nand2_1_0/VGND" 0.00260417
+resist "GND.n0" "sky130_fd_sc_hd__dfxtp_1_0/VGND" 0.00260417
+resist "sky130_fd_sc_hd__nand2_1_0/VGND" "GND.n2" 0.0338542
+resist "GND.n7" "sky130_fd_sc_hd__dlygate4sd3_1_3/VGND" 0.0351562
+resist "sky130_fd_sc_hd__inv_2_0/VGND" "GND.n4" 0.0351562
+resist "sky130_fd_sc_hd__dfxtp_1_0/VGND" "GND.n0" 0.0351562
+resist "sky130_fd_sc_hd__dlygate4sd3_1_4/VGND" "sky130_fd_sc_hd__dlygate4sd3_1_4/VGND" 0.0377604
+resist "sky130_fd_sc_hd__dlygate4sd3_1_5/VGND" "sky130_fd_sc_hd__dlygate4sd3_1_5/VGND" 0.0377604
+resist "sky130_fd_sc_hd__dlygate4sd3_1_0/VGND" "sky130_fd_sc_hd__dlygate4sd3_1_0/VGND" 0.0377604
+resist "sky130_fd_sc_hd__dlygate4sd3_1_1/VGND" "sky130_fd_sc_hd__dlygate4sd3_1_1/VGND" 0.0377604
+resist "sky130_fd_sc_hd__dlygate4sd3_1_2/VGND" "sky130_fd_sc_hd__dlygate4sd3_1_2/VGND" 0.0377604
+resist "sky130_fd_sc_hd__buf_2_0/VGND" "sky130_fd_sc_hd__buf_2_0/VGND" 0.0377604
+resist "GND.n25" "sky130_fd_sc_hd__buf_2_0/VGND" 0.0581985
+resist "GND.n9" "GND.n8" 0.08875
+resist "GND.n9" "sky130_fd_sc_hd__dlygate4sd3_1_3/VGND" 0.09625
+resist "GND.n27" "GND.n26" 0.1
+resist "GND.n6" "sky130_fd_sc_hd__dlygate4sd3_1_5/VGND" 0.194424
+resist "GND.n5" "sky130_fd_sc_hd__inv_2_0/VGND" 0.304554
+resist "GND.n3" "sky130_fd_sc_hd__nand2_1_0/VGND" 0.318932
+resist "sky130_fd_sc_hd__inv_2_0/VGND" "GND.n3" 0.3225
+resist "GND.n5" "sky130_fd_sc_hd__inv_2_0/VGND" 0.3275
+resist "GND.n3" "sky130_fd_sc_hd__nand2_1_0/VGND" 0.34
+resist "GND.n26" "GND.n25" 0.376887
+resist "sky130_fd_sc_hd__dfxtp_1_0/VGND" "GND.n27" 0.3975
+resist "GND" "GND.n5" 0.425
+resist "GND.n26" "sky130_fd_sc_hd__buf_2_0/VGND" 0.4525
+resist "sky130_fd_sc_hd__dlygate4sd3_1_4/VGND" "GND.n6" 0.839022
+resist "GND.n8" "sky130_fd_sc_hd__dlygate4sd3_1_2/VGND" 0.915
+resist "GND.n8" "sky130_fd_sc_hd__dlygate4sd3_1_2/VGND" 0.91886
+resist "sky130_fd_sc_hd__dlygate4sd3_1_3/VGND" "sky130_fd_sc_hd__dlygate4sd3_1_4/VGND" 1.03344
+resist "sky130_fd_sc_hd__dlygate4sd3_1_1/VGND" "sky130_fd_sc_hd__dlygate4sd3_1_0/VGND" 1.03344
+resist "sky130_fd_sc_hd__dlygate4sd3_1_2/VGND" "sky130_fd_sc_hd__dlygate4sd3_1_1/VGND" 1.03344
+resist "GND.n6" "GND" 1.25788
+resist "sky130_fd_sc_hd__nand2_1_0/VGND" "sky130_fd_sc_hd__dfxtp_1_0/VGND" 2.35882
+resist "GND.n25" "sky130_fd_sc_hd__buf_2_0/VGND" 13.5651
+resist "GND.n23" "GND.n22" 32.2513
+resist "GND.n21" "GND.n20" 140.556
+resist "GND.n22" "GND.n21" 161.944
+resist "sky130_fd_sc_hd__dfxtp_1_0/VNB" "sky130_fd_sc_hd__dfxtp_1_0/VNB" 242.071
+resist "GND.n20" "GND.n19" 256.667
+resist "GND.n18" "GND.n17" 284.167
+resist "sky130_fd_sc_hd__dlygate4sd3_1_0/VNB" "GND.n16" 355.745
+resist "GND.n19" "GND.n18" 388.056
+resist "GND.n23" "sky130_fd_sc_hd__dlygate4sd3_1_0/VNB" 627.234
+resist "GND.n12" "GND.n11" 803.478
+resist "GND.n14" "GND.n13" 889.362
+resist "sky130_fd_sc_hd__dlygate4sd3_1_4/VNB" "GND.n1" 889.565
+resist "GND.n16" "GND.n15" 945.532
+resist "sky130_fd_sc_hd__buf_2_0/VNB" "GND.n23" 954.045
+resist "GND.n15" "GND.n14" 992.34
+resist "GND.n10" "sky130_fd_sc_hd__dlygate4sd3_1_3/VNB" 994.783
+resist "GND.n10" "GND.n9" 1179.4
+resist "GND.n27" "GND.n24" 1179.41
+resist "GND.n13" "GND.n12" 1800.3
+resist "GND.n11" "sky130_fd_sc_hd__dlygate4sd3_1_1/VNB" 1954.15
+resist "GND.n1" "sky130_fd_sc_hd__dlygate4sd3_1_5/VNB" 2908
+resist "GND.n1" "sky130_fd_sc_hd__inv_2_0/VNB" 4175.59
+resist "GND.n24" "sky130_fd_sc_hd__dfxtp_1_0/VNB" 5060.71
+resist "GND.n24" "sky130_fd_sc_hd__buf_2_0/VNB" 5896.29
+resist "sky130_fd_sc_hd__dlygate4sd3_1_2/VNB" "GND.n10" 7300.3
+resist "sky130_fd_sc_hd__dlygate4sd3_1_1/VNB" "sky130_fd_sc_hd__dlygate4sd3_1_2/VNB" 7676.6
+resist "sky130_fd_sc_hd__inv_2_0/VNB" "sky130_fd_sc_hd__nand2_1_0/VNB" 7759.38
+resist "sky130_fd_sc_hd__dlygate4sd3_1_3/VNB" "sky130_fd_sc_hd__dlygate4sd3_1_4/VNB" 7843.48
+resist "sky130_fd_sc_hd__nand2_1_0/VNB" "sky130_fd_sc_hd__dfxtp_1_0/VNB" 26243.9
+rnode "VCCD.n0" 0 28.4815 1284 497 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_5/VPB" 0 1252.74 4917 665 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_4/VPB" 0 883.272 4097 665 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_3/VPB" 0 488.492 3277 665 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_0/VPB" 0 0.190087 757 665 0
+rnode "VCCD.n1" 0 64.091 781 422 0
+rnode "VCCD.n2" 0 96.4059 876 455 0
+rnode "VCCD.n3" 0 106.639 960 455 0
+rnode "VCCD.n4" 0 174.5 1074 455 0
+rnode "VCCD.n5" 0 158.343 1284 397 0
+rnode "VCCD.n6" 0 157.804 1368 397 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_1/VPB" 0 554.199 1577 665 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_2/VPB" 0 868.73 2397 665 0
+rnode "VCCD.n7" 0 461.6 3190 550 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_5/VPWR" 0 317.949 4917 665 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_5/VPWR" 0 170.368 4888 634 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_4/VPWR" 0 176.399 4097 665 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_4/VPWR" 0 170.368 4068 634 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_3/VPWR" 0 176.094 3277 665 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_3/VPWR" 0 -0.304139 3248 634 0
+rnode "VCCD.n8" 0 4.72683 3250 682 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_3/VPWR" 0 9.50436 3248 634 0
+rnode "VCCD.n9" 0 68.7427 3190 630 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_2/VPWR" 0 -115.953 2368 634 0
+rnode "VCCD.n10" 0 289.643 3100 682 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_2/VPWR" 0 155.475 2397 665 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_2/VPWR" 0 -1.82484 2368 634 0
+rnode "VCCD.n11" 0 6.31089 2380 682 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_2/VPWR" 0 15.8406 2368 634 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_1/VPWR" 0 -115.953 1548 634 0
+rnode "VCCD.n12" 0 289.326 2280 682 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_1/VPWR" 0 155.475 1577 665 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_1/VPWR" 0 -1.82484 1548 634 0
+rnode "VCCD.n13" 0 6.31089 1560 682 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_1/VPWR" 0 15.8406 1548 634 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_0/VPWR" 0 -115.953 728 634 0
+rnode "VCCD.n14" 0 162.869 1460 682 0
+rnode "VCCD.n15" 0 167.137 1271 682 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_0/VPWR" 0 126.415 757 665 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_0/VPWR" 0 -3.34553 728 634 0
+rnode "VCCD.n16" 0 7.89495 750 682 0
+rnode "sky130_fd_sc_hd__buf_2_0/VPWR" 0 13.0599 757 -135 0
+rnode "sky130_fd_sc_hd__inv_2_0/VPWR" 0 226.787 3897 -135 0
+rnode "sky130_fd_sc_hd__inv_2_0/VPWR" 0 -0.304139 3868 -166 0
+rnode "VCCD.n17" 0 4.72683 3870 -118 0
+rnode "sky130_fd_sc_hd__inv_2_0/VPWR" 0 41.1855 3868 -166 0
+rnode "sky130_fd_sc_hd__nand2_1_0/VPWR" 0 -43.0864 3338 -166 0
+rnode "VCCD.n18" 0 195.404 3610 -118 0
+rnode "sky130_fd_sc_hd__nand2_1_0/VPWR" 0 133.029 3366 -135 0
+rnode "sky130_fd_sc_hd__nand2_1_0/VPWR" 0 -0.304139 3338 -166 0
+rnode "VCCD.n19" 0 4.57476 3340 -118 0
+rnode "sky130_fd_sc_hd__nand2_1_0/VPWR" 0 398.96 3338 -166 0
+rnode "sky130_fd_sc_hd__dfxtp_1_0/VPWR" 0 4.41002 1488 -166 0
+rnode "sky130_fd_sc_hd__dfxtp_1_0/VPWR" 0 24.1134 1517 -135 0
+rnode "VCCD.n20" 0 433.826 1534 -118 0
+rnode "sky130_fd_sc_hd__inv_2_0/VPB" 0 601.594 3897 -135 0
+rnode "sky130_fd_sc_hd__nand2_1_0/VPB" 0 1272.67 3366 -135 0
+rnode "sky130_fd_sc_hd__dfxtp_1_0/VPB" 0 995.835 1534 -118 0
+rnode "sky130_fd_sc_hd__dfxtp_1_0/VPB" 0 169.114 1517 -135 0
+rnode "sky130_fd_sc_hd__buf_2_0/VPB" 0 313.467 757 -135 0
+rnode "VCCD.n21" 0 397.099 1220 -250 0
+rnode "VCCD.n22" 0 65.2218 1180 -90 0
+rnode "VCCD.n23" 0 167.727 906 -118 0
+rnode "sky130_fd_sc_hd__buf_2_0/VPWR" 0 73.7039 757 -135 0
+rnode "sky130_fd_sc_hd__buf_2_0/VPWR" 0 -3.34553 728 -166 0
+rnode "VCCD.n24" 0 7.89495 750 -118 0
+rnode "sky130_fd_sc_hd__buf_2_0/VPWR" 0 266.615 728 -166 0
+rnode "VCCD" 0 282.42 620 730 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_0/VPWR" 0 20.5928 728 634 0
+resist "sky130_fd_sc_hd__nand2_1_0/VPWR" "VCCD.n19" 0.0025
+resist "sky130_fd_sc_hd__inv_2_0/VPWR" "VCCD.n17" 0.0025
+resist "sky130_fd_sc_hd__dlygate4sd3_1_3/VPWR" "VCCD.n8" 0.0025
+resist "VCCD.n19" "sky130_fd_sc_hd__nand2_1_0/VPWR" 0.00260417
+resist "VCCD.n17" "sky130_fd_sc_hd__inv_2_0/VPWR" 0.00260417
+resist "VCCD.n8" "sky130_fd_sc_hd__dlygate4sd3_1_3/VPWR" 0.00260417
+resist "VCCD.n24" "sky130_fd_sc_hd__buf_2_0/VPWR" 0.00911458
+resist "VCCD.n16" "sky130_fd_sc_hd__dlygate4sd3_1_0/VPWR" 0.00911458
+resist "sky130_fd_sc_hd__dlygate4sd3_1_1/VPWR" "VCCD.n13" 0.015
+resist "sky130_fd_sc_hd__dlygate4sd3_1_2/VPWR" "VCCD.n11" 0.015
+resist "VCCD.n13" "sky130_fd_sc_hd__dlygate4sd3_1_1/VPWR" 0.015625
+resist "VCCD.n11" "sky130_fd_sc_hd__dlygate4sd3_1_2/VPWR" 0.015625
+resist "VCCD.n13" "sky130_fd_sc_hd__dlygate4sd3_1_1/VPWR" 0.0221354
+resist "VCCD.n11" "sky130_fd_sc_hd__dlygate4sd3_1_2/VPWR" 0.0221354
+resist "sky130_fd_sc_hd__dlygate4sd3_1_0/VPWR" "VCCD.n16" 0.0275
+resist "sky130_fd_sc_hd__buf_2_0/VPWR" "VCCD.n24" 0.0275
+resist "VCCD.n24" "sky130_fd_sc_hd__buf_2_0/VPWR" 0.0286458
+resist "VCCD.n16" "sky130_fd_sc_hd__dlygate4sd3_1_0/VPWR" 0.0286458
+resist "VCCD.n19" "sky130_fd_sc_hd__nand2_1_0/VPWR" 0.0338542
+resist "VCCD.n17" "sky130_fd_sc_hd__inv_2_0/VPWR" 0.0351562
+resist "VCCD.n8" "sky130_fd_sc_hd__dlygate4sd3_1_3/VPWR" 0.0351562
+resist "sky130_fd_sc_hd__dfxtp_1_0/VPWR" "sky130_fd_sc_hd__dfxtp_1_0/VPWR" 0.0377604
+resist "sky130_fd_sc_hd__dlygate4sd3_1_4/VPWR" "sky130_fd_sc_hd__dlygate4sd3_1_4/VPWR" 0.0377604
+resist "sky130_fd_sc_hd__dlygate4sd3_1_5/VPWR" "sky130_fd_sc_hd__dlygate4sd3_1_5/VPWR" 0.0377604
+resist "VCCD.n20" "sky130_fd_sc_hd__dfxtp_1_0/VPWR" 0.0690193
+resist "VCCD.n9" "sky130_fd_sc_hd__dlygate4sd3_1_3/VPWR" 0.0725
+resist "VCCD.n14" "sky130_fd_sc_hd__dlygate4sd3_1_1/VPWR" 0.11
+resist "VCCD.n12" "sky130_fd_sc_hd__dlygate4sd3_1_2/VPWR" 0.11
+resist "VCCD.n10" "VCCD.n9" 0.1125
+resist "sky130_fd_sc_hd__dlygate4sd3_1_0/VPWR" "VCCD" 0.135
+resist "sky130_fd_sc_hd__buf_2_0/VPWR" "VCCD.n23" 0.161769
+resist "VCCD.n15" "VCCD.n14" 0.196472
+resist "sky130_fd_sc_hd__nand2_1_0/VPWR" "VCCD.n18" 0.318876
+resist "VCCD.n18" "sky130_fd_sc_hd__inv_2_0/VPWR" 0.3225
+resist "VCCD.n18" "sky130_fd_sc_hd__nand2_1_0/VPWR" 0.34
+resist "sky130_fd_sc_hd__dlygate4sd3_1_0/VPWR" "VCCD.n15" 0.722305
+resist "VCCD.n14" "sky130_fd_sc_hd__dlygate4sd3_1_0/VPWR" 0.915
+resist "VCCD.n12" "sky130_fd_sc_hd__dlygate4sd3_1_1/VPWR" 0.915
+resist "VCCD.n10" "sky130_fd_sc_hd__dlygate4sd3_1_2/VPWR" 0.915
+resist "sky130_fd_sc_hd__dlygate4sd3_1_2/VPWR" "VCCD.n10" 0.918862
+resist "sky130_fd_sc_hd__dlygate4sd3_1_1/VPWR" "VCCD.n12" 0.918862
+resist "sky130_fd_sc_hd__dlygate4sd3_1_4/VPWR" "sky130_fd_sc_hd__dlygate4sd3_1_5/VPWR" 1.03345
+resist "sky130_fd_sc_hd__dlygate4sd3_1_3/VPWR" "sky130_fd_sc_hd__dlygate4sd3_1_4/VPWR" 1.03345
+resist "VCCD" "sky130_fd_sc_hd__buf_2_0/VPWR" 1.96
+resist "VCCD.n20" "sky130_fd_sc_hd__nand2_1_0/VPWR" 2.29006
+resist "VCCD.n23" "sky130_fd_sc_hd__buf_2_0/VPWR" 13.462
+resist "VCCD.n23" "VCCD.n22" 43.4984
+resist "sky130_fd_sc_hd__dfxtp_1_0/VPB" "sky130_fd_sc_hd__dfxtp_1_0/VPB" 47.5
+resist "VCCD.n1" "sky130_fd_sc_hd__dlygate4sd3_1_0/VPB" 67.0588
+resist "VCCD.n22" "VCCD.n20" 88.5289
+resist "VCCD.n3" "VCCD.n2" 234.706
+resist "VCCD.n6" "VCCD.n5" 234.706
+resist "VCCD.n7" "sky130_fd_sc_hd__dlygate4sd3_1_3/VPB" 243.088
+resist "VCCD.n2" "VCCD.n1" 265.441
+resist "VCCD.n4" "VCCD.n3" 318.529
+resist "VCCD.n9" "VCCD.n7" 379.425
+resist "VCCD.n22" "VCCD.n21" 395.6
+resist "sky130_fd_sc_hd__dlygate4sd3_1_1/VPB" "VCCD.n6" 583.971
+resist "VCCD.n5" "VCCD.n4" 586.765
+resist "VCCD.n21" "sky130_fd_sc_hd__dfxtp_1_0/VPB" 829.853
+resist "VCCD.n15" "VCCD.n0" 855.845
+resist "VCCD.n21" "sky130_fd_sc_hd__buf_2_0/VPB" 1307.48
+resist "sky130_fd_sc_hd__nand2_1_0/VPB" "sky130_fd_sc_hd__inv_2_0/VPB" 1483.68
+resist "VCCD.n7" "sky130_fd_sc_hd__dlygate4sd3_1_2/VPB" 2215.74
+resist "sky130_fd_sc_hd__dlygate4sd3_1_2/VPB" "sky130_fd_sc_hd__dlygate4sd3_1_1/VPB" 2291.18
+resist "sky130_fd_sc_hd__dlygate4sd3_1_3/VPB" "sky130_fd_sc_hd__dlygate4sd3_1_4/VPB" 2291.18
+resist "sky130_fd_sc_hd__dlygate4sd3_1_4/VPB" "sky130_fd_sc_hd__dlygate4sd3_1_5/VPB" 2291.18
+resist "sky130_fd_sc_hd__dfxtp_1_0/VPB" "sky130_fd_sc_hd__nand2_1_0/VPB" 5118.82
+rnode "CLK.t2" 0 41.0585 1582 -235 0
+rnode "CLK.t3" 0 27.4703 1582 -573 0
+rnode "CLK.n0" 0 75.1576 1537 -430 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_0/A" 0 47.2154 849 427 0
+rnode "sky130_fd_sc_hd__dlygate4sd3_1_0/A" 0 48.7893 757 427 0
+rnode "CLK.t0" 0 34.0703 844 593 0
+rnode "CLK.t1" 0 23.18 844 227 0
+rnode "CLK.n1" 0 73.1542 826 370 0
+rnode "CLK.n2" 0 36.7231 826 370 0
+rnode "CLK.n3" 0 23.8639 827 385 0
+rnode "CLK" 0 1418.99 490 440 0
+rnode "CLK.n4" 0 227.188 1533 -427 0
+rnode "sky130_fd_sc_hd__dfxtp_1_0/CLK" 0 23.1393 1517 -441 0
+resist "CLK.n3" "CLK.n2" 0.114286
+resist "sky130_fd_sc_hd__dfxtp_1_0/CLK" "CLK.n4" 1.57538
+resist "CLK.n3" "sky130_fd_sc_hd__dlygate4sd3_1_0/A" 2.51429
+resist "CLK.n2" "sky130_fd_sc_hd__dlygate4sd3_1_0/A" 7.88571
+resist "CLK" "CLK.n3" 9.84596
+resist "CLK.n4" "CLK" 12.3519
+resist "CLK.n2" "CLK.n1" 152
+resist "CLK.n4" "CLK.n0" 152.394
+resist "CLK.n1" "CLK.t1" 203.243
+resist "CLK.n0" "CLK.t3" 211.009
+resist "CLK.n0" "CLK.t2" 294.556
+resist "CLK.n1" "CLK.t0" 331.777
+device msubckt sky130_fd_pr__nfet_01v8 1567 -615 1568 -614  "GND" "CLK.t3" 60 0 "sky130_fd_sc_hd__dfxtp_1_0/a_27_47#" 84 4368,272 "GND" 84 2268,138
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1567 -299 1568 -298  "VCCD" "CLK.t2" 60 0 "sky130_fd_sc_hd__dfxtp_1_0/a_27_47#" 128 6656,360 "VCCD" 128 3456,182
+device msubckt sky130_fd_pr__pfet_01v8_hvt 3421 -365 3422 -364  "VCCD" "Dout.t1" 60 0 "VCCD" 200 10400,504 "FBack_inv" 200 5400,254
+device msubckt sky130_fd_pr__nfet_01v8 3421 -615 3422 -614  "GND" "Dout.t0" 60 0 "GND" 130 6760,364 "sky130_fd_sc_hd__nand2_1_0/a_113_47#" 130 3510,184
+device msubckt sky130_fd_pr__nfet_01v8 807 -615 808 -614  "GND" "D.t1" 60 0 "sky130_fd_sc_hd__buf_2_0/a_27_47#" 84 4368,272 "GND" 84 3880,195
+device msubckt sky130_fd_pr__pfet_01v8_hvt 807 -301 808 -300  "VCCD" "D.t0" 60 0 "sky130_fd_sc_hd__buf_2_0/a_27_47#" 128 6656,360 "VCCD" 128 5960,265
+device msubckt sky130_fd_pr__nfet_01v8 829 185 830 186  "GND" "CLK.t1" 60 0 "sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47#" 84 4368,272 "GND" 84 2268,138
+device msubckt sky130_fd_pr__pfet_01v8_hvt 829 551 830 552  "VCCD" "CLK.t0" 60 0 "sky130_fd_sc_hd__dlygate4sd3_1_0/a_49_47#" 84 4368,272 "VCCD" 84 2268,138

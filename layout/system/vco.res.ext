@@ -55,7 +55,7 @@ resist "VCCD.n4" "VCCD.t0" 229.753
 resist "VCCD.n2" "VCCD.t1" 936.67
 resist "VCCD.t1" "sky130_fd_sc_hd__einvp_1_0/VPB" 988.474
 rnode "vco_ring_osc_0/vco_cc_inv_3/vco_aux_inv_1/Y" 0 385.785 8540 1670 0
-rnode "p[4].t5" 0 871.031 10075 2170 0
+rnode "p[4].t5" 0 871.032 10075 2170 0
 rnode "p[4].t4" 0 1107.89 10075 1060 0
 rnode "p[4].n0" 0 938.082 10010 1670 0
 rnode "p[4].n1" 0 2284.92 8580 920 0
@@ -76,7 +76,7 @@ rnode "p[4].n11" 0 134.276 1800 5660 0
 rnode "p[4].n12" 0 814.784 1225 5770 0
 rnode "vco_ring_osc_0/vco_cc_inv_0/vco_main_inv_0/A" 0 5.44264 1020 5660 0
 rnode "p[4].n13" 0 26.4064 1060 5660 0
-rnode "p[4].n14" 0 47.5964 1140 5660 0
+rnode "p[4].n14" 0 47.5965 1140 5660 0
 rnode "p[4].n15" 0 123.45 1220 5660 0
 rnode "p[4].n16" 0 21.7706 1220 5660 0
 rnode "p[4].n17" 0 28.5739 1220 5660 0

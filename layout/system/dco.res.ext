@@ -109,136 +109,146 @@ rnode "GND.n10" 0 0 8010 -2140 0
 rnode "dco_freq_1/sky130_fd_sc_hd__buf_4_0/VNB" 0 0 7948 -3099 0
 rnode "GND.n11" 0 0 7710 -1490 0
 rnode "GND.n12" 0 0 6770 -1035 0
-rnode "GND.n13" 0 0 940 -1280 0
+rnode "GND.n13" 0 0 6240 -150 0
+rnode "GND.n14" 0 0 2255 -150 0
 rnode "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VNB" 0 0 1031 -1611 0
-rnode "GND.n14" 0 0 294 -1510 0
-rnode "GND.n15" 0 0 760 -1280 0
-rnode "GND.n16" 0 0 480 4980 0
+rnode "GND.n15" 0 0 294 -1510 0
+rnode "GND.n16" 0 0 760 -1280 0
 rnode "GND.n17" 0 0 99 112 0
-rnode "GND.n18" 0 0 380 -420 0
-rnode "GND.n19" 0 0 7710 899 0
-rnode "GND.n20" 0 0 8010 200 0
-rnode "GND.n21" 0 0 5710 1135 0
-rnode "GND.n22" 0 0 2255 -150 0
-rnode "GND.n23" 0 0 7525 900 0
-rnode "sky130_fd_sc_hd__buf_2_0/VGND" 0 0 6837 621 0
-rnode "sky130_fd_sc_hd__buf_2_0/VGND" 0 0 6808 590 0
-rnode "sky130_fd_sc_hd__buf_2_0/VGND" 0 0 6837 621 0
-rnode "GND.n24" 0 0 6854 638 0
-rnode "GND.n25" 0 0 4650 3460 0
+rnode "GND.n18" 0 0 11130 4980 0
+rnode "GND.n19" 0 0 2620 4480 0
+rnode "GND.n20" 0 0 2620 4220 0
+rnode "GND.n21" 0 0 3200 4220 0
+rnode "GND.n22" 0 0 3780 4220 0
+rnode "GND.n23" 0 0 4640 4220 0
+rnode "dco_ring_osc_0/GND" 0 0 5310 3800 0
+rnode "GND.n24" 0 0 5500 4220 0
+rnode "GND.n25" 0 0 6080 4220 0
+rnode "GND.n26" 0 0 6660 4220 0
+rnode "GND.n27" 0 0 7520 4220 0
+rnode "GND.n28" 0 0 8380 4220 0
+rnode "GND.n29" 0 0 9540 4080 0
+rnode "GND.n30" 0 0 8960 4480 0
+rnode "dco_ring_osc_0/dco_cc_inv_2/dco_aux_inv_1/VGND" 0 0 9100 4440 0
+rnode "GND.n31" 0 0 9100 4260 0
+rnode "dco_ring_osc_0/dco_cc_inv_2/dco_aux_inv_0/VGND" 0 0 8520 4440 0
+rnode "dco_ring_osc_0/dco_cc_inv_1/dco_aux_inv_1/VGND" 0 0 6220 4440 0
+rnode "dco_ring_osc_0/dco_cc_inv_1/dco_aux_inv_0/VGND" 0 0 5640 4440 0
+rnode "dco_ring_osc_0/dco_cc_inv_0/dco_aux_inv_1/VGND" 0 0 3340 4440 0
+rnode "dco_ring_osc_0/dco_cc_inv_0/dco_aux_inv_0/VGND" 0 0 2760 4440 0
+rnode "GND.n32" 0 0 2760 4260 0
+rnode "GND.n33" 0 0 3200 4220 0
+rnode "GND.n34" 0 0 3340 4260 0
+rnode "GND.n35" 0 0 3780 4220 0
+rnode "GND.n36" 0 0 4640 4220 0
+rnode "GND.n37" 0 0 5350 3420 0
 rnode "sky130_fd_sc_hd__einvp_1_0/VGND" 0 0 3288 3190 0
 rnode "sky130_fd_sc_hd__einvp_1_0/VGND" 0 0 3318 3221 0
-rnode "GND.n26" 0 0 3200 4480 0
+rnode "GND.n38" 0 0 3270 3135 0
+rnode "GND.n39" 0 0 8010 200 0
+rnode "GND.n40" 0 0 7525 900 0
 rnode "sky130_fd_sc_hd__einvp_1_0/VNB" 0 0 3318 3221 0
-rnode "GND.n27" 0 0 3250 1939 0
-rnode "GND.n28" 0 0 5710 1135 0
-rnode "GND.n29" 0 0 2895 -140 0
-rnode "GND.n30" 0 0 1837 112 0
-rnode "GND.n31" 0 0 1753 112 0
-rnode "GND.n32" 0 0 1656 89 0
-rnode "GND.n33" 0 0 1455 112 0
-rnode "GND.n34" 0 0 1370 112 0
-rnode "GND.n35" 0 0 1286 112 0
-rnode "GND.n36" 0 0 1097 89 0
-rnode "GND.n37" 0 0 1002 83 0
-rnode "GND.n38" 0 0 896 83 0
-rnode "GND.n39" 0 0 795 111 0
-rnode "GND.n40" 0 0 183 112 0
-rnode "GND.n41" 0 0 267 112 0
-rnode "GND.n42" 0 0 355 154 0
-rnode "GND.n43" 0 0 430 112 0
-rnode "GND.n44" 0 0 478 83 0
-rnode "GND.n45" 0 0 577 83 0
-rnode "GND.n46" 0 0 676 89 0
-rnode "GND.n47" 0 0 780 -140 0
-rnode "GND.n48" 0 0 1760 4480 0
-rnode "GND.n49" 0 0 2620 4080 0
-rnode "dco_ring_osc_0/dco_cc_inv_0/dco_aux_inv_0/VGND" 0 0 2760 4440 0
-rnode "dco_ring_osc_0/dco_cc_inv_0/dco_aux_inv_1/VGND" 0 0 3340 4440 0
-rnode "GND.n50" 0 0 3340 4260 0
-rnode "GND.n51" 0 0 3780 4220 0
-rnode "GND.n52" 0 0 4640 4220 0
-rnode "dco_ring_osc_0/GND" 0 0 5310 3800 0
-rnode "GND.n53" 0 0 5500 4220 0
-rnode "GND.n54" 0 0 6080 4220 0
-rnode "GND.n55" 0 0 6660 4220 0
-rnode "GND.n56" 0 0 7520 4220 0
-rnode "GND.n57" 0 0 8380 4220 0
-rnode "GND.n58" 0 0 9540 4080 0
-rnode "GND.n59" 0 0 8960 4480 0
-rnode "dco_ring_osc_0/dco_cc_inv_2/dco_aux_inv_1/VGND" 0 0 9100 4440 0
+rnode "GND.n41" 0 0 3250 1939 0
+rnode "GND.n42" 0 0 5500 4480 0
+rnode "GND.n43" 0 0 5930 3420 0
+rnode "GND.n44" 0 0 6510 3420 0
+rnode "GND.n45" 0 0 7370 3420 0
+rnode "GND.n46" 0 0 8230 3420 0
+rnode "GND.n47" 0 0 5930 3160 0
+rnode "GND.n48" 0 0 6080 4480 0
+rnode "GND.n49" 0 0 6510 3160 0
+rnode "GND.n50" 0 0 6660 4480 0
+rnode "GND.n51" 0 0 7370 3160 0
+rnode "GND.n52" 0 0 7520 4480 0
+rnode "GND.n53" 0 0 8230 3160 0
+rnode "GND.n54" 0 0 8380 4480 0
+rnode "GND.n55" 0 0 8810 3160 0
+rnode "GND.n56" 0 0 8810 3420 0
 rnode "dco_ring_osc_0/dco_cc_inv_4/dco_aux_inv_0/VGND" 0 0 9250 3200 0
-rnode "GND.n60" 0 0 9250 3380 0
-rnode "GND.n61" 0 0 8810 3420 0
-rnode "GND.n62" 0 0 8230 3420 0
-rnode "GND.n63" 0 0 7370 3420 0
-rnode "GND.n64" 0 0 6510 3420 0
-rnode "GND.n65" 0 0 5930 3420 0
-rnode "GND.n66" 0 0 8810 3160 0
-rnode "GND.n67" 0 0 8380 4480 0
-rnode "GND.n68" 0 0 8230 3160 0
-rnode "GND.n69" 0 0 7520 4480 0
-rnode "GND.n70" 0 0 7370 3160 0
-rnode "GND.n71" 0 0 6660 4480 0
-rnode "GND.n72" 0 0 6510 3160 0
-rnode "GND.n73" 0 0 6080 4480 0
-rnode "GND.n74" 0 0 5930 3160 0
-rnode "GND.n75" 0 0 5500 4480 0
-rnode "GND.n76" 0 0 3780 4480 0
-rnode "GND.n77" 0 0 4570 3820 0
-rnode "GND.n78" 0 0 4640 4480 0
-rnode "GND.n79" 0 0 5350 3160 0
-rnode "dco_ring_osc_0/dco_cc_inv_3/dco_aux_inv_1/VGND" 0 0 5790 3200 0
-rnode "dco_ring_osc_0/dco_cc_inv_3/dco_aux_inv_0/VGND" 0 0 6370 3200 0
 rnode "dco_ring_osc_0/dco_cc_inv_4/dco_aux_inv_1/VGND" 0 0 8670 3200 0
-rnode "GND.n80" 0 0 8810 3420 0
-rnode "GND.n81" 0 0 8670 3380 0
-rnode "GND.n82" 0 0 8230 3420 0
-rnode "GND.n83" 0 0 7370 3420 0
-rnode "GND.n84" 0 0 6510 3420 0
-rnode "GND.n85" 0 0 6370 3380 0
-rnode "GND.n86" 0 0 5930 3420 0
-rnode "GND.n87" 0 0 5790 3380 0
-rnode "GND.n88" 0 0 5350 3420 0
-rnode "GND.n89" 0 0 5350 3420 0
-rnode "GND.n90" 0 0 5350 3640 0
-rnode "GND.n91" 0 0 5930 3560 0
-rnode "GND.n92" 0 0 6510 3560 0
-rnode "GND.n93" 0 0 7370 3560 0
-rnode "GND.n94" 0 0 8230 3560 0
-rnode "GND.n95" 0 0 8810 3560 0
-rnode "GND.n96" 0 0 9390 3560 0
-rnode "GND.n97" 0 0 7710 1400 0
-rnode "GND.n98" 0 0 7910 1295 0
+rnode "dco_ring_osc_0/dco_cc_inv_3/dco_aux_inv_0/VGND" 0 0 6370 3200 0
+rnode "dco_ring_osc_0/dco_cc_inv_3/dco_aux_inv_1/VGND" 0 0 5790 3200 0
+rnode "GND.n57" 0 0 5790 3380 0
+rnode "GND.n58" 0 0 5930 3420 0
+rnode "GND.n59" 0 0 6370 3380 0
+rnode "GND.n60" 0 0 6510 3420 0
+rnode "GND.n61" 0 0 7370 3420 0
+rnode "GND.n62" 0 0 8230 3420 0
+rnode "GND.n63" 0 0 8670 3380 0
+rnode "GND.n64" 0 0 8810 3420 0
+rnode "GND.n65" 0 0 9250 3380 0
+rnode "GND.n66" 0 0 9390 3420 0
+rnode "GND.n67" 0 0 9390 3420 0
+rnode "GND.n68" 0 0 9390 3160 0
+rnode "GND.n69" 0 0 9540 4480 0
+rnode "GND.n70" 0 0 10250 3160 0
+rnode "GND.n71" 0 0 9540 3640 0
+rnode "GND.n72" 0 0 9390 3560 0
+rnode "GND.n73" 0 0 8810 3560 0
+rnode "GND.n74" 0 0 8230 3560 0
+rnode "GND.n75" 0 0 7370 3560 0
+rnode "GND.n76" 0 0 6510 3560 0
+rnode "GND.n77" 0 0 5930 3560 0
+rnode "GND.n78" 0 0 5350 3640 0
+rnode "GND.n79" 0 0 5350 3420 0
+rnode "GND.n80" 0 0 5350 3160 0
+rnode "GND.n81" 0 0 4640 4480 0
+rnode "GND.n82" 0 0 4570 3820 0
+rnode "GND.n83" 0 0 3780 4480 0
+rnode "GND.n84" 0 0 3200 4480 0
+rnode "GND.n85" 0 0 3080 4400 0
+rnode "GND.n86" 0 0 2895 380 0
+rnode "GND.n87" 0 0 2895 -140 0
+rnode "GND.n88" 0 0 5710 1135 0
+rnode "GND.n89" 0 0 5710 1135 0
 rnode "dco_freq_1/sky130_fd_sc_hd__inv_4_0/VNB" 0 0 8387 -2259 0
 rnode "dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/VNB" 0 0 9307 -2259 0
 rnode "dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/VNB" 0 0 9324 -2242 0
 rnode "dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/VNB" 0 0 9027 -3099 0
 rnode "dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/VNB" 0 0 9044 -3082 0
-rnode "GND.n99" 0 0 10788 -2241 0
-rnode "GND.n100" 0 0 7880 -1491 0
+rnode "GND.n90" 0 0 10788 -2241 0
+rnode "GND.n91" 0 0 7880 -1491 0
 rnode "dco_freq_0/sky130_fd_sc_hd__buf_4_0/VNB" 0 0 7948 -759 0
 rnode "dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/VNB" 0 0 9027 -759 0
 rnode "dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/VNB" 0 0 9044 -742 0
-rnode "GND.n101" 0 0 11364 -1660 0
+rnode "GND.n92" 0 0 11364 -1660 0
 rnode "dco_freq_0/sky130_fd_sc_hd__inv_4_0/VNB" 0 0 8387 81 0
 rnode "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VNB" 0 0 9307 81 0
 rnode "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VNB" 0 0 9324 98 0
-rnode "GND.n102" 0 0 10788 99 0
-rnode "GND.n103" 0 0 10330 1290 0
-rnode "GND.n104" 0 0 11130 4980 0
-rnode "GND.n105" 0 0 9540 3640 0
-rnode "GND.n106" 0 0 10250 3160 0
-rnode "GND.n107" 0 0 9540 4480 0
-rnode "GND.n108" 0 0 9390 3160 0
-rnode "GND.n109" 0 0 9390 3420 0
-rnode "GND.n110" 0 0 9390 3420 0
-rnode "GND.n111" 0 0 9100 4260 0
-rnode "dco_ring_osc_0/dco_cc_inv_2/dco_aux_inv_0/VGND" 0 0 8520 4440 0
-rnode "dco_ring_osc_0/dco_cc_inv_1/dco_aux_inv_1/VGND" 0 0 6220 4440 0
-rnode "dco_ring_osc_0/dco_cc_inv_1/dco_aux_inv_0/VGND" 0 0 5640 4440 0
-rnode "GND.n112" 0 0 3780 4220 0
-rnode "GND.n113" 0 0 4640 4220 0
+rnode "GND.n93" 0 0 10788 99 0
+rnode "GND.n94" 0 0 10330 1290 0
+rnode "GND.n95" 0 0 7710 1400 0
+rnode "GND.n96" 0 0 7910 1295 0
+rnode "GND.n97" 0 0 7710 899 0
+rnode "GND.n98" 0 0 6770 -590 0
+rnode "GND.n99" 0 0 7710 369 0
+rnode "GND.n100" 0 0 6770 374 0
+rnode "sky130_fd_sc_hd__buf_2_0/VNB" 0 0 6837 621 0
+rnode "GND.n101" 0 0 7260 750 0
+rnode "sky130_fd_sc_hd__buf_2_0/VGND" 0 0 6837 621 0
+rnode "sky130_fd_sc_hd__buf_2_0/VGND" 0 0 6808 590 0
+rnode "sky130_fd_sc_hd__buf_2_0/VGND" 0 0 6837 621 0
+rnode "GND.n102" 0 0 6854 638 0
+rnode "GND.n103" 0 0 7170 460 0
+rnode "GND.n104" 0 0 7170 200 0
+rnode "dco_freq_0/sky130_fd_sc_hd__inv_4_0/VGND" 0 0 8358 50 0
+rnode "dco_freq_0/sky130_fd_sc_hd__inv_4_0/VGND" 0 0 8387 81 0
+rnode "dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/VGND" 0 0 8998 -790 0
+rnode "dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/VGND" 0 0 9027 -759 0
+rnode "dco_freq_0/sky130_fd_sc_hd__buf_4_0/VGND" 0 0 7918 -790 0
+rnode "dco_freq_0/sky130_fd_sc_hd__buf_4_0/VGND" 0 0 7948 -759 0
+rnode "dco_freq_0/sky130_fd_sc_hd__buf_4_0/VGND" 0 0 7948 -759 0
+rnode "GND.n105" 0 0 8255 -742 0
+rnode "GND.n106" 0 0 9167 -742 0
+rnode "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VGND" 0 0 9307 81 0
+rnode "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VGND" 0 0 9278 85 0
+rnode "GND.n107" 0 0 8772 98 0
+rnode "GND.n108" 0 0 7190 70 0
+rnode "GND.n109" 0 0 7180 150 0
+rnode "GND.n110" 0 0 7490 200 0
+rnode "GND.n111" 0 0 7490 200 0
+rnode "GND.n112" 0 0 3270 2690 0
+rnode "GND.n113" 0 0 4650 3460 0
 rnode "dco_ring_osc_0/VGND" 0 0 4610 3780 0
 rnode "GND.n114" 0 0 4650 4180 0
 rnode "GND.n115" 0 0 5500 4220 0
@@ -261,83 +271,76 @@ rnode "GND.n131" 0 0 5350 4000 0
 rnode "GND.n132" 0 0 4640 4080 0
 rnode "GND.n133" 0 0 3780 4080 0
 rnode "GND.n134" 0 0 3200 4080 0
-rnode "GND.n135" 0 0 3200 4220 0
-rnode "GND.n136" 0 0 3200 4220 0
-rnode "GND.n137" 0 0 2760 4260 0
-rnode "GND.n138" 0 0 2620 4220 0
-rnode "GND.n139" 0 0 2620 4480 0
-rnode "GND.n140" 0 0 2895 380 0
-rnode "GND.n141" 0 0 3080 4400 0
-rnode "GND.n142" 0 0 3270 3135 0
-rnode "GND.n143" 0 0 3270 2690 0
-rnode "GND.n144" 0 0 7490 200 0
-rnode "GND.n145" 0 0 7490 200 0
-rnode "dco_freq_0/sky130_fd_sc_hd__inv_4_0/VGND" 0 0 8358 50 0
-rnode "dco_freq_0/sky130_fd_sc_hd__inv_4_0/VGND" 0 0 8387 81 0
-rnode "dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/VGND" 0 0 8998 -790 0
-rnode "dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/VGND" 0 0 9027 -759 0
-rnode "dco_freq_0/sky130_fd_sc_hd__buf_4_0/VGND" 0 0 7918 -790 0
-rnode "dco_freq_0/sky130_fd_sc_hd__buf_4_0/VGND" 0 0 7948 -759 0
-rnode "dco_freq_0/sky130_fd_sc_hd__buf_4_0/VGND" 0 0 7948 -759 0
-rnode "GND.n146" 0 0 8255 -742 0
-rnode "GND.n147" 0 0 9167 -742 0
-rnode "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VGND" 0 0 9307 81 0
-rnode "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VGND" 0 0 9278 85 0
-rnode "GND.n148" 0 0 8772 98 0
-rnode "GND.n149" 0 0 7190 70 0
-rnode "GND.n150" 0 0 7180 150 0
-rnode "GND.n151" 0 0 7170 200 0
-rnode "GND.n152" 0 0 7170 460 0
-rnode "GND.n153" 0 0 7260 750 0
-rnode "sky130_fd_sc_hd__buf_2_0/VNB" 0 0 6837 621 0
-rnode "GND.n154" 0 0 6770 374 0
-rnode "GND.n155" 0 0 7710 369 0
-rnode "GND.n156" 0 0 6770 -590 0
-rnode "GND.n157" 0 0 380 -420 0
-rnode "GND.n158" 0 0 1530 -1280 0
-rnode "GND.n159" 0 0 1710 -1280 0
-rnode "GND.n160" 0 0 3375 -2000 0
+rnode "GND.n135" 0 0 2620 4080 0
+rnode "GND.n136" 0 0 1760 4480 0
+rnode "GND.n137" 0 0 1837 112 0
+rnode "GND.n138" 0 0 1753 112 0
+rnode "GND.n139" 0 0 1656 89 0
+rnode "GND.n140" 0 0 1455 112 0
+rnode "GND.n141" 0 0 1370 112 0
+rnode "GND.n142" 0 0 1286 112 0
+rnode "GND.n143" 0 0 1097 89 0
+rnode "GND.n144" 0 0 1002 83 0
+rnode "GND.n145" 0 0 896 83 0
+rnode "GND.n146" 0 0 795 111 0
+rnode "GND.n147" 0 0 183 112 0
+rnode "GND.n148" 0 0 267 112 0
+rnode "GND.n149" 0 0 355 154 0
+rnode "GND.n150" 0 0 430 112 0
+rnode "GND.n151" 0 0 478 83 0
+rnode "GND.n152" 0 0 577 83 0
+rnode "GND.n153" 0 0 676 89 0
+rnode "GND.n154" 0 0 780 -140 0
+rnode "GND.n155" 0 0 780 -140 0
+rnode "GND.n156" 0 0 0 0 0
+rnode "GND.n157" 0 0 117 -420 0
+rnode "GND.n158" 0 0 380 -420 0
+rnode "GND.n159" 0 0 815 -1030 0
+rnode "GND.n160" 0 0 940 -1280 0
+rnode "GND.n161" 0 0 1530 -1280 0
+rnode "GND.n162" 0 0 1710 -1280 0
+rnode "GND.n163" 0 0 3375 -2000 0
 rnode "dco_idac_0/B_M6" 0 0 4800 -1520 0
 rnode "dco_idac_0/sky130_fd_sc_hd__inv_2_0/VGND" 0 0 1031 -2271 0
 rnode "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VGND" 0 0 1031 -1611 0
 rnode "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VGND" 0 0 1031 -1611 0
-rnode "GND.n161" 0 0 1048 -1686 0
+rnode "GND.n164" 0 0 1048 -1686 0
 rnode "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VGND" 0 -0 1000 -1916 0
-rnode "GND.n162" 0 0 1048 -1910 0
+rnode "GND.n165" 0 0 1048 -1910 0
 rnode "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VGND" 0 0 1000 -1916 0
-rnode "GND.n163" 0 0 1100 -2020 0
+rnode "GND.n166" 0 0 1100 -2020 0
 rnode "dco_idac_0/sky130_fd_sc_hd__inv_2_0/VGND" 0 -0 1000 -2484 0
-rnode "GND.n164" 0 0 1048 -2210 0
-rnode "GND.n165" 0 0 1048 -2254 0
+rnode "GND.n167" 0 0 1048 -2210 0
+rnode "GND.n168" 0 0 1048 -2254 0
 rnode "dco_idac_0/sky130_fd_sc_hd__inv_2_0/VGND" 0 0 1050 -2484 0
-rnode "GND.n166" 0 0 2500 -3120 0
-rnode "GND.n167" 0 0 4065 -1040 0
-rnode "GND.n168" 0 0 4065 -1040 0
-rnode "GND.n169" 0 0 4890 -1030 0
-rnode "GND.n170" 0 0 6275 -1040 0
-rnode "GND.n171" 0 0 6770 -1520 0
-rnode "GND.n172" 0 0 6770 -2261 0
-rnode "GND.n173" 0 0 4238 -3167 0
-rnode "GND.n174" 0 0 4238 -3167 0
-rnode "GND.n175" 0 0 5623 -3019 0
-rnode "GND.n176" 0 0 5623 -3019 0
-rnode "GND.n177" 0 0 5623 -3019 0
-rnode "GND.n178" 0 0 6770 -3401 0
-rnode "GND.n179" 0 0 7710 -3550 0
-rnode "GND.n180" 0 0 7490 -2140 0
-rnode "GND.n181" 0 0 7190 -2140 0
-rnode "GND.n182" 0 0 7190 -2265 0
-rnode "GND.n183" 0 0 7130 -4080 0
+rnode "GND.n169" 0 0 2500 -3120 0
+rnode "GND.n170" 0 0 4065 -1040 0
+rnode "GND.n171" 0 0 4065 -1040 0
+rnode "GND.n172" 0 0 4890 -1030 0
+rnode "GND.n173" 0 0 6275 -1040 0
+rnode "GND.n174" 0 0 6770 -1520 0
+rnode "GND.n175" 0 0 6770 -2261 0
+rnode "GND.n176" 0 0 4238 -3167 0
+rnode "GND.n177" 0 0 4238 -3167 0
+rnode "GND.n178" 0 0 5623 -3019 0
+rnode "GND.n179" 0 0 5623 -3019 0
+rnode "GND.n180" 0 0 5623 -3019 0
+rnode "GND.n181" 0 0 6770 -3401 0
+rnode "GND.n182" 0 0 7710 -3550 0
+rnode "GND.n183" 0 0 7490 -2140 0
+rnode "GND.n184" 0 0 7190 -2140 0
+rnode "GND.n185" 0 0 7190 -2265 0
+rnode "GND.n186" 0 0 7130 -4080 0
 rnode "GND" 0 0 4910 -4080 0
-rnode "GND.n184" 0 0 2850 -3184 0
-rnode "GND.n185" 0 0 2853 -3019 0
-rnode "GND.n186" 0 0 2853 -3019 0
-rnode "GND.n187" 0 0 2853 -3019 0
-rnode "GND.n188" 0 0 294 -2522 0
+rnode "GND.n187" 0 0 2850 -3184 0
+rnode "GND.n188" 0 0 2853 -3019 0
+rnode "GND.n189" 0 0 2853 -3019 0
+rnode "GND.n190" 0 0 2853 -3019 0
+rnode "GND.n191" 0 0 294 -2522 0
 rnode "dco_idac_0/sky130_fd_sc_hd__inv_2_0/VNB" 0 0 1031 -2271 0
-resist "GND.n165" "dco_idac_0/sky130_fd_sc_hd__inv_2_0/VGND" 0.00056513
-resist "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VGND" "GND.n162" 0.0075
-resist "GND.n162" "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VGND" 0.0078125
+resist "GND.n168" "dco_idac_0/sky130_fd_sc_hd__inv_2_0/VGND" 0.00056513
+resist "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VGND" "GND.n165" 0.0075
+resist "GND.n165" "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VGND" 0.0078125
 resist "sky130_fd_sc_hd__buf_2_0/VGND" "sky130_fd_sc_hd__buf_2_0/VGND" 0.0377604
 resist "dco_freq_1/sky130_fd_sc_hd__inv_4_0/VGND" "dco_freq_1/sky130_fd_sc_hd__inv_4_0/VGND" 0.0377604
 resist "dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/VGND" "dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/VGND" 0.0377604
@@ -348,326 +351,329 @@ resist "dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/VGND" "dco_freq_0/sky130_fd_sc_hd_
 resist "sky130_fd_sc_hd__einvp_1_0/VGND" "sky130_fd_sc_hd__einvp_1_0/VGND" 0.0390625
 resist "dco_freq_1/sky130_fd_sc_hd__buf_4_0/VGND" "dco_freq_1/sky130_fd_sc_hd__buf_4_0/VGND" 0.0390625
 resist "dco_freq_0/sky130_fd_sc_hd__buf_4_0/VGND" "dco_freq_0/sky130_fd_sc_hd__buf_4_0/VGND" 0.0390625
-resist "GND.n148" "dco_freq_0/sky130_fd_sc_hd__inv_4_0/VGND" 0.0539759
+resist "GND.n107" "dco_freq_0/sky130_fd_sc_hd__inv_4_0/VGND" 0.0539759
 resist "GND.n9" "dco_freq_1/sky130_fd_sc_hd__inv_4_0/VGND" 0.0549671
 resist "GND.n8" "dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/VGND" 0.0610499
-resist "GND.n147" "dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/VGND" 0.0610499
+resist "GND.n106" "dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/VGND" 0.0610499
 resist "GND.n7" "dco_freq_1/sky130_fd_sc_hd__buf_4_0/VGND" 0.0670903
-resist "GND.n146" "dco_freq_0/sky130_fd_sc_hd__buf_4_0/VGND" 0.0670903
-resist "GND.n165" "GND.n164" 0.0798503
-resist "GND.n163" "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VGND" 0.13
-resist "GND.n161" "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VGND" 0.135368
-resist "GND.n24" "sky130_fd_sc_hd__buf_2_0/VGND" 0.190176
-resist "GND.n109" "GND.n96" 0.21875
+resist "GND.n105" "dco_freq_0/sky130_fd_sc_hd__buf_4_0/VGND" 0.0670903
+resist "GND.n168" "GND.n167" 0.0798503
+resist "GND.n166" "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VGND" 0.13
+resist "GND.n164" "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VGND" 0.135368
+resist "GND.n102" "sky130_fd_sc_hd__buf_2_0/VGND" 0.190176
+resist "GND.n72" "GND.n67" 0.21875
 resist "GND.n125" "GND.n124" 0.21875
-resist "GND.n138" "GND.n49" 0.21875
-resist "GND.n135" "GND.n134" 0.21875
-resist "GND.n133" "GND.n51" 0.21875
-resist "GND.n132" "GND.n52" 0.21875
-resist "GND.n130" "GND.n53" 0.21875
-resist "GND.n129" "GND.n54" 0.21875
-resist "GND.n128" "GND.n55" 0.21875
-resist "GND.n127" "GND.n56" 0.21875
-resist "GND.n126" "GND.n57" 0.21875
-resist "GND.n95" "GND.n61" 0.21875
-resist "GND.n94" "GND.n62" 0.21875
-resist "GND.n93" "GND.n63" 0.21875
-resist "GND.n92" "GND.n64" 0.21875
-resist "GND.n91" "GND.n65" 0.21875
-resist "GND.n90" "GND.n89" 0.21875
-resist "GND.n105" "GND.n96" 0.234375
+resist "GND.n135" "GND.n20" 0.21875
+resist "GND.n134" "GND.n21" 0.21875
+resist "GND.n133" "GND.n22" 0.21875
+resist "GND.n132" "GND.n23" 0.21875
+resist "GND.n130" "GND.n24" 0.21875
+resist "GND.n129" "GND.n25" 0.21875
+resist "GND.n128" "GND.n26" 0.21875
+resist "GND.n127" "GND.n27" 0.21875
+resist "GND.n126" "GND.n28" 0.21875
+resist "GND.n73" "GND.n56" 0.21875
+resist "GND.n74" "GND.n46" 0.21875
+resist "GND.n75" "GND.n45" 0.21875
+resist "GND.n76" "GND.n44" 0.21875
+resist "GND.n77" "GND.n43" 0.21875
+resist "GND.n79" "GND.n78" 0.21875
+resist "GND.n72" "GND.n71" 0.234375
 resist "GND.n131" "GND.n130" 0.234375
-resist "GND.n164" "GND.n163" 0.2375
-resist "GND.n90" "dco_ring_osc_0/GND" 0.25
-resist "GND.n162" "GND.n161" 0.255049
-resist "dco_idac_0/sky130_fd_sc_hd__inv_2_0/VGND" "GND.n165" 0.278089
+resist "GND.n167" "GND.n166" 0.2375
+resist "GND.n78" "dco_ring_osc_0/GND" 0.25
+resist "GND.n165" "GND.n164" 0.255049
+resist "dco_idac_0/sky130_fd_sc_hd__inv_2_0/VGND" "GND.n168" 0.278089
 resist "GND.n131" "dco_ring_osc_0/GND" 0.3125
-resist "GND.n164" "dco_idac_0/sky130_fd_sc_hd__inv_2_0/VGND" 0.3425
-resist "GND.n105" "GND.n58" 0.5625
-resist "GND.n91" "GND.n90" 0.90625
-resist "GND.n92" "GND.n91" 0.90625
-resist "GND.n95" "GND.n94" 0.90625
-resist "GND.n96" "GND.n95" 0.90625
-resist "GND.n134" "GND.n49" 0.90625
+resist "GND.n167" "dco_idac_0/sky130_fd_sc_hd__inv_2_0/VGND" 0.3425
+resist "GND.n71" "GND.n29" 0.5625
+resist "GND.n78" "GND.n77" 0.90625
+resist "GND.n77" "GND.n76" 0.90625
+resist "GND.n74" "GND.n73" 0.90625
+resist "GND.n73" "GND.n72" 0.90625
+resist "GND.n135" "GND.n134" 0.90625
 resist "GND.n134" "GND.n133" 0.90625
 resist "GND.n130" "GND.n129" 0.90625
 resist "GND.n129" "GND.n128" 0.90625
 resist "GND.n126" "GND.n125" 0.90625
-resist "GND.n125" "GND.n58" 0.90625
+resist "GND.n125" "GND.n29" 0.90625
 resist "GND.n132" "GND.n131" 1.10938
-resist "GND.n151" "GND.n150" 1.28
+resist "GND.n109" "GND.n104" 1.28
 resist "GND.n9" "dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/VGND" 1.32996
-resist "GND.n148" "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VGND" 1.33096
-resist "GND.n93" "GND.n92" 1.34375
-resist "GND.n94" "GND.n93" 1.34375
+resist "GND.n107" "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VGND" 1.33096
+resist "GND.n76" "GND.n75" 1.34375
+resist "GND.n75" "GND.n74" 1.34375
 resist "GND.n133" "GND.n132" 1.34375
 resist "GND.n128" "GND.n127" 1.34375
 resist "GND.n127" "GND.n126" 1.34375
-resist "GND.n167" "dco_idac_0/B_M6" 1.46617
-resist "GND.n114" "GND.n113" 1.6
-resist "GND.n166" "dco_idac_0/sky130_fd_sc_hd__inv_2_0/VGND" 3.25938
-resist "GND.n184" "GND.n5" 3.76471
+resist "GND.n170" "dco_idac_0/B_M6" 1.46617
+resist "GND.n114" "GND.n36" 1.6
+resist "GND.n169" "dco_idac_0/sky130_fd_sc_hd__inv_2_0/VGND" 3.25938
+resist "GND.n187" "GND.n5" 3.76471
 resist "dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/VGND" "GND.n8" 6.90497
-resist "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VGND" "GND.n147" 6.90497
-resist "GND.n145" "GND.n144" 9.3
-resist "GND.n110" "GND.n109" 9.3
-resist "GND.n89" "GND.n88" 9.3
-resist "GND.n86" "GND.n65" 9.3
-resist "GND.n84" "GND.n64" 9.3
-resist "GND.n83" "GND.n63" 9.3
-resist "GND.n82" "GND.n62" 9.3
-resist "GND.n80" "GND.n61" 9.3
-resist "GND.n136" "GND.n135" 9.3
-resist "GND.n112" "GND.n51" 9.3
-resist "GND.n113" "GND.n52" 9.3
-resist "GND.n115" "GND.n53" 9.3
-resist "GND.n117" "GND.n54" 9.3
-resist "GND.n119" "GND.n55" 9.3
-resist "GND.n120" "GND.n56" 9.3
-resist "GND.n121" "GND.n57" 9.3
+resist "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VGND" "GND.n106" 6.90497
+resist "GND.n111" "GND.n110" 9.3
+resist "GND.n67" "GND.n66" 9.3
+resist "GND.n79" "GND.n37" 9.3
+resist "GND.n58" "GND.n43" 9.3
+resist "GND.n60" "GND.n44" 9.3
+resist "GND.n61" "GND.n45" 9.3
+resist "GND.n62" "GND.n46" 9.3
+resist "GND.n64" "GND.n56" 9.3
+resist "GND.n33" "GND.n21" 9.3
+resist "GND.n35" "GND.n22" 9.3
+resist "GND.n36" "GND.n23" 9.3
+resist "GND.n115" "GND.n24" 9.3
+resist "GND.n117" "GND.n25" 9.3
+resist "GND.n119" "GND.n26" 9.3
+resist "GND.n120" "GND.n27" 9.3
+resist "GND.n121" "GND.n28" 9.3
 resist "GND.n124" "GND.n123" 9.3
-resist "GND.n166" "GND.n5" 9.8625
+resist "GND.n169" "GND.n5" 9.8625
 resist "GND.n7" "dco_freq_1/sky130_fd_sc_hd__buf_4_0/VGND" 13.0612
-resist "GND.n146" "dco_freq_0/sky130_fd_sc_hd__buf_4_0/VGND" 13.0612
-resist "GND.n24" "sky130_fd_sc_hd__buf_2_0/VGND" 13.4321
-resist "GND.n173" "GND.n3" 15.3947
-resist "GND.n174" "GND.n3" 15.3947
-resist "GND.n173" "GND.n2" 15.3947
+resist "GND.n105" "dco_freq_0/sky130_fd_sc_hd__buf_4_0/VGND" 13.0612
+resist "GND.n102" "sky130_fd_sc_hd__buf_2_0/VGND" 13.4321
+resist "GND.n176" "GND.n3" 15.3947
+resist "GND.n177" "GND.n3" 15.3947
+resist "GND.n176" "GND.n2" 15.3947
 resist "GND.n4" "GND.n2" 15.3947
 resist "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VGND" "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VGND" 15.7221
-resist "GND.n142" "sky130_fd_sc_hd__einvp_1_0/VGND" 18.2613
-resist "GND.n87" "GND.n86" 22.4
-resist "GND.n85" "GND.n84" 22.4
-resist "GND.n81" "GND.n80" 22.4
-resist "GND.n110" "GND.n60" 22.4
-resist "GND.n136" "GND.n50" 22.4
+resist "GND.n38" "sky130_fd_sc_hd__einvp_1_0/VGND" 18.2613
+resist "GND.n58" "GND.n57" 22.4
+resist "GND.n60" "GND.n59" 22.4
+resist "GND.n64" "GND.n63" 22.4
+resist "GND.n66" "GND.n65" 22.4
+resist "GND.n34" "GND.n33" 22.4
 resist "GND.n116" "GND.n115" 22.4
 resist "GND.n118" "GND.n117" 22.4
 resist "GND.n122" "GND.n121" 22.4
-resist "GND.n123" "GND.n111" 22.4
-resist "GND.n155" "GND.n154" 23.4043
-resist "GND.n161" "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VGND" 25.3307
-resist "GND.n141" "GND.n27" 25.8824
-resist "GND.n100" "GND.n11" 25.8824
-resist "GND.n60" "dco_ring_osc_0/dco_cc_inv_4/dco_aux_inv_0/VGND" 28.8
-resist "GND.n81" "dco_ring_osc_0/dco_cc_inv_4/dco_aux_inv_1/VGND" 28.8
-resist "GND.n85" "dco_ring_osc_0/dco_cc_inv_3/dco_aux_inv_0/VGND" 28.8
-resist "GND.n87" "dco_ring_osc_0/dco_cc_inv_3/dco_aux_inv_1/VGND" 28.8
-resist "GND.n137" "dco_ring_osc_0/dco_cc_inv_0/dco_aux_inv_0/VGND" 28.8
-resist "GND.n50" "dco_ring_osc_0/dco_cc_inv_0/dco_aux_inv_1/VGND" 28.8
+resist "GND.n123" "GND.n31" 22.4
+resist "GND.n100" "GND.n99" 23.4043
+resist "GND.n164" "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VGND" 25.3307
+resist "GND.n85" "GND.n41" 25.8824
+resist "GND.n91" "GND.n11" 25.8824
+resist "GND.n65" "dco_ring_osc_0/dco_cc_inv_4/dco_aux_inv_0/VGND" 28.8
+resist "GND.n63" "dco_ring_osc_0/dco_cc_inv_4/dco_aux_inv_1/VGND" 28.8
+resist "GND.n59" "dco_ring_osc_0/dco_cc_inv_3/dco_aux_inv_0/VGND" 28.8
+resist "GND.n57" "dco_ring_osc_0/dco_cc_inv_3/dco_aux_inv_1/VGND" 28.8
+resist "GND.n32" "dco_ring_osc_0/dco_cc_inv_0/dco_aux_inv_0/VGND" 28.8
+resist "GND.n34" "dco_ring_osc_0/dco_cc_inv_0/dco_aux_inv_1/VGND" 28.8
 resist "GND.n116" "dco_ring_osc_0/dco_cc_inv_1/dco_aux_inv_0/VGND" 28.8
 resist "GND.n118" "dco_ring_osc_0/dco_cc_inv_1/dco_aux_inv_1/VGND" 28.8
 resist "GND.n122" "dco_ring_osc_0/dco_cc_inv_2/dco_aux_inv_0/VGND" 28.8
-resist "GND.n111" "dco_ring_osc_0/dco_cc_inv_2/dco_aux_inv_1/VGND" 28.8
-resist "GND.n138" "GND.n137" 31.7
-resist "GND.n157" "GND.n18" 34.5685
-resist "GND.n152" "GND.n24" 35.4831
-resist "GND.n181" "GND.n180" 38.4
-resist "GND.n150" "GND.n145" 39.68
-resist "GND.n185" "GND.n184" 39.9435
-resist "GND.n14" "GND.n0" 40.9302
-resist "GND.n152" "GND.n151" 41.6
-resist "GND.n157" "GND.n156" 45.101
-resist "GND.n188" "GND.n0" 50
-resist "GND.n150" "GND.n149" 51.2
-resist "dco_ring_osc_0/VGND" "GND.n25" 51.2
+resist "GND.n31" "dco_ring_osc_0/dco_cc_inv_2/dco_aux_inv_1/VGND" 28.8
+resist "GND.n32" "GND.n20" 31.7
+resist "GND.n103" "GND.n102" 35.4831
+resist "GND.n184" "GND.n183" 38.4
+resist "GND.n15" "GND.n0" 39.6396
+resist "GND.n110" "GND.n109" 39.68
+resist "GND.n188" "GND.n187" 39.9435
+resist "GND.n104" "GND.n103" 41.6
+resist "GND.n191" "GND.n0" 50
+resist "GND.n109" "GND.n108" 51.2
+resist "dco_ring_osc_0/VGND" "GND.n113" 51.2
 resist "dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/VNB" "dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/VNB" 51.268
-resist "GND.n143" "GND.n142" 56.96
+resist "GND.n112" "GND.n38" 56.96
 resist "dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/VNB" "dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/VNB" 63.9316
 resist "GND.n114" "dco_ring_osc_0/VGND" 64
-resist "GND.n22" "GND.n18" 65.3694
-resist "GND.n88" "GND.n87" 70.4
-resist "GND.n86" "GND.n85" 70.4
-resist "GND.n82" "GND.n81" 70.4
-resist "GND.n80" "GND.n60" 70.4
-resist "GND.n137" "GND.n136" 70.4
-resist "GND.n112" "GND.n50" 70.4
+resist "GND.n57" "GND.n37" 70.4
+resist "GND.n59" "GND.n58" 70.4
+resist "GND.n63" "GND.n62" 70.4
+resist "GND.n65" "GND.n64" 70.4
+resist "GND.n33" "GND.n32" 70.4
+resist "GND.n35" "GND.n34" 70.4
 resist "GND.n117" "GND.n116" 70.4
 resist "GND.n119" "GND.n118" 70.4
 resist "GND.n123" "GND.n122" 70.4
-resist "GND.n182" "GND.n181" 80
-resist "GND.n173" "GND.n1" 95.1081
-resist "GND.n181" "GND.n6" 112
-resist "GND.n88" "GND.n25" 112
+resist "GND.n185" "GND.n184" 80
+resist "GND.n176" "GND.n1" 95.1081
+resist "GND.n184" "GND.n6" 112
+resist "GND.n113" "GND.n37" 112
 resist "GND.n8" "GND.n7" 115.202
-resist "GND.n147" "GND.n146" 115.202
-resist "GND.n47" "GND.n39" 126.923
-resist "GND.n78" "GND.n77" 132.759
+resist "GND.n106" "GND.n105" 115.202
+resist "GND.n154" "GND.n146" 126.923
+resist "GND.n82" "GND.n81" 132.759
 resist "GND.n115" "GND.n114" 136
-resist "GND.n84" "GND.n83" 137.6
-resist "GND.n83" "GND.n82" 137.6
-resist "GND.n113" "GND.n112" 137.6
+resist "GND.n61" "GND.n60" 137.6
+resist "GND.n62" "GND.n61" 137.6
+resist "GND.n36" "GND.n35" 137.6
 resist "GND.n120" "GND.n119" 137.6
 resist "GND.n121" "GND.n120" 137.6
-resist "GND.n171" "GND.n11" 140.426
-resist "GND" "GND.n183" 142.08
+resist "GND.n174" "GND.n11" 140.426
+resist "GND" "GND.n186" 142.08
 resist "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VNB" "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VNB" 144.123
 resist "dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/VNB" "dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/VNB" 144.123
-resist "GND.n167" "GND.n166" 164.112
-resist "GND.n169" "GND.n157" 176.235
-resist "GND.n141" "GND.n140" 176.957
-resist "GND.n184" "GND" 189.184
-resist "GND.n149" "GND.n148" 201.09
-resist "GND.n182" "GND.n9" 228.647
-resist "GND.n179" "dco_freq_1/sky130_fd_sc_hd__buf_4_0/VNB" 230.954
-resist "GND.n144" "GND.n143" 232.466
-resist "GND.n140" "GND.n139" 263.043
-resist "GND.n79" "GND.n75" 284.483
-resist "GND.n74" "GND.n73" 284.483
-resist "GND.n72" "GND.n71" 284.483
-resist "GND.n70" "GND.n69" 284.483
-resist "GND.n68" "GND.n67" 284.483
-resist "GND.n66" "GND.n59" 284.483
-resist "GND.n108" "GND.n107" 284.483
-resist "GND.n47" "GND.n16" 286.957
-resist "GND.n177" "GND.n176" 292.5
-resist "GND.n176" "GND.n175" 292.5
-resist "GND.n187" "GND.n186" 292.5
-resist "GND.n186" "GND.n185" 292.5
-resist "GND.n143" "GND.n25" 324.8
-resist "GND.n183" "GND.n6" 338.4
-resist "GND.n151" "GND.n6" 346.4
-resist "GND.n111" "GND.n110" 392
-resist "GND.n44" "GND.n43" 406.154
-resist "GND.n141" "GND.n26" 455.172
-resist "GND.n157" "GND.n16" 459.13
-resist "GND.n169" "GND.n15" 504.167
-resist "GND.n174" "GND.n5" 518.776
-resist "GND.n175" "GND.n174" 570.729
-resist "GND.n175" "GND.n4" 570.729
-resist "GND.n185" "GND.n4" 570.729
-resist "sky130_fd_sc_hd__buf_2_0/VNB" "GND.n153" 603.83
-resist "GND.n43" "GND.n42" 626.154
-resist "GND.n179" "GND.n178" 697.447
-resist "GND.n40" "GND.n17" 710.769
-resist "GND.n41" "GND.n40" 710.769
-resist "GND.n35" "GND.n34" 710.769
-resist "GND.n31" "GND.n30" 710.769
-resist "GND.n34" "GND.n33" 719.231
-resist "GND.n42" "GND.n41" 744.615
-resist "GND.n172" "GND.n171" 757.039
-resist "GND.n37" "GND.n36" 803.846
-resist "GND.n75" "GND.n74" 815.517
-resist "GND.n73" "GND.n72" 815.517
-resist "GND.n67" "GND.n66" 815.517
-resist "GND.n108" "GND.n59" 815.517
-resist "GND.n32" "GND.n31" 820.769
-resist "GND.n139" "GND.n48" 822.609
-resist "GND.n157" "GND.n17" 837.692
-resist "GND.n45" "GND.n44" 837.692
-resist "GND.n46" "GND.n45" 837.692
-resist "GND.n39" "GND.n38" 854.615
-resist "GND.n47" "GND.n46" 880
-resist "GND.n38" "GND.n37" 896.923
-resist "GND.n48" "GND.n47" 937.391
-resist "GND.n169" "GND.n13" 1145.83
-resist "GND.n28" "GND.n21" 1154.53
-resist "GND.n154" "sky130_fd_sc_hd__buf_2_0/VNB" 1156.17
-resist "GND.n139" "GND.n138" 1179.71
-resist "GND.n78" "GND.n52" 1179.71
-resist "GND.n75" "GND.n53" 1179.71
-resist "GND.n73" "GND.n54" 1179.71
-resist "GND.n71" "GND.n55" 1179.71
-resist "GND.n69" "GND.n56" 1179.71
-resist "GND.n67" "GND.n57" 1179.71
-resist "GND.n124" "GND.n59" 1179.71
-resist "GND.n89" "GND.n79" 1179.71
-resist "GND.n74" "GND.n65" 1179.71
-resist "GND.n72" "GND.n64" 1179.71
-resist "GND.n70" "GND.n63" 1179.71
-resist "GND.n68" "GND.n62" 1179.71
-resist "GND.n66" "GND.n61" 1179.71
-resist "GND.n109" "GND.n108" 1179.71
-resist "GND.n135" "GND.n26" 1179.71
-resist "GND.n76" "GND.n51" 1179.71
-resist "GND.n107" "GND.n58" 1179.93
-resist "GND.n106" "GND.n105" 1181.03
-resist "GND.n49" "GND.n48" 1181.27
-resist "GND.n183" "GND.n182" 1228.16
-resist "GND.n180" "GND.n10" 1236.56
-resist "GND.n145" "GND.n20" 1236.56
-resist "GND.n153" "GND.n152" 1244.67
-resist "GND.n149" "GND.n6" 1302.4
-resist "GND.n79" "GND.n78" 1346.55
-resist "GND.n71" "GND.n70" 1346.55
-resist "GND.n69" "GND.n68" 1346.55
-resist "GND.n107" "GND.n106" 1346.55
-resist "GND.n36" "GND.n35" 1599.23
-resist "GND.n159" "GND.n158" 1650
-resist "GND.n106" "GND.n104" 1668.97
-resist "GND.n33" "GND.n32" 1700.77
-resist "GND.n156" "GND.n12" 2082.98
+resist "GND.n170" "GND.n169" 164.112
+resist "GND.n86" "GND.n85" 176.957
+resist "GND.n187" "GND" 189.184
+resist "GND.n108" "GND.n107" 201.09
+resist "GND.n185" "GND.n9" 228.647
+resist "GND.n182" "dco_freq_1/sky130_fd_sc_hd__buf_4_0/VNB" 230.954
+resist "GND.n112" "GND.n111" 232.466
+resist "GND.n86" "GND.n19" 263.043
+resist "GND.n80" "GND.n42" 284.483
+resist "GND.n48" "GND.n47" 284.483
+resist "GND.n50" "GND.n49" 284.483
+resist "GND.n52" "GND.n51" 284.483
+resist "GND.n54" "GND.n53" 284.483
+resist "GND.n55" "GND.n30" 284.483
+resist "GND.n69" "GND.n68" 284.483
+resist "GND.n155" "GND.n154" 286.335
+resist "GND.n180" "GND.n179" 292.5
+resist "GND.n179" "GND.n178" 292.5
+resist "GND.n190" "GND.n189" 292.5
+resist "GND.n189" "GND.n188" 292.5
+resist "GND.n113" "GND.n112" 324.8
+resist "GND.n186" "GND.n6" 338.4
+resist "GND.n104" "GND.n6" 346.4
+resist "GND.n66" "GND.n31" 392
+resist "GND.n151" "GND.n150" 406.154
+resist "GND.n85" "GND.n84" 455.172
+resist "GND.n156" "GND.n155" 458.135
+resist "GND.n159" "GND.n16" 504.167
+resist "GND.n177" "GND.n5" 518.776
+resist "GND.n178" "GND.n177" 570.729
+resist "GND.n178" "GND.n4" 570.729
+resist "GND.n188" "GND.n4" 570.729
+resist "GND.n157" "GND.n156" 585
+resist "GND.n101" "sky130_fd_sc_hd__buf_2_0/VNB" 603.83
+resist "GND.n150" "GND.n149" 626.154
+resist "GND.n182" "GND.n181" 697.447
+resist "GND.n147" "GND.n17" 710.769
+resist "GND.n148" "GND.n147" 710.769
+resist "GND.n142" "GND.n141" 710.769
+resist "GND.n138" "GND.n137" 710.769
+resist "GND.n141" "GND.n140" 719.231
+resist "GND.n149" "GND.n148" 744.615
+resist "GND.n175" "GND.n174" 757.039
+resist "GND.n144" "GND.n143" 803.846
+resist "GND.n47" "GND.n42" 815.517
+resist "GND.n49" "GND.n48" 815.517
+resist "GND.n55" "GND.n54" 815.517
+resist "GND.n68" "GND.n30" 815.517
+resist "GND.n139" "GND.n138" 820.769
+resist "GND.n136" "GND.n19" 822.609
+resist "GND.n156" "GND.n17" 837.692
+resist "GND.n152" "GND.n151" 837.692
+resist "GND.n153" "GND.n152" 837.692
+resist "GND.n146" "GND.n145" 854.615
+resist "GND.n154" "GND.n153" 880
+resist "GND.n145" "GND.n144" 896.923
+resist "GND.n154" "GND.n136" 937.391
+resist "GND.n160" "GND.n159" 1145.83
+resist "GND.n89" "GND.n88" 1154.53
+resist "sky130_fd_sc_hd__buf_2_0/VNB" "GND.n100" 1156.17
+resist "GND.n20" "GND.n19" 1179.71
+resist "GND.n81" "GND.n23" 1179.71
+resist "GND.n42" "GND.n24" 1179.71
+resist "GND.n48" "GND.n25" 1179.71
+resist "GND.n50" "GND.n26" 1179.71
+resist "GND.n52" "GND.n27" 1179.71
+resist "GND.n54" "GND.n28" 1179.71
+resist "GND.n124" "GND.n30" 1179.71
+resist "GND.n80" "GND.n79" 1179.71
+resist "GND.n47" "GND.n43" 1179.71
+resist "GND.n49" "GND.n44" 1179.71
+resist "GND.n51" "GND.n45" 1179.71
+resist "GND.n53" "GND.n46" 1179.71
+resist "GND.n56" "GND.n55" 1179.71
+resist "GND.n68" "GND.n67" 1179.71
+resist "GND.n84" "GND.n21" 1179.71
+resist "GND.n83" "GND.n22" 1179.71
+resist "GND.n69" "GND.n29" 1179.93
+resist "GND.n71" "GND.n70" 1181.03
+resist "GND.n136" "GND.n135" 1181.27
+resist "GND.n186" "GND.n185" 1228.16
+resist "GND.n183" "GND.n10" 1236.56
+resist "GND.n110" "GND.n39" 1236.56
+resist "GND.n103" "GND.n101" 1244.67
+resist "GND.n108" "GND.n6" 1302.4
+resist "GND.n158" "GND.n157" 1315
+resist "GND.n81" "GND.n80" 1346.55
+resist "GND.n51" "GND.n50" 1346.55
+resist "GND.n53" "GND.n52" 1346.55
+resist "GND.n70" "GND.n69" 1346.55
+resist "GND.n143" "GND.n142" 1599.23
+resist "GND.n162" "GND.n161" 1650
+resist "GND.n70" "GND.n18" 1668.97
+resist "GND.n140" "GND.n139" 1700.77
+resist "GND.n98" "GND.n12" 2082.98
 resist "GND.n12" "GND.n11" 2129.79
-resist "GND.n171" "GND.n170" 2133.33
-resist "GND.n154" "GND.n22" 2175.09
-resist "GND.n76" "GND.n26" 2200
-resist "GND.n101" "GND.n99" 2219.1
-resist "GND.n168" "GND.n167" 2219.72
-resist "GND.n98" "GND.n97" 2310
-resist "GND.n178" "GND.n177" 2870.76
-resist "GND.n154" "GND.n21" 3158.87
-resist "dco_freq_0/sky130_fd_sc_hd__inv_4_0/VNB" "GND.n20" 3191.09
+resist "GND.n174" "GND.n173" 2133.33
+resist "GND.n159" "GND.n158" 2175
+resist "GND.n100" "GND.n13" 2175.09
+resist "GND.n84" "GND.n83" 2200
+resist "GND.n92" "GND.n90" 2219.1
+resist "GND.n171" "GND.n170" 2219.72
+resist "GND.n96" "GND.n95" 2310
+resist "GND.n98" "GND.n13" 2650
+resist "GND.n181" "GND.n180" 2870.76
+resist "GND.n100" "GND.n89" 3158.87
+resist "dco_freq_0/sky130_fd_sc_hd__inv_4_0/VNB" "GND.n39" 3191.09
 resist "dco_freq_1/sky130_fd_sc_hd__inv_4_0/VNB" "GND.n10" 3191.09
 resist "dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/VNB" "dco_freq_1/sky130_fd_sc_hd__buf_4_0/VNB" 3262.81
-resist "GND.n77" "GND.n76" 3277.86
-resist "GND.n187" "GND.n1" 3371.33
-resist "GND.n177" "GND.n173" 3466.44
-resist "GND.n104" "GND.n103" 3753.58
-resist "GND.n103" "GND.n102" 3886.18
-resist "GND.n102" "GND.n101" 4012.05
+resist "GND.n83" "GND.n82" 3277.86
+resist "GND.n190" "GND.n1" 3371.33
+resist "GND.n180" "GND.n176" 3466.44
+resist "GND.n94" "GND.n18" 3753.58
+resist "GND.n94" "GND.n93" 3886.18
+resist "GND.n93" "GND.n92" 4012.05
 resist "dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/VNB" "dco_freq_0/sky130_fd_sc_hd__buf_4_0/VNB" 4054.45
-resist "GND.n15" "GND.n14" 4271.67
-resist "GND.n156" "GND.n155" 4488.94
-resist "GND.n28" "GND.n27" 4514.52
-resist "GND.n158" "GND.n13" 5408.33
-resist "GND.n97" "GND.n23" 5945.95
-resist "GND.n188" "GND.n187" 6404.78
-resist "GND.n155" "GND.n20" 6764.15
-resist "GND.n178" "GND.n172" 6816.8
-resist "GND.n160" "GND.n1" 6954.02
-resist "GND.n97" "GND.n21" 7355.09
-resist "GND.n14" "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VNB" 7541.4
-resist "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VNB" "dco_freq_0/sky130_fd_sc_hd__inv_4_0/VNB" 7862.45
-resist "dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/VNB" "dco_freq_1/sky130_fd_sc_hd__inv_4_0/VNB" 7862.45
-resist "GND.n140" "GND.n29" 8474.07
-resist "GND.n98" "GND.n19" 8712
-resist "GND.n101" "dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/VNB" 8724.79
-resist "GND.n103" "GND.n98" 8740.68
-resist "GND.n186" "GND.n3" 8783.88
-resist "GND.n176" "GND.n3" 8783.88
-resist "GND.n186" "GND.n2" 8783.88
-resist "GND.n176" "GND.n2" 8783.88
-resist "dco_idac_0/sky130_fd_sc_hd__inv_2_0/VNB" "GND.n188" 9212.5
-resist "GND.n27" "sky130_fd_sc_hd__einvp_1_0/VNB" 10523.9
-resist "GND.n77" "GND.n27" 10556.6
-resist "GND.n155" "GND.n19" 11660
-resist "GND.n99" "dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/VNB" 12157.8
-resist "GND.n102" "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VNB" 12411.6
-resist "GND.n99" "dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/VNB" 12411.6
-resist "GND.n180" "GND.n179" 14907.7
-resist "GND.n163" "GND.n0" 17631.6
-resist "GND.n172" "GND.n1" 18401.1
-resist "GND.n144" "GND.n11" 22145.4
-resist "GND.n142" "GND.n141" 37049.9
-resist "dco_freq_0/sky130_fd_sc_hd__buf_4_0/VNB" "GND.n100" 62476.4
-resist "GND.n104" "GND.n16" 97623.4
-resist "GND.n100" "GND.n10" 110699
-resist "GND.n170" "GND.n12" 217800
-resist "GND.n47" "GND.n18" 224465
-resist "GND.n153" "GND.n23" 277897
-resist "GND.n29" "GND.n22" 281600
-resist "GND.n168" "GND.n160" 303600
-resist "GND.n169" "GND.n168" 363000
-resist "GND.n29" "GND.n28" 498901
-resist "GND.n170" "GND.n169" 609400
-resist "GND.n160" "GND.n159" 614900
-resist "GND.n23" "GND.n19" 814000
+resist "GND.n16" "GND.n15" 4271.67
+resist "GND.n99" "GND.n98" 4488.94
+resist "GND.n88" "GND.n41" 4514.52
+resist "GND.n161" "GND.n160" 5408.33
+resist "GND.n95" "GND.n40" 5945.95
+resist "GND.n191" "GND.n190" 6404.78
+resist "GND.n172" "GND.n13" 6750
+resist "GND.n99" "GND.n39" 6764.15
+resist "GND.n181" "GND.n175" 6816.8
+resist "GND.n163" "GND.n1" 6954.02
+resist "GND.n159" "GND.n14" 7200
+resist "GND.n15" "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VNB" 7303.6
+resist "GND.n95" "GND.n89" 7355.09
+resist "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VNB" "dco_freq_0/sky130_fd_sc_hd__inv_4_0/VNB" 7859.46
+resist "dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/VNB" "dco_freq_1/sky130_fd_sc_hd__inv_4_0/VNB" 7859.46
+resist "GND.n87" "GND.n86" 8474.07
+resist "GND.n97" "GND.n96" 8712
+resist "GND.n92" "dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/VNB" 8724.79
+resist "GND.n96" "GND.n94" 8740.68
+resist "GND.n189" "GND.n3" 8783.88
+resist "GND.n179" "GND.n3" 8783.88
+resist "GND.n189" "GND.n2" 8783.88
+resist "GND.n179" "GND.n2" 8783.88
+resist "dco_idac_0/sky130_fd_sc_hd__inv_2_0/VNB" "GND.n191" 9212.5
+resist "GND.n41" "sky130_fd_sc_hd__einvp_1_0/VNB" 10523.9
+resist "GND.n82" "GND.n41" 10556.6
+resist "GND.n99" "GND.n97" 11660
+resist "GND.n90" "dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/VNB" 12157.8
+resist "GND.n93" "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VNB" 12411.6
+resist "GND.n90" "dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/VNB" 12411.6
+resist "GND.n172" "GND.n14" 13175
+resist "GND.n183" "GND.n182" 14907.7
+resist "GND.n175" "GND.n1" 18401.1
+resist "GND.n166" "GND.n0" 18697.9
+resist "GND.n111" "GND.n11" 22145.4
+resist "GND.n85" "GND.n38" 37049.9
+resist "dco_freq_0/sky130_fd_sc_hd__buf_4_0/VNB" "GND.n91" 62476.4
+resist "GND.n155" "GND.n18" 97623.8
+resist "GND.n91" "GND.n10" 110699
+resist "GND.n173" "GND.n12" 217800
+resist "GND.n101" "GND.n40" 277897
+resist "GND.n87" "GND.n14" 281600
+resist "GND.n171" "GND.n163" 303600
+resist "GND.n172" "GND.n171" 363000
+resist "GND.n88" "GND.n87" 498901
+resist "GND.n173" "GND.n172" 609400
+resist "GND.n163" "GND.n162" 614900
+resist "GND.n154" "GND.n14" 649000
+resist "GND.n97" "GND.n40" 814000
 rnode "VCCD.n0" 0 85.976 8160 1340 0
 rnode "VCCD.n1" 0 18.5574 8080 1340 0
 rnode "dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/VPB" 0 1631.58 9044 -198 0
 rnode "dco_freq_0/sky130_fd_sc_hd__dfxbp_2_0/VPB" 0 417.445 9027 -215 0
 rnode "dco_freq_0/sky130_fd_sc_hd__buf_4_0/VPB" 0 514.708 7948 -215 0
-rnode "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VPB" 0 164.817 9324 642 0
+rnode "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VPB" 0 164.818 9324 642 0
 rnode "dco_freq_0/sky130_fd_sc_hd__dfxtp_1_0/VPB" 0 1279.47 9307 625 0
 rnode "dco_freq_0/sky130_fd_sc_hd__inv_4_0/VPB" 0 549.035 8387 625 0
 rnode "VCCD.n2" 0 649.254 8010 530 0
@@ -721,7 +727,7 @@ rnode "dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/VPB" 0 1631.58 9044 -2538 0
 rnode "dco_freq_1/sky130_fd_sc_hd__dfxbp_2_0/VPB" 0 417.445 9027 -2555 0
 rnode "dco_freq_1/sky130_fd_sc_hd__buf_4_0/VPB" 0 509.553 7948 -2555 0
 rnode "VCCD.n23" 0 245.839 7700 -2535 0
-rnode "dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/VPB" 0 164.817 9324 -1698 0
+rnode "dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/VPB" 0 164.818 9324 -1698 0
 rnode "dco_freq_1/sky130_fd_sc_hd__dfxtp_1_0/VPB" 0 1279.47 9307 -1715 0
 rnode "dco_freq_1/sky130_fd_sc_hd__inv_4_0/VPB" 0 550.162 8387 -1715 0
 rnode "VCCD.n24" 0 730.877 7650 -1860 0
@@ -737,7 +743,7 @@ rnode "sky130_fd_sc_hd__einvp_1_0/VPWR" 0 223.756 3318 3765 0
 rnode "sky130_fd_sc_hd__einvp_1_0/VPWR" 0 12.5262 3288 3785 0
 rnode "VCCD.t1" 0 224.129 3652 3635 0
 rnode "sky130_fd_sc_hd__einvp_1_0/VPB" 0 233.356 3318 3765 0
-rnode "VCCD.n28" 0 105.397 3200 3790 0
+rnode "VCCD.n28" 0 105.398 3200 3790 0
 rnode "VCCD.n29" 0 628.605 3200 3790 0
 rnode "VCCD" 0 505.747 -620 6080 0
 rnode "VCCD.n30" 0 2255.89 -530 3785 0
@@ -759,7 +765,7 @@ rnode "VCCD.n37" 0 81.4078 1592 -1726 0
 rnode "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VPWR" 0 18.4314 1575 -1611 0
 rnode "VCCD.n38" 0 8.5442 1592 -1594 0
 rnode "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VPWR" 0 -42.45 1544 -1916 0
-rnode "VCCD.n39" 0 64.7467 1592 -1550 0
+rnode "VCCD.n39" 0 64.7468 1592 -1550 0
 rnode "dco_idac_0/VCCD" 0 173.03 1590 -1400 0
 resist "VCCD.n33" "dco_idac_0/sky130_fd_sc_hd__inv_2_0/VPWR" 0.00056513
 resist "VCCD.n36" "dco_idac_0/sky130_fd_sc_hd__buf_2_0/VPWR" 0.0075

@@ -1,12 +1,12 @@
 * SPICE3 file created from dco.ext - technology: sky130A
 
 .subckt dco VCCD VCCA Dctrl ENB Vbs_12 Vbs_34 pha_DCO GND
-C0 Isup dco_ring_osc_0/p[3] 2.565691f
-C1 dco_ring_osc_0/p[2] Isup 3.689101f
-C2 dco_ring_osc_0/p[1] Isup 2.560124f
-C3 dco_ring_osc_0/p[0] Isup 2.557879f
+C0 Isup dco_ring_osc_0/p[2] 3.689101f
+C1 Isup dco_ring_osc_0/p[1] 2.560124f
+C2 ro_div2 VCCD 2.804919f
+C3 dco_ring_osc_0/p[3] Isup 2.565691f
 C4 p_osc Isup 2.865048f
-C5 ro_div2 VCCD 2.804919f
+C5 dco_ring_osc_0/p[0] Isup 2.557879f
 Xdco_freq_0 pha_ro ro_div2 dco_freq
 Xdco_freq_1 ro_div2 pha_DCO dco_freq
 Xsky130_fd_sc_hd__buf_2_0 p_osc GND GND VCCD VCCD pha_ro sky130_fd_sc_hd__buf_2
@@ -26,7 +26,7 @@ C13 dco_ring_osc_0/pn[3] GND 3.842829f
 C14 dco_ring_osc_0/p[3] GND 2.511793f
 C15 dco_ring_osc_0/pn[4] GND 6.391574f
 C16 p_osc GND 7.112562f
-C17 dco_ring_osc_0/pn[2] GND 4.464278f
+C17 dco_ring_osc_0/pn[2] GND 4.464279f
 C18 Isup GND 49.697628f
 C19 dco_ring_osc_0/p[2] GND 3.392114f
 C20 dco_ring_osc_0/pn[1] GND 3.823762f
@@ -34,9 +34,9 @@ C21 dco_ring_osc_0/p[1] GND 2.511596f
 C22 dco_ring_osc_0/pn[0] GND 3.855207f
 C23 dco_ring_osc_0/p[0] GND 2.511309f
 C24 VCCD GND 31.148153f
-C25 dco_freq_1/D GND 3.341328f
+C25 dco_freq_1/D GND 3.341327f
 C26 ro_div2 GND 3.686911f
 C27 dco_freq_1/Q_N GND 2.956692f
-C28 dco_freq_0/D GND 3.341328f
+C28 dco_freq_0/D GND 3.341327f
 C29 dco_freq_0/Q_N GND 2.971666f
 .ends
