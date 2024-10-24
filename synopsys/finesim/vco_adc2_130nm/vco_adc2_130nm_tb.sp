@@ -23,7 +23,7 @@ X_UDC_2 p_dco FBack ENB GND GND VCCD VCCD D2 DLib_UpDownCounter
 .param wp_v=5
 .param wn_v=4
 .param vsin=0.36
-.param sig_freq=10k
+.param sig_freq=1k
 
 **** end user architecture code
 **.ends
@@ -268,13 +268,13 @@ XM2 Y A VGND GND sky130_fd_pr__nfet_01v8 L="L" W="Wn" nf=1 ad='int((nf+1)/2) * W
 
 .print v(clk) v(dout) v(anlg_in)
 
-.tran 1n 120u start=0 sweep data=input
+.tran 1n 12m start=0 $ sweep data=input
 
-.data input
-+ vsin sig_freq
-+ 0.1m 1k
-+ 1m 10k
-.enddata
+*.data input
+*+ vsin sig_freq
+*+ 0.1m 1k
+*+ 1m 10k
+*.enddata
 
 .measure tran prd trig v(p_vco) val=0.8 rise=10 targ v(p_vco) val=0.8 rise=20
 .measure tran freq_v param='10/prd'
