@@ -29,6 +29,7 @@ def signal_cprs(raw_sig = [4.5* 10 **7, 10 ** 7]):
 	return cprs_sig
 
 def main():
+	volt = 0.4	# V_amp
 	volt = 0.36	# V_amp
 	freq = 1	# kHz
 	file_name = str(volt) + 'V@' + str(freq) + 'kHz.txt'
@@ -37,6 +38,8 @@ def main():
 #	plt.figure(0)
 #	plt.plot(data_out)
 	cic_filr_sig =	decimation_filr (data_out, 500)	
+	plt.figure(1) 
+	plt.plot(cic_filr_sig)	
 	
 	cic_filr_sig_cprs = signal_cprs(raw_sig = cic_filr_sig)
 

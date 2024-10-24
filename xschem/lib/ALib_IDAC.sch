@@ -68,14 +68,6 @@ N 270 -360 270 -330 {
 lab=#net2}
 N 260 -360 270 -360 {
 lab=#net2}
-N 440 -140 450 -140 {
-lab=Isup}
-N 440 -140 440 -120 {
-lab=Isup}
-N 440 -120 440 -110 {
-lab=Isup}
-N 440 -110 450 -110 {
-lab=Isup}
 N 70 -200 80 -200 {
 lab=add_pwr}
 N 80 -230 80 -200 {
@@ -88,12 +80,16 @@ N 340 -230 340 -200 {
 lab=add_pwr}
 N 330 -230 340 -230 {
 lab=add_pwr}
-N 180 -140 190 -140 {
-lab=#net3}
-N 180 -140 180 -110 {
-lab=#net3}
-N 180 -110 190 -110 {
-lab=#net3}
+N 160 -140 190 -140 {
+lab=GND}
+N 420 -140 450 -140 {
+lab=Isup}
+N 420 -140 420 -110 {
+lab=Isup}
+N 420 -110 450 -110 {
+lab=Isup}
+N 160 -140 160 -110 {}
+N 160 -110 190 -110 {}
 C {devices/ipin.sym} 200 -430 0 0 {name=p3 lab=Vbs3}
 C {devices/ipin.sym} 200 -330 0 0 {name=p4 lab=Vbs4}
 C {devices/ipin.sym} 460 -430 0 0 {name=p1 lab=Vbs1}
