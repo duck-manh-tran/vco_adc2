@@ -7,9 +7,9 @@ run_freq_ext:
 
 run_finesim:
 	mkdir -p simulations
-	finesim -np 12 -o ./simulations/ vco_adc2_65nm_ams_tb.sp
+	finesim -np 12 -afile input_dat.sp -o ./simulations/ vco_adc2_65nm_tb.sp
 
-#	finesim -np 12 -o ./simulations/ vco_adc2_130nm_tb.sp 	
+#	finesim -np 12 -o ./simulations/ vco_adc2_65nm_ams_tb.sp
 #	cat simulations/vco_tb.mt0
 run_analysis:
 	mkdir -p results/raw
