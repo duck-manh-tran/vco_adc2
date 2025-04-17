@@ -14,7 +14,7 @@ N 150 -430 180 -430 { lab=Vbs_12}
 N 150 -450 150 -430 { lab=Vbs_12}
 N 200 -300 200 -270 { lab=Isup}
 N 400 -480 400 -440 { lab=Isup}
-N 460 -390 500 -390 { lab=#net1}
+N 460 -390 500 -390 { lab=p[0]}
 N 220 -480 220 -430 { lab=Vbs_34}
 N 460 -350 500 -350 { lab=p[1]}
 N 460 -310 500 -310 { lab=p[2]}
@@ -36,7 +36,7 @@ N 230 -200 280 -200 { lab=pn[0]}
 N 740 -200 740 -180 { lab=GND}
 N 740 -320 740 -260 { lab=ENB}
 N 1040 -180 1040 -160 { lab=GND}
-N 1040 -300 1040 -240 { lab=D1}
+N 1040 -300 1040 -240 { lab=D1_off}
 N 90 -350 120 -350 { lab=D1}
 N 840 -380 840 -360 { lab=GND}
 N 840 -500 840 -440 { lab=Vbs_34}
@@ -51,6 +51,8 @@ N 680 -140 700 -140 { lab=pha_dco}
 N 700 -200 700 -140 { lab=pha_dco}
 N 540 -140 560 -140 { lab=ro_div2}
 N 540 -200 540 -140 { lab=ro_div2}
+N 1120 -180 1120 -160 { lab=GND}
+N 1120 -300 1120 -240 { lab=D1}
 C {devices/lab_wire.sym} 110 -350 0 0 {name=l1 sig_type=std_logic lab=D1}
 C {devices/lab_pin.sym} 150 -440 0 0 {name=l2 sig_type=std_logic lab=Vbs_12}
 C {devices/lab_pin.sym} 220 -470 0 0 {name=l3 sig_type=std_logic lab=Vbs_34}
@@ -67,7 +69,7 @@ C {devices/lab_wire.sym} 330 -270 0 0 {name=l12 sig_type=std_logic lab=pn[3]}
 C {devices/vsource.sym} 940 -410 0 0 {name=Vsup value="DC=1.8"}
 C {devices/gnd.sym} 940 -360 0 0 {name=l14 lab=GND}
 C {devices/lab_pin.sym} 940 -470 2 0 {name=l15 sig_type=std_logic lab=VCCA}
-C {devices/vsource.sym} 740 -410 0 0 {name=Vbs1 value="DC=0.4"}
+C {devices/vsource.sym} 740 -410 0 0 {name=Vbs1 value="DC=0.3"}
 C {devices/gnd.sym} 840 -360 0 0 {name=l17 lab=GND}
 C {devices/lab_pin.sym} 740 -470 2 0 {name=l18 sig_type=std_logic lab=Vbs_12}
 C {devices/gnd.sym} 400 -160 0 0 {name=l19 lab=GND}
@@ -83,9 +85,10 @@ C {devices/gnd.sym} 740 -180 0 0 {name=l27 lab=GND}
 C {devices/lab_pin.sym} 740 -290 2 0 {name=l28 sig_type=std_logic lab=ENB}
 C {devices/vsource.sym} 1040 -210 0 1 {name=V3 value="DC=1.8  PULSE( 0 1.8 0 0.1n 0.1n 1u 4u )"}
 C {devices/gnd.sym} 1040 -160 0 0 {name=l29 lab=GND}
-C {devices/lab_pin.sym} 1040 -270 2 0 {name=l30 sig_type=std_logic lab=D1}
+C {devices/lab_pin.sym} 1040 -270 2 0 {name=l30 sig_type=std_logic lab=D1_off}
 C {devices/code.sym} 240 -110 0 0 {name=control only_toplevel=false value="
 .save all
+.probe v(p[0]) v(pha_vco)
 .tran 1n 50u start=0 $  sweep vin 0 1.0 0.1
 .measure tran prd1 trig v(pha_dco) val=0.8 rise=10 targ v(pha_dco) val=0.8 rise=30
 .measure tran freq_d param='20/prd1'
@@ -98,9 +101,9 @@ C {devices/code.sym} 240 -110 0 0 {name=control only_toplevel=false value="
 "
 place=end}
 C {devices/code_shown.sym} 770 -90 0 0 {name=IDAC_param only_toplevel=false value="
-.param W_br1=2
+.param W_br1=1.8
 .param L_br1=0.5
-.param W_br2=1.6
+.param W_br2=1.8
 .param L_br2=0.5
 .param Wp_lk=4
 .param Lp_lk=0.5
@@ -128,8 +131,8 @@ value=tcleval(".include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
 
 place=header}
 C {devices/code_shown.sym} 950 -90 0 0 {name=RO_par only_toplevel=false value="
-.param l_main=1.2
-.param l_aux=1.2
+.param l_main=1
+.param l_aux=1
 .param wp=3
 .param wn=2"
 
@@ -140,3 +143,7 @@ C {devices/lab_pin.sym} 700 -190 0 0 {name=l36 sig_type=std_logic lab=pha_dco}
 C {../lib/DLib_freqDiv2.sym} 620 -130 0 0 {name=Xdiv1 VGND=GND VNB=GND VPB=VCCD VPWR=VCCD}
 C {devices/vdd.sym} 940 -500 0 0 {name=l16 lab=VCCA}
 C {devices/vdd.sym} 1040 -500 0 0 {name=l37 lab=VCCD}
+C {devices/vsource.sym} 1120 -210 0 0 {name=Vsup2 value="DC=0"}
+C {devices/gnd.sym} 1120 -160 0 0 {name=l38 lab=GND}
+C {devices/lab_pin.sym} 1120 -270 2 0 {name=l39 sig_type=std_logic lab=D1}
+C {devices/lab_wire.sym} 470 -390 2 0 {name=l40 sig_type=std_logic lab=p[0]}
